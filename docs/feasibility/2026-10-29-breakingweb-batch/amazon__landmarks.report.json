@@ -1,0 +1,772 @@
+{
+ "env": "amazon",
+ "kind": "landmarks",
+ "codemod_counts_env": {
+  "env": {
+   "header": 1,
+   "nav": 3,
+   "main": 1,
+   "footer": 1,
+   "aside": 3,
+   "role": 3
+  },
+  "shared": {
+   "header": 2,
+   "nav": 1,
+   "main": 0,
+   "footer": 1,
+   "aside": 1,
+   "role": 1
+  }
+ },
+ "tasks": [
+  {
+   "page": "amazon_account_overhaul_and_shop",
+   "visible": {
+    "lines_clean": 95,
+    "removed": 38,
+    "added": 36,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t[32] textbox 'Search Amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 439,
+    "removed": 437,
+    "added": 433,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t\t[23] option 'All', selected=True",
+     "-\t\t\t[24] option 'Electronics', selected=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3389
+    ],
+    "diff_share": 0.00223
+   }
+  },
+  {
+   "page": "amazon_add_new_address",
+   "visible": {
+    "lines_clean": 95,
+    "removed": 38,
+    "added": 36,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t[32] textbox 'Search Amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 439,
+    "removed": 437,
+    "added": 433,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t\t[23] option 'All', selected=True",
+     "-\t\t\t[24] option 'Electronics', selected=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3391
+    ],
+    "diff_share": 0.0009
+   }
+  },
+  {
+   "page": "route__account",
+   "visible": {
+    "lines_clean": 94,
+    "removed": 38,
+    "added": 36,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t[32] textbox 'Search Amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 174,
+    "removed": 172,
+    "added": 168,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t\t[23] option 'All', selected=True",
+     "-\t\t\t[24] option 'Electronics', selected=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1788
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__cart",
+   "visible": {
+    "lines_clean": 60,
+    "removed": 59,
+    "added": 55,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t[32] textbox 'Search Amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 70,
+    "removed": 69,
+    "added": 65,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t\t[23] option 'All', selected=True",
+     "-\t\t\t[24] option 'Electronics', selected=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     771
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__categories",
+   "visible": {
+    "lines_clean": 67,
+    "removed": 66,
+    "added": 63,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t[32] textbox 'Search Amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 88,
+    "removed": 87,
+    "added": 83,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t\t[23] option 'All', selected=True",
+     "-\t\t\t[24] option 'Electronics', selected=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     997
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__checkout",
+   "visible": {
+    "lines_clean": 55,
+    "removed": 54,
+    "added": 50,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t[32] textbox 'Search Amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 64,
+    "removed": 63,
+    "added": 59,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t\t[23] option 'All', selected=True",
+     "-\t\t\t[24] option 'Electronics', selected=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__customer-service",
+   "visible": {
+    "lines_clean": 75,
+    "removed": 75,
+    "added": 72,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t[32] textbox 'Search Amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 142,
+    "removed": 141,
+    "added": 137,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t\t[23] option 'All', selected=True",
+     "-\t\t\t[24] option 'Electronics', selected=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1587
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__deals",
+   "visible": {
+    "lines_clean": 121,
+    "removed": 38,
+    "added": 36,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t[32] textbox 'Search Amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 484,
+    "removed": 483,
+    "added": 479,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t\t[23] option 'All', selected=True",
+     "-\t\t\t[24] option 'Electronics', selected=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3263
+    ],
+    "diff_share": 0.00272
+   }
+  },
+  {
+   "page": "route__gift-cards",
+   "visible": {
+    "lines_clean": 48,
+    "removed": 47,
+    "added": 44,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t[32] textbox 'Search Amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 69,
+    "removed": 68,
+    "added": 64,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t\t[23] option 'All', selected=True",
+     "-\t\t\t[24] option 'Electronics', selected=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     980
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__home",
+   "visible": {
+    "lines_clean": 95,
+    "removed": 38,
+    "added": 36,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t[32] textbox 'Search Amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 439,
+    "removed": 437,
+    "added": 433,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t\t[23] option 'All', selected=True",
+     "-\t\t\t[24] option 'Electronics', selected=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3389
+    ],
+    "diff_share": 0.00223
+   }
+  },
+  {
+   "page": "route__notifications",
+   "visible": {
+    "lines_clean": 72,
+    "removed": 71,
+    "added": 68,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t[32] textbox 'Search Amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 94,
+    "removed": 93,
+    "added": 89,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t\t[23] option 'All', selected=True",
+     "-\t\t\t[24] option 'Electronics', selected=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1058
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__orders",
+   "visible": {
+    "lines_clean": 90,
+    "removed": 38,
+    "added": 36,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t[32] textbox 'Search Amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 265,
+    "removed": 264,
+    "added": 260,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t\t[23] option 'All', selected=True",
+     "-\t\t\t[24] option 'Electronics', selected=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2777
+    ],
+    "diff_share": 7e-05
+   }
+  },
+  {
+   "page": "route__product_product_36",
+   "visible": {
+    "lines_clean": 99,
+    "removed": 99,
+    "added": 95,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t[32] textbox 'Search Amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 147,
+    "removed": 146,
+    "added": 141,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t\t[23] option 'All', selected=True",
+     "-\t\t\t[24] option 'Electronics', selected=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1543
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__returns",
+   "visible": {
+    "lines_clean": 73,
+    "removed": 73,
+    "added": 69,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t[32] textbox 'Search Amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 84,
+    "removed": 83,
+    "added": 79,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t\t[23] option 'All', selected=True",
+     "-\t\t\t[24] option 'Electronics', selected=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     811
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search_q-headphones",
+   "visible": {
+    "lines_clean": 128,
+    "removed": 38,
+    "added": 36,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t[32] textbox 'Search Amazon' value='headphones', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 360,
+    "removed": 359,
+    "added": 353,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t\t[23] option 'All', selected=True",
+     "-\t\t\t[24] option 'Electronics', selected=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3525
+    ],
+    "diff_share": 0.00114
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 59,
+    "removed": 59,
+    "added": 56,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t[32] textbox 'Search Amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 98,
+    "removed": 97,
+    "added": 93,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t\t[23] option 'All', selected=True",
+     "-\t\t\t[24] option 'Electronics', selected=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1298
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__wishlist",
+   "visible": {
+    "lines_clean": 59,
+    "removed": 59,
+    "added": 55,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t[32] textbox 'Search Amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 70,
+    "removed": 69,
+    "added": 65,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "-\t\tStaticText 'amazon'",
+     "-\t[19] image '', visible",
+     "-\tStaticText 'Deliver to'",
+     "-\tStaticText 'Benchmark User'",
+     "-\t[21] search '', visible",
+     "-\t\t[22] combobox 'Search in department' value='All', visible, hasPopup='menu', expanded=False",
+     "-\t\t\t[23] option 'All', selected=True",
+     "-\t\t\t[24] option 'Electronics', selected=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     784
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

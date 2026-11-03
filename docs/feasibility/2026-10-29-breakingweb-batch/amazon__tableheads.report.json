@@ -1,0 +1,389 @@
+{
+ "env": "amazon",
+ "kind": "tableheads",
+ "codemod_counts_env": {
+  "env": {
+   "th": 0
+  },
+  "shared": {
+   "th": 1,
+   "css-files": 1
+  }
+ },
+ "tasks": [
+  {
+   "page": "amazon_account_overhaul_and_shop",
+   "visible": {
+    "lines_clean": 95,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 439,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3389
+    ],
+    "diff_share": 0.00121
+   }
+  },
+  {
+   "page": "amazon_add_new_address",
+   "visible": {
+    "lines_clean": 95,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 439,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3391
+    ],
+    "diff_share": 0.00219
+   }
+  },
+  {
+   "page": "route__account",
+   "visible": {
+    "lines_clean": 94,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 174,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1788
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__cart",
+   "visible": {
+    "lines_clean": 60,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 70,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     771
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__categories",
+   "visible": {
+    "lines_clean": 67,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 88,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     997
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__checkout",
+   "visible": {
+    "lines_clean": 55,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 64,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__customer-service",
+   "visible": {
+    "lines_clean": 75,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 142,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1587
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__deals",
+   "visible": {
+    "lines_clean": 121,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 484,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3263
+    ],
+    "diff_share": 0.00013
+   }
+  },
+  {
+   "page": "route__gift-cards",
+   "visible": {
+    "lines_clean": 48,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 69,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     980
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__home",
+   "visible": {
+    "lines_clean": 95,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 439,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3389
+    ],
+    "diff_share": 0.00121
+   }
+  },
+  {
+   "page": "route__notifications",
+   "visible": {
+    "lines_clean": 72,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 94,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1058
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__orders",
+   "visible": {
+    "lines_clean": 90,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 265,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2777
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__product_product_36",
+   "visible": {
+    "lines_clean": 99,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 147,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1543
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__returns",
+   "visible": {
+    "lines_clean": 73,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 84,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     811
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search_q-headphones",
+   "visible": {
+    "lines_clean": 128,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 360,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3525
+    ],
+    "diff_share": 0.0016
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 59,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 98,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1298
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__wishlist",
+   "visible": {
+    "lines_clean": 59,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 70,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     784
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

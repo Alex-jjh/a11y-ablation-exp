@@ -1,0 +1,3598 @@
+{
+ "what": "Function equivalence of BreakingWeb source-level variants (click_effect.py), 2026-10-30. Per env: trial counts, clean-vs-clean calibration, per-kind verdicts with mismatch/expected/recheck counts and examples; coverage of targets; treated targets (click_treated.py); label clicks that lost focus.",
+ "out_dir": "/tmp/amt-syn/bw-fx/final",
+ "envs": {
+  "amazon": {
+   "n_pages": 17,
+   "n_trials_per_build": 786,
+   "trials_by_type": {
+    "click": 607,
+    "enter": 81,
+    "space": 81,
+    "tab": 17
+   },
+   "calibration_clean1_vs_clean0": {
+    "trials_with_unstable_field": 60,
+    "by_field": {
+     "px": 60
+    }
+   },
+   "coverage": {
+    "pages": 17,
+    "clickable": 783,
+    "clicks_kept": 607,
+    "below_fold_kept": 128,
+    "keys_kept": 81,
+    "buttons_total": null,
+    "labels_for_kept": 4,
+    "labels_for_all": null,
+    "tab_presses": 748,
+    "focusable": 772,
+    "tab_capped_pages": 4,
+    "why": {
+     "ax": 604,
+     "react": 537,
+     "pointer": 576,
+     "label": 10
+    },
+    "tags": {
+     "A": 465,
+     "BUTTON": 84,
+     "INPUT": 24,
+     "SELECT": 20,
+     "LABEL": 10,
+     "ARTICLE": 4
+    },
+    "effects": {
+     "click:dialog": 0,
+     "click:js_dialog": 0,
+     "click:mutating_req": 10,
+     "click:muts>0": 528,
+     "click:n": 607,
+     "click:no_visible_effect": 79,
+     "click:popup_or_ext": 0,
+     "click:reqs": 469,
+     "enter:dialog": 0,
+     "enter:js_dialog": 0,
+     "enter:mutating_req": 7,
+     "enter:muts>0": 47,
+     "enter:n": 81,
+     "enter:no_visible_effect": 34,
+     "enter:popup_or_ext": 0,
+     "enter:reqs": 18,
+     "space:dialog": 0,
+     "space:js_dialog": 0,
+     "space:mutating_req": 6,
+     "space:muts>0": 46,
+     "space:n": 81,
+     "space:no_visible_effect": 35,
+     "space:popup_or_ext": 0,
+     "space:reqs": 17
+    },
+    "secs_per_trial": 1.95,
+    "errors": 0
+   },
+   "treated_targets": {
+    "landmarks": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 568,
+      "none": 0
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 73,
+      "none": 0
+     },
+     "pages_misaligned": 1
+    },
+    "headings": {
+     "click": {
+      "self": 0,
+      "inside": 33,
+      "within": 0,
+      "none": 535
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 73
+     },
+     "pages_misaligned": 1
+    },
+    "names": {
+     "click": {
+      "self": 96,
+      "inside": 0,
+      "within": 0,
+      "none": 472
+     },
+     "key": {
+      "self": 25,
+      "inside": 0,
+      "within": 0,
+      "none": 48
+     },
+     "pages_misaligned": 1
+    },
+    "labels": {
+     "click": {
+      "self": 39,
+      "inside": 3,
+      "within": 0,
+      "none": 526
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 73
+     },
+     "pages_misaligned": 1
+    },
+    "alt": {
+     "click": {
+      "self": 0,
+      "inside": 85,
+      "within": 0,
+      "none": 483
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 73
+     },
+     "pages_misaligned": 1
+    },
+    "tableheads": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 568
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 73
+     },
+     "pages_misaligned": 1
+    }
+   },
+   "cells": {
+    "none": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 786,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {},
+      "shared": {}
+     },
+     "recheck": {
+      "n_rechecked": 6,
+      "n_confirmed": 0,
+      "n_cleared": 6,
+      "n_runs": 3
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": [
+      {
+       "page": "amazon_add_new_address",
+       "trial": "enter:619",
+       "fields": [
+        "scroll_after"
+       ],
+       "clean0": {
+        "scroll_after": 808
+       },
+       "variant": {
+        "scroll_after": 909
+       }
+      },
+      {
+       "page": "route__home",
+       "trial": "enter:626",
+       "fields": [
+        "px",
+        "scroll_after"
+       ],
+       "clean0": {
+        "scroll_after": 908
+       },
+       "variant": {
+        "px": 18314,
+        "scroll_after": 807,
+        "px_share": 0.01987
+       }
+      }
+     ]
+    },
+    "landmarks": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 786,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "main": 1,
+       "aside": 3,
+       "nav": 3,
+       "header": 1,
+       "role": 3,
+       "footer": 1
+      },
+      "shared": {
+       "nav": 1,
+       "header": 2,
+       "footer": 1,
+       "role": 1,
+       "aside": 1
+      }
+     },
+     "recheck": {
+      "n_rechecked": 3,
+      "n_confirmed": 0,
+      "n_cleared": 3,
+      "n_runs": 3
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": [
+      {
+       "page": "amazon_account_overhaul_and_shop",
+       "trial": "enter:626",
+       "fields": [
+        "px",
+        "scroll_after"
+       ],
+       "clean0": {
+        "scroll_after": 908
+       },
+       "variant": {
+        "px": 117447,
+        "scroll_after": 380,
+        "px_share": 0.12744
+       }
+      },
+      {
+       "page": "amazon_add_new_address",
+       "trial": "enter:619",
+       "fields": [
+        "scroll_after"
+       ],
+       "clean0": {
+        "scroll_after": 808
+       },
+       "variant": {
+        "scroll_after": 909
+       }
+      }
+     ]
+    },
+    "headings": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 786,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "h1": 21,
+       "h2": 37,
+       "h3": 17,
+       "h4": 3,
+       "css-h1": 14,
+       "css-h2": 12,
+       "css-h3": 7,
+       "css-h4": 1,
+       "css-files": 1
+      },
+      "shared": {
+       "h2": 3,
+       "h3": 3
+      }
+     },
+     "recheck": {
+      "n_rechecked": 5,
+      "n_confirmed": 0,
+      "n_cleared": 5,
+      "n_runs": 3
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": [
+      {
+       "page": "amazon_account_overhaul_and_shop",
+       "trial": "space:626",
+       "fields": [
+        "scroll_after"
+       ],
+       "clean0": {
+        "scroll_after": 908
+       },
+       "variant": {
+        "scroll_after": 807
+       }
+      },
+      {
+       "page": "amazon_add_new_address",
+       "trial": "enter:619",
+       "fields": [
+        "scroll_after"
+       ],
+       "clean0": {
+        "scroll_after": 808
+       },
+       "variant": {
+        "scroll_after": 909
+       }
+      }
+     ]
+    },
+    "names": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 786,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "aria-label": 133
+      },
+      "shared": {
+       "aria-label": 19
+      }
+     },
+     "recheck": {
+      "n_rechecked": 3,
+      "n_confirmed": 0,
+      "n_cleared": 3,
+      "n_runs": 3
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": [
+      {
+       "page": "amazon_add_new_address",
+       "trial": "enter:619",
+       "fields": [
+        "scroll_after"
+       ],
+       "clean0": {
+        "scroll_after": 808
+       },
+       "variant": {
+        "scroll_after": 909
+       }
+      },
+      {
+       "page": "route__deals",
+       "trial": "click:553",
+       "fields": [
+        "scroll_after"
+       ],
+       "clean0": {
+        "scroll_after": 768
+       },
+       "variant": {
+        "scroll_after": 863
+       }
+      }
+     ]
+    },
+    "labels": {
+     "verdict": "PRESERVED except expected",
+     "identical_bundle": null,
+     "n_trials": 786,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 4,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "control-aria": 52,
+       "htmlFor": 27
+      },
+      "shared": {
+       "control-aria": 5,
+       "htmlFor": 1
+      }
+     },
+     "recheck": {
+      "n_rechecked": 4,
+      "n_confirmed": 0,
+      "n_cleared": 4,
+      "n_runs": 3
+     },
+     "mismatch_examples": [],
+     "expected_examples": [
+      {
+       "page": "route__search_q-headphones",
+       "trial": "click:127",
+       "fields": [
+        "focus",
+        "px"
+       ],
+       "target": {
+        "tag": "LABEL",
+        "role": "LabelText",
+        "text": "Sort by:",
+        "why": [
+         "ax",
+         "label"
+        ],
+        "label_for": "sort-select"
+       },
+       "clean0": {
+        "focus": 128
+       },
+       "variant": {
+        "focus": 9,
+        "px": 840,
+        "px_share": 0.00091
+       }
+      },
+      {
+       "page": "route__product_product_345",
+       "trial": "click:148",
+       "fields": [
+        "focus",
+        "px"
+       ],
+       "target": {
+        "tag": "LABEL",
+        "role": "LabelText",
+        "text": "Qty:",
+        "why": [
+         "ax",
+         "label"
+        ],
+        "label_for": "buy-qty"
+       },
+       "clean0": {
+        "focus": 149
+       },
+       "variant": {
+        "focus": 9,
+        "px": 348,
+        "px_share": 0.00038
+       }
+      }
+     ],
+     "cleared_examples": [
+      {
+       "page": "amazon_add_new_address",
+       "trial": "enter:619",
+       "fields": [
+        "scroll_after"
+       ],
+       "clean0": {
+        "scroll_after": 808
+       },
+       "variant": {
+        "scroll_after": 909
+       }
+      },
+      {
+       "page": "route__deals",
+       "trial": "click:553",
+       "fields": [
+        "scroll_after"
+       ],
+       "clean0": {
+        "scroll_after": 768
+       },
+       "variant": {
+        "scroll_after": 863
+       }
+      }
+     ]
+    },
+    "alt": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 786,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "img": 17
+      },
+      "shared": {}
+     },
+     "recheck": {
+      "n_rechecked": 2,
+      "n_confirmed": 0,
+      "n_cleared": 2,
+      "n_runs": 3
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": [
+      {
+       "page": "amazon_add_new_address",
+       "trial": "enter:619",
+       "fields": [
+        "scroll_after"
+       ],
+       "clean0": {
+        "scroll_after": 808
+       },
+       "variant": {
+        "scroll_after": 909
+       }
+      },
+      {
+       "page": "route__deals",
+       "trial": "click:553",
+       "fields": [
+        "scroll_after"
+       ],
+       "clean0": {
+        "scroll_after": 768
+       },
+       "variant": {
+        "scroll_after": 863
+       }
+      }
+     ]
+    },
+    "tableheads": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 786,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {},
+      "shared": {
+       "th": 1,
+       "css-td-guard": 1,
+       "css-th": 2,
+       "css-files": 1
+      }
+     },
+     "recheck": {
+      "n_rechecked": 1,
+      "n_confirmed": 0,
+      "n_cleared": 1,
+      "n_runs": 3
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": [
+      {
+       "page": "amazon_add_new_address",
+       "trial": "enter:619",
+       "fields": [
+        "scroll_after"
+       ],
+       "clean0": {
+        "scroll_after": 808
+       },
+       "variant": {
+        "scroll_after": 909
+       }
+      }
+     ]
+    }
+   }
+  },
+  "booking": {
+   "n_pages": 12,
+   "n_trials_per_build": 581,
+   "trials_by_type": {
+    "click": 413,
+    "enter": 78,
+    "space": 78,
+    "tab": 12
+   },
+   "calibration_clean1_vs_clean0": {
+    "trials_with_unstable_field": 7,
+    "by_field": {
+     "px": 7,
+     "reqs": 2,
+     "muts": 2,
+     "n_el": 2,
+     "focus": 1
+    }
+   },
+   "coverage": {
+    "pages": 12,
+    "clickable": 1127,
+    "clicks_kept": 413,
+    "below_fold_kept": 162,
+    "keys_kept": 78,
+    "buttons_total": null,
+    "labels_for_kept": 9,
+    "labels_for_all": null,
+    "tab_presses": 497,
+    "focusable": 1014,
+    "tab_capped_pages": 2,
+    "why": {
+     "ax": 378,
+     "react": 296,
+     "pointer": 318,
+     "label": 52
+    },
+    "tags": {
+     "A": 220,
+     "BUTTON": 61,
+     "LABEL": 52,
+     "INPUT": 39,
+     "DIV": 32,
+     "SELECT": 9
+    },
+    "effects": {
+     "click:dialog": 0,
+     "click:js_dialog": 0,
+     "click:mutating_req": 84,
+     "click:muts>0": 375,
+     "click:n": 413,
+     "click:no_visible_effect": 38,
+     "click:popup_or_ext": 0,
+     "click:reqs": 283,
+     "enter:dialog": 0,
+     "enter:js_dialog": 0,
+     "enter:mutating_req": 40,
+     "enter:muts>0": 77,
+     "enter:n": 78,
+     "enter:no_visible_effect": 1,
+     "enter:popup_or_ext": 0,
+     "enter:reqs": 48,
+     "space:dialog": 0,
+     "space:js_dialog": 0,
+     "space:mutating_req": 40,
+     "space:muts>0": 77,
+     "space:n": 78,
+     "space:no_visible_effect": 1,
+     "space:popup_or_ext": 0,
+     "space:reqs": 48
+    },
+    "secs_per_trial": 1.94,
+    "errors": 0
+   },
+   "treated_targets": {
+    "landmarks": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 413,
+      "none": 0
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 78,
+      "none": 0
+     },
+     "pages_misaligned": 0
+    },
+    "headings": {
+     "click": {
+      "self": 0,
+      "inside": 18,
+      "within": 0,
+      "none": 395
+     },
+     "key": {
+      "self": 0,
+      "inside": 4,
+      "within": 0,
+      "none": 74
+     },
+     "pages_misaligned": 0
+    },
+    "names": {
+     "click": {
+      "self": 26,
+      "inside": 14,
+      "within": 2,
+      "none": 371
+     },
+     "key": {
+      "self": 28,
+      "inside": 8,
+      "within": 0,
+      "none": 42
+     },
+     "pages_misaligned": 0
+    },
+    "labels": {
+     "click": {
+      "self": 14,
+      "inside": 0,
+      "within": 0,
+      "none": 399
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 78
+     },
+     "pages_misaligned": 0
+    },
+    "tableheads": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 413
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 78
+     },
+     "pages_misaligned": 0
+    }
+   },
+   "cells": {
+    "none": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 581,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {},
+      "shared": {}
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "landmarks": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 581,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "header": 1,
+       "nav": 2,
+       "main": 1,
+       "footer": 1,
+       "aside": 2
+      },
+      "shared": {
+       "nav": 1,
+       "header": 2,
+       "footer": 1,
+       "role": 1,
+       "aside": 1
+      }
+     },
+     "recheck": {
+      "n_rechecked": 2,
+      "n_confirmed": 0,
+      "n_cleared": 2,
+      "n_runs": 3
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": [
+      {
+       "page": "route__account",
+       "trial": "click:25",
+       "fields": [
+        "muts",
+        "reqs",
+        "n_el",
+        "px"
+       ],
+       "clean0": {
+        "muts": 236,
+        "reqs": [
+         "POST /api/env/booking/properties/search?session_id={sid} 200"
+        ],
+        "n_el": 464
+       },
+       "variant": {
+        "muts": 114,
+        "reqs": [],
+        "n_el": 170,
+        "px": 66212,
+        "px_share": 0.07184
+       }
+      },
+      {
+       "page": "route__messages",
+       "trial": "space:58",
+       "fields": [
+        "px"
+       ],
+       "clean0": {},
+       "variant": {
+        "px": 2,
+        "px_share": 0.0
+       }
+      }
+     ]
+    },
+    "headings": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 581,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "h1": 13,
+       "h2": 36,
+       "h3": 42,
+       "css-h1": 1,
+       "css-h3": 4,
+       "css-files": 1
+      },
+      "shared": {
+       "h2": 3,
+       "h3": 3
+      }
+     },
+     "recheck": {
+      "n_rechecked": 2,
+      "n_confirmed": 0,
+      "n_cleared": 2,
+      "n_runs": 3
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": [
+      {
+       "page": "route__account",
+       "trial": "click:25",
+       "fields": [
+        "muts",
+        "reqs",
+        "n_el",
+        "px"
+       ],
+       "clean0": {
+        "muts": 236,
+        "reqs": [
+         "POST /api/env/booking/properties/search?session_id={sid} 200"
+        ],
+        "n_el": 464
+       },
+       "variant": {
+        "muts": 114,
+        "reqs": [],
+        "n_el": 170,
+        "px": 66212,
+        "px_share": 0.07184
+       }
+      },
+      {
+       "page": "route__messages",
+       "trial": "space:58",
+       "fields": [
+        "px"
+       ],
+       "clean0": {},
+       "variant": {
+        "px": 2,
+        "px_share": 0.0
+       }
+      }
+     ]
+    },
+    "names": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 581,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "aria-label": 93
+      },
+      "shared": {
+       "aria-label": 19
+      }
+     },
+     "recheck": {
+      "n_rechecked": 1,
+      "n_confirmed": 0,
+      "n_cleared": 1,
+      "n_runs": 3
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": [
+      {
+       "page": "route__messages",
+       "trial": "enter:58",
+       "fields": [
+        "px"
+       ],
+       "clean0": {},
+       "variant": {
+        "px": 2,
+        "px_share": 0.0
+       }
+      }
+     ]
+    },
+    "labels": {
+     "verdict": "PRESERVED except expected",
+     "identical_bundle": null,
+     "n_trials": 581,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 9,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "control-aria": 65,
+       "htmlFor": 18
+      },
+      "shared": {
+       "control-aria": 5,
+       "htmlFor": 1
+      }
+     },
+     "recheck": {
+      "n_rechecked": 1,
+      "n_confirmed": 0,
+      "n_cleared": 1,
+      "n_runs": 3
+     },
+     "mismatch_examples": [],
+     "expected_examples": [
+      {
+       "page": "booking_account_security_and_payment",
+       "trial": "click:57",
+       "fields": [
+        "focus",
+        "px",
+        "scroll_after"
+       ],
+       "target": {
+        "tag": "LABEL",
+        "role": "LabelText",
+        "text": "Language",
+        "why": [
+         "ax",
+         "label"
+        ],
+        "label_for": "settings-language"
+       },
+       "clean0": {
+        "focus": 58,
+        "scroll_after": 40
+       },
+       "variant": {
+        "focus": 9,
+        "px": 107272,
+        "scroll_after": 0,
+        "px_share": 0.1164
+       }
+      },
+      {
+       "page": "booking_account_security_and_payment",
+       "trial": "click:71",
+       "fields": [
+        "focus",
+        "px",
+        "scroll_after"
+       ],
+       "target": {
+        "tag": "LABEL",
+        "role": "LabelText",
+        "text": "Currency",
+        "why": [
+         "ax",
+         "label"
+        ],
+        "label_for": "settings-currency"
+       },
+       "clean0": {
+        "focus": 72,
+        "scroll_after": 40
+       },
+       "variant": {
+        "focus": 9,
+        "px": 107273,
+        "scroll_after": 0,
+        "px_share": 0.1164
+       }
+      }
+     ],
+     "cleared_examples": [
+      {
+       "page": "route__search",
+       "trial": "enter:455",
+       "fields": [
+        "scroll_after"
+       ],
+       "clean0": {
+        "scroll_after": 20
+       },
+       "variant": {
+        "scroll_after": 185
+       }
+      }
+     ]
+    },
+    "tableheads": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 581,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "th": 6,
+       "css-td-guard": 1,
+       "css-th": 2,
+       "css-files": 1
+      },
+      "shared": {
+       "th": 1,
+       "css-td-guard": 1,
+       "css-th": 2,
+       "css-files": 1
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    }
+   }
+  },
+  "gmail": {
+   "n_pages": 8,
+   "n_trials_per_build": 390,
+   "trials_by_type": {
+    "click": 272,
+    "enter": 55,
+    "space": 55,
+    "tab": 8
+   },
+   "calibration_clean1_vs_clean0": {
+    "trials_with_unstable_field": 0,
+    "by_field": {}
+   },
+   "coverage": {
+    "pages": 8,
+    "clickable": 358,
+    "clicks_kept": 272,
+    "below_fold_kept": 65,
+    "keys_kept": 55,
+    "buttons_total": null,
+    "labels_for_kept": 2,
+    "labels_for_all": null,
+    "tab_presses": 337,
+    "focusable": 321,
+    "tab_capped_pages": 0,
+    "why": {
+     "ax": 267,
+     "pointer": 156,
+     "react": 209,
+     "label": 12
+    },
+    "tags": {
+     "BUTTON": 124,
+     "A": 95,
+     "INPUT": 33,
+     "LABEL": 12,
+     "ARTICLE": 4,
+     "TEXTAREA": 2,
+     "SPAN": 1,
+     "SELECT": 1
+    },
+    "effects": {
+     "click:dialog": 0,
+     "click:js_dialog": 0,
+     "click:mutating_req": 64,
+     "click:muts>0": 228,
+     "click:n": 272,
+     "click:no_visible_effect": 43,
+     "click:popup_or_ext": 0,
+     "click:reqs": 185,
+     "enter:dialog": 0,
+     "enter:js_dialog": 0,
+     "enter:mutating_req": 10,
+     "enter:muts>0": 53,
+     "enter:n": 55,
+     "enter:no_visible_effect": 2,
+     "enter:popup_or_ext": 0,
+     "enter:reqs": 40,
+     "space:dialog": 0,
+     "space:js_dialog": 0,
+     "space:mutating_req": 10,
+     "space:muts>0": 53,
+     "space:n": 55,
+     "space:no_visible_effect": 2,
+     "space:popup_or_ext": 0,
+     "space:reqs": 40
+    },
+    "secs_per_trial": 1.79,
+    "errors": 0
+   },
+   "treated_targets": {
+    "landmarks": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 271,
+      "none": 1
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 54,
+      "none": 1
+     },
+     "pages_misaligned": 0
+    },
+    "headings": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 272
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 55
+     },
+     "pages_misaligned": 0
+    },
+    "names": {
+     "click": {
+      "self": 212,
+      "inside": 4,
+      "within": 0,
+      "none": 56
+     },
+     "key": {
+      "self": 49,
+      "inside": 0,
+      "within": 0,
+      "none": 6
+     },
+     "pages_misaligned": 0
+    },
+    "labels": {
+     "click": {
+      "self": 25,
+      "inside": 2,
+      "within": 0,
+      "none": 245
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 55
+     },
+     "pages_misaligned": 0
+    },
+    "alt": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 272
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 55
+     },
+     "pages_misaligned": 0
+    },
+    "tableheads": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 272
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 55
+     },
+     "pages_misaligned": 0
+    }
+   },
+   "cells": {
+    "none": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 390,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {},
+      "shared": {}
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "landmarks": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 390,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "header": 4,
+       "nav": 2,
+       "role": 1,
+       "main": 6,
+       "footer": 1
+      },
+      "shared": {
+       "nav": 1,
+       "header": 2,
+       "footer": 1,
+       "role": 1,
+       "aside": 1
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "headings": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 390,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "h1": 3,
+       "h2": 4,
+       "h3": 3,
+       "css-h1": 1,
+       "css-h2": 2,
+       "css-h3": 3,
+       "css-files": 1
+      },
+      "shared": {
+       "h2": 3,
+       "h3": 3
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "names": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 390,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "aria-label": 60
+      },
+      "shared": {
+       "aria-label": 19
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "labels": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 390,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "control-aria": 29,
+       "control-aria-props": 17
+      },
+      "shared": {
+       "control-aria": 5,
+       "htmlFor": 1
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "alt": {
+     "verdict": "PRESERVED (identical bundle)",
+     "identical_bundle": true,
+     "n_trials": null,
+     "n_mismatch": null,
+     "n_unresolved": null,
+     "n_expected": null,
+     "mismatch_by_field": null,
+     "mismatch_by_type": null,
+     "codemod": {
+      "env": {},
+      "shared": {}
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "tableheads": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 390,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "th": 13
+      },
+      "shared": {
+       "th": 1,
+       "css-td-guard": 1,
+       "css-th": 2,
+       "css-files": 1
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    }
+   }
+  },
+  "lms": {
+   "n_pages": 7,
+   "n_trials_per_build": 87,
+   "trials_by_type": {
+    "click": 78,
+    "enter": 1,
+    "space": 1,
+    "tab": 7
+   },
+   "calibration_clean1_vs_clean0": {
+    "trials_with_unstable_field": 0,
+    "by_field": {}
+   },
+   "coverage": {
+    "pages": 7,
+    "clickable": 78,
+    "clicks_kept": 78,
+    "below_fold_kept": 12,
+    "keys_kept": 1,
+    "buttons_total": null,
+    "labels_for_kept": 2,
+    "labels_for_all": null,
+    "tab_presses": 90,
+    "focusable": 76,
+    "tab_capped_pages": 0,
+    "why": {
+     "ax": 78,
+     "react": 74,
+     "pointer": 74,
+     "label": 2
+    },
+    "tags": {
+     "A": 73,
+     "LABEL": 2,
+     "SELECT": 2,
+     "BUTTON": 1
+    },
+    "effects": {
+     "click:dialog": 0,
+     "click:js_dialog": 0,
+     "click:mutating_req": 0,
+     "click:muts>0": 64,
+     "click:n": 78,
+     "click:no_visible_effect": 8,
+     "click:popup_or_ext": 0,
+     "click:reqs": 69,
+     "enter:dialog": 0,
+     "enter:js_dialog": 0,
+     "enter:mutating_req": 0,
+     "enter:muts>0": 1,
+     "enter:n": 1,
+     "enter:no_visible_effect": 0,
+     "enter:popup_or_ext": 0,
+     "enter:reqs": 0,
+     "space:dialog": 0,
+     "space:js_dialog": 0,
+     "space:mutating_req": 0,
+     "space:muts>0": 1,
+     "space:n": 1,
+     "space:no_visible_effect": 0,
+     "space:popup_or_ext": 0,
+     "space:reqs": 0
+    },
+    "secs_per_trial": 1.85,
+    "errors": 0
+   },
+   "treated_targets": {
+    "landmarks": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 78,
+      "none": 0
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 1,
+      "none": 0
+     },
+     "pages_misaligned": 0
+    },
+    "headings": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 78
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 1
+     },
+     "pages_misaligned": 0
+    },
+    "names": {
+     "click": {
+      "self": 74,
+      "inside": 0,
+      "within": 0,
+      "none": 4
+     },
+     "key": {
+      "self": 1,
+      "inside": 0,
+      "within": 0,
+      "none": 0
+     },
+     "pages_misaligned": 0
+    },
+    "labels": {
+     "click": {
+      "self": 4,
+      "inside": 0,
+      "within": 0,
+      "none": 74
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 1
+     },
+     "pages_misaligned": 0
+    },
+    "alt": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 78
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 1
+     },
+     "pages_misaligned": 0
+    },
+    "tableheads": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 78
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 1
+     },
+     "pages_misaligned": 0
+    }
+   },
+   "cells": {
+    "none": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 87,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {},
+      "shared": {}
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "landmarks": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 87,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "header": 1,
+       "nav": 2,
+       "main": 1,
+       "role": 1
+      },
+      "shared": {
+       "nav": 1,
+       "header": 2,
+       "footer": 1,
+       "role": 1,
+       "aside": 1
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "headings": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 87,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "h1": 9,
+       "h2": 18,
+       "h3": 7
+      },
+      "shared": {
+       "h2": 3,
+       "h3": 3
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "names": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 87,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "aria-label": 38
+      },
+      "shared": {
+       "aria-label": 19
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "labels": {
+     "verdict": "PRESERVED except expected",
+     "identical_bundle": null,
+     "n_trials": 87,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 2,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "htmlFor": 6,
+       "control-aria": 12
+      },
+      "shared": {
+       "control-aria": 5,
+       "htmlFor": 1
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [
+      {
+       "page": "route__calendar",
+       "trial": "click:27",
+       "fields": [
+        "focus",
+        "px"
+       ],
+       "target": {
+        "tag": "LABEL",
+        "role": "LabelText",
+        "text": "Event type:",
+        "why": [
+         "ax",
+         "label"
+        ],
+        "label_for": "filter-type"
+       },
+       "clean0": {
+        "focus": 28
+       },
+       "variant": {
+        "focus": 8,
+        "px": 638,
+        "px_share": 0.00069
+       }
+      },
+      {
+       "page": "route__calendar",
+       "trial": "click:35",
+       "fields": [
+        "focus",
+        "px"
+       ],
+       "target": {
+        "tag": "LABEL",
+        "role": "LabelText",
+        "text": "Course:",
+        "why": [
+         "ax",
+         "label"
+        ],
+        "label_for": "filter-course"
+       },
+       "clean0": {
+        "focus": 36
+       },
+       "variant": {
+        "focus": 8,
+        "px": 591,
+        "px_share": 0.00064
+       }
+      }
+     ],
+     "cleared_examples": []
+    },
+    "alt": {
+     "verdict": "PRESERVED (identical bundle)",
+     "identical_bundle": true,
+     "n_trials": null,
+     "n_mismatch": null,
+     "n_unresolved": null,
+     "n_expected": null,
+     "mismatch_by_field": null,
+     "mismatch_by_type": null,
+     "codemod": {
+      "env": {},
+      "shared": {}
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "tableheads": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 87,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "th": 45,
+       "css-td-guard": 1,
+       "css-th": 2,
+       "css-files": 1
+      },
+      "shared": {
+       "th": 1,
+       "css-td-guard": 1,
+       "css-th": 2,
+       "css-files": 1
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "pc_break": {
+     "verdict": "MISMATCH",
+     "identical_bundle": null,
+     "n_trials": 87,
+     "n_mismatch": 7,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {
+      "seq": 7
+     },
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 7
+     },
+     "codemod": {
+      "button_onclick": 16,
+      "link_tabindex": 7
+     },
+     "recheck": {
+      "n_rechecked": 7,
+      "n_confirmed": 7,
+      "n_cleared": 0,
+      "n_runs": 3
+     },
+     "mismatch_examples": [
+      {
+       "page": "lms_academic_probation_recovery",
+       "trial": "tab",
+       "fields": [
+        "seq"
+       ],
+       "target": null,
+       "clean0": {
+        "seq": [
+         12,
+         14,
+         15,
+         16,
+         17,
+         18,
+         52,
+         59,
+         66,
+         73,
+         80,
+         87,
+         99,
+         103,
+         107,
+         111,
+         8,
+         12
+        ]
+       },
+       "variant": {
+        "seq": [
+         12,
+         15,
+         17,
+         52,
+         59,
+         66,
+         73,
+         80,
+         87,
+         8,
+         12,
+         15,
+         17,
+         52,
+         59,
+         66,
+         73,
+         80
+        ]
+       },
+       "recheck": {
+        "verdict": "confirmed",
+        "fields_confirmed": [
+         "seq"
+        ],
+        "clean": {
+         "seq": [
+          "[12, 14, 15, 16, 17, 18, 52, 59, 66, 73, 80, 87, 99, 103, 107, 111, 8, 12]"
+         ]
+        },
+        "variant": {
+         "seq": [
+          "[12, 15, 17, 52, 59, 66, 73, 80, 87, 8, 12, 15, 17, 52, 59, 66, 73, 80]"
+         ]
+        }
+       }
+      },
+      {
+       "page": "lms_academic_standing_optimization",
+       "trial": "tab",
+       "fields": [
+        "seq"
+       ],
+       "target": null,
+       "clean0": {
+        "seq": [
+         12,
+         14,
+         15,
+         16,
+         17,
+         18,
+         52,
+         59,
+         66,
+         78,
+         82,
+         86,
+         90,
+         8,
+         12
+        ]
+       },
+       "variant": {
+        "seq": [
+         12,
+         15,
+         17,
+         52,
+         59,
+         66,
+         8,
+         12,
+         15,
+         17,
+         52,
+         59,
+         66,
+         8,
+         12
+        ]
+       },
+       "recheck": {
+        "verdict": "confirmed",
+        "fields_confirmed": [
+         "seq"
+        ],
+        "clean": {
+         "seq": [
+          "[12, 14, 15, 16, 17, 18, 52, 59, 66, 78, 82, 86, 90, 8, 12]"
+         ]
+        },
+        "variant": {
+         "seq": [
+          "[12, 15, 17, 52, 59, 66, 8, 12, 15, 17, 52, 59, 66, 8, 12]"
+         ]
+        }
+       }
+      },
+      {
+       "page": "route__dashboard",
+       "trial": "tab",
+       "fields": [
+        "seq"
+       ],
+       "target": null,
+       "clean0": {
+        "seq": [
+         12,
+         14,
+         15,
+         16,
+         17,
+         18,
+         52,
+         59,
+         66,
+         73,
+         80,
+         87,
+         99,
+         103,
+         107,
+         111,
+         8,
+         12
+        ]
+       },
+       "variant": {
+        "seq": [
+         12,
+         15,
+         17,
+         52,
+         59,
+         66,
+         73,
+         80,
+         87,
+         8,
+         12,
+         15,
+         17,
+         52,
+         59,
+         66,
+         73,
+         80
+        ]
+       },
+       "recheck": {
+        "verdict": "confirmed",
+        "fields_confirmed": [
+         "seq"
+        ],
+        "clean": {
+         "seq": [
+          "[12, 14, 15, 16, 17, 18, 52, 59, 66, 73, 80, 87, 99, 103, 107, 111, 8, 12]"
+         ]
+        },
+        "variant": {
+         "seq": [
+          "[12, 15, 17, 52, 59, 66, 73, 80, 87, 8, 12, 15, 17, 52, 59, 66, 73, 80]"
+         ]
+        }
+       }
+      }
+     ],
+     "expected_examples": [],
+     "cleared_examples": []
+    }
+   }
+  },
+  "patient_portal": {
+   "n_pages": 9,
+   "n_trials_per_build": 266,
+   "trials_by_type": {
+    "click": 169,
+    "enter": 44,
+    "space": 44,
+    "tab": 9
+   },
+   "calibration_clean1_vs_clean0": {
+    "trials_with_unstable_field": 0,
+    "by_field": {}
+   },
+   "coverage": {
+    "pages": 9,
+    "clickable": 169,
+    "clicks_kept": 169,
+    "below_fold_kept": 33,
+    "keys_kept": 44,
+    "buttons_total": null,
+    "labels_for_kept": 12,
+    "labels_for_all": null,
+    "tab_presses": 173,
+    "focusable": 155,
+    "tab_capped_pages": 0,
+    "why": {
+     "ax": 169,
+     "react": 140,
+     "pointer": 142,
+     "label": 14
+    },
+    "tags": {
+     "A": 72,
+     "BUTTON": 70,
+     "LABEL": 14,
+     "INPUT": 11,
+     "SELECT": 2
+    },
+    "effects": {
+     "click:dialog": 3,
+     "click:js_dialog": 0,
+     "click:mutating_req": 10,
+     "click:muts>0": 134,
+     "click:n": 169,
+     "click:no_visible_effect": 35,
+     "click:popup_or_ext": 0,
+     "click:reqs": 95,
+     "enter:dialog": 3,
+     "enter:js_dialog": 0,
+     "enter:mutating_req": 10,
+     "enter:muts>0": 44,
+     "enter:n": 44,
+     "enter:no_visible_effect": 0,
+     "enter:popup_or_ext": 0,
+     "enter:reqs": 22,
+     "space:dialog": 3,
+     "space:js_dialog": 0,
+     "space:mutating_req": 10,
+     "space:muts>0": 44,
+     "space:n": 44,
+     "space:no_visible_effect": 0,
+     "space:popup_or_ext": 0,
+     "space:reqs": 22
+    },
+    "secs_per_trial": 1.73,
+    "errors": 0
+   },
+   "treated_targets": {
+    "landmarks": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 169,
+      "none": 0
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 44,
+      "none": 0
+     },
+     "pages_misaligned": 0
+    },
+    "headings": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 169
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 44
+     },
+     "pages_misaligned": 0
+    },
+    "names": {
+     "click": {
+      "self": 142,
+      "inside": 0,
+      "within": 0,
+      "none": 27
+     },
+     "key": {
+      "self": 44,
+      "inside": 0,
+      "within": 0,
+      "none": 0
+     },
+     "pages_misaligned": 0
+    },
+    "labels": {
+     "click": {
+      "self": 25,
+      "inside": 0,
+      "within": 0,
+      "none": 144
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 44
+     },
+     "pages_misaligned": 0
+    },
+    "alt": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 169
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 44
+     },
+     "pages_misaligned": 0
+    },
+    "tableheads": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 169
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 44
+     },
+     "pages_misaligned": 0
+    }
+   },
+   "cells": {
+    "none": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 266,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {},
+      "shared": {}
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "landmarks": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 266,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "header": 1,
+       "nav": 2,
+       "main": 1,
+       "role": 1,
+       "aside": 1
+      },
+      "shared": {
+       "nav": 1,
+       "header": 2,
+       "footer": 1,
+       "role": 1,
+       "aside": 1
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "headings": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 266,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "h1": 2,
+       "h2": 8,
+       "h3": 20,
+       "h4": 4,
+       "css-h3": 2,
+       "css-h4": 1,
+       "css-files": 1
+      },
+      "shared": {
+       "h2": 3,
+       "h3": 3
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "names": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 266,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "aria-label": 46
+      },
+      "shared": {
+       "aria-label": 19
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "labels": {
+     "verdict": "PRESERVED except expected",
+     "identical_bundle": null,
+     "n_trials": 266,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 12,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "control-aria": 36,
+       "htmlFor": 30
+      },
+      "shared": {
+       "control-aria": 5,
+       "htmlFor": 1
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [
+      {
+       "page": "route__labs",
+       "trial": "click:30",
+       "fields": [
+        "focus",
+        "px"
+       ],
+       "target": {
+        "tag": "LABEL",
+        "role": "LabelText",
+        "text": "Sort by:",
+        "why": [
+         "ax",
+         "label"
+        ],
+        "label_for": "lab-sort"
+       },
+       "clean0": {
+        "focus": 31
+       },
+       "variant": {
+        "focus": 8,
+        "px": 524,
+        "px_share": 0.00057
+       }
+      },
+      {
+       "page": "route__profile",
+       "trial": "click:31",
+       "fields": [
+        "focus",
+        "px"
+       ],
+       "target": {
+        "tag": "LABEL",
+        "role": "LabelText",
+        "text": "Name",
+        "why": [
+         "ax",
+         "label"
+        ],
+        "label_for": "profile-name"
+       },
+       "clean0": {
+        "focus": 32
+       },
+       "variant": {
+        "focus": 8,
+        "px": 6158,
+        "px_share": 0.00668
+       }
+      }
+     ],
+     "cleared_examples": []
+    },
+    "alt": {
+     "verdict": "PRESERVED (identical bundle)",
+     "identical_bundle": true,
+     "n_trials": null,
+     "n_mismatch": null,
+     "n_unresolved": null,
+     "n_expected": null,
+     "mismatch_by_field": null,
+     "mismatch_by_type": null,
+     "codemod": {
+      "env": {},
+      "shared": {}
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "tableheads": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 266,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "th": 87,
+       "css-th": 1,
+       "css-td-guard": 2,
+       "css-files": 1
+      },
+      "shared": {
+       "th": 1,
+       "css-td-guard": 1,
+       "css-th": 2,
+       "css-files": 1
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "pc_break": {
+     "verdict": "MISMATCH",
+     "identical_bundle": null,
+     "n_trials": 266,
+     "n_mismatch": 91,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {
+      "muts": 9,
+      "reqs": 15,
+      "dialogs": 9,
+      "fixed": 15,
+      "focus": 6,
+      "n_el": 91,
+      "px": 49
+     },
+     "mismatch_by_type": {
+      "click": 39,
+      "enter": 26,
+      "space": 26,
+      "tab": 0
+     },
+     "codemod": {
+      "button_onclick": 21,
+      "link_tabindex": 5
+     },
+     "recheck": {
+      "n_rechecked": 91,
+      "n_confirmed": 91,
+      "n_cleared": 0,
+      "n_runs": 3
+     },
+     "mismatch_examples": [
+      {
+       "page": "pp_cancel_appointment",
+       "trial": "click:47",
+       "fields": [
+        "n_el"
+       ],
+       "target": {
+        "tag": "BUTTON",
+        "role": "button",
+        "text": "Cancel",
+        "why": [
+         "ax",
+         "react",
+         "pointer"
+        ],
+        "label_for": null
+       },
+       "clean0": {
+        "n_el": 176
+       },
+       "variant": {
+        "n_el": 168
+       },
+       "recheck": {
+        "verdict": "confirmed",
+        "fields_confirmed": [
+         "n_el"
+        ],
+        "clean": {
+         "n_el": [
+          "176"
+         ]
+        },
+        "variant": {
+         "n_el": [
+          "168"
+         ]
+        }
+       }
+      },
+      {
+       "page": "pp_cancel_appointment",
+       "trial": "click:64",
+       "fields": [
+        "n_el"
+       ],
+       "target": {
+        "tag": "BUTTON",
+        "role": "button",
+        "text": "Cancel",
+        "why": [
+         "ax",
+         "react",
+         "pointer"
+        ],
+        "label_for": null
+       },
+       "clean0": {
+        "n_el": 176
+       },
+       "variant": {
+        "n_el": 168
+       },
+       "recheck": {
+        "verdict": "confirmed",
+        "fields_confirmed": [
+         "n_el"
+        ],
+        "clean": {
+         "n_el": [
+          "176"
+         ]
+        },
+        "variant": {
+         "n_el": [
+          "168"
+         ]
+        }
+       }
+      },
+      {
+       "page": "pp_cancel_appointment",
+       "trial": "click:81",
+       "fields": [
+        "n_el"
+       ],
+       "target": {
+        "tag": "BUTTON",
+        "role": "button",
+        "text": "Cancel",
+        "why": [
+         "ax",
+         "react",
+         "pointer"
+        ],
+        "label_for": null
+       },
+       "clean0": {
+        "n_el": 176
+       },
+       "variant": {
+        "n_el": 168
+       },
+       "recheck": {
+        "verdict": "confirmed",
+        "fields_confirmed": [
+         "n_el"
+        ],
+        "clean": {
+         "n_el": [
+          "176"
+         ]
+        },
+        "variant": {
+         "n_el": [
+          "168"
+         ]
+        }
+       }
+      }
+     ],
+     "expected_examples": [],
+     "cleared_examples": []
+    }
+   }
+  },
+  "reddit": {
+   "n_pages": 9,
+   "n_trials_per_build": 438,
+   "trials_by_type": {
+    "click": 303,
+    "enter": 63,
+    "space": 63,
+    "tab": 9
+   },
+   "calibration_clean1_vs_clean0": {
+    "trials_with_unstable_field": 0,
+    "by_field": {}
+   },
+   "coverage": {
+    "pages": 9,
+    "clickable": 986,
+    "clicks_kept": 303,
+    "below_fold_kept": 58,
+    "keys_kept": 63,
+    "buttons_total": null,
+    "labels_for_kept": 7,
+    "labels_for_all": null,
+    "tab_presses": 413,
+    "focusable": 1015,
+    "tab_capped_pages": 4,
+    "why": {
+     "pointer": 275,
+     "ax": 293,
+     "react": 236,
+     "label": 18
+    },
+    "tags": {
+     "BUTTON": 156,
+     "A": 77,
+     "LABEL": 18,
+     "INPUT": 15,
+     "svg": 9,
+     "SPAN": 9,
+     "H3": 7,
+     "SELECT": 6
+    },
+    "effects": {
+     "click:dialog": 0,
+     "click:js_dialog": 0,
+     "click:mutating_req": 70,
+     "click:muts>0": 255,
+     "click:n": 303,
+     "click:no_visible_effect": 48,
+     "click:popup_or_ext": 0,
+     "click:reqs": 217,
+     "enter:dialog": 0,
+     "enter:js_dialog": 0,
+     "enter:mutating_req": 6,
+     "enter:muts>0": 60,
+     "enter:n": 63,
+     "enter:no_visible_effect": 3,
+     "enter:popup_or_ext": 0,
+     "enter:reqs": 31,
+     "space:dialog": 0,
+     "space:js_dialog": 0,
+     "space:mutating_req": 6,
+     "space:muts>0": 60,
+     "space:n": 63,
+     "space:no_visible_effect": 3,
+     "space:popup_or_ext": 0,
+     "space:reqs": 31
+    },
+    "secs_per_trial": 1.82,
+    "errors": 0
+   },
+   "treated_targets": {
+    "landmarks": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 135,
+      "none": 168
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 27,
+      "none": 36
+     },
+     "pages_misaligned": 0
+    },
+    "headings": {
+     "click": {
+      "self": 7,
+      "inside": 5,
+      "within": 0,
+      "none": 291
+     },
+     "key": {
+      "self": 0,
+      "inside": 4,
+      "within": 0,
+      "none": 59
+     },
+     "pages_misaligned": 0
+    },
+    "names": {
+     "click": {
+      "self": 202,
+      "inside": 0,
+      "within": 0,
+      "none": 101
+     },
+     "key": {
+      "self": 37,
+      "inside": 0,
+      "within": 0,
+      "none": 26
+     },
+     "pages_misaligned": 0
+    },
+    "labels": {
+     "click": {
+      "self": 23,
+      "inside": 10,
+      "within": 0,
+      "none": 270
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 63
+     },
+     "pages_misaligned": 0
+    },
+    "alt": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 303
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 63
+     },
+     "pages_misaligned": 0
+    },
+    "tableheads": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 303
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 63
+     },
+     "pages_misaligned": 0
+    }
+   },
+   "cells": {
+    "none": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 438,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {},
+      "shared": {}
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "landmarks": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 438,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "risk-of-type-selectors": 1,
+       "header": 1,
+       "nav": 1,
+       "role": 1,
+       "aside": 2
+      },
+      "shared": {
+       "nav": 1,
+       "header": 2,
+       "footer": 1,
+       "role": 1,
+       "aside": 1
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "headings": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 438,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "risk-of-type-selectors": 1,
+       "h1": 9,
+       "h3": 6,
+       "h2": 6,
+       "h4": 2,
+       "css-h3": 3,
+       "css-h1": 2,
+       "css-files": 1
+      },
+      "shared": {
+       "h2": 3,
+       "h3": 3
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "names": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 438,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "aria-label": 68
+      },
+      "shared": {
+       "aria-label": 19
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "labels": {
+     "verdict": "PRESERVED except expected",
+     "identical_bundle": null,
+     "n_trials": 438,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 7,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "control-aria": 36,
+       "htmlFor": 11
+      },
+      "shared": {
+       "control-aria": 5,
+       "htmlFor": 1
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [
+      {
+       "page": "route__submit",
+       "trial": "click:96",
+       "fields": [
+        "focus",
+        "px"
+       ],
+       "target": {
+        "tag": "LABEL",
+        "role": "LabelText",
+        "text": "Community",
+        "why": [
+         "ax",
+         "label"
+        ],
+        "label_for": "subreddit-input"
+       },
+       "clean0": {
+        "focus": 97
+       },
+       "variant": {
+        "focus": 9,
+        "px": 2074,
+        "px_share": 0.00225
+       }
+      },
+      {
+       "page": "route__submit",
+       "trial": "click:102",
+       "fields": [
+        "focus",
+        "px"
+       ],
+       "target": {
+        "tag": "LABEL",
+        "role": "LabelText",
+        "text": "Title",
+        "why": [
+         "ax",
+         "label"
+        ],
+        "label_for": "title-input"
+       },
+       "clean0": {
+        "focus": 103
+       },
+       "variant": {
+        "focus": 9,
+        "px": 2074,
+        "px_share": 0.00225
+       }
+      }
+     ],
+     "cleared_examples": []
+    },
+    "alt": {
+     "verdict": "PRESERVED (identical bundle)",
+     "identical_bundle": true,
+     "n_trials": null,
+     "n_mismatch": null,
+     "n_unresolved": null,
+     "n_expected": null,
+     "mismatch_by_field": null,
+     "mismatch_by_type": null,
+     "codemod": {
+      "env": {},
+      "shared": {}
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "tableheads": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 438,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "risk-of-type-selectors": 1
+      },
+      "shared": {
+       "th": 1,
+       "css-td-guard": 1,
+       "css-th": 2,
+       "css-files": 1
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    }
+   }
+  },
+  "robinhood": {
+   "n_pages": 14,
+   "n_trials_per_build": 362,
+   "trials_by_type": {
+    "click": 270,
+    "enter": 39,
+    "space": 39,
+    "tab": 14
+   },
+   "calibration_clean1_vs_clean0": {
+    "trials_with_unstable_field": 0,
+    "by_field": {}
+   },
+   "coverage": {
+    "pages": 14,
+    "clickable": 270,
+    "clicks_kept": 270,
+    "below_fold_kept": 30,
+    "keys_kept": 39,
+    "buttons_total": null,
+    "labels_for_kept": 8,
+    "labels_for_all": null,
+    "tab_presses": 288,
+    "focusable": 260,
+    "tab_capped_pages": 0,
+    "why": {
+     "ax": 268,
+     "react": 216,
+     "pointer": 231,
+     "label": 10
+    },
+    "tags": {
+     "A": 162,
+     "BUTTON": 71,
+     "INPUT": 20,
+     "LABEL": 10,
+     "SELECT": 7
+    },
+    "effects": {
+     "click:dialog": 0,
+     "click:js_dialog": 0,
+     "click:mutating_req": 1,
+     "click:muts>0": 201,
+     "click:n": 270,
+     "click:no_visible_effect": 69,
+     "click:popup_or_ext": 0,
+     "click:reqs": 167,
+     "enter:dialog": 0,
+     "enter:js_dialog": 0,
+     "enter:mutating_req": 1,
+     "enter:muts>0": 35,
+     "enter:n": 39,
+     "enter:no_visible_effect": 4,
+     "enter:popup_or_ext": 0,
+     "enter:reqs": 18,
+     "space:dialog": 0,
+     "space:js_dialog": 0,
+     "space:mutating_req": 1,
+     "space:muts>0": 35,
+     "space:n": 39,
+     "space:no_visible_effect": 4,
+     "space:popup_or_ext": 0,
+     "space:reqs": 18
+    },
+    "secs_per_trial": 1.81,
+    "errors": 0
+   },
+   "treated_targets": {
+    "landmarks": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 270,
+      "none": 0
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 39,
+      "none": 0
+     },
+     "pages_misaligned": 0
+    },
+    "headings": {
+     "click": {
+      "self": 0,
+      "inside": 1,
+      "within": 0,
+      "none": 269
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 39
+     },
+     "pages_misaligned": 0
+    },
+    "names": {
+     "click": {
+      "self": 111,
+      "inside": 0,
+      "within": 0,
+      "none": 159
+     },
+     "key": {
+      "self": 35,
+      "inside": 0,
+      "within": 0,
+      "none": 4
+     },
+     "pages_misaligned": 0
+    },
+    "labels": {
+     "click": {
+      "self": 25,
+      "inside": 0,
+      "within": 0,
+      "none": 245
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 39
+     },
+     "pages_misaligned": 0
+    },
+    "alt": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 270
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 39
+     },
+     "pages_misaligned": 0
+    },
+    "tableheads": {
+     "click": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 270
+     },
+     "key": {
+      "self": 0,
+      "inside": 0,
+      "within": 0,
+      "none": 39
+     },
+     "pages_misaligned": 0
+    }
+   },
+   "cells": {
+    "none": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 362,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {},
+      "shared": {}
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "landmarks": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 362,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "header": 1,
+       "nav": 1,
+       "main": 1,
+       "aside": 2,
+       "role": 1
+      },
+      "shared": {
+       "nav": 1,
+       "header": 2,
+       "footer": 1,
+       "role": 1,
+       "aside": 1
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "headings": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 362,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "h1": 18,
+       "h3": 4,
+       "h2": 22,
+       "css-h1": 5,
+       "css-h2": 3,
+       "css-h3": 2,
+       "css-files": 1
+      },
+      "shared": {
+       "h2": 3,
+       "h3": 3
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "names": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 362,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "aria-label": 87
+      },
+      "shared": {
+       "aria-label": 19
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "labels": {
+     "verdict": "PRESERVED except expected",
+     "identical_bundle": null,
+     "n_trials": 362,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 8,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "htmlFor": 19,
+       "control-aria": 33
+      },
+      "shared": {
+       "control-aria": 5,
+       "htmlFor": 1
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [
+      {
+       "page": "route__transfers",
+       "trial": "click:46",
+       "fields": [
+        "focus",
+        "px"
+       ],
+       "target": {
+        "tag": "LABEL",
+        "role": "LabelText",
+        "text": "From",
+        "why": [
+         "ax",
+         "label"
+        ],
+        "label_for": "xfer-bank"
+       },
+       "clean0": {
+        "focus": 47
+       },
+       "variant": {
+        "focus": 8,
+        "px": 2266,
+        "px_share": 0.00246
+       }
+      },
+      {
+       "page": "route__transfers",
+       "trial": "click:49",
+       "fields": [
+        "focus",
+        "px"
+       ],
+       "target": {
+        "tag": "LABEL",
+        "role": "LabelText",
+        "text": "Amount",
+        "why": [
+         "ax",
+         "label"
+        ],
+        "label_for": "xfer-amount"
+       },
+       "clean0": {
+        "focus": 50
+       },
+       "variant": {
+        "focus": 8,
+        "px": 2524,
+        "px_share": 0.00274
+       }
+      }
+     ],
+     "cleared_examples": []
+    },
+    "alt": {
+     "verdict": "PRESERVED (identical bundle)",
+     "identical_bundle": true,
+     "n_trials": null,
+     "n_mismatch": null,
+     "n_unresolved": null,
+     "n_expected": null,
+     "mismatch_by_field": null,
+     "mismatch_by_type": null,
+     "codemod": {
+      "env": {},
+      "shared": {}
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    },
+    "tableheads": {
+     "verdict": "PRESERVED",
+     "identical_bundle": null,
+     "n_trials": 362,
+     "n_mismatch": 0,
+     "n_unresolved": 0,
+     "n_expected": 0,
+     "mismatch_by_field": {},
+     "mismatch_by_type": {
+      "click": 0,
+      "enter": 0,
+      "space": 0,
+      "tab": 0
+     },
+     "codemod": {
+      "env": {
+       "th": 41,
+       "css-th": 2,
+       "css-td-guard": 2,
+       "css-files": 1
+      },
+      "shared": {
+       "th": 1,
+       "css-td-guard": 1,
+       "css-th": 2,
+       "css-files": 1
+      }
+     },
+     "mismatch_examples": [],
+     "expected_examples": [],
+     "cleared_examples": []
+    }
+   }
+  }
+ },
+ "labels_expected": {
+  "amazon": {
+   "n": 4,
+   "controls": {
+    "select": 2,
+    "?": 1,
+    "input:text": 1
+   },
+   "pages": {
+    "route__search_q-headphones": 1,
+    "route__product_product_345": 1,
+    "route__settings": 2
+   }
+  },
+  "booking": {
+   "n": 9,
+   "controls": {
+    "select": 9
+   },
+   "pages": {
+    "booking_account_security_and_payment": 3,
+    "booking_add_payment": 3,
+    "route__settings": 3
+   }
+  },
+  "gmail": {
+   "n": 0,
+   "controls": {},
+   "pages": {}
+  },
+  "lms": {
+   "n": 2,
+   "controls": {
+    "select": 2
+   },
+   "pages": {
+    "route__calendar": 2
+   }
+  },
+  "patient_portal": {
+   "n": 12,
+   "controls": {
+    "select": 1,
+    "input:text": 8,
+    "input:tel": 2,
+    "input:email": 1
+   },
+   "pages": {
+    "route__labs": 1,
+    "route__profile": 11
+   }
+  },
+  "reddit": {
+   "n": 7,
+   "controls": {
+    "input:text": 3,
+    "textarea": 1,
+    "select": 3
+   },
+   "pages": {
+    "route__submit": 4,
+    "route__settings": 3
+   }
+  },
+  "robinhood": {
+   "n": 8,
+   "controls": {
+    "select": 5,
+    "input:number": 2,
+    "input:": 1
+   },
+   "pages": {
+    "route__transfers": 2,
+    "route__alerts": 3,
+    "route__account": 3
+   }
+  }
+ }
+}

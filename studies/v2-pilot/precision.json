@@ -1,0 +1,1134 @@
+{
+ "reference_configs": [
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 1.5,
+    "tau": 0.5,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.7,
+   "admitted_share": 0.853,
+   "pairwise_disagreement_admitted": 0.291,
+   "half_vs_half_95hw_64": 10.3,
+   "null_95hw_by_n_4v3": {
+    "10": 22.8,
+    "24": 13.3,
+    "29": 12.0,
+    "46": 9.4,
+    "53": 8.7,
+    "62": 8.0,
+    "64": 7.9
+   },
+   "null_95hw_by_n_4v2": {
+    "24": 15.1
+   }
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 3.0,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.869,
+   "pairwise_disagreement_admitted": 0.12,
+   "half_vs_half_95hw_64": 6.5,
+   "null_95hw_by_n_4v3": {
+    "10": 13.1,
+    "24": 8.2,
+    "29": 7.5,
+    "46": 5.9,
+    "53": 5.5,
+    "62": 5.0,
+    "64": 5.0
+   },
+   "null_95hw_by_n_4v2": {
+    "24": 9.3
+   }
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 3.0,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.945,
+   "pairwise_disagreement_admitted": 0.079,
+   "half_vs_half_95hw_64": 5.0,
+   "null_95hw_by_n_4v3": {
+    "10": 9.5,
+    "24": 6.2,
+    "29": 5.6,
+    "46": 4.5,
+    "53": 4.2,
+    "62": 3.9,
+    "64": 3.8
+   },
+   "null_95hw_by_n_4v2": {
+    "24": 7.0
+   }
+  }
+ ],
+ "grid_implied": [
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 1.0,
+    "tau": 0.0,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.6,
+   "admitted_share": 0.8,
+   "pairwise_disagreement_admitted": 0.392
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 1.0,
+    "tau": 0.0,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.744,
+   "pairwise_disagreement_admitted": 0.255
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 1.0,
+    "tau": 0.5,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.6,
+   "admitted_share": 0.8,
+   "pairwise_disagreement_admitted": 0.392
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 1.0,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.744,
+   "pairwise_disagreement_admitted": 0.255
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 1.0,
+    "tau": 0.8,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.6,
+   "admitted_share": 0.8,
+   "pairwise_disagreement_admitted": 0.392
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 1.0,
+    "tau": 0.8,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.744,
+   "pairwise_disagreement_admitted": 0.255
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 1.5,
+    "tau": 0.0,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.771,
+   "pairwise_disagreement_admitted": 0.336
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 1.5,
+    "tau": 0.0,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.723,
+   "pairwise_disagreement_admitted": 0.223
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 1.5,
+    "tau": 0.5,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.771,
+   "pairwise_disagreement_admitted": 0.336
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 1.5,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.723,
+   "pairwise_disagreement_admitted": 0.223
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 1.5,
+    "tau": 0.8,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.771,
+   "pairwise_disagreement_admitted": 0.336
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 1.5,
+    "tau": 0.8,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.723,
+   "pairwise_disagreement_admitted": 0.223
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 2.0,
+    "tau": 0.0,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.747,
+   "pairwise_disagreement_admitted": 0.29
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 2.0,
+    "tau": 0.0,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.706,
+   "pairwise_disagreement_admitted": 0.196
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 2.0,
+    "tau": 0.5,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.747,
+   "pairwise_disagreement_admitted": 0.29
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 2.0,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.706,
+   "pairwise_disagreement_admitted": 0.196
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 2.0,
+    "tau": 0.8,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.747,
+   "pairwise_disagreement_admitted": 0.29
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 2.0,
+    "tau": 0.8,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.706,
+   "pairwise_disagreement_admitted": 0.196
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 3.0,
+    "tau": 0.0,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.712,
+   "pairwise_disagreement_admitted": 0.224
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 3.0,
+    "tau": 0.0,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.602,
+   "admitted_share": 0.681,
+   "pairwise_disagreement_admitted": 0.154
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 3.0,
+    "tau": 0.5,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.712,
+   "pairwise_disagreement_admitted": 0.224
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 3.0,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.602,
+   "admitted_share": 0.681,
+   "pairwise_disagreement_admitted": 0.154
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 3.0,
+    "tau": 0.8,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.601,
+   "admitted_share": 0.712,
+   "pairwise_disagreement_admitted": 0.224
+  },
+  {
+   "config": {
+    "p_clean": 0.6,
+    "s_task": 3.0,
+    "tau": 0.8,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.602,
+   "admitted_share": 0.681,
+   "pairwise_disagreement_admitted": 0.154
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 1.0,
+    "tau": 0.0,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.7,
+   "admitted_share": 0.877,
+   "pairwise_disagreement_admitted": 0.342
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 1.0,
+    "tau": 0.0,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.701,
+   "admitted_share": 0.843,
+   "pairwise_disagreement_admitted": 0.26
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 1.0,
+    "tau": 0.5,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.7,
+   "admitted_share": 0.877,
+   "pairwise_disagreement_admitted": 0.342
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 1.0,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.701,
+   "admitted_share": 0.843,
+   "pairwise_disagreement_admitted": 0.26
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 1.0,
+    "tau": 0.8,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.7,
+   "admitted_share": 0.877,
+   "pairwise_disagreement_admitted": 0.342
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 1.0,
+    "tau": 0.8,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.701,
+   "admitted_share": 0.843,
+   "pairwise_disagreement_admitted": 0.26
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 1.5,
+    "tau": 0.0,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.7,
+   "admitted_share": 0.853,
+   "pairwise_disagreement_admitted": 0.291
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 1.5,
+    "tau": 0.0,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.701,
+   "admitted_share": 0.823,
+   "pairwise_disagreement_admitted": 0.221
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 1.5,
+    "tau": 0.5,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.7,
+   "admitted_share": 0.853,
+   "pairwise_disagreement_admitted": 0.291
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 1.5,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.701,
+   "admitted_share": 0.823,
+   "pairwise_disagreement_admitted": 0.221
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 1.5,
+    "tau": 0.8,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.7,
+   "admitted_share": 0.853,
+   "pairwise_disagreement_admitted": 0.291
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 1.5,
+    "tau": 0.8,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.701,
+   "admitted_share": 0.823,
+   "pairwise_disagreement_admitted": 0.221
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 2.0,
+    "tau": 0.0,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.7,
+   "admitted_share": 0.832,
+   "pairwise_disagreement_admitted": 0.248
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 2.0,
+    "tau": 0.0,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.701,
+   "admitted_share": 0.806,
+   "pairwise_disagreement_admitted": 0.189
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 2.0,
+    "tau": 0.5,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.7,
+   "admitted_share": 0.832,
+   "pairwise_disagreement_admitted": 0.248
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 2.0,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.701,
+   "admitted_share": 0.806,
+   "pairwise_disagreement_admitted": 0.189
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 2.0,
+    "tau": 0.8,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.7,
+   "admitted_share": 0.832,
+   "pairwise_disagreement_admitted": 0.248
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 2.0,
+    "tau": 0.8,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.701,
+   "admitted_share": 0.806,
+   "pairwise_disagreement_admitted": 0.189
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 3.0,
+    "tau": 0.0,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.7,
+   "admitted_share": 0.8,
+   "pairwise_disagreement_admitted": 0.188
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 3.0,
+    "tau": 0.0,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.701,
+   "admitted_share": 0.781,
+   "pairwise_disagreement_admitted": 0.145
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 3.0,
+    "tau": 0.5,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.7,
+   "admitted_share": 0.8,
+   "pairwise_disagreement_admitted": 0.188
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 3.0,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.701,
+   "admitted_share": 0.781,
+   "pairwise_disagreement_admitted": 0.145
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 3.0,
+    "tau": 0.8,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.7,
+   "admitted_share": 0.8,
+   "pairwise_disagreement_admitted": 0.188
+  },
+  {
+   "config": {
+    "p_clean": 0.7,
+    "s_task": 3.0,
+    "tau": 0.8,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.701,
+   "admitted_share": 0.781,
+   "pairwise_disagreement_admitted": 0.145
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 1.0,
+    "tau": 0.0,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.939,
+   "pairwise_disagreement_admitted": 0.268
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 1.0,
+    "tau": 0.0,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.921,
+   "pairwise_disagreement_admitted": 0.225
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 1.0,
+    "tau": 0.5,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.939,
+   "pairwise_disagreement_admitted": 0.268
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 1.0,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.921,
+   "pairwise_disagreement_admitted": 0.225
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 1.0,
+    "tau": 0.8,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.939,
+   "pairwise_disagreement_admitted": 0.268
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 1.0,
+    "tau": 0.8,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.921,
+   "pairwise_disagreement_admitted": 0.225
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 1.5,
+    "tau": 0.0,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.921,
+   "pairwise_disagreement_admitted": 0.228
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 1.5,
+    "tau": 0.0,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.905,
+   "pairwise_disagreement_admitted": 0.19
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 1.5,
+    "tau": 0.5,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.921,
+   "pairwise_disagreement_admitted": 0.228
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 1.5,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.905,
+   "pairwise_disagreement_admitted": 0.19
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 1.5,
+    "tau": 0.8,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.921,
+   "pairwise_disagreement_admitted": 0.228
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 1.5,
+    "tau": 0.8,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.905,
+   "pairwise_disagreement_admitted": 0.19
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 2.0,
+    "tau": 0.0,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.905,
+   "pairwise_disagreement_admitted": 0.193
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 2.0,
+    "tau": 0.0,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.89,
+   "pairwise_disagreement_admitted": 0.161
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 2.0,
+    "tau": 0.5,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.905,
+   "pairwise_disagreement_admitted": 0.193
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 2.0,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.89,
+   "pairwise_disagreement_admitted": 0.161
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 2.0,
+    "tau": 0.8,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.905,
+   "pairwise_disagreement_admitted": 0.193
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 2.0,
+    "tau": 0.8,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.89,
+   "pairwise_disagreement_admitted": 0.161
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 3.0,
+    "tau": 0.0,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.88,
+   "pairwise_disagreement_admitted": 0.144
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 3.0,
+    "tau": 0.0,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.869,
+   "pairwise_disagreement_admitted": 0.12
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 3.0,
+    "tau": 0.5,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.88,
+   "pairwise_disagreement_admitted": 0.144
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 3.0,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.869,
+   "pairwise_disagreement_admitted": 0.12
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 3.0,
+    "tau": 0.8,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.88,
+   "pairwise_disagreement_admitted": 0.144
+  },
+  {
+   "config": {
+    "p_clean": 0.8,
+    "s_task": 3.0,
+    "tau": 0.8,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.8,
+   "admitted_share": 0.869,
+   "pairwise_disagreement_admitted": 0.12
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 1.0,
+    "tau": 0.0,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.982,
+   "pairwise_disagreement_admitted": 0.16
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 1.0,
+    "tau": 0.0,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.976,
+   "pairwise_disagreement_admitted": 0.146
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 1.0,
+    "tau": 0.5,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.982,
+   "pairwise_disagreement_admitted": 0.16
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 1.0,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.976,
+   "pairwise_disagreement_admitted": 0.146
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 1.0,
+    "tau": 0.8,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.982,
+   "pairwise_disagreement_admitted": 0.16
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 1.0,
+    "tau": 0.8,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.976,
+   "pairwise_disagreement_admitted": 0.146
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 1.5,
+    "tau": 0.0,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.973,
+   "pairwise_disagreement_admitted": 0.139
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 1.5,
+    "tau": 0.0,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.967,
+   "pairwise_disagreement_admitted": 0.125
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 1.5,
+    "tau": 0.5,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.973,
+   "pairwise_disagreement_admitted": 0.139
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 1.5,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.967,
+   "pairwise_disagreement_admitted": 0.125
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 1.5,
+    "tau": 0.8,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.973,
+   "pairwise_disagreement_admitted": 0.139
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 1.5,
+    "tau": 0.8,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.967,
+   "pairwise_disagreement_admitted": 0.125
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 2.0,
+    "tau": 0.0,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.964,
+   "pairwise_disagreement_admitted": 0.119
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 2.0,
+    "tau": 0.0,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.959,
+   "pairwise_disagreement_admitted": 0.107
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 2.0,
+    "tau": 0.5,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.964,
+   "pairwise_disagreement_admitted": 0.119
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 2.0,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.959,
+   "pairwise_disagreement_admitted": 0.107
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 2.0,
+    "tau": 0.8,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.964,
+   "pairwise_disagreement_admitted": 0.119
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 2.0,
+    "tau": 0.8,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.959,
+   "pairwise_disagreement_admitted": 0.107
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 3.0,
+    "tau": 0.0,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.95,
+   "pairwise_disagreement_admitted": 0.088
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 3.0,
+    "tau": 0.0,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.945,
+   "pairwise_disagreement_admitted": 0.079
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 3.0,
+    "tau": 0.5,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.95,
+   "pairwise_disagreement_admitted": 0.088
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 3.0,
+    "tau": 0.5,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.945,
+   "pairwise_disagreement_admitted": 0.079
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 3.0,
+    "tau": 0.8,
+    "ceil": 0.0
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.95,
+   "pairwise_disagreement_admitted": 0.088
+  },
+  {
+   "config": {
+    "p_clean": 0.9,
+    "s_task": 3.0,
+    "tau": 0.8,
+    "ceil": 0.3
+   },
+   "mean_clean": 0.9,
+   "admitted_share": 0.945,
+   "pairwise_disagreement_admitted": 0.079
+  }
+ ]
+}

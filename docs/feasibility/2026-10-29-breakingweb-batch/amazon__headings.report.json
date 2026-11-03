@@ -1,0 +1,709 @@
+{
+ "env": "amazon",
+ "kind": "headings",
+ "codemod_counts_env": {
+  "env": {
+   "h1": 21,
+   "h2": 37,
+   "h3": 17,
+   "h4": 3,
+   "h5": 0,
+   "h6": 0,
+   "role": 0,
+   "css-files": 1
+  },
+  "shared": {
+   "h1": 0,
+   "h2": 3,
+   "h3": 3,
+   "h4": 0,
+   "h5": 0,
+   "h6": 0,
+   "role": 0
+  }
+ },
+ "tasks": [
+  {
+   "page": "amazon_account_overhaul_and_shop",
+   "visible": {
+    "lines_clean": 95,
+    "removed": 5,
+    "added": 5,
+    "examples": [
+     "-\t[72] heading 'Fast delivery on everyday finds', visible",
+     "+\tStaticText 'Fast delivery on everyday finds'",
+     "-\t\t[82] heading 'Save on tech essentials', visible",
+     "+\t\tStaticText 'Save on tech essentials'",
+     "-\t\t[102] heading 'Refresh your home', visible",
+     "+\t\tStaticText 'Refresh your home'",
+     "-\t\t[122] heading 'Fitness and wellness finds', visible",
+     "+\t\tStaticText 'Fitness and wellness finds'",
+     "-\t\t[142] heading 'Work and school supplies', visible",
+     "+\t\tStaticText 'Work and school supplies'"
+    ]
+   },
+   "all": {
+    "lines_clean": 439,
+    "removed": 27,
+    "added": 27,
+    "examples": [
+     "-\t\t[72] heading 'Fast delivery on everyday finds', visible",
+     "+\t\tStaticText 'Fast delivery on everyday finds'",
+     "-\t\t\t[82] heading 'Save on tech essentials', visible",
+     "+\t\t\tStaticText 'Save on tech essentials'",
+     "-\t\t\t[102] heading 'Refresh your home', visible",
+     "+\t\t\tStaticText 'Refresh your home'",
+     "-\t\t\t[122] heading 'Fitness and wellness finds', visible",
+     "+\t\t\tStaticText 'Fitness and wellness finds'",
+     "-\t\t\t[142] heading 'Work and school supplies', visible",
+     "+\t\t\tStaticText 'Work and school supplies'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3389
+    ],
+    "diff_share": 0.00109
+   }
+  },
+  {
+   "page": "amazon_add_new_address",
+   "visible": {
+    "lines_clean": 95,
+    "removed": 5,
+    "added": 5,
+    "examples": [
+     "-\t[72] heading 'Fast delivery on everyday finds', visible",
+     "+\tStaticText 'Fast delivery on everyday finds'",
+     "-\t\t[82] heading 'Save on tech essentials', visible",
+     "+\t\tStaticText 'Save on tech essentials'",
+     "-\t\t[102] heading 'Refresh your home', visible",
+     "+\t\tStaticText 'Refresh your home'",
+     "-\t\t[122] heading 'Fitness and wellness finds', visible",
+     "+\t\tStaticText 'Fitness and wellness finds'",
+     "-\t\t[142] heading 'Work and school supplies', visible",
+     "+\t\tStaticText 'Work and school supplies'"
+    ]
+   },
+   "all": {
+    "lines_clean": 439,
+    "removed": 27,
+    "added": 27,
+    "examples": [
+     "-\t\t[72] heading 'Fast delivery on everyday finds', visible",
+     "+\t\tStaticText 'Fast delivery on everyday finds'",
+     "-\t\t\t[82] heading 'Save on tech essentials', visible",
+     "+\t\t\tStaticText 'Save on tech essentials'",
+     "-\t\t\t[102] heading 'Refresh your home', visible",
+     "+\t\t\tStaticText 'Refresh your home'",
+     "-\t\t\t[122] heading 'Fitness and wellness finds', visible",
+     "+\t\t\tStaticText 'Fitness and wellness finds'",
+     "-\t\t\t[142] heading 'Work and school supplies', visible",
+     "+\t\t\tStaticText 'Work and school supplies'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3391
+    ],
+    "diff_share": 0.00076
+   }
+  },
+  {
+   "page": "route__account",
+   "visible": {
+    "lines_clean": 94,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-[68] heading 'Your Account', visible",
+     "+StaticText 'Your Account'",
+     "-\t[70] heading 'Login & Security', visible",
+     "+\tStaticText 'Login & Security'",
+     "-\t[88] heading 'Your Addresses', visible",
+     "+\tStaticText 'Your Addresses'"
+    ]
+   },
+   "all": {
+    "lines_clean": 174,
+    "removed": 12,
+    "added": 12,
+    "examples": [
+     "-\t[68] heading 'Your Account', visible",
+     "+\tStaticText 'Your Account'",
+     "-\t\t[70] heading 'Login & Security', visible",
+     "+\t\tStaticText 'Login & Security'",
+     "-\t\t[88] heading 'Your Addresses', visible",
+     "+\t\tStaticText 'Your Addresses'",
+     "-\t\t[123] heading 'Payment Methods'",
+     "+\t\tStaticText 'Payment Methods'",
+     "-\t\t[154] heading 'Quick Links'",
+     "+\t\tStaticText 'Quick Links'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1788
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__cart",
+   "visible": {
+    "lines_clean": 60,
+    "removed": 5,
+    "added": 5,
+    "examples": [
+     "-\t[70] heading 'Shopping Cart', visible",
+     "+\tStaticText 'Shopping Cart'",
+     "-\t[74] heading 'Your Amazon Cart is empty', visible",
+     "+\tStaticText 'Your Amazon Cart is empty'",
+     "-\t[82] heading 'Get to Know Us', visible",
+     "+\tStaticText 'Get to Know Us'",
+     "-\t[85] heading 'Your Account', visible",
+     "+\tStaticText 'Your Account'",
+     "-\t[90] heading 'Shop With Us', visible",
+     "+\tStaticText 'Shop With Us'"
+    ]
+   },
+   "all": {
+    "lines_clean": 70,
+    "removed": 5,
+    "added": 5,
+    "examples": [
+     "-\t[70] heading 'Shopping Cart', visible",
+     "+\tStaticText 'Shopping Cart'",
+     "-\t[74] heading 'Your Amazon Cart is empty', visible",
+     "+\tStaticText 'Your Amazon Cart is empty'",
+     "-\t[82] heading 'Get to Know Us', visible",
+     "+\tStaticText 'Get to Know Us'",
+     "-\t[85] heading 'Your Account', visible",
+     "+\tStaticText 'Your Account'",
+     "-\t[90] heading 'Shop With Us', visible",
+     "+\tStaticText 'Shop With Us'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     771
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__categories",
+   "visible": {
+    "lines_clean": 67,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[68] heading 'Shop by Category', visible",
+     "+\tStaticText 'Shop by Category'"
+    ]
+   },
+   "all": {
+    "lines_clean": 88,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[68] heading 'Shop by Category', visible",
+     "+\tStaticText 'Shop by Category'",
+     "-\t[116] heading 'Get to Know Us'",
+     "+\tStaticText 'Get to Know Us'",
+     "-\t[119] heading 'Your Account'",
+     "+\tStaticText 'Your Account'",
+     "-\t[124] heading 'Shop With Us'",
+     "+\tStaticText 'Shop With Us'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     997
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__checkout",
+   "visible": {
+    "lines_clean": 55,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[68] heading 'Checkout', visible",
+     "+\tStaticText 'Checkout'",
+     "-\t[75] heading 'Get to Know Us', visible",
+     "+\tStaticText 'Get to Know Us'",
+     "-\t[78] heading 'Your Account', visible",
+     "+\tStaticText 'Your Account'",
+     "-\t[83] heading 'Shop With Us', visible",
+     "+\tStaticText 'Shop With Us'"
+    ]
+   },
+   "all": {
+    "lines_clean": 64,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[68] heading 'Checkout', visible",
+     "+\tStaticText 'Checkout'",
+     "-\t[75] heading 'Get to Know Us', visible",
+     "+\tStaticText 'Get to Know Us'",
+     "-\t[78] heading 'Your Account', visible",
+     "+\tStaticText 'Your Account'",
+     "-\t[83] heading 'Shop With Us', visible",
+     "+\tStaticText 'Shop With Us'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__customer-service",
+   "visible": {
+    "lines_clean": 75,
+    "removed": 2,
+    "added": 2,
+    "examples": [
+     "-\t[68] heading 'Hello Jordan, what can we help you with?', visible",
+     "+\tStaticText 'Hello Jordan, what can we help you with?'",
+     "-\t[106] heading 'Your recent orders', visible",
+     "+\tStaticText 'Your recent orders'"
+    ]
+   },
+   "all": {
+    "lines_clean": 142,
+    "removed": 6,
+    "added": 6,
+    "examples": [
+     "-\t[68] heading 'Hello Jordan, what can we help you with?', visible",
+     "+\tStaticText 'Hello Jordan, what can we help you with?'",
+     "-\t[106] heading 'Your recent orders', visible",
+     "+\tStaticText 'Your recent orders'",
+     "-\t[136] heading 'Need more help?'",
+     "+\tStaticText 'Need more help?'",
+     "-\t[148] heading 'Get to Know Us'",
+     "+\tStaticText 'Get to Know Us'",
+     "-\t[151] heading 'Your Account'",
+     "+\tStaticText 'Your Account'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1587
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__deals",
+   "visible": {
+    "lines_clean": 121,
+    "removed": 5,
+    "added": 5,
+    "examples": [
+     "-[69] heading \"Today's Deals\", visible",
+     "+StaticText \"Today's Deals\"",
+     "-\t[77] heading 'charmast Portable Charger with Built in Cables, Power Bank with Cords Wires, Slim 10000mAh Travel Battery Pack 6 Outputs', visible",
+     "+\tStaticText 'charmast Portable Charger with Built in Cables, Power Bank with Cords Wires, Slim 10000mAh Travel Battery Pack 6 Outputs'",
+     "-\t[96] heading 'INIU Portable Charger, Ultra Slim 45W Fast Charging with Attached USB C Cable, Flight-Safe 10000mAh PD Power Bank Batter', visible",
+     "+\tStaticText 'INIU Portable Charger, Ultra Slim 45W Fast Charging with Attached USB C Cable, Flight-Safe 10000mAh PD Power Bank Batter'",
+     "-\t[115] heading 'vitafusion Adult Gummy Vitamin Supplement for Men, Berry Flavored, A, C, D, E, B6, B12, Daily, 120 Count, 60 Day Supply', visible",
+     "+\tStaticText 'vitafusion Adult Gummy Vitamin Supplement for Men, Berry Flavored, A, C, D, E, B6, B12, Daily, 120 Count, 60 Day Supply'",
+     "-\t[134] heading 'Nature Made Multivitamin Tablets with Iron, Multivitamin for Women and Men for Daily Nutritional Support, Nature Made Mu', visible",
+     "+\tStaticText 'Nature Made Multivitamin Tablets with Iron, Multivitamin for Women and Men for Daily Nutritional Support, Nature Made Mu'"
+    ]
+   },
+   "all": {
+    "lines_clean": 484,
+    "removed": 29,
+    "added": 29,
+    "examples": [
+     "-\t[69] heading \"Today's Deals\", visible",
+     "+\tStaticText \"Today's Deals\"",
+     "-\t\t[77] heading 'charmast Portable Charger with Built in Cables, Power Bank with Cords Wires, Slim 10000mAh Travel Battery Pack 6 Outputs', visible",
+     "+\t\tStaticText 'charmast Portable Charger with Built in Cables, Power Bank with Cords Wires, Slim 10000mAh Travel Battery Pack 6 Outputs'",
+     "-\t\t[96] heading 'INIU Portable Charger, Ultra Slim 45W Fast Charging with Attached USB C Cable, Flight-Safe 10000mAh PD Power Bank Batter', visible",
+     "+\t\tStaticText 'INIU Portable Charger, Ultra Slim 45W Fast Charging with Attached USB C Cable, Flight-Safe 10000mAh PD Power Bank Batter'",
+     "-\t\t[115] heading 'vitafusion Adult Gummy Vitamin Supplement for Men, Berry Flavored, A, C, D, E, B6, B12, Daily, 120 Count, 60 Day Supply', visible",
+     "+\t\tStaticText 'vitafusion Adult Gummy Vitamin Supplement for Men, Berry Flavored, A, C, D, E, B6, B12, Daily, 120 Count, 60 Day Supply'",
+     "-\t\t[134] heading 'Nature Made Multivitamin Tablets with Iron, Multivitamin for Women and Men for Daily Nutritional Support, Nature Made Mu', visible",
+     "+\t\tStaticText 'Nature Made Multivitamin Tablets with Iron, Multivitamin for Women and Men for Daily Nutritional Support, Nature Made Mu'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3263
+    ],
+    "diff_share": 0.00042
+   }
+  },
+  {
+   "page": "route__gift-cards",
+   "visible": {
+    "lines_clean": 48,
+    "removed": 2,
+    "added": 2,
+    "examples": [
+     "-\t[68] heading 'Gift Cards', visible",
+     "+\tStaticText 'Gift Cards'",
+     "-\t[75] heading 'No gift cards', visible",
+     "+\tStaticText 'No gift cards'"
+    ]
+   },
+   "all": {
+    "lines_clean": 69,
+    "removed": 5,
+    "added": 5,
+    "examples": [
+     "-\t[68] heading 'Gift Cards', visible",
+     "+\tStaticText 'Gift Cards'",
+     "-\t[75] heading 'No gift cards', visible",
+     "+\tStaticText 'No gift cards'",
+     "-\t[82] heading 'Get to Know Us'",
+     "+\tStaticText 'Get to Know Us'",
+     "-\t[85] heading 'Your Account'",
+     "+\tStaticText 'Your Account'",
+     "-\t[90] heading 'Shop With Us'",
+     "+\tStaticText 'Shop With Us'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     980
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__home",
+   "visible": {
+    "lines_clean": 95,
+    "removed": 5,
+    "added": 5,
+    "examples": [
+     "-\t[72] heading 'Fast delivery on everyday finds', visible",
+     "+\tStaticText 'Fast delivery on everyday finds'",
+     "-\t\t[82] heading 'Save on tech essentials', visible",
+     "+\t\tStaticText 'Save on tech essentials'",
+     "-\t\t[102] heading 'Refresh your home', visible",
+     "+\t\tStaticText 'Refresh your home'",
+     "-\t\t[122] heading 'Fitness and wellness finds', visible",
+     "+\t\tStaticText 'Fitness and wellness finds'",
+     "-\t\t[142] heading 'Work and school supplies', visible",
+     "+\t\tStaticText 'Work and school supplies'"
+    ]
+   },
+   "all": {
+    "lines_clean": 439,
+    "removed": 27,
+    "added": 27,
+    "examples": [
+     "-\t\t[72] heading 'Fast delivery on everyday finds', visible",
+     "+\t\tStaticText 'Fast delivery on everyday finds'",
+     "-\t\t\t[82] heading 'Save on tech essentials', visible",
+     "+\t\t\tStaticText 'Save on tech essentials'",
+     "-\t\t\t[102] heading 'Refresh your home', visible",
+     "+\t\t\tStaticText 'Refresh your home'",
+     "-\t\t\t[122] heading 'Fitness and wellness finds', visible",
+     "+\t\t\tStaticText 'Fitness and wellness finds'",
+     "-\t\t\t[142] heading 'Work and school supplies', visible",
+     "+\t\t\tStaticText 'Work and school supplies'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3389
+    ],
+    "diff_share": 0.00109
+   }
+  },
+  {
+   "page": "route__notifications",
+   "visible": {
+    "lines_clean": 72,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[69] heading 'Notifications', visible",
+     "+\tStaticText 'Notifications'"
+    ]
+   },
+   "all": {
+    "lines_clean": 94,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[69] heading 'Notifications', visible",
+     "+\tStaticText 'Notifications'",
+     "-\t[109] heading 'Get to Know Us'",
+     "+\tStaticText 'Get to Know Us'",
+     "-\t[112] heading 'Your Account'",
+     "+\tStaticText 'Your Account'",
+     "-\t[117] heading 'Shop With Us'",
+     "+\tStaticText 'Shop With Us'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1058
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__orders",
+   "visible": {
+    "lines_clean": 90,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-[68] heading 'Your Orders', visible",
+     "+StaticText 'Your Orders'"
+    ]
+   },
+   "all": {
+    "lines_clean": 265,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[68] heading 'Your Orders', visible",
+     "+\tStaticText 'Your Orders'",
+     "-\t[350] heading 'Get to Know Us'",
+     "+\tStaticText 'Get to Know Us'",
+     "-\t[353] heading 'Your Account'",
+     "+\tStaticText 'Your Account'",
+     "-\t[358] heading 'Shop With Us'",
+     "+\tStaticText 'Shop With Us'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2777
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__product_product_36",
+   "visible": {
+    "lines_clean": 99,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[83] heading 'Amazon Basics Bluetooth Headphones True Wireless Earbuds IPX4Waterproof, in-Ear w/Mic,Charging Case, Black', visible",
+     "+\tStaticText 'Amazon Basics Bluetooth Headphones True Wireless Earbuds IPX4Waterproof, in-Ear w/Mic,Charging Case, Black'",
+     "-\t[113] heading 'About this item', visible",
+     "+\tStaticText 'About this item'",
+     "-\t[116] heading 'Product Features', visible",
+     "+\tStaticText 'Product Features'"
+    ]
+   },
+   "all": {
+    "lines_clean": 147,
+    "removed": 8,
+    "added": 8,
+    "examples": [
+     "-\t[83] heading 'Amazon Basics Bluetooth Headphones True Wireless Earbuds IPX4Waterproof, in-Ear w/Mic,Charging Case, Black', visible",
+     "+\tStaticText 'Amazon Basics Bluetooth Headphones True Wireless Earbuds IPX4Waterproof, in-Ear w/Mic,Charging Case, Black'",
+     "-\t[113] heading 'About this item', visible",
+     "+\tStaticText 'About this item'",
+     "-\t[116] heading 'Product Features', visible",
+     "+\tStaticText 'Product Features'",
+     "-\t\t[156] heading 'Customer Reviews'",
+     "+\t\tStaticText 'Customer Reviews'",
+     "-\t\t[170] heading 'Customer Questions & Answers'",
+     "+\t\tStaticText 'Customer Questions & Answers'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1543
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__returns",
+   "visible": {
+    "lines_clean": 73,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[69] heading 'Your Returns', visible",
+     "+\tStaticText 'Your Returns'",
+     "-\t[102] heading 'Get to Know Us', visible",
+     "+\tStaticText 'Get to Know Us'",
+     "-\t[105] heading 'Your Account', visible",
+     "+\tStaticText 'Your Account'",
+     "-\t[110] heading 'Shop With Us', visible",
+     "+\tStaticText 'Shop With Us'"
+    ]
+   },
+   "all": {
+    "lines_clean": 84,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[69] heading 'Your Returns', visible",
+     "+\tStaticText 'Your Returns'",
+     "-\t[102] heading 'Get to Know Us', visible",
+     "+\tStaticText 'Get to Know Us'",
+     "-\t[105] heading 'Your Account', visible",
+     "+\tStaticText 'Your Account'",
+     "-\t[110] heading 'Shop With Us', visible",
+     "+\tStaticText 'Shop With Us'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     811
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search_q-headphones",
+   "visible": {
+    "lines_clean": 128,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-[70] heading 'Department', visible",
+     "+StaticText 'Department'",
+     "-[91] heading 'Customer Review', visible",
+     "+StaticText 'Customer Review'",
+     "-[102] heading 'Price', visible",
+     "+StaticText 'Price'"
+    ]
+   },
+   "all": {
+    "lines_clean": 360,
+    "removed": 6,
+    "added": 6,
+    "examples": [
+     "-\t\t[70] heading 'Department', visible",
+     "+\t\tStaticText 'Department'",
+     "-\t\t[91] heading 'Customer Review', visible",
+     "+\t\tStaticText 'Customer Review'",
+     "-\t\t[102] heading 'Price', visible",
+     "+\t\tStaticText 'Price'",
+     "-\t[454] heading 'Get to Know Us'",
+     "+\tStaticText 'Get to Know Us'",
+     "-\t[457] heading 'Your Account'",
+     "+\tStaticText 'Your Account'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3525
+    ],
+    "diff_share": 0.00093
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 59,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[68] heading 'Account Settings', visible",
+     "-\t[70] heading 'Shopping Preferences', visible",
+     "+\tStaticText 'Account Settings'",
+     "+\tStaticText 'Shopping Preferences'",
+     "-\t[91] heading 'Login & Security', visible",
+     "+\tStaticText 'Login & Security'"
+    ]
+   },
+   "all": {
+    "lines_clean": 98,
+    "removed": 7,
+    "added": 7,
+    "examples": [
+     "-\t[68] heading 'Account Settings', visible",
+     "-\t[70] heading 'Shopping Preferences', visible",
+     "+\tStaticText 'Account Settings'",
+     "+\tStaticText 'Shopping Preferences'",
+     "-\t[91] heading 'Login & Security', visible",
+     "+\tStaticText 'Login & Security'",
+     "-\t[98] heading 'Notifications'",
+     "+\tStaticText 'Notifications'",
+     "-\t[116] heading 'Get to Know Us'",
+     "+\tStaticText 'Get to Know Us'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1298
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__wishlist",
+   "visible": {
+    "lines_clean": 59,
+    "removed": 5,
+    "added": 5,
+    "examples": [
+     "-\t[68] heading 'Your Wishlist', visible",
+     "+\tStaticText 'Your Wishlist'",
+     "-\t[71] heading 'Your wishlist is empty', visible",
+     "+\tStaticText 'Your wishlist is empty'",
+     "-\t[79] heading 'Get to Know Us', visible",
+     "+\tStaticText 'Get to Know Us'",
+     "-\t[82] heading 'Your Account', visible",
+     "+\tStaticText 'Your Account'",
+     "-\t[87] heading 'Shop With Us', visible",
+     "+\tStaticText 'Shop With Us'"
+    ]
+   },
+   "all": {
+    "lines_clean": 70,
+    "removed": 5,
+    "added": 5,
+    "examples": [
+     "-\t[68] heading 'Your Wishlist', visible",
+     "+\tStaticText 'Your Wishlist'",
+     "-\t[71] heading 'Your wishlist is empty', visible",
+     "+\tStaticText 'Your wishlist is empty'",
+     "-\t[79] heading 'Get to Know Us', visible",
+     "+\tStaticText 'Get to Know Us'",
+     "-\t[82] heading 'Your Account', visible",
+     "+\tStaticText 'Your Account'",
+     "-\t[87] heading 'Shop With Us', visible",
+     "+\tStaticText 'Shop With Us'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     784
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

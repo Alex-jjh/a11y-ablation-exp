@@ -1,0 +1,251 @@
+[
+ {
+  "config": {
+   "p_clean": 0.7,
+   "s_task": 1.5,
+   "tau": 0.5,
+   "ceil": 0.0
+  },
+  "PC1_PC2_n24_power": {
+   "10": {
+    "one_sided_0025": 0.26,
+    "one_sided_005": 0.38,
+    "old_two_sided_holm6_first": 0.08
+   },
+   "15": {
+    "one_sided_0025": 0.51,
+    "one_sided_005": 0.65,
+    "old_two_sided_holm6_first": 0.22
+   },
+   "20": {
+    "one_sided_0025": 0.75,
+    "one_sided_005": 0.85,
+    "old_two_sided_holm6_first": 0.45
+   },
+   "30": {
+    "one_sided_0025": 0.97,
+    "one_sided_005": 0.98,
+    "old_two_sided_holm6_first": 0.85
+   }
+  },
+  "PC1_PC2_n53_primary_power_0025": {
+   "5": 0.2,
+   "10": 0.56,
+   "15": 0.86
+  },
+  "PC3_PC6_n62_tost": {
+   "margin5_true0": {
+    "hit": 0.349,
+    "miss": 0.002
+   },
+   "margin5_true5": {
+    "hit": 0.048,
+    "miss": 0.038
+   },
+   "margin5_true10": {
+    "hit": 0.002,
+    "miss": 0.307
+   },
+   "margin5_true15": {
+    "hit": 0.0,
+    "miss": 0.718
+   },
+   "margin10_true0": {
+    "hit": 0.788,
+    "miss": 0.0
+   },
+   "margin10_true5": {
+    "hit": 0.331,
+    "miss": 0.002
+   },
+   "margin10_true10": {
+    "hit": 0.054,
+    "miss": 0.053
+   },
+   "margin10_true15": {
+    "hit": 0.003,
+    "miss": 0.284
+   }
+  },
+  "MH1_n64_two_sided_005_power": {
+   "5": 0.23,
+   "10": 0.63,
+   "15": 0.92
+  },
+  "MH3_MH4_n24_4v2_P_lower95_ge15": {
+   "20": 0.08,
+   "30": 0.38,
+   "40": 0.83
+  },
+  "names50_n24_power_0025": {
+   "5": 0.1,
+   "10": 0.26
+  }
+ },
+ {
+  "config": {
+   "p_clean": 0.8,
+   "s_task": 3.0,
+   "tau": 0.5,
+   "ceil": 0.3
+  },
+  "PC1_PC2_n24_power": {
+   "10": {
+    "one_sided_0025": 0.43,
+    "one_sided_005": 0.59,
+    "old_two_sided_holm6_first": 0.08
+   },
+   "15": {
+    "one_sided_0025": 0.71,
+    "one_sided_005": 0.86,
+    "old_two_sided_holm6_first": 0.3
+   },
+   "20": {
+    "one_sided_0025": 0.91,
+    "one_sided_005": 0.96,
+    "old_two_sided_holm6_first": 0.57
+   },
+   "30": {
+    "one_sided_0025": 1.0,
+    "one_sided_005": 1.0,
+    "old_two_sided_holm6_first": 0.91
+   }
+  },
+  "PC1_PC2_n53_primary_power_0025": {
+   "5": 0.31,
+   "10": 0.85,
+   "15": 0.99
+  },
+  "PC3_PC6_n62_tost": {
+   "margin5_true0": {
+    "hit": 0.636,
+    "miss": 0.001
+   },
+   "margin5_true5": {
+    "hit": 0.065,
+    "miss": 0.038
+   },
+   "margin5_true10": {
+    "hit": 0.001,
+    "miss": 0.417
+   },
+   "margin5_true15": {
+    "hit": 0.0,
+    "miss": 0.897
+   },
+   "margin10_true0": {
+    "hit": 0.98,
+    "miss": 0.0
+   },
+   "margin10_true5": {
+    "hit": 0.531,
+    "miss": 0.0
+   },
+   "margin10_true10": {
+    "hit": 0.073,
+    "miss": 0.039
+   },
+   "margin10_true15": {
+    "hit": 0.002,
+    "miss": 0.335
+   }
+  },
+  "MH1_n64_two_sided_005_power": {
+   "5": 0.38,
+   "10": 0.91,
+   "15": 1.0
+  },
+  "MH3_MH4_n24_4v2_P_lower95_ge15": {
+   "20": 0.06,
+   "30": 0.4,
+   "40": 0.82
+  },
+  "names50_n24_power_0025": {
+   "5": 0.12,
+   "10": 0.42
+  }
+ },
+ {
+  "config": {
+   "p_clean": 0.9,
+   "s_task": 3.0,
+   "tau": 0.5,
+   "ceil": 0.3
+  },
+  "PC1_PC2_n24_power": {
+   "10": {
+    "one_sided_0025": 0.51,
+    "one_sided_005": 0.72,
+    "old_two_sided_holm6_first": 0.12
+   },
+   "15": {
+    "one_sided_0025": 0.83,
+    "one_sided_005": 0.92,
+    "old_two_sided_holm6_first": 0.36
+   },
+   "20": {
+    "one_sided_0025": 0.95,
+    "one_sided_005": 0.98,
+    "old_two_sided_holm6_first": 0.64
+   },
+   "30": {
+    "one_sided_0025": 1.0,
+    "one_sided_005": 1.0,
+    "old_two_sided_holm6_first": 0.96
+   }
+  },
+  "PC1_PC2_n53_primary_power_0025": {
+   "5": 0.45,
+   "10": 0.92,
+   "15": 1.0
+  },
+  "PC3_PC6_n62_tost": {
+   "margin5_true0": {
+    "hit": 0.805,
+    "miss": 0.0
+   },
+   "margin5_true5": {
+    "hit": 0.079,
+    "miss": 0.029
+   },
+   "margin5_true10": {
+    "hit": 0.002,
+    "miss": 0.514
+   },
+   "margin5_true15": {
+    "hit": 0.0,
+    "miss": 0.929
+   },
+   "margin10_true0": {
+    "hit": 0.995,
+    "miss": 0.0
+   },
+   "margin10_true5": {
+    "hit": 0.644,
+    "miss": 0.0
+   },
+   "margin10_true10": {
+    "hit": 0.08,
+    "miss": 0.032
+   },
+   "margin10_true15": {
+    "hit": 0.003,
+    "miss": 0.406
+   }
+  },
+  "MH1_n64_two_sided_005_power": {
+   "5": 0.55,
+   "10": 0.97,
+   "15": 1.0
+  },
+  "MH3_MH4_n24_4v2_P_lower95_ge15": {
+   "20": 0.06,
+   "30": 0.42,
+   "40": 0.86
+  },
+  "names50_n24_power_0025": {
+   "5": 0.17,
+   "10": 0.52
+  }
+ }
+]

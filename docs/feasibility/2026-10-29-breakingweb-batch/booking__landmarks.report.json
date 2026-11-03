@@ -1,0 +1,552 @@
+{
+ "env": "booking",
+ "kind": "landmarks",
+ "codemod_counts_env": {
+  "env": {
+   "header": 1,
+   "nav": 2,
+   "main": 1,
+   "footer": 1,
+   "aside": 2,
+   "role": 0
+  },
+  "shared": {
+   "header": 2,
+   "nav": 1,
+   "main": 0,
+   "footer": 1,
+   "aside": 1,
+   "role": 1
+  }
+ },
+ "tasks": [
+  {
+   "page": "booking_account_security_and_payment",
+   "visible": {
+    "lines_clean": 42,
+    "removed": 13,
+    "added": 11,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 186,
+    "removed": 186,
+    "added": 182,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2130
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "booking_add_payment",
+   "visible": {
+    "lines_clean": 42,
+    "removed": 13,
+    "added": 11,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 176,
+    "removed": 176,
+    "added": 172,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2068
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__account",
+   "visible": {
+    "lines_clean": 67,
+    "removed": 66,
+    "added": 63,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 117,
+    "removed": 116,
+    "added": 112,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1294
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__deals",
+   "visible": {
+    "lines_clean": 86,
+    "removed": 13,
+    "added": 11,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 599,
+    "removed": 599,
+    "added": 595,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     4725
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__home",
+   "visible": {
+    "lines_clean": 107,
+    "removed": 13,
+    "added": 11,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 415,
+    "removed": 405,
+    "added": 401,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2397
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__messages",
+   "visible": {
+    "lines_clean": 53,
+    "removed": 13,
+    "added": 11,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 99,
+    "removed": 99,
+    "added": 95,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1561
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__notifications",
+   "visible": {
+    "lines_clean": 49,
+    "removed": 13,
+    "added": 11,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 139,
+    "removed": 138,
+    "added": 134,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1966
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__reviews",
+   "visible": {
+    "lines_clean": 66,
+    "removed": 13,
+    "added": 11,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 10761,
+    "removed": 10761,
+    "added": 10757,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     109230
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__saved",
+   "visible": {
+    "lines_clean": 53,
+    "removed": 53,
+    "added": 50,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 62,
+    "removed": 62,
+    "added": 58,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     919
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search",
+   "visible": {
+    "lines_clean": 136,
+    "removed": 13,
+    "added": 11,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 432,
+    "removed": 431,
+    "added": 425,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2682
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 42,
+    "removed": 13,
+    "added": 11,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 186,
+    "removed": 186,
+    "added": 182,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2130
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__trips",
+   "visible": {
+    "lines_clean": 72,
+    "removed": 13,
+    "added": 11,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 442,
+    "removed": 441,
+    "added": 437,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] link 'Booking.com', clickable, visible",
+     "-\t[15] navigation '', visible",
+     "-\t\t[16] link 'Deals', clickable, visible",
+     "-\t\t[17] link 'My Trips', clickable, visible",
+     "-\t\t[18] link 'Saved', clickable, visible",
+     "-\t\t[19] link 'Messages', clickable, visible",
+     "-\t\t[20] link 'Notifications', clickable, visible",
+     "-\t\t[21] link 'Account', clickable, visible",
+     "-\t[24] link 'Stays', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     4433
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

@@ -1,0 +1,339 @@
+{
+ "env": "patient_portal",
+ "kind": "names",
+ "codemod_counts_env": {
+  "env": {
+   "aria-label": 46
+  },
+  "shared": {
+   "aria-label": 19
+  }
+ },
+ "tasks": [
+  {
+   "page": "pp_cancel_appointment",
+   "visible": {
+    "lines_clean": 120,
+    "removed": 18,
+    "added": 18,
+    "examples": [
+     "-\t\t\t\t\t[46] gridcell 'Cancel appointment with Dr. Lisa Patel Reschedule appointment with Dr. Lisa Patel', visible",
+     "-\t\t\t\t\t\t[47] button 'Cancel appointment with Dr. Lisa Patel', clickable, visible",
+     "-\t\t\t\t\t\t[48] button 'Reschedule appointment with Dr. Lisa Patel', clickable, visible",
+     "+\t\t\t\t\t[46] gridcell 'Cancel Reschedule', visible",
+     "+\t\t\t\t\t\t[47] button 'Cancel', clickable, visible",
+     "+\t\t\t\t\t\t[48] button 'Reschedule', clickable, visible",
+     "-\t\t\t\t\t[63] gridcell 'Cancel appointment with Dr. Lisa Patel Reschedule appointment with Dr. Lisa Patel', visible",
+     "-\t\t\t\t\t\t[64] button 'Cancel appointment with Dr. Lisa Patel', clickable, visible",
+     "-\t\t\t\t\t\t[65] button 'Reschedule appointment with Dr. Lisa Patel', clickable, visible",
+     "+\t\t\t\t\t[63] gridcell 'Cancel Reschedule', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 158,
+    "removed": 25,
+    "added": 22,
+    "examples": [
+     "-\t\t\t\t\t[46] gridcell 'Cancel appointment with Dr. Lisa Patel Reschedule appointment with Dr. Lisa Patel', visible",
+     "-\t\t\t\t\t\t[47] button 'Cancel appointment with Dr. Lisa Patel', clickable, visible",
+     "-\t\t\t\t\t\t[48] button 'Reschedule appointment with Dr. Lisa Patel', clickable, visible",
+     "+\t\t\t\t\t[46] gridcell 'Cancel Reschedule', visible",
+     "+\t\t\t\t\t\t[47] button 'Cancel', clickable, visible",
+     "+\t\t\t\t\t\t[48] button 'Reschedule', clickable, visible",
+     "-\t\t\t\t\t[63] gridcell 'Cancel appointment with Dr. Lisa Patel Reschedule appointment with Dr. Lisa Patel', visible",
+     "-\t\t\t\t\t\t[64] button 'Cancel appointment with Dr. Lisa Patel', clickable, visible",
+     "-\t\t\t\t\t\t[65] button 'Reschedule appointment with Dr. Lisa Patel', clickable, visible",
+     "+\t\t\t\t\t[63] gridcell 'Cancel Reschedule', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1051
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "pp_cancel_duplicate_appointments",
+   "visible": {
+    "lines_clean": 120,
+    "removed": 18,
+    "added": 18,
+    "examples": [
+     "-\t\t\t\t\t[46] gridcell 'Cancel appointment with Dr. Sandra Lee Reschedule appointment with Dr. Sandra Lee', visible",
+     "-\t\t\t\t\t\t[47] button 'Cancel appointment with Dr. Sandra Lee', clickable, visible",
+     "-\t\t\t\t\t\t[48] button 'Reschedule appointment with Dr. Sandra Lee', clickable, visible",
+     "+\t\t\t\t\t[46] gridcell 'Cancel Reschedule', visible",
+     "+\t\t\t\t\t\t[47] button 'Cancel', clickable, visible",
+     "+\t\t\t\t\t\t[48] button 'Reschedule', clickable, visible",
+     "-\t\t\t\t\t[63] gridcell 'Cancel appointment with Dr. David Chen Reschedule appointment with Dr. David Chen', visible",
+     "-\t\t\t\t\t\t[64] button 'Cancel appointment with Dr. David Chen', clickable, visible",
+     "-\t\t\t\t\t\t[65] button 'Reschedule appointment with Dr. David Chen', clickable, visible",
+     "+\t\t\t\t\t[63] gridcell 'Cancel Reschedule', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 175,
+    "removed": 28,
+    "added": 25,
+    "examples": [
+     "-\t\t\t\t\t[46] gridcell 'Cancel appointment with Dr. Sandra Lee Reschedule appointment with Dr. Sandra Lee', visible",
+     "-\t\t\t\t\t\t[47] button 'Cancel appointment with Dr. Sandra Lee', clickable, visible",
+     "-\t\t\t\t\t\t[48] button 'Reschedule appointment with Dr. Sandra Lee', clickable, visible",
+     "+\t\t\t\t\t[46] gridcell 'Cancel Reschedule', visible",
+     "+\t\t\t\t\t\t[47] button 'Cancel', clickable, visible",
+     "+\t\t\t\t\t\t[48] button 'Reschedule', clickable, visible",
+     "-\t\t\t\t\t[63] gridcell 'Cancel appointment with Dr. David Chen Reschedule appointment with Dr. David Chen', visible",
+     "-\t\t\t\t\t\t[64] button 'Cancel appointment with Dr. David Chen', clickable, visible",
+     "-\t\t\t\t\t\t[65] button 'Reschedule appointment with Dr. David Chen', clickable, visible",
+     "+\t\t\t\t\t[63] gridcell 'Cancel Reschedule', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1126
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__appointments",
+   "visible": {
+    "lines_clean": 120,
+    "removed": 18,
+    "added": 18,
+    "examples": [
+     "-\t\t\t\t\t[46] gridcell 'Cancel appointment with Dr. Lisa Patel Reschedule appointment with Dr. Lisa Patel', visible",
+     "-\t\t\t\t\t\t[47] button 'Cancel appointment with Dr. Lisa Patel', clickable, visible",
+     "-\t\t\t\t\t\t[48] button 'Reschedule appointment with Dr. Lisa Patel', clickable, visible",
+     "+\t\t\t\t\t[46] gridcell 'Cancel Reschedule', visible",
+     "+\t\t\t\t\t\t[47] button 'Cancel', clickable, visible",
+     "+\t\t\t\t\t\t[48] button 'Reschedule', clickable, visible",
+     "-\t\t\t\t\t[63] gridcell 'Cancel appointment with Dr. Lisa Patel Reschedule appointment with Dr. Lisa Patel', visible",
+     "-\t\t\t\t\t\t[64] button 'Cancel appointment with Dr. Lisa Patel', clickable, visible",
+     "-\t\t\t\t\t\t[65] button 'Reschedule appointment with Dr. Lisa Patel', clickable, visible",
+     "+\t\t\t\t\t[63] gridcell 'Cancel Reschedule', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 158,
+    "removed": 25,
+    "added": 22,
+    "examples": [
+     "-\t\t\t\t\t[46] gridcell 'Cancel appointment with Dr. Lisa Patel Reschedule appointment with Dr. Lisa Patel', visible",
+     "-\t\t\t\t\t\t[47] button 'Cancel appointment with Dr. Lisa Patel', clickable, visible",
+     "-\t\t\t\t\t\t[48] button 'Reschedule appointment with Dr. Lisa Patel', clickable, visible",
+     "+\t\t\t\t\t[46] gridcell 'Cancel Reschedule', visible",
+     "+\t\t\t\t\t\t[47] button 'Cancel', clickable, visible",
+     "+\t\t\t\t\t\t[48] button 'Reschedule', clickable, visible",
+     "-\t\t\t\t\t[63] gridcell 'Cancel appointment with Dr. Lisa Patel Reschedule appointment with Dr. Lisa Patel', visible",
+     "-\t\t\t\t\t\t[64] button 'Cancel appointment with Dr. Lisa Patel', clickable, visible",
+     "-\t\t\t\t\t\t[65] button 'Reschedule appointment with Dr. Lisa Patel', clickable, visible",
+     "+\t\t\t\t\t[63] gridcell 'Cancel Reschedule', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1051
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__billing",
+   "visible": {
+    "lines_clean": 60,
+    "removed": 8,
+    "added": 6,
+    "examples": [
+     "-\t\t\t\t\t[56] gridcell 'View EOB for claim clm_2 Appeal claim clm_2', visible",
+     "-\t\t\t\t\t\t[57] button 'View EOB for claim clm_2', clickable, visible",
+     "-\t\t\t\t\t\t[58] button 'Appeal claim clm_2', clickable, visible",
+     "-\t\t\t\t\t\t\tStaticText 'Dispute/Appeal'",
+     "+\t\t\t\t\t[56] gridcell 'View EOB Dispute/Appeal', visible",
+     "+\t\t\t\t\t\t[57] button 'View EOB', clickable, visible",
+     "+\t\t\t\t\t\t[58] button 'Dispute/Appeal', clickable, visible",
+     "-\t\t\t\t\t[70] gridcell 'View EOB for claim clm_1 Pay balance for claim clm_1', visible",
+     "-\t\t\t\t\t\t[71] button 'View EOB for claim clm_1', clickable, visible",
+     "-\t\t\t\t\t\t[72] button 'Pay balance for claim clm_1', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 74,
+    "removed": 8,
+    "added": 6,
+    "examples": [
+     "-\t\t\t\t\t[56] gridcell 'View EOB for claim clm_2 Appeal claim clm_2', visible",
+     "-\t\t\t\t\t\t[57] button 'View EOB for claim clm_2', clickable, visible",
+     "-\t\t\t\t\t\t[58] button 'Appeal claim clm_2', clickable, visible",
+     "-\t\t\t\t\t\t\tStaticText 'Dispute/Appeal'",
+     "+\t\t\t\t\t[56] gridcell 'View EOB Dispute/Appeal', visible",
+     "+\t\t\t\t\t\t[57] button 'View EOB', clickable, visible",
+     "+\t\t\t\t\t\t[58] button 'Dispute/Appeal', clickable, visible",
+     "-\t\t\t\t\t[70] gridcell 'View EOB for claim clm_1 Pay balance for claim clm_1', visible",
+     "-\t\t\t\t\t\t[71] button 'View EOB for claim clm_1', clickable, visible",
+     "-\t\t\t\t\t\t[72] button 'Pay balance for claim clm_1', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__labs",
+   "visible": {
+    "lines_clean": 21,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 24,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__medications",
+   "visible": {
+    "lines_clean": 108,
+    "removed": 8,
+    "added": 4,
+    "examples": [
+     "-\t\t\t[55] button 'Request refill for Omeprazole 20mg', clickable, visible",
+     "-\t\t\t\tStaticText 'Request Refill'",
+     "-\t\t\t[56] button 'Transfer Omeprazole 20mg to another pharmacy', clickable, visible",
+     "-\t\t\t\tStaticText 'Transfer Pharmacy'",
+     "+\t\t\t[55] button 'Request Refill', clickable, visible",
+     "+\t\t\t[56] button 'Transfer Pharmacy', clickable, visible",
+     "-\t\t\t[82] button 'Request refill for Atorvastatin 20mg', clickable, visible",
+     "-\t\t\t\tStaticText 'Request Refill'",
+     "-\t\t\t[83] button 'Transfer Atorvastatin 20mg to another pharmacy', clickable, visible",
+     "-\t\t\t\tStaticText 'Transfer Pharmacy'"
+    ]
+   },
+   "all": {
+    "lines_clean": 117,
+    "removed": 16,
+    "added": 7,
+    "examples": [
+     "-\t\t\t[55] button 'Request refill for Omeprazole 20mg', clickable, visible",
+     "-\t\t\t\tStaticText 'Request Refill'",
+     "-\t\t\t[56] button 'Transfer Omeprazole 20mg to another pharmacy', clickable, visible",
+     "-\t\t\t\tStaticText 'Transfer Pharmacy'",
+     "+\t\t\t[55] button 'Request Refill', clickable, visible",
+     "+\t\t\t[56] button 'Transfer Pharmacy', clickable, visible",
+     "-\t\t\t[82] button 'Request refill for Atorvastatin 20mg', clickable, visible",
+     "-\t\t\t\tStaticText 'Request Refill'",
+     "-\t\t\t[83] button 'Transfer Atorvastatin 20mg to another pharmacy', clickable, visible",
+     "-\t\t\t\tStaticText 'Transfer Pharmacy'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     928
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__messages",
+   "visible": {
+    "lines_clean": 20,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[38] button 'Compose new message', clickable, visible",
+     "+\t[38] button 'Compose', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 27,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[38] button 'Compose new message', clickable, visible",
+     "+\t[38] button 'Compose', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__profile",
+   "visible": {
+    "lines_clean": 41,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 197,
+    "removed": 14,
+    "added": 9,
+    "examples": [
+     "-\t\t\t[56] button 'Save demographics', clickable",
+     "-\t\t\t\tStaticText 'Save Demographics'",
+     "+\t\t\t[56] button 'Save Demographics', clickable",
+     "-\t\t\t[76] button 'Save insurance information', clickable",
+     "-\t\t\t\tStaticText 'Save Insurance'",
+     "+\t\t\t[76] button 'Save Insurance', clickable",
+     "-\t\t\t\t\t[111] gridcell 'Set CVS Pharmacy #4821 as default pharmacy Remove CVS Pharmacy #4821'",
+     "-\t\t\t\t\t\t[112] button 'Set CVS Pharmacy #4821 as default pharmacy', clickable",
+     "-\t\t\t\t\t\t\tStaticText 'Set Default'",
+     "-\t\t\t\t\t\t[113] button 'Remove CVS Pharmacy #4821', clickable"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2583
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__referrals",
+   "visible": {
+    "lines_clean": 50,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 50,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

@@ -1,0 +1,323 @@
+{
+ "env": "booking",
+ "kind": "alt",
+ "codemod_counts_env": {
+  "env": {
+   "img": 5
+  },
+  "shared": {}
+ },
+ "tasks": [
+  {
+   "page": "booking_account_security_and_payment",
+   "visible": {
+    "lines_clean": 42,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 186,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2130
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "booking_add_payment",
+   "visible": {
+    "lines_clean": 42,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 176,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2068
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__account",
+   "visible": {
+    "lines_clean": 67,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 117,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1294
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__deals",
+   "visible": {
+    "lines_clean": 86,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-[34] link 'Bob Hotel Bob Hotel \u2605\u2605\u2605\u2606\u2606 Montparnasse, Paris, France \u00b7 2.5 km from center 7.8 Good 3,456 reviews 26% off Genius Free cancellation Superior King Room -26% \u20ac329 \u20ac245 per night See deal', clickable, visible",
+     "-\t[37] image 'Bob Hotel', visible",
+     "+[34] link 'Bob Hotel \u2605\u2605\u2605\u2606\u2606 Montparnasse, Paris, France \u00b7 2.5 km from center 7.8 Good 3,456 reviews 26% off Genius Free cancellation Superior King Room -26% \u20ac329 \u20ac245 per night See deal', clickable, visible",
+     "+\t[37] image '', visible",
+     "-[61] link 'The Greenwich Hotel The Greenwich Hotel \u2605\u2605\u2605\u2605\u2605 TriBeCa, New York, United States \u00b7 2.2 km from center 9.3 Superb 1,234 reviews 26% off Free cancellation Deluxe Double Room -26% $1216 $905 per night See deal', clickable, visible",
+     "-\t[64] image 'The Greenwich Hotel', visible",
+     "+[61] link 'The Greenwich Hotel \u2605\u2605\u2605\u2605\u2605 TriBeCa, New York, United States \u00b7 2.2 km from center 9.3 Superb 1,234 reviews 26% off Free cancellation Deluxe Double Room -26% $1216 $905 per night See deal', clickable, visible",
+     "+\t[64] image '', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 599,
+    "removed": 40,
+    "added": 40,
+    "examples": [
+     "-\t[34] link 'Bob Hotel Bob Hotel \u2605\u2605\u2605\u2606\u2606 Montparnasse, Paris, France \u00b7 2.5 km from center 7.8 Good 3,456 reviews 26% off Genius Free cancellation Superior King Room -26% \u20ac329 \u20ac245 per night See deal', clickable, visible",
+     "-\t\t[37] image 'Bob Hotel', visible",
+     "+\t[34] link 'Bob Hotel \u2605\u2605\u2605\u2606\u2606 Montparnasse, Paris, France \u00b7 2.5 km from center 7.8 Good 3,456 reviews 26% off Genius Free cancellation Superior King Room -26% \u20ac329 \u20ac245 per night See deal', clickable, visible",
+     "+\t\t[37] image '', visible",
+     "-\t[61] link 'The Greenwich Hotel The Greenwich Hotel \u2605\u2605\u2605\u2605\u2605 TriBeCa, New York, United States \u00b7 2.2 km from center 9.3 Superb 1,234 reviews 26% off Free cancellation Deluxe Double Room -26% $1216 $905 per night See deal', clickable, visible",
+     "-\t\t[64] image 'The Greenwich Hotel', visible",
+     "+\t[61] link 'The Greenwich Hotel \u2605\u2605\u2605\u2605\u2605 TriBeCa, New York, United States \u00b7 2.2 km from center 9.3 Superb 1,234 reviews 26% off Free cancellation Deluxe Double Room -26% $1216 $905 per night See deal', clickable, visible",
+     "+\t\t[64] image '', visible",
+     "-\t[87] link 'Harbor Hotel Paris Harbor Hotel Paris \u2605\u2605\u2605\u2606\u2606 Paris, France \u00b7 0.8 km from center 7.8 Good 1,033 reviews 26% off Free cancellation Standard Double Room -26% \u20ac208 \u20ac155 per night See deal', clickable",
+     "-\t\t[90] image 'Harbor Hotel Paris'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     4725
+    ],
+    "diff_share": 0.0041
+   }
+  },
+  {
+   "page": "route__home",
+   "visible": {
+    "lines_clean": 107,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 415,
+    "removed": 28,
+    "added": 28,
+    "examples": [
+     "-\t\t[149] link 'Bob Hotel Bob Hotel Paris, France -26% \u2605\u2605\u2605 7.8 Good 3,456 reviews \u20ac329 \u20ac245 Genius', clickable",
+     "-\t\t\t[152] image 'Bob Hotel'",
+     "+\t\t[149] link 'Bob Hotel Paris, France -26% \u2605\u2605\u2605 7.8 Good 3,456 reviews \u20ac329 \u20ac245 Genius', clickable",
+     "+\t\t\t[152] image ''",
+     "-\t\t[168] link 'The Greenwich Hotel The Greenwich Hotel New York, United States -26% \u2605\u2605\u2605\u2605\u2605 9.3 Superb 1,234 reviews $1,216 $905', clickable",
+     "-\t\t\t[171] image 'The Greenwich Hotel'",
+     "+\t\t[168] link 'The Greenwich Hotel New York, United States -26% \u2605\u2605\u2605\u2605\u2605 9.3 Superb 1,234 reviews $1,216 $905', clickable",
+     "+\t\t\t[171] image ''",
+     "-\t\t[186] link 'Harbor Hotel Paris Harbor Hotel Paris Paris, France -26% \u2605\u2605\u2605 7.8 Good 1,033 reviews \u20ac208 \u20ac155', clickable",
+     "-\t\t\t[189] image 'Harbor Hotel Paris'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2397
+    ],
+    "diff_share": 0.00424
+   }
+  },
+  {
+   "page": "route__messages",
+   "visible": {
+    "lines_clean": 53,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 99,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1561
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__notifications",
+   "visible": {
+    "lines_clean": 49,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 139,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1966
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__reviews",
+   "visible": {
+    "lines_clean": 66,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 10761,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     109230
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__saved",
+   "visible": {
+    "lines_clean": 53,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 62,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     919
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search",
+   "visible": {
+    "lines_clean": 136,
+    "removed": 2,
+    "added": 2,
+    "examples": [
+     "-\t[169] image 'Generator London', visible",
+     "+\t[169] image '', visible",
+     "-\t[197] image 'Generator Paris', visible",
+     "+\t[197] image '', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 432,
+    "removed": 10,
+    "added": 10,
+    "examples": [
+     "-\t\t[169] image 'Generator London', visible",
+     "+\t\t[169] image '', visible",
+     "-\t\t[197] image 'Generator Paris', visible",
+     "+\t\t[197] image '', visible",
+     "-\t\t[224] image 'TOC Hostel Barcelona'",
+     "+\t\t[224] image ''",
+     "-\t\t[252] image 'The Yellow Hostel'",
+     "+\t\t[252] image ''",
+     "-\t\t[280] image 'Generator Barcelona'",
+     "+\t\t[280] image ''"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2682
+    ],
+    "diff_share": 0.00158
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 42,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 186,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2130
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__trips",
+   "visible": {
+    "lines_clean": 72,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 442,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     4433
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

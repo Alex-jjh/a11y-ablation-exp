@@ -1,0 +1,616 @@
+{
+ "env": "robinhood",
+ "kind": "names",
+ "codemod_counts_env": {
+  "env": {
+   "aria-label": 87
+  },
+  "shared": {
+   "aria-label": 19
+  }
+ },
+ "tasks": [
+  {
+   "page": "rh_add_to_watchlist",
+   "visible": {
+    "lines_clean": 61,
+    "removed": 5,
+    "added": 4,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 104,
+    "removed": 5,
+    "added": 4,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1368
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "rh_buy_market_order",
+   "visible": {
+    "lines_clean": 73,
+    "removed": 7,
+    "added": 6,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible",
+     "-\t[63] link 'TSLA position', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 118,
+    "removed": 7,
+    "added": 6,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible",
+     "-\t\t[63] link 'TSLA position', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1406
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__account",
+   "visible": {
+    "lines_clean": 43,
+    "removed": 7,
+    "added": 5,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible",
+     "-\t\t[56] button 'Save settings', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 50,
+    "removed": 7,
+    "added": 5,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible",
+     "-\t\t[56] button 'Save settings', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     822
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__alerts",
+   "visible": {
+    "lines_clean": 32,
+    "removed": 7,
+    "added": 5,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible",
+     "-\t\t[52] button 'Create price alert', visible, disabled=True"
+    ]
+   },
+   "all": {
+    "lines_clean": 34,
+    "removed": 7,
+    "added": 5,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible",
+     "-\t\t[52] button 'Create price alert', visible, disabled=True"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__dividends",
+   "visible": {
+    "lines_clean": 25,
+    "removed": 5,
+    "added": 4,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 25,
+    "removed": 5,
+    "added": 4,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__history",
+   "visible": {
+    "lines_clean": 21,
+    "removed": 5,
+    "added": 4,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 29,
+    "removed": 5,
+    "added": 4,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__lists",
+   "visible": {
+    "lines_clean": 27,
+    "removed": 5,
+    "added": 4,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 27,
+    "removed": 5,
+    "added": 4,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__notifications",
+   "visible": {
+    "lines_clean": 23,
+    "removed": 8,
+    "added": 6,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible",
+     "-\t[40] link 'Manage price alerts', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 23,
+    "removed": 8,
+    "added": 6,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible",
+     "-\t[40] link 'Manage price alerts', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__options_positions",
+   "visible": {
+    "lines_clean": 30,
+    "removed": 8,
+    "added": 6,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible",
+     "-\t[41] link 'Browse stocks for options trading', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 30,
+    "removed": 8,
+    "added": 6,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible",
+     "-\t[41] link 'Browse stocks for options trading', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__orders",
+   "visible": {
+    "lines_clean": 25,
+    "removed": 5,
+    "added": 4,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 25,
+    "removed": 5,
+    "added": 4,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__recurring",
+   "visible": {
+    "lines_clean": 22,
+    "removed": 5,
+    "added": 4,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 22,
+    "removed": 5,
+    "added": 4,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search",
+   "visible": {
+    "lines_clean": 22,
+    "removed": 7,
+    "added": 5,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible",
+     "-\t\t[41] button 'Run search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 22,
+    "removed": 7,
+    "added": 5,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible",
+     "-\t\t[41] button 'Run search', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__tax",
+   "visible": {
+    "lines_clean": 30,
+    "removed": 5,
+    "added": 4,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 31,
+    "removed": 5,
+    "added": 4,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__transfers",
+   "visible": {
+    "lines_clean": 32,
+    "removed": 7,
+    "added": 5,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible",
+     "-\t[48] button 'Submit deposit', visible, disabled=True"
+    ]
+   },
+   "all": {
+    "lines_clean": 32,
+    "removed": 7,
+    "added": 5,
+    "examples": [
+     "-\t[13] link 'Home', clickable, visible",
+     "+\t[13] link '', clickable, visible",
+     "-\t\t[28] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[30] link 'Notifications', clickable, visible",
+     "-\t[32] link 'Account', clickable, visible",
+     "+\t\t[28] button 'Search', clickable, visible",
+     "+\t[30] link '', clickable, visible",
+     "+\t[32] link '', clickable, visible",
+     "-\t[48] button 'Submit deposit', visible, disabled=True"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

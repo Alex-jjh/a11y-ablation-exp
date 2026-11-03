@@ -1,0 +1,485 @@
+{
+ "env": "amazon",
+ "kind": "alt",
+ "codemod_counts_env": {
+  "env": {
+   "img": 17
+  },
+  "shared": {}
+ },
+ "tasks": [
+  {
+   "page": "amazon_account_overhaul_and_shop",
+   "visible": {
+    "lines_clean": 95,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 439,
+    "removed": 32,
+    "added": 32,
+    "examples": [
+     "-\t\t\t[200] link 'Double-Wall Insulated Cookware & Bakeware Set of 4 Double-Wall Insulated Cookware & Bakeware Set of 4 Ironstone Home 4.9 out of 5 stars 4000+ bought in past month $4777 Prime eligible FREE delivery Sat, Oct 31', clickable",
+     "-\t\t\t\t[202] image 'Double-Wall Insulated Cookware & Bakeware Set of 4'",
+     "+\t\t\t[200] link 'Double-Wall Insulated Cookware & Bakeware Set of 4 Ironstone Home 4.9 out of 5 stars 4000+ bought in past month $4777 Prime eligible FREE delivery Sat, Oct 31', clickable",
+     "+\t\t\t\t[202] image ''",
+     "-\t\t\t[226] link 'True Wireless Hubs & Adapters Active Noise Cancelling True Wireless Hubs & Adapters Active Noise Cancelling Lumivox 4.8 out of 5 stars 3200+ bought in past month $1689 Prime eligible FREE delivery Sat, Oct 31', clickable",
+     "-\t\t\t\t[228] image 'True Wireless Hubs & Adapters Active Noise Cancelling'",
+     "+\t\t\t[226] link 'True Wireless Hubs & Adapters Active Noise Cancelling Lumivox 4.8 out of 5 stars 3200+ bought in past month $1689 Prime eligible FREE delivery Sat, Oct 31', clickable",
+     "+\t\t\t\t[228] image ''",
+     "-\t\t\t[252] link 'Portable Bluetooth 5.3 Speakers IPX7 Waterproof Portable Bluetooth 5.3 Speakers IPX7 Waterproof Wavefront 4.7 out of 5 stars 3100+ bought in past month $3959 Prime eligible FREE delivery Sat, Oct 31', clickable",
+     "-\t\t\t\t[254] image 'Portable Bluetooth 5.3 Speakers IPX7 Waterproof'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3389
+    ],
+    "diff_share": 0.00105
+   }
+  },
+  {
+   "page": "amazon_add_new_address",
+   "visible": {
+    "lines_clean": 95,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 439,
+    "removed": 32,
+    "added": 32,
+    "examples": [
+     "-\t\t\t[200] link '1500 Pieces Building Bricks, Classic Bulk Small Blocks, Classic Bricks Set Basic Building Blocks Compatible with All Maj 1500 Pieces Building Bricks, Classic Bulk Small Blocks, Classic Bricks Set Basic Building Blocks Compatible with All Maj 1500 Pieces 4.6 out of 5 stars $2427 Prime eligible FREE delivery Sat, Oct 31', clickable",
+     "-\t\t\t\t[202] image '1500 Pieces Building Bricks, Classic Bulk Small Blocks, Classic Bricks Set Basic Building Blocks Compatible with All Maj'",
+     "+\t\t\t[200] link '1500 Pieces Building Bricks, Classic Bulk Small Blocks, Classic Bricks Set Basic Building Blocks Compatible with All Maj 1500 Pieces 4.6 out of 5 stars $2427 Prime eligible FREE delivery Sat, Oct 31', clickable",
+     "+\t\t\t\t[202] image ''",
+     "-\t\t\t[225] link '2 Pack Portable Charger, Slimmer 10000mAh Power Bank, USB C in&Out Fast Charging Battery Pack, Portable Power Bank for i 2 Pack Portable Charger, Slimmer 10000mAh Power Bank, USB C in&Out Fast Charging Battery Pack, Portable Power Bank for i 2 Pack 4.6 out of 5 stars $1500 FREE delivery Sat, Oct 31 Currently unavailable', clickable",
+     "-\t\t\t\t[227] image '2 Pack Portable Charger, Slimmer 10000mAh Power Bank, USB C in&Out Fast Charging Battery Pack, Portable Power Bank for i'",
+     "+\t\t\t[225] link '2 Pack Portable Charger, Slimmer 10000mAh Power Bank, USB C in&Out Fast Charging Battery Pack, Portable Power Bank for i 2 Pack 4.6 out of 5 stars $1500 FREE delivery Sat, Oct 31 Currently unavailable', clickable",
+     "+\t\t\t\t[227] image ''",
+     "-\t\t\t[248] link '2026 2-Pack 12800mAh Portable Charger with Built in Cables, Travel Essential Battery Pack, 4 Outputs 2 Inputs Slim Power 2026 2-Pack 12800mAh Portable Charger with Built in Cables, Travel Essential Battery Pack, 4 Outputs 2 Inputs Slim Power 2026 2-Pack 4.6 out of 5 stars -13% $2499 List: $28.75 Prime eligible FREE delivery Sat, Oct 31', clickable",
+     "-\t\t\t\t[250] image '2026 2-Pack 12800mAh Portable Charger with Built in Cables, Travel Essential Battery Pack, 4 Outputs 2 Inputs Slim Power'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3391
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__account",
+   "visible": {
+    "lines_clean": 94,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 174,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1788
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__cart",
+   "visible": {
+    "lines_clean": 60,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 70,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     771
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__categories",
+   "visible": {
+    "lines_clean": 67,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 88,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     997
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__checkout",
+   "visible": {
+    "lines_clean": 55,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 64,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__customer-service",
+   "visible": {
+    "lines_clean": 75,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 142,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1587
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__deals",
+   "visible": {
+    "lines_clean": 121,
+    "removed": 8,
+    "added": 8,
+    "examples": [
+     "-[72] link 'charmast Portable Charger with Built in Cables, Power Bank with Cords Wires, Slim 10000mAh Travel Battery Pack 6 Outputs -29% charmast Portable Charger with Built in Cables, Power Bank with Cords Wires, Slim 10000mAh Travel Battery Pack 6 Outputs 4.6 out of 5 stars $20.99 $29.37 You save: $8.38 (29%) prime', clickable, visible",
+     "-\t[74] image 'charmast Portable Charger with Built in Cables, Power Bank with Cords Wires, Slim 10000mAh Travel Battery Pack 6 Outputs', visible",
+     "+[72] link '-29% charmast Portable Charger with Built in Cables, Power Bank with Cords Wires, Slim 10000mAh Travel Battery Pack 6 Outputs 4.6 out of 5 stars $20.99 $29.37 You save: $8.38 (29%) prime', clickable, visible",
+     "+\t[74] image '', visible",
+     "-[91] link 'INIU Portable Charger, Ultra Slim 45W Fast Charging with Attached USB C Cable, Flight-Safe 10000mAh PD Power Bank Batter -28% INIU Portable Charger, Ultra Slim 45W Fast Charging with Attached USB C Cable, Flight-Safe 10000mAh PD Power Bank Batter 4.5 out of 5 stars $19.98 $27.89 You save: $7.91 (28%) prime', clickable, visible",
+     "-\t[93] image 'INIU Portable Charger, Ultra Slim 45W Fast Charging with Attached USB C Cable, Flight-Safe 10000mAh PD Power Bank Batter', visible",
+     "+[91] link '-28% INIU Portable Charger, Ultra Slim 45W Fast Charging with Attached USB C Cable, Flight-Safe 10000mAh PD Power Bank Batter 4.5 out of 5 stars $19.98 $27.89 You save: $7.91 (28%) prime', clickable, visible",
+     "+\t[93] image '', visible",
+     "-[110] link 'vitafusion Adult Gummy Vitamin Supplement for Men, Berry Flavored, A, C, D, E, B6, B12, Daily, 120 Count, 60 Day Supply -28% vitafusion Adult Gummy Vitamin Supplement for Men, Berry Flavored, A, C, D, E, B6, B12, Daily, 120 Count, 60 Day Supply 4.6 out of 5 stars $15.00 $20.93 You save: $5.93 (28%) prime', clickable, visible",
+     "-\t[112] image 'vitafusion Adult Gummy Vitamin Supplement for Men, Berry Flavored, A, C, D, E, B6, B12, Daily, 120 Count, 60 Day Supply', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 484,
+    "removed": 50,
+    "added": 50,
+    "examples": [
+     "-\t[72] link 'charmast Portable Charger with Built in Cables, Power Bank with Cords Wires, Slim 10000mAh Travel Battery Pack 6 Outputs -29% charmast Portable Charger with Built in Cables, Power Bank with Cords Wires, Slim 10000mAh Travel Battery Pack 6 Outputs 4.6 out of 5 stars $20.99 $29.37 You save: $8.38 (29%) prime', clickable, visible",
+     "-\t\t[74] image 'charmast Portable Charger with Built in Cables, Power Bank with Cords Wires, Slim 10000mAh Travel Battery Pack 6 Outputs', visible",
+     "+\t[72] link '-29% charmast Portable Charger with Built in Cables, Power Bank with Cords Wires, Slim 10000mAh Travel Battery Pack 6 Outputs 4.6 out of 5 stars $20.99 $29.37 You save: $8.38 (29%) prime', clickable, visible",
+     "+\t\t[74] image '', visible",
+     "-\t[91] link 'INIU Portable Charger, Ultra Slim 45W Fast Charging with Attached USB C Cable, Flight-Safe 10000mAh PD Power Bank Batter -28% INIU Portable Charger, Ultra Slim 45W Fast Charging with Attached USB C Cable, Flight-Safe 10000mAh PD Power Bank Batter 4.5 out of 5 stars $19.98 $27.89 You save: $7.91 (28%) prime', clickable, visible",
+     "-\t\t[93] image 'INIU Portable Charger, Ultra Slim 45W Fast Charging with Attached USB C Cable, Flight-Safe 10000mAh PD Power Bank Batter', visible",
+     "+\t[91] link '-28% INIU Portable Charger, Ultra Slim 45W Fast Charging with Attached USB C Cable, Flight-Safe 10000mAh PD Power Bank Batter 4.5 out of 5 stars $19.98 $27.89 You save: $7.91 (28%) prime', clickable, visible",
+     "+\t\t[93] image '', visible",
+     "-\t[110] link 'vitafusion Adult Gummy Vitamin Supplement for Men, Berry Flavored, A, C, D, E, B6, B12, Daily, 120 Count, 60 Day Supply -28% vitafusion Adult Gummy Vitamin Supplement for Men, Berry Flavored, A, C, D, E, B6, B12, Daily, 120 Count, 60 Day Supply 4.6 out of 5 stars $15.00 $20.93 You save: $5.93 (28%) prime', clickable, visible",
+     "-\t\t[112] image 'vitafusion Adult Gummy Vitamin Supplement for Men, Berry Flavored, A, C, D, E, B6, B12, Daily, 120 Count, 60 Day Supply', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3263
+    ],
+    "diff_share": 0.00087
+   }
+  },
+  {
+   "page": "route__gift-cards",
+   "visible": {
+    "lines_clean": 48,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 69,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     980
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__home",
+   "visible": {
+    "lines_clean": 95,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 439,
+    "removed": 32,
+    "added": 32,
+    "examples": [
+     "-\t\t\t[200] link 'Double-Wall Insulated Cookware & Bakeware Set of 4 Double-Wall Insulated Cookware & Bakeware Set of 4 Ironstone Home 4.9 out of 5 stars 4000+ bought in past month $4777 Prime eligible FREE delivery Sat, Oct 31', clickable",
+     "-\t\t\t\t[202] image 'Double-Wall Insulated Cookware & Bakeware Set of 4'",
+     "+\t\t\t[200] link 'Double-Wall Insulated Cookware & Bakeware Set of 4 Ironstone Home 4.9 out of 5 stars 4000+ bought in past month $4777 Prime eligible FREE delivery Sat, Oct 31', clickable",
+     "+\t\t\t\t[202] image ''",
+     "-\t\t\t[226] link 'True Wireless Hubs & Adapters Active Noise Cancelling True Wireless Hubs & Adapters Active Noise Cancelling Lumivox 4.8 out of 5 stars 3200+ bought in past month $1689 Prime eligible FREE delivery Sat, Oct 31', clickable",
+     "-\t\t\t\t[228] image 'True Wireless Hubs & Adapters Active Noise Cancelling'",
+     "+\t\t\t[226] link 'True Wireless Hubs & Adapters Active Noise Cancelling Lumivox 4.8 out of 5 stars 3200+ bought in past month $1689 Prime eligible FREE delivery Sat, Oct 31', clickable",
+     "+\t\t\t\t[228] image ''",
+     "-\t\t\t[252] link 'Portable Bluetooth 5.3 Speakers IPX7 Waterproof Portable Bluetooth 5.3 Speakers IPX7 Waterproof Wavefront 4.7 out of 5 stars 3100+ bought in past month $3959 Prime eligible FREE delivery Sat, Oct 31', clickable",
+     "-\t\t\t\t[254] image 'Portable Bluetooth 5.3 Speakers IPX7 Waterproof'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3389
+    ],
+    "diff_share": 0.00105
+   }
+  },
+  {
+   "page": "route__notifications",
+   "visible": {
+    "lines_clean": 72,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 94,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1058
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__orders",
+   "visible": {
+    "lines_clean": 90,
+    "removed": 2,
+    "added": 2,
+    "examples": [
+     "-\t[107] image 'THORNE - Basic Nutrients 2/Day - Comprehensive Daily Multi-Vitamin with Optimal Bioavailability - Vitamin & Mineral Form', visible",
+     "+\t[107] image '', visible",
+     "-\t[113] image 'DeskPro Sticky Notes Variety Pack', visible",
+     "+\t[113] image '', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 265,
+    "removed": 10,
+    "added": 10,
+    "examples": [
+     "-\t\t[107] image 'THORNE - Basic Nutrients 2/Day - Comprehensive Daily Multi-Vitamin with Optimal Bioavailability - Vitamin & Mineral Form', visible",
+     "+\t\t[107] image '', visible",
+     "-\t\t[113] image 'DeskPro Sticky Notes Variety Pack', visible",
+     "+\t\t[113] image '', visible",
+     "-\t\t[157] image 'Daily5 Multivitamin for Women and Men, Clinically Validated Ingredients, Heart, Joints, Circulation, 90 Vegan Capsules'",
+     "+\t\t[157] image ''",
+     "-\t\t[201] image 'MapleLine Classic Non-Stick Small Appliances'",
+     "+\t\t[201] image ''",
+     "-\t\t[207] image 'One Golden Summer'",
+     "+\t\t[207] image ''"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2777
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__product_product_36",
+   "visible": {
+    "lines_clean": 99,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[78] image 'Amazon Basics Bluetooth Headphones True Wireless Earbuds IPX4Waterproof, in-Ear w/Mic,Charging Case, Black', visible",
+     "+\t[78] image '', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 147,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[78] image 'Amazon Basics Bluetooth Headphones True Wireless Earbuds IPX4Waterproof, in-Ear w/Mic,Charging Case, Black', visible",
+     "+\t[78] image '', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1543
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__returns",
+   "visible": {
+    "lines_clean": 73,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[89] image 'MapleLine Classic Non-Stick Small Appliances', visible",
+     "+\t\t[89] image '', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 84,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[89] image 'MapleLine Classic Non-Stick Small Appliances', visible",
+     "+\t\t[89] image '', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     811
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search_q-headphones",
+   "visible": {
+    "lines_clean": 128,
+    "removed": 2,
+    "added": 2,
+    "examples": [
+     "-\t\t[129] image 'Amazon Basics Bluetooth Headphones True Wireless Earbuds IPX4Waterproof, in-Ear w/Mic,Charging Case, Black', visible",
+     "+\t\t[129] image '', visible",
+     "-\t\t[157] image 'Amazon Basics Wired Earbuds with Microphone, In-Ear Headphones, 3.5mm Jack, High Definition Sound, Secure Fit, 4.2 ft Ca', visible",
+     "+\t\t[157] image '', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 360,
+    "removed": 12,
+    "added": 12,
+    "examples": [
+     "-\t\t\t[129] image 'Amazon Basics Bluetooth Headphones True Wireless Earbuds IPX4Waterproof, in-Ear w/Mic,Charging Case, Black', visible",
+     "+\t\t\t[129] image '', visible",
+     "-\t\t\t[157] image 'Amazon Basics Wired Earbuds with Microphone, In-Ear Headphones, 3.5mm Jack, High Definition Sound, Secure Fit, 4.2 ft Ca', visible",
+     "+\t\t\t[157] image '', visible",
+     "-\t\t\t[183] image 'kurdene Wireless Earbuds Bluetooth 5.3 in Ear Buds Light Weight Headphones,Deep Bass Sound,Built in Mics Headset,Clear C'",
+     "+\t\t\t[183] image ''",
+     "-\t\t\t[209] image 'PocBuds Bluetooth Headphones Wireless Earbuds 80hrs Playtime Wireless Charging Case Digital Display Sports Ear Buds with'",
+     "+\t\t\t[209] image ''",
+     "-\t\t\t[235] image 'Portable Bluetooth 5.3 Headphones IPX7 Waterproof'",
+     "+\t\t\t[235] image ''"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3525
+    ],
+    "diff_share": 0.00152
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 59,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 98,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1298
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__wishlist",
+   "visible": {
+    "lines_clean": 59,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 70,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     784
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

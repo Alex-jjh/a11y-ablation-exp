@@ -1,0 +1,332 @@
+{
+ "env": "lms",
+ "kind": "landmarks",
+ "codemod_counts_env": {
+  "env": {
+   "header": 1,
+   "nav": 2,
+   "main": 1,
+   "footer": 0,
+   "aside": 0,
+   "role": 1
+  },
+  "shared": {
+   "header": 2,
+   "nav": 1,
+   "main": 0,
+   "footer": 1,
+   "aside": 1,
+   "role": 1
+  }
+ },
+ "tasks": [
+  {
+   "page": "lms_academic_probation_recovery",
+   "visible": {
+    "lines_clean": 92,
+    "removed": 91,
+    "added": 88,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "-\t[13] navigation 'Main navigation', visible",
+     "-\t\t[14] link 'Dashboard', clickable, visible",
+     "-\t\t[15] link 'Courses', clickable, visible",
+     "-\t\t[16] link 'Calendar', clickable, visible",
+     "-\t\t[17] link 'Peer Reviews', clickable, visible",
+     "-\t\t[18] link 'Messages', clickable, visible",
+     "+[12] link 'LMS Home', clickable, visible",
+     "+[14] link 'Dashboard', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 122,
+    "removed": 121,
+    "added": 118,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "-\t[13] navigation 'Main navigation', visible",
+     "-\t\t[14] link 'Dashboard', clickable, visible",
+     "-\t\t[15] link 'Courses', clickable, visible",
+     "-\t\t[16] link 'Calendar', clickable, visible",
+     "-\t\t[17] link 'Peer Reviews', clickable, visible",
+     "-\t\t[18] link 'Messages', clickable, visible",
+     "+[12] link 'LMS Home', clickable, visible",
+     "+[14] link 'Dashboard', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1182
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "lms_academic_standing_optimization",
+   "visible": {
+    "lines_clean": 75,
+    "removed": 74,
+    "added": 71,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "-\t[13] navigation 'Main navigation', visible",
+     "-\t\t[14] link 'Dashboard', clickable, visible",
+     "-\t\t[15] link 'Courses', clickable, visible",
+     "-\t\t[16] link 'Calendar', clickable, visible",
+     "-\t\t[17] link 'Peer Reviews', clickable, visible",
+     "-\t\t[18] link 'Messages', clickable, visible",
+     "+[12] link 'LMS Home', clickable, visible",
+     "+[14] link 'Dashboard', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 101,
+    "removed": 100,
+    "added": 97,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "-\t[13] navigation 'Main navigation', visible",
+     "-\t\t[14] link 'Dashboard', clickable, visible",
+     "-\t\t[15] link 'Courses', clickable, visible",
+     "-\t\t[16] link 'Calendar', clickable, visible",
+     "-\t\t[17] link 'Peer Reviews', clickable, visible",
+     "-\t\t[18] link 'Messages', clickable, visible",
+     "+[12] link 'LMS Home', clickable, visible",
+     "+[14] link 'Dashboard', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1063
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__calendar",
+   "visible": {
+    "lines_clean": 21,
+    "removed": 21,
+    "added": 18,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "-\t[13] navigation 'Main navigation', visible",
+     "-\t\t[14] link 'Dashboard', clickable, visible",
+     "-\t\t[15] link 'Courses', clickable, visible",
+     "-\t\t[16] link 'Calendar', clickable, visible",
+     "-\t\t[17] link 'Peer Reviews', clickable, visible",
+     "-\t\t[18] link 'Messages', clickable, visible",
+     "-\tStaticText 'Miles Rivera'",
+     "-\tStaticText 'GPA:'"
+    ]
+   },
+   "all": {
+    "lines_clean": 32,
+    "removed": 32,
+    "added": 29,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "-\t[13] navigation 'Main navigation', visible",
+     "-\t\t[14] link 'Dashboard', clickable, visible",
+     "-\t\t[15] link 'Courses', clickable, visible",
+     "-\t\t[16] link 'Calendar', clickable, visible",
+     "-\t\t[17] link 'Peer Reviews', clickable, visible",
+     "-\t\t[18] link 'Messages', clickable, visible",
+     "-\tStaticText 'Miles Rivera'",
+     "-\tStaticText 'GPA:'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__courses",
+   "visible": {
+    "lines_clean": 48,
+    "removed": 48,
+    "added": 45,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "-\t[13] navigation 'Main navigation', visible",
+     "-\t\t[14] link 'Dashboard', clickable, visible",
+     "-\t\t[15] link 'Courses', clickable, visible",
+     "-\t\t[16] link 'Calendar', clickable, visible",
+     "-\t\t[17] link 'Peer Reviews', clickable, visible",
+     "-\t\t[18] link 'Messages', clickable, visible",
+     "-\tStaticText 'Miles Rivera'",
+     "-\tStaticText 'GPA:'"
+    ]
+   },
+   "all": {
+    "lines_clean": 48,
+    "removed": 48,
+    "added": 45,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "-\t[13] navigation 'Main navigation', visible",
+     "-\t\t[14] link 'Dashboard', clickable, visible",
+     "-\t\t[15] link 'Courses', clickable, visible",
+     "-\t\t[16] link 'Calendar', clickable, visible",
+     "-\t\t[17] link 'Peer Reviews', clickable, visible",
+     "-\t\t[18] link 'Messages', clickable, visible",
+     "-\tStaticText 'Miles Rivera'",
+     "-\tStaticText 'GPA:'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__dashboard",
+   "visible": {
+    "lines_clean": 92,
+    "removed": 91,
+    "added": 88,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "-\t[13] navigation 'Main navigation', visible",
+     "-\t\t[14] link 'Dashboard', clickable, visible",
+     "-\t\t[15] link 'Courses', clickable, visible",
+     "-\t\t[16] link 'Calendar', clickable, visible",
+     "-\t\t[17] link 'Peer Reviews', clickable, visible",
+     "-\t\t[18] link 'Messages', clickable, visible",
+     "+[12] link 'LMS Home', clickable, visible",
+     "+[14] link 'Dashboard', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 122,
+    "removed": 121,
+    "added": 118,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "-\t[13] navigation 'Main navigation', visible",
+     "-\t\t[14] link 'Dashboard', clickable, visible",
+     "-\t\t[15] link 'Courses', clickable, visible",
+     "-\t\t[16] link 'Calendar', clickable, visible",
+     "-\t\t[17] link 'Peer Reviews', clickable, visible",
+     "-\t\t[18] link 'Messages', clickable, visible",
+     "+[12] link 'LMS Home', clickable, visible",
+     "+[14] link 'Dashboard', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1182
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__messages",
+   "visible": {
+    "lines_clean": 18,
+    "removed": 18,
+    "added": 14,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "-\t[13] navigation 'Main navigation', visible",
+     "-\t\t[14] link 'Dashboard', clickable, visible",
+     "-\t\t[15] link 'Courses', clickable, visible",
+     "-\t\t[16] link 'Calendar', clickable, visible",
+     "-\t\t[17] link 'Peer Reviews', clickable, visible",
+     "-\t\t[18] link 'Messages', clickable, visible",
+     "-\tStaticText 'Miles Rivera'",
+     "-\tStaticText 'GPA:'"
+    ]
+   },
+   "all": {
+    "lines_clean": 18,
+    "removed": 18,
+    "added": 14,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "-\t[13] navigation 'Main navigation', visible",
+     "-\t\t[14] link 'Dashboard', clickable, visible",
+     "-\t\t[15] link 'Courses', clickable, visible",
+     "-\t\t[16] link 'Calendar', clickable, visible",
+     "-\t\t[17] link 'Peer Reviews', clickable, visible",
+     "-\t\t[18] link 'Messages', clickable, visible",
+     "-\tStaticText 'Miles Rivera'",
+     "-\tStaticText 'GPA:'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__peer-reviews",
+   "visible": {
+    "lines_clean": 14,
+    "removed": 14,
+    "added": 11,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "-\t[13] navigation 'Main navigation', visible",
+     "-\t\t[14] link 'Dashboard', clickable, visible",
+     "-\t\t[15] link 'Courses', clickable, visible",
+     "-\t\t[16] link 'Calendar', clickable, visible",
+     "-\t\t[17] link 'Peer Reviews', clickable, visible",
+     "-\t\t[18] link 'Messages', clickable, visible",
+     "-\tStaticText 'Miles Rivera'",
+     "-\tStaticText 'GPA:'"
+    ]
+   },
+   "all": {
+    "lines_clean": 14,
+    "removed": 14,
+    "added": 11,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "-\t[13] navigation 'Main navigation', visible",
+     "-\t\t[14] link 'Dashboard', clickable, visible",
+     "-\t\t[15] link 'Courses', clickable, visible",
+     "-\t\t[16] link 'Calendar', clickable, visible",
+     "-\t\t[17] link 'Peer Reviews', clickable, visible",
+     "-\t\t[18] link 'Messages', clickable, visible",
+     "-\tStaticText 'Miles Rivera'",
+     "-\tStaticText 'GPA:'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

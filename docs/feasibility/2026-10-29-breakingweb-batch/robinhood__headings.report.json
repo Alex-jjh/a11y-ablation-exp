@@ -1,0 +1,481 @@
+{
+ "env": "robinhood",
+ "kind": "headings",
+ "codemod_counts_env": {
+  "env": {
+   "h1": 18,
+   "h2": 22,
+   "h3": 4,
+   "h4": 0,
+   "h5": 0,
+   "h6": 0,
+   "role": 0,
+   "css-files": 1
+  },
+  "shared": {
+   "h1": 0,
+   "h2": 3,
+   "h3": 3,
+   "h4": 0,
+   "h5": 0,
+   "h6": 0,
+   "role": 0
+  }
+ },
+ "tasks": [
+  {
+   "page": "rh_add_to_watchlist",
+   "visible": {
+    "lines_clean": 61,
+    "removed": 3,
+    "added": 4,
+    "examples": [
+     "-\t[38] heading '$0.00', visible",
+     "+\tStaticText '$'",
+     "+\tStaticText '0.00'",
+     "-\t\t[62] heading 'Stocks', visible",
+     "+\t\tStaticText 'Stocks'",
+     "-\t[65] heading 'Discover Investments', visible",
+     "+\tStaticText 'Discover Investments'"
+    ]
+   },
+   "all": {
+    "lines_clean": 104,
+    "removed": 7,
+    "added": 8,
+    "examples": [
+     "-\t[38] heading '$0.00', visible",
+     "+\tStaticText '$'",
+     "+\tStaticText '0.00'",
+     "-\t\t[62] heading 'Stocks', visible",
+     "+\t\tStaticText 'Stocks'",
+     "-\t\t[65] heading 'Discover Investments', visible",
+     "+\t\tStaticText 'Discover Investments'",
+     "-\t\t[83] heading 'News'",
+     "+\t\tStaticText 'News'",
+     "-\t\t[90] heading 'Markets rally as Fed signals potential rate pause'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1368
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "rh_buy_market_order",
+   "visible": {
+    "lines_clean": 73,
+    "removed": 2,
+    "added": 3,
+    "examples": [
+     "-[38] heading '$4,256.40', visible",
+     "+StaticText '$'",
+     "+StaticText '4,256.40'",
+     "-\t[62] heading 'Stocks', visible",
+     "+\tStaticText 'Stocks'"
+    ]
+   },
+   "all": {
+    "lines_clean": 118,
+    "removed": 7,
+    "added": 8,
+    "examples": [
+     "-\t[38] heading '$4,256.40', visible",
+     "+\tStaticText '$'",
+     "+\tStaticText '4,256.40'",
+     "-\t\t[62] heading 'Stocks', visible",
+     "+\t\tStaticText 'Stocks'",
+     "-\t\t[82] heading 'Discover Investments'",
+     "+\t\tStaticText 'Discover Investments'",
+     "-\t\t[100] heading 'News'",
+     "+\t\tStaticText 'News'",
+     "-\t\t[107] heading 'Markets rally as Fed signals potential rate pause'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1406
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__account",
+   "visible": {
+    "lines_clean": 43,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[37] heading 'Account', visible",
+     "+\tStaticText 'Account'",
+     "-\t\t[39] heading 'Settings', visible",
+     "+\t\tStaticText 'Settings'",
+     "-\t\t[58] heading 'Security', visible",
+     "+\t\tStaticText 'Security'",
+     "-\t\t[66] heading 'Security Log', visible",
+     "+\t\tStaticText 'Security Log'"
+    ]
+   },
+   "all": {
+    "lines_clean": 50,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[37] heading 'Account', visible",
+     "+\tStaticText 'Account'",
+     "-\t\t[39] heading 'Settings', visible",
+     "+\t\tStaticText 'Settings'",
+     "-\t\t[58] heading 'Security', visible",
+     "+\t\tStaticText 'Security'",
+     "-\t\t[66] heading 'Security Log', visible",
+     "+\t\tStaticText 'Security Log'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     822
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__alerts",
+   "visible": {
+    "lines_clean": 32,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[39] heading 'Price Alerts', visible",
+     "+\tStaticText 'Price Alerts'"
+    ]
+   },
+   "all": {
+    "lines_clean": 34,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[39] heading 'Price Alerts', visible",
+     "+\tStaticText 'Price Alerts'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__dividends",
+   "visible": {
+    "lines_clean": 25,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[37] heading 'Dividends', visible",
+     "+\tStaticText 'Dividends'",
+     "-\t\t[39] heading 'Upcoming', visible",
+     "+\t\tStaticText 'Upcoming'",
+     "-\t\t[42] heading 'Paid', visible",
+     "+\t\tStaticText 'Paid'"
+    ]
+   },
+   "all": {
+    "lines_clean": 25,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[37] heading 'Dividends', visible",
+     "+\tStaticText 'Dividends'",
+     "-\t\t[39] heading 'Upcoming', visible",
+     "+\t\tStaticText 'Upcoming'",
+     "-\t\t[42] heading 'Paid', visible",
+     "+\t\tStaticText 'Paid'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__history",
+   "visible": {
+    "lines_clean": 21,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[37] heading 'History', visible",
+     "+\tStaticText 'History'"
+    ]
+   },
+   "all": {
+    "lines_clean": 29,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[37] heading 'History', visible",
+     "+\tStaticText 'History'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__lists",
+   "visible": {
+    "lines_clean": 27,
+    "removed": 2,
+    "added": 2,
+    "examples": [
+     "-\t[38] heading 'Lists', visible",
+     "+\tStaticText 'Lists'",
+     "-\t\t[42] heading 'Tech Stocks', visible",
+     "+\t\tStaticText 'Tech Stocks'"
+    ]
+   },
+   "all": {
+    "lines_clean": 27,
+    "removed": 2,
+    "added": 2,
+    "examples": [
+     "-\t[38] heading 'Lists', visible",
+     "+\tStaticText 'Lists'",
+     "-\t\t[42] heading 'Tech Stocks', visible",
+     "+\t\tStaticText 'Tech Stocks'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__notifications",
+   "visible": {
+    "lines_clean": 23,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[38] heading 'Notifications', visible",
+     "+\tStaticText 'Notifications'"
+    ]
+   },
+   "all": {
+    "lines_clean": 23,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[38] heading 'Notifications', visible",
+     "+\tStaticText 'Notifications'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__options_positions",
+   "visible": {
+    "lines_clean": 30,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[39] heading 'Options Positions', visible",
+     "+\tStaticText 'Options Positions'",
+     "-\t\t[44] heading 'Open Positions', visible",
+     "+\t\tStaticText 'Open Positions'",
+     "-\t\t[47] heading 'Recent Orders', visible",
+     "+\t\tStaticText 'Recent Orders'"
+    ]
+   },
+   "all": {
+    "lines_clean": 30,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[39] heading 'Options Positions', visible",
+     "+\tStaticText 'Options Positions'",
+     "-\t\t[44] heading 'Open Positions', visible",
+     "+\t\tStaticText 'Open Positions'",
+     "-\t\t[47] heading 'Recent Orders', visible",
+     "+\t\tStaticText 'Recent Orders'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__orders",
+   "visible": {
+    "lines_clean": 25,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[37] heading 'Orders', visible",
+     "+\tStaticText 'Orders'"
+    ]
+   },
+   "all": {
+    "lines_clean": 25,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[37] heading 'Orders', visible",
+     "+\tStaticText 'Orders'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__recurring",
+   "visible": {
+    "lines_clean": 22,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[38] heading 'Recurring Investments', visible",
+     "+\tStaticText 'Recurring Investments'"
+    ]
+   },
+   "all": {
+    "lines_clean": 22,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[38] heading 'Recurring Investments', visible",
+     "+\tStaticText 'Recurring Investments'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search",
+   "visible": {
+    "lines_clean": 22,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 22,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__tax",
+   "visible": {
+    "lines_clean": 30,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[37] heading 'Tax Center', visible",
+     "+\tStaticText 'Tax Center'",
+     "-\t\t[42] heading 'Documents', visible",
+     "+\t\tStaticText 'Documents'",
+     "-\t\t[45] heading 'Realized Gains & Losses', visible",
+     "+\t\tStaticText 'Realized Gains & Losses'"
+    ]
+   },
+   "all": {
+    "lines_clean": 31,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[37] heading 'Tax Center', visible",
+     "+\tStaticText 'Tax Center'",
+     "-\t\t[42] heading 'Documents', visible",
+     "+\t\tStaticText 'Documents'",
+     "-\t\t[45] heading 'Realized Gains & Losses', visible",
+     "+\t\tStaticText 'Realized Gains & Losses'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__transfers",
+   "visible": {
+    "lines_clean": 32,
+    "removed": 2,
+    "added": 2,
+    "examples": [
+     "-\t[37] heading 'Transfers', visible",
+     "+\tStaticText 'Transfers'",
+     "-\t\t[50] heading 'Transfer History', visible",
+     "+\t\tStaticText 'Transfer History'"
+    ]
+   },
+   "all": {
+    "lines_clean": 32,
+    "removed": 2,
+    "added": 2,
+    "examples": [
+     "-\t[37] heading 'Transfers', visible",
+     "+\tStaticText 'Transfers'",
+     "-\t\t[50] heading 'Transfer History', visible",
+     "+\t\tStaticText 'Transfer History'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

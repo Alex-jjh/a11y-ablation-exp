@@ -1,0 +1,280 @@
+{
+ "env": "booking",
+ "kind": "tableheads",
+ "codemod_counts_env": {
+  "env": {
+   "th": 6,
+   "css-files": 1
+  },
+  "shared": {
+   "th": 1,
+   "css-files": 1
+  }
+ },
+ "tasks": [
+  {
+   "page": "booking_account_security_and_payment",
+   "visible": {
+    "lines_clean": 42,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 186,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2130
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "booking_add_payment",
+   "visible": {
+    "lines_clean": 42,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 176,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2068
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__account",
+   "visible": {
+    "lines_clean": 67,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 117,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1294
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__deals",
+   "visible": {
+    "lines_clean": 86,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 599,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     4725
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__home",
+   "visible": {
+    "lines_clean": 107,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 415,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2397
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__messages",
+   "visible": {
+    "lines_clean": 53,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 99,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1561
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__notifications",
+   "visible": {
+    "lines_clean": 49,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 139,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1966
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__reviews",
+   "visible": {
+    "lines_clean": 66,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 10761,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     109230
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__saved",
+   "visible": {
+    "lines_clean": 53,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 62,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     919
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search",
+   "visible": {
+    "lines_clean": 136,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 432,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2682
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 42,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 186,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2130
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__trips",
+   "visible": {
+    "lines_clean": 72,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 442,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     4433
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

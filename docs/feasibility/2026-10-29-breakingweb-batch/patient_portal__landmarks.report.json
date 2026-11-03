@@ -1,0 +1,415 @@
+{
+ "env": "patient_portal",
+ "kind": "landmarks",
+ "codemod_counts_env": {
+  "env": {
+   "header": 1,
+   "nav": 2,
+   "main": 1,
+   "footer": 0,
+   "aside": 1,
+   "role": 1
+  },
+  "shared": {
+   "header": 2,
+   "nav": 1,
+   "main": 0,
+   "footer": 1,
+   "aside": 1,
+   "role": 1
+  }
+ },
+ "tasks": [
+  {
+   "page": "pp_cancel_appointment",
+   "visible": {
+    "lines_clean": 120,
+    "removed": 120,
+    "added": 117,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Maya Nguyen'",
+     "-[15] navigation 'Patient Portal Navigation', visible",
+     "-\t[16] link 'Dashboard', clickable, visible",
+     "-\t[17] link 'Appointments', clickable, visible",
+     "-\t[18] link 'Messages', clickable, visible",
+     "-\t[19] link 'Medications', clickable, visible",
+     "-\t[20] link 'Lab Results', clickable, visible",
+     "-\t[21] link 'Referrals', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 158,
+    "removed": 158,
+    "added": 155,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Maya Nguyen'",
+     "-[15] navigation 'Patient Portal Navigation', visible",
+     "-\t[16] link 'Dashboard', clickable, visible",
+     "-\t[17] link 'Appointments', clickable, visible",
+     "-\t[18] link 'Messages', clickable, visible",
+     "-\t[19] link 'Medications', clickable, visible",
+     "-\t[20] link 'Lab Results', clickable, visible",
+     "-\t[21] link 'Referrals', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1051
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "pp_cancel_duplicate_appointments",
+   "visible": {
+    "lines_clean": 120,
+    "removed": 120,
+    "added": 117,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Nina Nguyen'",
+     "-[15] navigation 'Patient Portal Navigation', visible",
+     "-\t[16] link 'Dashboard', clickable, visible",
+     "-\t[17] link 'Appointments', clickable, visible",
+     "-\t[18] link 'Messages', clickable, visible",
+     "-\t[19] link 'Medications', clickable, visible",
+     "-\t[20] link 'Lab Results', clickable, visible",
+     "-\t[21] link 'Referrals', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 175,
+    "removed": 175,
+    "added": 172,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Nina Nguyen'",
+     "-[15] navigation 'Patient Portal Navigation', visible",
+     "-\t[16] link 'Dashboard', clickable, visible",
+     "-\t[17] link 'Appointments', clickable, visible",
+     "-\t[18] link 'Messages', clickable, visible",
+     "-\t[19] link 'Medications', clickable, visible",
+     "-\t[20] link 'Lab Results', clickable, visible",
+     "-\t[21] link 'Referrals', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1126
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__appointments",
+   "visible": {
+    "lines_clean": 120,
+    "removed": 120,
+    "added": 117,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Maya Nguyen'",
+     "-[15] navigation 'Patient Portal Navigation', visible",
+     "-\t[16] link 'Dashboard', clickable, visible",
+     "-\t[17] link 'Appointments', clickable, visible",
+     "-\t[18] link 'Messages', clickable, visible",
+     "-\t[19] link 'Medications', clickable, visible",
+     "-\t[20] link 'Lab Results', clickable, visible",
+     "-\t[21] link 'Referrals', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 158,
+    "removed": 158,
+    "added": 155,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Maya Nguyen'",
+     "-[15] navigation 'Patient Portal Navigation', visible",
+     "-\t[16] link 'Dashboard', clickable, visible",
+     "-\t[17] link 'Appointments', clickable, visible",
+     "-\t[18] link 'Messages', clickable, visible",
+     "-\t[19] link 'Medications', clickable, visible",
+     "-\t[20] link 'Lab Results', clickable, visible",
+     "-\t[21] link 'Referrals', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1051
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__billing",
+   "visible": {
+    "lines_clean": 60,
+    "removed": 60,
+    "added": 57,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Maya Nguyen'",
+     "-[15] navigation 'Patient Portal Navigation', visible",
+     "-\t[16] link 'Dashboard', clickable, visible",
+     "-\t[17] link 'Appointments', clickable, visible",
+     "-\t[18] link 'Messages', clickable, visible",
+     "-\t[19] link 'Medications', clickable, visible",
+     "-\t[20] link 'Lab Results', clickable, visible",
+     "-\t[21] link 'Referrals', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 74,
+    "removed": 74,
+    "added": 70,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Maya Nguyen'",
+     "-[15] navigation 'Patient Portal Navigation', visible",
+     "-\t[16] link 'Dashboard', clickable, visible",
+     "-\t[17] link 'Appointments', clickable, visible",
+     "-\t[18] link 'Messages', clickable, visible",
+     "-\t[19] link 'Medications', clickable, visible",
+     "-\t[20] link 'Lab Results', clickable, visible",
+     "-\t[21] link 'Referrals', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__labs",
+   "visible": {
+    "lines_clean": 21,
+    "removed": 21,
+    "added": 18,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Maya Nguyen'",
+     "-[15] navigation 'Patient Portal Navigation', visible",
+     "-\t[16] link 'Dashboard', clickable, visible",
+     "-\t[17] link 'Appointments', clickable, visible",
+     "-\t[18] link 'Messages', clickable, visible",
+     "-\t[19] link 'Medications', clickable, visible",
+     "-\t[20] link 'Lab Results', clickable, visible",
+     "-\t[21] link 'Referrals', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 24,
+    "removed": 24,
+    "added": 21,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Maya Nguyen'",
+     "-[15] navigation 'Patient Portal Navigation', visible",
+     "-\t[16] link 'Dashboard', clickable, visible",
+     "-\t[17] link 'Appointments', clickable, visible",
+     "-\t[18] link 'Messages', clickable, visible",
+     "-\t[19] link 'Medications', clickable, visible",
+     "-\t[20] link 'Lab Results', clickable, visible",
+     "-\t[21] link 'Referrals', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__medications",
+   "visible": {
+    "lines_clean": 108,
+    "removed": 108,
+    "added": 105,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Maya Nguyen'",
+     "-[15] navigation 'Patient Portal Navigation', visible",
+     "-\t[16] link 'Dashboard', clickable, visible",
+     "-\t[17] link 'Appointments', clickable, visible",
+     "-\t[18] link 'Messages', clickable, visible",
+     "-\t[19] link 'Medications', clickable, visible",
+     "-\t[20] link 'Lab Results', clickable, visible",
+     "-\t[21] link 'Referrals', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 117,
+    "removed": 117,
+    "added": 114,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Maya Nguyen'",
+     "-[15] navigation 'Patient Portal Navigation', visible",
+     "-\t[16] link 'Dashboard', clickable, visible",
+     "-\t[17] link 'Appointments', clickable, visible",
+     "-\t[18] link 'Messages', clickable, visible",
+     "-\t[19] link 'Medications', clickable, visible",
+     "-\t[20] link 'Lab Results', clickable, visible",
+     "-\t[21] link 'Referrals', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     928
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__messages",
+   "visible": {
+    "lines_clean": 20,
+    "removed": 20,
+    "added": 16,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Maya Nguyen'",
+     "-[15] navigation 'Patient Portal Navigation', visible",
+     "-\t[16] link 'Dashboard', clickable, visible",
+     "-\t[17] link 'Appointments', clickable, visible",
+     "-\t[18] link 'Messages', clickable, visible",
+     "-\t[19] link 'Medications', clickable, visible",
+     "-\t[20] link 'Lab Results', clickable, visible",
+     "-\t[21] link 'Referrals', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 27,
+    "removed": 27,
+    "added": 23,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Maya Nguyen'",
+     "-[15] navigation 'Patient Portal Navigation', visible",
+     "-\t[16] link 'Dashboard', clickable, visible",
+     "-\t[17] link 'Appointments', clickable, visible",
+     "-\t[18] link 'Messages', clickable, visible",
+     "-\t[19] link 'Medications', clickable, visible",
+     "-\t[20] link 'Lab Results', clickable, visible",
+     "-\t[21] link 'Referrals', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__profile",
+   "visible": {
+    "lines_clean": 41,
+    "removed": 3,
+    "added": 2,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Maya Nguyen'",
+     "+[12] heading 'Patient Portal', visible",
+     "+StaticText 'Maya Nguyen'"
+    ]
+   },
+   "all": {
+    "lines_clean": 197,
+    "removed": 195,
+    "added": 192,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Maya Nguyen'",
+     "-[15] navigation 'Patient Portal Navigation'",
+     "-\t[16] link 'Dashboard', clickable, visible",
+     "-\t[17] link 'Appointments', clickable, visible",
+     "-\t[18] link 'Messages', clickable, visible",
+     "-\t[19] link 'Medications', clickable, visible",
+     "-\t[20] link 'Lab Results', clickable, visible",
+     "-\t[21] link 'Referrals', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2583
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__referrals",
+   "visible": {
+    "lines_clean": 50,
+    "removed": 50,
+    "added": 47,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Maya Nguyen'",
+     "-[15] navigation 'Patient Portal Navigation', visible",
+     "-\t[16] link 'Dashboard', clickable, visible",
+     "-\t[17] link 'Appointments', clickable, visible",
+     "-\t[18] link 'Messages', clickable, visible",
+     "-\t[19] link 'Medications', clickable, visible",
+     "-\t[20] link 'Lab Results', clickable, visible",
+     "-\t[21] link 'Referrals', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 50,
+    "removed": 50,
+    "added": 47,
+    "examples": [
+     "-[11] banner '', visible",
+     "-\t[12] heading 'Patient Portal', visible",
+     "-\tStaticText 'Maya Nguyen'",
+     "-[15] navigation 'Patient Portal Navigation', visible",
+     "-\t[16] link 'Dashboard', clickable, visible",
+     "-\t[17] link 'Appointments', clickable, visible",
+     "-\t[18] link 'Messages', clickable, visible",
+     "-\t[19] link 'Medications', clickable, visible",
+     "-\t[20] link 'Lab Results', clickable, visible",
+     "-\t[21] link 'Referrals', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

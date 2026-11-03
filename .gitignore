@@ -1,0 +1,21 @@
+# Work folders are anchored to the root: a bare `data` or `build/` would hide any folder of that name
+# anywhere (the v1 repository's .gitignore did exactly that; platform-split proposal F7). Unanchored
+# patterns below are only names that must never be tracked at any depth.
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+/.venv/
+/out/
+/work/
+/runs/
+/packed/
+# never credentials or tokens in this repository (CLAUDE.md)
+.env
+*.token
+.aws/
+# never BreakingWeb code, clones or built bundles (no LICENSE in BreakingWeb; CLAUDE.md)
+/BreakingWeb/
+/_refsrc/
+static/envs/
+node_modules/

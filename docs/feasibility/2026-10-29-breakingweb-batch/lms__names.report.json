@@ -1,0 +1,278 @@
+{
+ "env": "lms",
+ "kind": "names",
+ "codemod_counts_env": {
+  "env": {
+   "aria-label": 38
+  },
+  "shared": {
+   "aria-label": 19
+  }
+ },
+ "tasks": [
+  {
+   "page": "lms_academic_probation_recovery",
+   "visible": {
+    "lines_clean": 92,
+    "removed": 13,
+    "added": 13,
+    "examples": [
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "+\t[12] link 'LMS', clickable, visible",
+     "-\t\t\t\t\t[51] gridcell 'Assignment Analysis Paper 7', visible",
+     "-\t\t\t\t\t\t[52] link 'Assignment Analysis Paper 7', clickable, visible",
+     "+\t\t\t\t\t[51] gridcell 'Analysis Paper 7', visible",
+     "+\t\t\t\t\t\t[52] link 'Analysis Paper 7', clickable, visible",
+     "-\t\t\t\t\t[58] gridcell 'Assignment Discussion Participation 2', visible",
+     "-\t\t\t\t\t\t[59] link 'Assignment Discussion Participation 2', clickable, visible",
+     "+\t\t\t\t\t[58] gridcell 'Discussion Participation 2', visible",
+     "+\t\t\t\t\t\t[59] link 'Discussion Participation 2', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 122,
+    "removed": 17,
+    "added": 17,
+    "examples": [
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "+\t[12] link 'LMS', clickable, visible",
+     "-\t\t\t\t\t[51] gridcell 'Assignment Analysis Paper 7', visible",
+     "-\t\t\t\t\t\t[52] link 'Assignment Analysis Paper 7', clickable, visible",
+     "+\t\t\t\t\t[51] gridcell 'Analysis Paper 7', visible",
+     "+\t\t\t\t\t\t[52] link 'Analysis Paper 7', clickable, visible",
+     "-\t\t\t\t\t[58] gridcell 'Assignment Discussion Participation 2', visible",
+     "-\t\t\t\t\t\t[59] link 'Assignment Discussion Participation 2', clickable, visible",
+     "+\t\t\t\t\t[58] gridcell 'Discussion Participation 2', visible",
+     "+\t\t\t\t\t\t[59] link 'Discussion Participation 2', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1182
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "lms_academic_standing_optimization",
+   "visible": {
+    "lines_clean": 75,
+    "removed": 7,
+    "added": 7,
+    "examples": [
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "+\t[12] link 'LMS', clickable, visible",
+     "-\t\t\t\t\t[51] gridcell 'Assignment Project 4: Integration', visible",
+     "-\t\t\t\t\t\t[52] link 'Assignment Project 4: Integration', clickable, visible",
+     "+\t\t\t\t\t[51] gridcell 'Project 4: Integration', visible",
+     "+\t\t\t\t\t\t[52] link 'Project 4: Integration', clickable, visible",
+     "-\t\t\t\t\t[58] gridcell 'Assignment Final Exam', visible",
+     "-\t\t\t\t\t\t[59] link 'Assignment Final Exam', clickable, visible",
+     "+\t\t\t\t\t[58] gridcell 'Final Exam', visible",
+     "+\t\t\t\t\t\t[59] link 'Final Exam', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 101,
+    "removed": 11,
+    "added": 11,
+    "examples": [
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "+\t[12] link 'LMS', clickable, visible",
+     "-\t\t\t\t\t[51] gridcell 'Assignment Project 4: Integration', visible",
+     "-\t\t\t\t\t\t[52] link 'Assignment Project 4: Integration', clickable, visible",
+     "+\t\t\t\t\t[51] gridcell 'Project 4: Integration', visible",
+     "+\t\t\t\t\t\t[52] link 'Project 4: Integration', clickable, visible",
+     "-\t\t\t\t\t[58] gridcell 'Assignment Final Exam', visible",
+     "-\t\t\t\t\t\t[59] link 'Assignment Final Exam', clickable, visible",
+     "+\t\t\t\t\t[58] gridcell 'Final Exam', visible",
+     "+\t\t\t\t\t\t[59] link 'Final Exam', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1063
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__calendar",
+   "visible": {
+    "lines_clean": 21,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "+\t[12] link 'LMS', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 32,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "+\t[12] link 'LMS', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__courses",
+   "visible": {
+    "lines_clean": 48,
+    "removed": 5,
+    "added": 5,
+    "examples": [
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "+\t[12] link 'LMS', clickable, visible",
+     "-\t[27] link 'Course CS101 Introduction to Computer Science', clickable, visible",
+     "+\t[27] link 'CS101 Introduction to Computer Science Prof. Brooks Spring 2026 -- 3 credits Drop deadline: 2/26/2027 Current grade 44.41%', clickable, visible",
+     "-\t[35] link 'Course MATH201 Linear Algebra', clickable, visible",
+     "+\t[35] link 'MATH201 Linear Algebra Prof. Brooks Spring 2026 -- 4 credits Drop deadline: 2/26/2027 Current grade 91.40%', clickable, visible",
+     "-\t[43] link 'Course ENG102 Academic Writing', clickable, visible",
+     "+\t[43] link 'ENG102 Academic Writing Prof. Chen Spring 2026 -- 3 credits Drop deadline: 2/26/2027 Current grade 74.83%', clickable, visible",
+     "-\t[51] link 'Course STAT301 Probability and Statistics', clickable, visible",
+     "+\t[51] link 'STAT301 Probability and Statistics Prof. Chen Spring 2026 -- 3 credits Drop deadline: 2/26/2027 Current grade 77.05%', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 48,
+    "removed": 5,
+    "added": 5,
+    "examples": [
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "+\t[12] link 'LMS', clickable, visible",
+     "-\t[27] link 'Course CS101 Introduction to Computer Science', clickable, visible",
+     "+\t[27] link 'CS101 Introduction to Computer Science Prof. Brooks Spring 2026 -- 3 credits Drop deadline: 2/26/2027 Current grade 44.41%', clickable, visible",
+     "-\t[35] link 'Course MATH201 Linear Algebra', clickable, visible",
+     "+\t[35] link 'MATH201 Linear Algebra Prof. Brooks Spring 2026 -- 4 credits Drop deadline: 2/26/2027 Current grade 91.40%', clickable, visible",
+     "-\t[43] link 'Course ENG102 Academic Writing', clickable, visible",
+     "+\t[43] link 'ENG102 Academic Writing Prof. Chen Spring 2026 -- 3 credits Drop deadline: 2/26/2027 Current grade 74.83%', clickable, visible",
+     "-\t[51] link 'Course STAT301 Probability and Statistics', clickable, visible",
+     "+\t[51] link 'STAT301 Probability and Statistics Prof. Chen Spring 2026 -- 3 credits Drop deadline: 2/26/2027 Current grade 77.05%', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__dashboard",
+   "visible": {
+    "lines_clean": 92,
+    "removed": 13,
+    "added": 13,
+    "examples": [
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "+\t[12] link 'LMS', clickable, visible",
+     "-\t\t\t\t\t[51] gridcell 'Assignment Analysis Paper 7', visible",
+     "-\t\t\t\t\t\t[52] link 'Assignment Analysis Paper 7', clickable, visible",
+     "+\t\t\t\t\t[51] gridcell 'Analysis Paper 7', visible",
+     "+\t\t\t\t\t\t[52] link 'Analysis Paper 7', clickable, visible",
+     "-\t\t\t\t\t[58] gridcell 'Assignment Discussion Participation 2', visible",
+     "-\t\t\t\t\t\t[59] link 'Assignment Discussion Participation 2', clickable, visible",
+     "+\t\t\t\t\t[58] gridcell 'Discussion Participation 2', visible",
+     "+\t\t\t\t\t\t[59] link 'Discussion Participation 2', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 122,
+    "removed": 17,
+    "added": 17,
+    "examples": [
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "+\t[12] link 'LMS', clickable, visible",
+     "-\t\t\t\t\t[51] gridcell 'Assignment Analysis Paper 7', visible",
+     "-\t\t\t\t\t\t[52] link 'Assignment Analysis Paper 7', clickable, visible",
+     "+\t\t\t\t\t[51] gridcell 'Analysis Paper 7', visible",
+     "+\t\t\t\t\t\t[52] link 'Analysis Paper 7', clickable, visible",
+     "-\t\t\t\t\t[58] gridcell 'Assignment Discussion Participation 2', visible",
+     "-\t\t\t\t\t\t[59] link 'Assignment Discussion Participation 2', clickable, visible",
+     "+\t\t\t\t\t[58] gridcell 'Discussion Participation 2', visible",
+     "+\t\t\t\t\t\t[59] link 'Discussion Participation 2', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1182
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__messages",
+   "visible": {
+    "lines_clean": 18,
+    "removed": 2,
+    "added": 2,
+    "examples": [
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "+\t[12] link 'LMS', clickable, visible",
+     "-\t[29] button 'Compose new message', clickable, visible",
+     "+\t[29] button 'Compose', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 18,
+    "removed": 2,
+    "added": 2,
+    "examples": [
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "+\t[12] link 'LMS', clickable, visible",
+     "-\t[29] button 'Compose new message', clickable, visible",
+     "+\t[29] button 'Compose', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__peer-reviews",
+   "visible": {
+    "lines_clean": 14,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "+\t[12] link 'LMS', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 14,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[12] link 'LMS Home', clickable, visible",
+     "+\t[12] link 'LMS', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

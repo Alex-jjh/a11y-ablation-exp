@@ -1,0 +1,335 @@
+{
+ "env": "patient_portal",
+ "kind": "tableheads",
+ "codemod_counts_env": {
+  "env": {
+   "th": 87,
+   "css-files": 1
+  },
+  "shared": {
+   "th": 1,
+   "css-files": 1
+  }
+ },
+ "tasks": [
+  {
+   "page": "pp_cancel_appointment",
+   "visible": {
+    "lines_clean": 120,
+    "removed": 10,
+    "added": 10,
+    "examples": [
+     "-\t\t\t\t\t[32] columnheader 'ACTIONS', visible",
+     "-\t\t\t\t\t[33] columnheader 'APPOINTMENT ID', visible",
+     "-\t\t\t\t\t[34] columnheader 'DATE/TIME', visible",
+     "-\t\t\t\t\t[35] columnheader 'BOOKED AT', visible",
+     "-\t\t\t\t\t[36] columnheader 'PROVIDER', visible",
+     "-\t\t\t\t\t[37] columnheader 'SPECIALTY', visible",
+     "-\t\t\t\t\t[38] columnheader 'TYPE', visible",
+     "-\t\t\t\t\t[39] columnheader 'STATUS', visible",
+     "-\t\t\t\t\t[40] columnheader 'PRE-AUTH STATUS', visible",
+     "-\t\t\t\t\t[41] columnheader 'REASON', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 158,
+    "removed": 12,
+    "added": 12,
+    "examples": [
+     "-\t\t\t\t\t[32] columnheader 'ACTIONS', visible",
+     "-\t\t\t\t\t[33] columnheader 'APPOINTMENT ID', visible",
+     "-\t\t\t\t\t[34] columnheader 'DATE/TIME', visible",
+     "-\t\t\t\t\t[35] columnheader 'BOOKED AT', visible",
+     "-\t\t\t\t\t[36] columnheader 'PROVIDER', visible",
+     "-\t\t\t\t\t[37] columnheader 'SPECIALTY', visible",
+     "-\t\t\t\t\t[38] columnheader 'TYPE', visible",
+     "-\t\t\t\t\t[39] columnheader 'STATUS', visible",
+     "-\t\t\t\t\t[40] columnheader 'PRE-AUTH STATUS', visible",
+     "-\t\t\t\t\t[41] columnheader 'REASON', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1051
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "pp_cancel_duplicate_appointments",
+   "visible": {
+    "lines_clean": 120,
+    "removed": 10,
+    "added": 10,
+    "examples": [
+     "-\t\t\t\t\t[32] columnheader 'ACTIONS', visible",
+     "-\t\t\t\t\t[33] columnheader 'APPOINTMENT ID', visible",
+     "-\t\t\t\t\t[34] columnheader 'DATE/TIME', visible",
+     "-\t\t\t\t\t[35] columnheader 'BOOKED AT', visible",
+     "-\t\t\t\t\t[36] columnheader 'PROVIDER', visible",
+     "-\t\t\t\t\t[37] columnheader 'SPECIALTY', visible",
+     "-\t\t\t\t\t[38] columnheader 'TYPE', visible",
+     "-\t\t\t\t\t[39] columnheader 'STATUS', visible",
+     "-\t\t\t\t\t[40] columnheader 'PRE-AUTH STATUS', visible",
+     "-\t\t\t\t\t[41] columnheader 'REASON', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 175,
+    "removed": 12,
+    "added": 12,
+    "examples": [
+     "-\t\t\t\t\t[32] columnheader 'ACTIONS', visible",
+     "-\t\t\t\t\t[33] columnheader 'APPOINTMENT ID', visible",
+     "-\t\t\t\t\t[34] columnheader 'DATE/TIME', visible",
+     "-\t\t\t\t\t[35] columnheader 'BOOKED AT', visible",
+     "-\t\t\t\t\t[36] columnheader 'PROVIDER', visible",
+     "-\t\t\t\t\t[37] columnheader 'SPECIALTY', visible",
+     "-\t\t\t\t\t[38] columnheader 'TYPE', visible",
+     "-\t\t\t\t\t[39] columnheader 'STATUS', visible",
+     "-\t\t\t\t\t[40] columnheader 'PRE-AUTH STATUS', visible",
+     "-\t\t\t\t\t[41] columnheader 'REASON', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1126
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__appointments",
+   "visible": {
+    "lines_clean": 120,
+    "removed": 10,
+    "added": 10,
+    "examples": [
+     "-\t\t\t\t\t[32] columnheader 'ACTIONS', visible",
+     "-\t\t\t\t\t[33] columnheader 'APPOINTMENT ID', visible",
+     "-\t\t\t\t\t[34] columnheader 'DATE/TIME', visible",
+     "-\t\t\t\t\t[35] columnheader 'BOOKED AT', visible",
+     "-\t\t\t\t\t[36] columnheader 'PROVIDER', visible",
+     "-\t\t\t\t\t[37] columnheader 'SPECIALTY', visible",
+     "-\t\t\t\t\t[38] columnheader 'TYPE', visible",
+     "-\t\t\t\t\t[39] columnheader 'STATUS', visible",
+     "-\t\t\t\t\t[40] columnheader 'PRE-AUTH STATUS', visible",
+     "-\t\t\t\t\t[41] columnheader 'REASON', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 158,
+    "removed": 12,
+    "added": 12,
+    "examples": [
+     "-\t\t\t\t\t[32] columnheader 'ACTIONS', visible",
+     "-\t\t\t\t\t[33] columnheader 'APPOINTMENT ID', visible",
+     "-\t\t\t\t\t[34] columnheader 'DATE/TIME', visible",
+     "-\t\t\t\t\t[35] columnheader 'BOOKED AT', visible",
+     "-\t\t\t\t\t[36] columnheader 'PROVIDER', visible",
+     "-\t\t\t\t\t[37] columnheader 'SPECIALTY', visible",
+     "-\t\t\t\t\t[38] columnheader 'TYPE', visible",
+     "-\t\t\t\t\t[39] columnheader 'STATUS', visible",
+     "-\t\t\t\t\t[40] columnheader 'PRE-AUTH STATUS', visible",
+     "-\t\t\t\t\t[41] columnheader 'REASON', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1051
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__billing",
+   "visible": {
+    "lines_clean": 60,
+    "removed": 10,
+    "added": 10,
+    "examples": [
+     "-\t\t\t\t\t[34] columnheader 'CLAIM ID', visible",
+     "-\t\t\t\t\t[35] columnheader 'SERVICE DATE', visible",
+     "-\t\t\t\t\t[36] columnheader 'PROVIDER', visible",
+     "-\t\t\t\t\t[37] columnheader 'LINKED APPOINTMENT', visible",
+     "-\t\t\t\t\t[38] columnheader 'PROCEDURE', visible",
+     "-\t\t\t\t\t[39] columnheader 'STATUS', visible",
+     "-\t\t\t\t\t[40] columnheader 'AMOUNT BILLED', visible",
+     "-\t\t\t\t\t[41] columnheader 'INSURANCE COVERED', visible",
+     "-\t\t\t\t\t[42] columnheader 'YOUR RESPONSIBILITY', visible",
+     "-\t\t\t\t\t[43] columnheader 'ACTIONS', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 74,
+    "removed": 10,
+    "added": 10,
+    "examples": [
+     "-\t\t\t\t\t[34] columnheader 'CLAIM ID', visible",
+     "-\t\t\t\t\t[35] columnheader 'SERVICE DATE', visible",
+     "-\t\t\t\t\t[36] columnheader 'PROVIDER', visible",
+     "-\t\t\t\t\t[37] columnheader 'LINKED APPOINTMENT', visible",
+     "-\t\t\t\t\t[38] columnheader 'PROCEDURE', visible",
+     "-\t\t\t\t\t[39] columnheader 'STATUS', visible",
+     "-\t\t\t\t\t[40] columnheader 'AMOUNT BILLED', visible",
+     "-\t\t\t\t\t[41] columnheader 'INSURANCE COVERED', visible",
+     "-\t\t\t\t\t[42] columnheader 'YOUR RESPONSIBILITY', visible",
+     "-\t\t\t\t\t[43] columnheader 'ACTIONS', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__labs",
+   "visible": {
+    "lines_clean": 21,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 24,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__medications",
+   "visible": {
+    "lines_clean": 108,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 117,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     928
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__messages",
+   "visible": {
+    "lines_clean": 20,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 27,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__profile",
+   "visible": {
+    "lines_clean": 41,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 197,
+    "removed": 18,
+    "added": 18,
+    "examples": [
+     "-\t\t\t\t\t[82] columnheader 'PHARMACY ID'",
+     "-\t\t\t\t\t[83] columnheader 'NAME'",
+     "-\t\t\t\t\t[84] columnheader 'ADDRESS'",
+     "-\t\t\t\t\t[85] columnheader 'PHONE'",
+     "-\t\t\t\t\t[86] columnheader 'TYPE'",
+     "-\t\t\t\t\t[87] columnheader 'DISPENSING FEE'",
+     "-\t\t\t\t\t[88] columnheader '90-DAY COST'",
+     "-\t\t\t\t\t[89] columnheader 'DEFAULT'",
+     "-\t\t\t\t\t[90] columnheader 'ACTIONS'",
+     "+\t\t\t\t\t[82] gridcell 'PHARMACY ID'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2583
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__referrals",
+   "visible": {
+    "lines_clean": 50,
+    "removed": 8,
+    "added": 8,
+    "examples": [
+     "-\t\t\t\t\t[32] columnheader 'REFERRAL ID', visible",
+     "-\t\t\t\t\t[33] columnheader 'SPECIALTY', visible",
+     "-\t\t\t\t\t[34] columnheader 'PROVIDER', visible",
+     "-\t\t\t\t\t[35] columnheader 'STATUS', visible",
+     "-\t\t\t\t\t[36] columnheader 'PRIOR AUTH', visible",
+     "-\t\t\t\t\t[37] columnheader 'LINKED APPOINTMENT', visible",
+     "-\t\t\t\t\t[38] columnheader 'EXPIRES', visible",
+     "-\t\t\t\t\t[39] columnheader 'REASON', visible",
+     "+\t\t\t\t\t[32] gridcell 'REFERRAL ID', visible",
+     "+\t\t\t\t\t[33] gridcell 'SPECIALTY', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 50,
+    "removed": 8,
+    "added": 8,
+    "examples": [
+     "-\t\t\t\t\t[32] columnheader 'REFERRAL ID', visible",
+     "-\t\t\t\t\t[33] columnheader 'SPECIALTY', visible",
+     "-\t\t\t\t\t[34] columnheader 'PROVIDER', visible",
+     "-\t\t\t\t\t[35] columnheader 'STATUS', visible",
+     "-\t\t\t\t\t[36] columnheader 'PRIOR AUTH', visible",
+     "-\t\t\t\t\t[37] columnheader 'LINKED APPOINTMENT', visible",
+     "-\t\t\t\t\t[38] columnheader 'EXPIRES', visible",
+     "-\t\t\t\t\t[39] columnheader 'REASON', visible",
+     "+\t\t\t\t\t[32] gridcell 'REFERRAL ID', visible",
+     "+\t\t\t\t\t[33] gridcell 'SPECIALTY', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

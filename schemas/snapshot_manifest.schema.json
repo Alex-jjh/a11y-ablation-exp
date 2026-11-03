@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "a11y-ablation-exp/schemas/snapshot_manifest.schema.json",
+  "title": "snapshot_manifest",
+  "description": "MANIFEST.json of a packed snapshot (zstd tar shards), format echo-data/1 of Echo's echo_data.pack at d96629b. Written by abl_store; abl_store does not interpret meta.",
+  "type": "object",
+  "required": ["format", "name", "created", "source", "code", "compression", "shard_limit_bytes", "totals", "meta", "shards", "files"],
+  "properties": {
+    "format": {"const": "echo-data/1"},
+    "name": {"type": "string"},
+    "created": {"type": "string"},
+    "source": {"type": "string"},
+    "code": {"type": "object", "properties": {"repo": {"type": "string"}, "commit": {"type": ["string", "null"]}, "dirty": {"type": ["boolean", "null"]}}},
+    "compression": {"type": "object"},
+    "shard_limit_bytes": {"type": "integer"},
+    "filters": {"type": "object"},
+    "totals": {"type": "object", "required": ["files", "bytes", "shards", "packed_bytes"]},
+    "meta": {"type": "object", "description": "caller data: series, version, producing script sha256, exclusions"},
+    "shards": {"type": "array", "items": {"type": "object", "required": ["name", "sha256", "size", "files"]}},
+    "files": {"type": "array", "items": {"type": "object", "required": ["path", "size", "sha256", "shard"]}}
+  }
+}

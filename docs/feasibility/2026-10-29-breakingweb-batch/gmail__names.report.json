@@ -1,0 +1,366 @@
+{
+ "env": "gmail",
+ "kind": "names",
+ "codemod_counts_env": {
+  "env": {
+   "aria-label": 62
+  },
+  "shared": {
+   "aria-label": 19
+  }
+ },
+ "tasks": [
+  {
+   "page": "gmail_access_review_audit",
+   "visible": {
+    "lines_clean": 208,
+    "removed": 41,
+    "added": 39,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "+\t[24] button 'Compose', clickable, visible",
+     "-\t\t\t[29] link 'Inbox', clickable, visible",
+     "+\t\t\t[29] link 'Inbox 43', clickable, visible",
+     "-\t\t\t[33] link 'Starred', clickable, visible",
+     "+\t\t\t[33] link 'Starred 0', clickable, visible",
+     "-\t\t\t[37] link 'Sent', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 217,
+    "removed": 43,
+    "added": 41,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "+\t[24] button 'Compose', clickable, visible",
+     "-\t\t\t[29] link 'Inbox', clickable, visible",
+     "+\t\t\t[29] link 'Inbox 43', clickable, visible",
+     "-\t\t\t[33] link 'Starred', clickable, visible",
+     "+\t\t\t[33] link 'Starred 0', clickable, visible",
+     "-\t\t\t[37] link 'Sent', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     758
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "gmail_action_item_extraction",
+   "visible": {
+    "lines_clean": 219,
+    "removed": 41,
+    "added": 39,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "+\t[24] button 'Compose', clickable, visible",
+     "-\t\t\t[29] link 'Inbox', clickable, visible",
+     "+\t\t\t[29] link 'Inbox 47', clickable, visible",
+     "-\t\t\t[33] link 'Starred', clickable, visible",
+     "+\t\t\t[33] link 'Starred 0', clickable, visible",
+     "-\t\t\t[37] link 'Sent', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 229,
+    "removed": 43,
+    "added": 41,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "+\t[24] button 'Compose', clickable, visible",
+     "-\t\t\t[29] link 'Inbox', clickable, visible",
+     "+\t\t\t[29] link 'Inbox 47', clickable, visible",
+     "-\t\t\t[33] link 'Starred', clickable, visible",
+     "+\t\t\t[33] link 'Starred 0', clickable, visible",
+     "-\t\t\t[37] link 'Sent', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     758
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__compose",
+   "visible": {
+    "lines_clean": 55,
+    "removed": 12,
+    "added": 9,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "+\t[24] button 'Compose', clickable, visible",
+     "-\t\t\t[29] link 'Inbox', clickable, visible",
+     "+\t\t\t[29] link 'Inbox 43', clickable, visible",
+     "-\t\t\t[33] link 'Starred', clickable, visible",
+     "+\t\t\t[33] link 'Starred 0', clickable, visible",
+     "-\t\t\t[37] link 'Sent', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 55,
+    "removed": 12,
+    "added": 9,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "+\t[24] button 'Compose', clickable, visible",
+     "-\t\t\t[29] link 'Inbox', clickable, visible",
+     "+\t\t\t[29] link 'Inbox 43', clickable, visible",
+     "-\t\t\t[33] link 'Starred', clickable, visible",
+     "+\t\t\t[33] link 'Starred 0', clickable, visible",
+     "-\t\t\t[37] link 'Sent', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__contacts",
+   "visible": {
+    "lines_clean": 62,
+    "removed": 9,
+    "added": 7,
+    "examples": [
+     "-\t\t[21] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-[25] button 'Compose a new message', clickable, visible",
+     "+\t\t[21] button 'Search', clickable, visible",
+     "+[25] button 'Compose', clickable, visible",
+     "-\t\t[30] link 'Inbox', clickable, visible",
+     "+\t\t[30] link 'Inbox 43', clickable, visible",
+     "-\t\t[34] link 'Starred', clickable, visible",
+     "+\t\t[34] link 'Starred 0', clickable, visible",
+     "-\t\t[38] link 'Sent', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 226,
+    "removed": 59,
+    "added": 57,
+    "examples": [
+     "-\t\t[21] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[21] button 'Search', clickable, visible",
+     "-\t[25] button 'Compose a new message', clickable, visible",
+     "+\t[25] button 'Compose', clickable, visible",
+     "-\t\t\t[30] link 'Inbox', clickable, visible",
+     "+\t\t\t[30] link 'Inbox 43', clickable, visible",
+     "-\t\t\t[34] link 'Starred', clickable, visible",
+     "+\t\t\t[34] link 'Starred 0', clickable, visible",
+     "-\t\t\t[38] link 'Sent', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2414
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__inbox",
+   "visible": {
+    "lines_clean": 208,
+    "removed": 41,
+    "added": 39,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "+\t[24] button 'Compose', clickable, visible",
+     "-\t\t\t[29] link 'Inbox', clickable, visible",
+     "+\t\t\t[29] link 'Inbox 43', clickable, visible",
+     "-\t\t\t[33] link 'Starred', clickable, visible",
+     "+\t\t\t[33] link 'Starred 0', clickable, visible",
+     "-\t\t\t[37] link 'Sent', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 217,
+    "removed": 43,
+    "added": 41,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "+\t[24] button 'Compose', clickable, visible",
+     "-\t\t\t[29] link 'Inbox', clickable, visible",
+     "+\t\t\t[29] link 'Inbox 43', clickable, visible",
+     "-\t\t\t[33] link 'Starred', clickable, visible",
+     "+\t\t\t[33] link 'Starred 0', clickable, visible",
+     "-\t\t\t[37] link 'Sent', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     758
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__labels",
+   "visible": {
+    "lines_clean": 59,
+    "removed": 7,
+    "added": 6,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-[24] button 'Compose a new message', clickable, visible",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "+[24] button 'Compose', clickable, visible",
+     "-\t\t[29] link 'Inbox', clickable, visible",
+     "+\t\t[29] link 'Inbox 43', clickable, visible",
+     "-\t\t[33] link 'Starred', clickable, visible",
+     "+\t\t[33] link 'Starred 0', clickable, visible",
+     "-\t\t[37] link 'Sent', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 223,
+    "removed": 57,
+    "added": 56,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "+\t[24] button 'Compose', clickable, visible",
+     "-\t\t\t[29] link 'Inbox', clickable, visible",
+     "+\t\t\t[29] link 'Inbox 43', clickable, visible",
+     "-\t\t\t[33] link 'Starred', clickable, visible",
+     "+\t\t\t[33] link 'Starred 0', clickable, visible",
+     "-\t\t\t[37] link 'Sent', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2414
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search",
+   "visible": {
+    "lines_clean": 40,
+    "removed": 7,
+    "added": 6,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "+\t[24] button 'Compose', clickable, visible",
+     "-\t\t\t[29] link 'Inbox', clickable, visible",
+     "+\t\t\t[29] link 'Inbox 43', clickable, visible",
+     "-\t\t\t[33] link 'Starred', clickable, visible",
+     "+\t\t\t[33] link 'Starred 0', clickable, visible",
+     "-\t\t\t[37] link 'Sent', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 40,
+    "removed": 7,
+    "added": 6,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "+\t[24] button 'Compose', clickable, visible",
+     "-\t\t\t[29] link 'Inbox', clickable, visible",
+     "+\t\t\t[29] link 'Inbox 43', clickable, visible",
+     "-\t\t\t[33] link 'Starred', clickable, visible",
+     "+\t\t\t[33] link 'Starred 0', clickable, visible",
+     "-\t\t\t[37] link 'Sent', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 106,
+    "removed": 7,
+    "added": 6,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "+\t[24] button 'Compose', clickable, visible",
+     "-\t\t\t[29] link 'Inbox', clickable, visible",
+     "+\t\t\t[29] link 'Inbox 43', clickable, visible",
+     "-\t\t\t[33] link 'Starred', clickable, visible",
+     "+\t\t\t[33] link 'Starred 0', clickable, visible",
+     "-\t\t\t[37] link 'Sent', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 173,
+    "removed": 12,
+    "added": 10,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "+\t[24] button 'Compose', clickable, visible",
+     "-\t\t\t[29] link 'Inbox', clickable, visible",
+     "+\t\t\t[29] link 'Inbox 43', clickable, visible",
+     "-\t\t\t[33] link 'Starred', clickable, visible",
+     "+\t\t\t[33] link 'Starred 0', clickable, visible",
+     "-\t\t\t[37] link 'Sent', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1268
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "a11y-ablation-exp/schemas/observer_note.schema.json",
+  "title": "observer_note",
+  "description": "One observer's coding of one trace in one pass. A separate artefact, never written into the trace. The envelope is defined here; the coding object is the pass A or pass B schema of studies/v2-pilot/trace_observer_prompt.md §3.2 and §3.3, stored verbatim. Draft v0 (READINESS B-5).",
+  "type": "object",
+  "required": ["schema", "trace_id", "trace_sha256", "packet_sha256", "pass", "observer_model", "prompt_sha256", "coding_schema_sha256", "label_shown", "quote_check", "coding"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "observer_note/0"},
+    "trace_id": {"type": "string", "pattern": "^[0-9a-f]{16}$", "description": "opaque id only; never cell_id (D-015)"},
+    "trace_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "packet_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$", "description": "the blinded packet the observer read (host:port masked, D-17)"},
+    "pass": {"enum": ["A", "B"], "description": "A without the evaluator verdict, B with it"},
+    "observer_id": {"enum": ["O1", "O2"]},
+    "observer_model": {"type": "string"},
+    "prompt_sha256": {"type": "string"},
+    "coding_schema_sha256": {"type": "string"},
+    "label_shown": {"const": false, "description": "the cell label is never shown; a note with true is invalid"},
+    "quote_check": {"type": "object", "required": ["passed", "rejected"], "properties": {"passed": {"type": "integer"}, "rejected": {"type": "integer"}, "re_requested": {"type": "boolean"}}},
+    "coding": {"type": "object", "description": "the observer's JSON object, verbatim"},
+    "created_utc": {"type": "string", "format": "date-time"}
+  }
+}

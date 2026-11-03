@@ -1,0 +1,294 @@
+{
+ "env": "booking",
+ "kind": "names",
+ "codemod_counts_env": {
+  "env": {
+   "aria-label": 93
+  },
+  "shared": {
+   "aria-label": 19
+  }
+ },
+ "tasks": [
+  {
+   "page": "booking_account_security_and_payment",
+   "visible": {
+    "lines_clean": 42,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 186,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2130
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "booking_add_payment",
+   "visible": {
+    "lines_clean": 42,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 176,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2068
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__account",
+   "visible": {
+    "lines_clean": 67,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 117,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1294
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__deals",
+   "visible": {
+    "lines_clean": 86,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 599,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     4725
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__home",
+   "visible": {
+    "lines_clean": 107,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 415,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2397
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__messages",
+   "visible": {
+    "lines_clean": 53,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 99,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1561
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__notifications",
+   "visible": {
+    "lines_clean": 49,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 139,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1966
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__reviews",
+   "visible": {
+    "lines_clean": 66,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 10761,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     109230
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__saved",
+   "visible": {
+    "lines_clean": 53,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 62,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     919
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search",
+   "visible": {
+    "lines_clean": 136,
+    "removed": 2,
+    "added": 2,
+    "examples": [
+     "-[166] link 'View Generator London', clickable, visible",
+     "+[166] link \"Generator London Generator London\u2605\u2605 King's Cross, London, United Kingdom1.5 km from center 7.3 Good 11,234 reviews Free WiFi Bar Common areas Genius \u2013 10% off Free cancellation hostel \u00a328 per night See availability\", clickable, visible",
+     "-[194] link 'View Generator Paris', clickable, visible",
+     "+[194] link 'Generator Paris Generator Paris\u2605\u2605 Republique, Paris, France2.0 km from center 7.5 Good 9,876 reviews Free WiFi Bar Shared kitchen Free cancellation hostel \u20ac32 per night See availability', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 432,
+    "removed": 10,
+    "added": 10,
+    "examples": [
+     "-\t[166] link 'View Generator London', clickable, visible",
+     "+\t[166] link \"Generator London Generator London\u2605\u2605 King's Cross, London, United Kingdom1.5 km from center 7.3 Good 11,234 reviews Free WiFi Bar Common areas Genius \u2013 10% off Free cancellation hostel \u00a328 per night See availability\", clickable, visible",
+     "-\t[194] link 'View Generator Paris', clickable, visible",
+     "+\t[194] link 'Generator Paris Generator Paris\u2605\u2605 Republique, Paris, France2.0 km from center 7.5 Good 9,876 reviews Free WiFi Bar Shared kitchen Free cancellation hostel \u20ac32 per night See availability', clickable, visible",
+     "-\t[221] link 'View TOC Hostel Barcelona', clickable",
+     "+\t[221] link 'TOC Hostel Barcelona TOC Hostel Barcelona\u2605\u2605 Eixample, Barcelona, Spain0.3 km from center 7.8 Good 9,876 reviews Pool Bar Free WiFi Shared kitchen Free cancellation hostel \u20ac25 per night See availability', clickable",
+     "-\t[249] link 'View The Yellow Hostel', clickable",
+     "+\t[249] link 'The Yellow Hostel The Yellow Hostel\u2605\u2605 Termini, Rome, Italy1.0 km from center 7.6 Good 9,876 reviews Free WiFi Bar Terrace Genius \u2013 10% off Free cancellation hostel \u20ac25 per night See availability', clickable",
+     "-\t[277] link 'View Generator Barcelona', clickable",
+     "+\t[277] link 'Generator Barcelona Generator Barcelona\u2605\u2605 Gracia, Barcelona, Spain1.5 km from center 7.8 Good 8,765 reviews Free WiFi Bar Terrace Free cancellation hostel \u20ac22 per night See availability', clickable"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2682
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 42,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 186,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2130
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__trips",
+   "visible": {
+    "lines_clean": 72,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 442,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     4433
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

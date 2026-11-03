@@ -1,0 +1,255 @@
+{
+ "env": "gmail",
+ "kind": "headings",
+ "codemod_counts_env": {
+  "env": {
+   "h1": 3,
+   "h2": 4,
+   "h3": 3,
+   "h4": 0,
+   "h5": 0,
+   "h6": 0,
+   "role": 0,
+   "css-files": 1
+  },
+  "shared": {
+   "h1": 0,
+   "h2": 3,
+   "h3": 3,
+   "h4": 0,
+   "h5": 0,
+   "h6": 0,
+   "role": 0
+  }
+ },
+ "tasks": [
+  {
+   "page": "gmail_access_review_audit",
+   "visible": {
+    "lines_clean": 208,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 217,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     758
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "gmail_action_item_extraction",
+   "visible": {
+    "lines_clean": 219,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 229,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     758
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__compose",
+   "visible": {
+    "lines_clean": 55,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[66] heading 'Compose', visible",
+     "+\t\tStaticText 'Compose'"
+    ]
+   },
+   "all": {
+    "lines_clean": 55,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[66] heading 'Compose', visible",
+     "+\t\tStaticText 'Compose'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__contacts",
+   "visible": {
+    "lines_clean": 62,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-[69] heading 'Labels & contacts', visible",
+     "+StaticText 'Labels & contacts'",
+     "-\t[72] heading 'Labels', visible",
+     "+\tStaticText 'Labels'",
+     "-\t\t[75] heading 'Create a label', visible",
+     "+\t\tStaticText 'Create a label'",
+     "-\t[87] heading 'Existing labels', visible",
+     "+\tStaticText 'Existing labels'"
+    ]
+   },
+   "all": {
+    "lines_clean": 226,
+    "removed": 6,
+    "added": 6,
+    "examples": [
+     "-\t[69] heading 'Labels & contacts', visible",
+     "+\tStaticText 'Labels & contacts'",
+     "-\t\t\t[72] heading 'Labels', visible",
+     "+\t\t\tStaticText 'Labels'",
+     "-\t\t\t\t[75] heading 'Create a label', visible",
+     "+\t\t\t\tStaticText 'Create a label'",
+     "-\t\t\t[87] heading 'Existing labels', visible",
+     "+\t\t\tStaticText 'Existing labels'",
+     "-\t\t\t[130] heading 'Contacts'",
+     "+\t\t\tStaticText 'Contacts'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2414
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__inbox",
+   "visible": {
+    "lines_clean": 208,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 217,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     758
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__labels",
+   "visible": {
+    "lines_clean": 59,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-[66] heading 'Labels & contacts', visible",
+     "+StaticText 'Labels & contacts'",
+     "-\t[69] heading 'Labels', visible",
+     "+\tStaticText 'Labels'",
+     "-\t\t[72] heading 'Create a label', visible",
+     "+\t\tStaticText 'Create a label'",
+     "-\t[84] heading 'Existing labels', visible",
+     "+\tStaticText 'Existing labels'"
+    ]
+   },
+   "all": {
+    "lines_clean": 223,
+    "removed": 6,
+    "added": 6,
+    "examples": [
+     "-\t[66] heading 'Labels & contacts', visible",
+     "+\tStaticText 'Labels & contacts'",
+     "-\t\t\t[69] heading 'Labels', visible",
+     "+\t\t\tStaticText 'Labels'",
+     "-\t\t\t\t[72] heading 'Create a label', visible",
+     "+\t\t\t\tStaticText 'Create a label'",
+     "-\t\t\t[84] heading 'Existing labels', visible",
+     "+\t\t\tStaticText 'Existing labels'",
+     "-\t\t\t[127] heading 'Contacts'",
+     "+\t\t\tStaticText 'Contacts'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2414
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search",
+   "visible": {
+    "lines_clean": 40,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 40,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 106,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[65] heading 'Settings', visible",
+     "+\tStaticText 'Settings'"
+    ]
+   },
+   "all": {
+    "lines_clean": 173,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[65] heading 'Settings', visible",
+     "+\tStaticText 'Settings'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1268
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

@@ -1,0 +1,420 @@
+{
+ "env": "reddit",
+ "kind": "landmarks",
+ "codemod_counts_env": {
+  "env": {
+   "header": 1,
+   "nav": 1,
+   "main": 0,
+   "footer": 0,
+   "aside": 2,
+   "role": 1
+  },
+  "shared": {
+   "header": 2,
+   "nav": 1,
+   "main": 0,
+   "footer": 1,
+   "aside": 1,
+   "role": 1
+  }
+ },
+ "tasks": [
+  {
+   "page": "reddit_account_cleanup",
+   "visible": {
+    "lines_clean": 133,
+    "removed": 80,
+    "added": 76,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "all": {
+    "lines_clean": 618,
+    "removed": 101,
+    "added": 97,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     5789
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "reddit_block_and_cleanup",
+   "visible": {
+    "lines_clean": 134,
+    "removed": 80,
+    "added": 76,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "all": {
+    "lines_clean": 611,
+    "removed": 101,
+    "added": 97,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     5492
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__feed",
+   "visible": {
+    "lines_clean": 133,
+    "removed": 80,
+    "added": 76,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "all": {
+    "lines_clean": 618,
+    "removed": 101,
+    "added": 97,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     5789
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__messages",
+   "visible": {
+    "lines_clean": 75,
+    "removed": 40,
+    "added": 37,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "all": {
+    "lines_clean": 108,
+    "removed": 58,
+    "added": 55,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     976
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__notifications",
+   "visible": {
+    "lines_clean": 85,
+    "removed": 40,
+    "added": 37,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "all": {
+    "lines_clean": 103,
+    "removed": 58,
+    "added": 55,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__saved",
+   "visible": {
+    "lines_clean": 102,
+    "removed": 40,
+    "added": 37,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "all": {
+    "lines_clean": 182,
+    "removed": 58,
+    "added": 55,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1436
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search",
+   "visible": {
+    "lines_clean": 46,
+    "removed": 40,
+    "added": 37,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "all": {
+    "lines_clean": 68,
+    "removed": 58,
+    "added": 55,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 67,
+    "removed": 40,
+    "added": 37,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "all": {
+    "lines_clean": 154,
+    "removed": 58,
+    "added": 55,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1603
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__submit",
+   "visible": {
+    "lines_clean": 61,
+    "removed": 40,
+    "added": 37,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "all": {
+    "lines_clean": 82,
+    "removed": 58,
+    "added": 55,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\t[14] image '', visible",
+     "-\t[15] link 'reddit', clickable, visible",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search Reddit', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-\t[22] button 'View your profile', clickable, visible",
+     "-\t\tStaticText 'T'",
+     "-\t\tStaticText 'TechNomad_42'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     794
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

@@ -1,0 +1,382 @@
+{
+ "env": "reddit",
+ "kind": "names",
+ "codemod_counts_env": {
+  "env": {
+   "aria-label": 68
+  },
+  "shared": {
+   "aria-label": 19
+  }
+ },
+ "tasks": [
+  {
+   "page": "reddit_account_cleanup",
+   "visible": {
+    "lines_clean": 133,
+    "removed": 4,
+    "added": 2,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 618,
+    "removed": 6,
+    "added": 4,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible",
+     "-\t\t\t[72] link 'Messages', clickable",
+     "+\t\t\t[72] link 'Messages 2', clickable",
+     "-\t\t\t[76] link 'Notifications', clickable",
+     "+\t\t\t[76] link 'Notifications 3', clickable"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     5789
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "reddit_block_and_cleanup",
+   "visible": {
+    "lines_clean": 134,
+    "removed": 4,
+    "added": 2,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 611,
+    "removed": 6,
+    "added": 4,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible",
+     "-\t\t\t[72] link 'Messages', clickable",
+     "+\t\t\t[72] link 'Messages 3', clickable",
+     "-\t\t\t[76] link 'Notifications', clickable",
+     "+\t\t\t[76] link 'Notifications 3', clickable"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     5492
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__feed",
+   "visible": {
+    "lines_clean": 133,
+    "removed": 4,
+    "added": 2,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 618,
+    "removed": 6,
+    "added": 4,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible",
+     "-\t\t\t[72] link 'Messages', clickable",
+     "+\t\t\t[72] link 'Messages 2', clickable",
+     "-\t\t\t[76] link 'Notifications', clickable",
+     "+\t\t\t[76] link 'Notifications 3', clickable"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     5789
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__messages",
+   "visible": {
+    "lines_clean": 75,
+    "removed": 8,
+    "added": 3,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible",
+     "-[94] button 'Mark all messages as read', clickable, visible",
+     "-\tStaticText 'Mark all read ('",
+     "-\tStaticText '2'",
+     "-\tStaticText ')'"
+    ]
+   },
+   "all": {
+    "lines_clean": 108,
+    "removed": 10,
+    "added": 5,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible",
+     "-\t\t\t[72] link 'Messages', clickable",
+     "+\t\t\t[72] link 'Messages 2', clickable",
+     "-\t\t\t[76] link 'Notifications', clickable",
+     "+\t\t\t[76] link 'Notifications 3', clickable"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     976
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__notifications",
+   "visible": {
+    "lines_clean": 85,
+    "removed": 8,
+    "added": 3,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible",
+     "-[93] button 'Mark all notifications as read', clickable, visible",
+     "-\tStaticText 'Mark all read ('",
+     "-\tStaticText '3'",
+     "-\tStaticText ')'"
+    ]
+   },
+   "all": {
+    "lines_clean": 103,
+    "removed": 10,
+    "added": 5,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible",
+     "-\t\t\t[72] link 'Messages', clickable",
+     "+\t\t\t[72] link 'Messages 2', clickable",
+     "-\t\t\t[76] link 'Notifications', clickable",
+     "+\t\t\t[76] link 'Notifications 3', clickable"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__saved",
+   "visible": {
+    "lines_clean": 102,
+    "removed": 4,
+    "added": 2,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 182,
+    "removed": 6,
+    "added": 4,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible",
+     "-\t\t\t[72] link 'Messages', clickable",
+     "+\t\t\t[72] link 'Messages 2', clickable",
+     "-\t\t\t[76] link 'Notifications', clickable",
+     "+\t\t\t[76] link 'Notifications 3', clickable"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1436
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search",
+   "visible": {
+    "lines_clean": 46,
+    "removed": 4,
+    "added": 2,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 68,
+    "removed": 6,
+    "added": 4,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible",
+     "-\t\t\t[72] link 'Messages', clickable",
+     "+\t\t\t[72] link 'Messages 2', clickable",
+     "-\t\t\t[76] link 'Notifications', clickable",
+     "+\t\t\t[76] link 'Notifications 3', clickable"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 67,
+    "removed": 4,
+    "added": 2,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 154,
+    "removed": 6,
+    "added": 4,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible",
+     "-\t\t\t[72] link 'Messages', clickable",
+     "+\t\t\t[72] link 'Messages 2', clickable",
+     "-\t\t\t[76] link 'Notifications', clickable",
+     "+\t\t\t[76] link 'Notifications 3', clickable"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1603
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__submit",
+   "visible": {
+    "lines_clean": 61,
+    "removed": 4,
+    "added": 2,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 82,
+    "removed": 8,
+    "added": 5,
+    "examples": [
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+\t\t[20] button 'Search', clickable, visible",
+     "-\t[28] button 'Create a new post', clickable, visible",
+     "-\t\tStaticText '+ Create Post'",
+     "+\t[28] button '+ Create Post', clickable, visible",
+     "-\t\t\t[72] link 'Messages', clickable",
+     "+\t\t\t[72] link 'Messages 2', clickable",
+     "-\t\t\t[76] link 'Notifications', clickable",
+     "+\t\t\t[76] link 'Notifications 3', clickable"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     794
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

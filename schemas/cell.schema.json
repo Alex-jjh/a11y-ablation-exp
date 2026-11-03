@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "a11y-ablation-exp/schemas/cell.schema.json",
+  "title": "cell",
+  "description": "One planned episode: harness x model x task x kind x repeat. Built deterministically by abl_run from studies/<study>/design.yaml; the list's sha256 goes into the run manifest. Draft v0.",
+  "type": "object",
+  "required": ["schema", "cell_id", "trace_id", "harness", "model", "region", "env", "task", "kind", "repeat", "bundle_content_sha256", "step_cap"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "cell/0"},
+    "cell_id": {"type": "string", "description": "readable id (task__kind__model__harness__rN); never shown to an observer"},
+    "trace_id": {"type": "string", "pattern": "^[0-9a-f]{16}$", "description": "opaque id: HMAC of cell_id under a per-run salt kept in the run's KEY/. The only id an observer sees (D-015)"},
+    "harness": {"enum": ["h1", "bu"], "description": "h1 = BreakingWeb LLMAgent text agent through the wrapper; bu = stock browser-use"},
+    "model": {"enum": ["us.anthropic.claude-sonnet-5-5", "us.openai.gpt-5.6-sol", "us.anthropic.claude-opus-5-5", "us.anthropic.claude-sonnet-5", "us.openai.gpt-5.6-terra", "us.openai.gpt-5.6-luna"]},
+    "region": {"enum": ["us-west-2", "us-east-2", "us-east-1"]},
+    "env": {"type": "string"},
+    "task": {"type": "string"},
+    "kind": {"type": "string"},
+    "repeat": {"type": "integer", "minimum": 0},
+    "bundle_content_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "step_cap": {"type": "integer", "minimum": 1, "description": "per-task cap (h1_budget.py; D-6)"},
+    "inference": {"type": "object", "description": "reasoning settings sent (D-3) and maxTokens (D-4); no temperature on any call"},
+    "action_interface": {"const": "bedrock_tool_use", "description": "agents act through Bedrock native tool calling for every model (D-013)"}
+  }
+}

@@ -1,0 +1,361 @@
+{
+ "env": "patient_portal",
+ "kind": "headings",
+ "codemod_counts_env": {
+  "env": {
+   "h1": 2,
+   "h2": 8,
+   "h3": 20,
+   "h4": 4,
+   "h5": 0,
+   "h6": 0,
+   "role": 0,
+   "css-files": 1
+  },
+  "shared": {
+   "h1": 0,
+   "h2": 3,
+   "h3": 3,
+   "h4": 0,
+   "h5": 0,
+   "h6": 0,
+   "role": 0
+  }
+ },
+ "tasks": [
+  {
+   "page": "pp_cancel_appointment",
+   "visible": {
+    "lines_clean": 120,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-\t[26] heading 'Appointments', visible",
+     "+\tStaticText 'Appointments'",
+     "-\t\t[28] heading 'Upcoming Appointments', visible",
+     "+\t\tStaticText 'Upcoming Appointments'"
+    ]
+   },
+   "all": {
+    "lines_clean": 158,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-\t[26] heading 'Appointments', visible",
+     "+\tStaticText 'Appointments'",
+     "-\t\t[28] heading 'Upcoming Appointments', visible",
+     "+\t\tStaticText 'Upcoming Appointments'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1051
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "pp_cancel_duplicate_appointments",
+   "visible": {
+    "lines_clean": 120,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-\t[26] heading 'Appointments', visible",
+     "+\tStaticText 'Appointments'",
+     "-\t\t[28] heading 'Upcoming Appointments', visible",
+     "+\t\tStaticText 'Upcoming Appointments'"
+    ]
+   },
+   "all": {
+    "lines_clean": 175,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-\t[26] heading 'Appointments', visible",
+     "+\tStaticText 'Appointments'",
+     "-\t\t[28] heading 'Upcoming Appointments', visible",
+     "+\t\tStaticText 'Upcoming Appointments'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1126
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__appointments",
+   "visible": {
+    "lines_clean": 120,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-\t[26] heading 'Appointments', visible",
+     "+\tStaticText 'Appointments'",
+     "-\t\t[28] heading 'Upcoming Appointments', visible",
+     "+\t\tStaticText 'Upcoming Appointments'"
+    ]
+   },
+   "all": {
+    "lines_clean": 158,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-\t[26] heading 'Appointments', visible",
+     "+\tStaticText 'Appointments'",
+     "-\t\t[28] heading 'Upcoming Appointments', visible",
+     "+\t\tStaticText 'Upcoming Appointments'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1051
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__billing",
+   "visible": {
+    "lines_clean": 60,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-\t[26] heading 'Billing & Claims', visible",
+     "+\tStaticText 'Billing & Claims'",
+     "-\t\t[30] heading 'Claims', visible",
+     "+\t\tStaticText 'Claims'"
+    ]
+   },
+   "all": {
+    "lines_clean": 74,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-\t[26] heading 'Billing & Claims', visible",
+     "+\tStaticText 'Billing & Claims'",
+     "-\t\t[30] heading 'Claims', visible",
+     "+\t\tStaticText 'Claims'",
+     "-\t\t[74] heading 'Summary'",
+     "+\t\tStaticText 'Summary'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__labs",
+   "visible": {
+    "lines_clean": 21,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-\t[26] heading 'Lab Results', visible",
+     "+\tStaticText 'Lab Results'",
+     "-\t\t[28] heading 'Results', visible",
+     "+\t\tStaticText 'Results'"
+    ]
+   },
+   "all": {
+    "lines_clean": 24,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-\t[26] heading 'Lab Results', visible",
+     "+\tStaticText 'Lab Results'",
+     "-\t\t[28] heading 'Results', visible",
+     "+\t\tStaticText 'Results'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__medications",
+   "visible": {
+    "lines_clean": 108,
+    "removed": 6,
+    "added": 12,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-\t[26] heading 'Medications', visible",
+     "+\tStaticText 'Medications'",
+     "-\t\t[28] heading 'Active Prescriptions', visible",
+     "+\t\tStaticText 'Active Prescriptions'",
+     "-\t\t\t[32] heading 'Omeprazole 20mg 20mg', visible",
+     "+\t\t\tStaticText 'Omeprazole 20mg'",
+     "+\t\t\tStaticText ''",
+     "+\t\t\tStaticText '20mg'"
+    ]
+   },
+   "all": {
+    "lines_clean": 117,
+    "removed": 6,
+    "added": 12,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-\t[26] heading 'Medications', visible",
+     "+\tStaticText 'Medications'",
+     "-\t\t[28] heading 'Active Prescriptions', visible",
+     "+\t\tStaticText 'Active Prescriptions'",
+     "-\t\t\t[32] heading 'Omeprazole 20mg 20mg', visible",
+     "+\t\t\tStaticText 'Omeprazole 20mg'",
+     "+\t\t\tStaticText ''",
+     "+\t\t\tStaticText '20mg'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     928
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__messages",
+   "visible": {
+    "lines_clean": 20,
+    "removed": 2,
+    "added": 2,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-\t[26] heading 'Messages', visible",
+     "+\tStaticText 'Messages'"
+    ]
+   },
+   "all": {
+    "lines_clean": 27,
+    "removed": 2,
+    "added": 2,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-\t[26] heading 'Messages', visible",
+     "+\tStaticText 'Messages'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__profile",
+   "visible": {
+    "lines_clean": 41,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-[26] heading 'Profile', visible",
+     "+StaticText 'Profile'",
+     "-\t[28] heading 'Demographics', visible",
+     "+\tStaticText 'Demographics'"
+    ]
+   },
+   "all": {
+    "lines_clean": 197,
+    "removed": 9,
+    "added": 9,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-\t[26] heading 'Profile', visible",
+     "+\tStaticText 'Profile'",
+     "-\t\t[28] heading 'Demographics', visible",
+     "+\t\tStaticText 'Demographics'",
+     "-\t\t[58] heading 'Insurance'",
+     "+\t\tStaticText 'Insurance'",
+     "-\t\t[78] heading 'Pharmacies'",
+     "+\t\tStaticText 'Pharmacies'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2583
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__referrals",
+   "visible": {
+    "lines_clean": 50,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-\t[26] heading 'Referrals', visible",
+     "+\tStaticText 'Referrals'",
+     "-\t\t[28] heading 'Referral List', visible",
+     "+\t\tStaticText 'Referral List'"
+    ]
+   },
+   "all": {
+    "lines_clean": 50,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[12] heading 'Patient Portal', visible",
+     "+\tStaticText 'Patient Portal'",
+     "-\t[26] heading 'Referrals', visible",
+     "+\tStaticText 'Referrals'",
+     "-\t\t[28] heading 'Referral List', visible",
+     "+\t\tStaticText 'Referral List'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

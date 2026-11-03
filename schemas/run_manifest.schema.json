@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "a11y-ablation-exp/schemas/run_manifest.schema.json",
+  "title": "run_manifest",
+  "description": "One run (a set of cells executed together). Written at run start by abl_run, closed at the end; makes the run reproducible and checkable. Draft v0.",
+  "type": "object",
+  "required": ["schema", "run_id", "study", "created_utc", "code", "design_sha256", "cells_sha256", "bundles", "breakingweb", "browser", "models", "unsealed"],
+  "properties": {
+    "schema": {"const": "run_manifest/0"},
+    "run_id": {"type": "string"},
+    "study": {"type": "string", "description": "e.g. v2-pilot"},
+    "created_utc": {"type": "string", "format": "date-time"},
+    "closed_utc": {"type": ["string", "null"]},
+    "code": {"type": "object", "required": ["repo", "commit", "dirty"], "properties": {"repo": {"const": "a11y-ablation-exp"}, "commit": {"type": ["string", "null"]}, "dirty": {"type": ["boolean", "null"]}, "file_sha256": {"type": "object", "description": "codemod, harness wrapper and other registered files"}}},
+    "design_sha256": {"type": "string"},
+    "cells_sha256": {"type": "string"},
+    "bundles": {"type": "array", "items": {"type": "object", "required": ["env", "kind", "content_sha256"]}},
+    "breakingweb": {"type": "object", "required": ["commit"], "properties": {"commit": {"type": "string"}, "allowed_diffs": {"type": "array"}}},
+    "browser": {"type": "object", "properties": {"playwright": {"type": "string"}, "chromium": {"type": "string"}, "browser_use": {"type": "string"}}},
+    "models": {"type": "array", "items": {"type": "object", "required": ["id", "region"]}},
+    "salt_location": {"type": "string", "description": "where the trace_id salt is kept (KEY/, never uploaded with traces)"},
+    "unsealed": {"type": "boolean"},
+    "counts": {"type": "object", "description": "cells planned, done, infra-failed, rerun"}
+  }
+}

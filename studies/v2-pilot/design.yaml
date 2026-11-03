@@ -1,0 +1,1969 @@
+# v2 pilot: machine-readable design
+# Summary: settings, cells, repeats, frozen bundles, checks, stages, analysis family and the frozen 64-task sample with each task's cells.
+# Written 2026-10-30 before any agent run; revised the same day after three reviews (DESIGN.md section 11). Prose: DESIGN.md, PREDICTIONS.md, ANALYSIS.md.
+study: amt-v2-pilot
+version: '2026-10-30'
+status: protocol revised after review (DESIGN.md, Review response); not run; no agent run made
+docs:
+  design: DESIGN.md
+  predictions: PREDICTIONS.md
+  analysis: ANALYSIS.md
+regenerate: python3 scripts/probe/breakingweb/pilot_plan.py all /tmp/amt-syn/pilot (BreakingWeb venv python)
+environment:
+  name: BreakingWeb
+  checkout: ~/.workspace/_refsrc/BreakingWeb
+  release: 052f0f0
+  browser: Chromium 125.0.6422.26 (Playwright 1.44)
+  bind: 127.0.0.1 only
+  license: none; local research use only
+  remote_requests: aborted in every arm
+  page_date: fixed at load (DATE_SHIM as replay.py)
+  seed: backend default per session
+models:
+- id: us.anthropic.claude-opus-5-5
+  region: us-west-2
+  reasoning: adaptive thinking, effort medium, passed by the H1 wrapper and recorded per call (cannot be disabled)
+  temperature: null
+- id: us.openai.gpt-5.6-sol
+  region: us-east-2
+  reasoning: Bedrock default reasoning effort, value recorded per call by the H1 wrapper
+  temperature: null
+aws_profile: codex-DO-NOT-DELETE
+model_rule: only Anthropic and OpenAI GPT-5.6 models on the codex-DO-NOT-DELETE Bedrock profile; never Gemini, Qwen or other providers; published
+  Gemini trajectories used only as recorded reference solutions
+harnesses:
+  bg:
+    name: BrowserGym AXTree text
+    code: 'breakingweb/agent.py LLMAgent through scripts/probe/breakingweb/h1_wrapper.py (to be written in Stage 0; sha256 recorded here before
+      Stage 0r): passes reasoning effort, maxTokens 16384, logs stopReason, usage, effort sent, summary-call failures; no edit to the clone'
+    observation: flatten_axtree_to_str(filter_visible_only=True, filter_with_bid_only=True, with_clickable=True, with_visible=True); text only
+    viewport:
+    - 1280
+    - 720
+    actions: one BrowserGym high-level action per step (bid, chat, infeas)
+    max_tokens: 16384
+    history_trim_est_tokens: 26000
+    step_cap: 1.5 * expected_steps (task YAML)
+    wall_cap_s: 1800
+    yaml_time_limit_used: false
+    wrapper_sha256: TBD (Stage 0)
+  bu:
+    name: stock browser-use 0.13.14
+    code: breakingweb/stock_browseruse_eval.py run_episode, provider bedrock
+    use_vision: true
+    viewport:
+    - 1024
+    - 768
+    max_steps: 60
+    timeout_s: 1200
+    max_actions_per_step: 4
+    envs:
+    - amazon
+    - gmail
+    - patient_portal
+    kinds:
+    - names
+    viewport_note: 1024x768 for every Bedrock model (stock_browseruse_eval.py:946-948); footprint recaptured at 1024x768 in Stage 0
+kinds:
+  landmarks:
+    envs: all
+  headings:
+    envs: all
+  names:
+    envs: all
+    note: aria-label/aria-labelledby removed on every element with an interactive role (codemod widened in Stage 0 if the pre-run residual count
+      is above 0)
+  labels:
+    envs: all
+    note: removes the control's computed name from both sources (label association and control aria-label); label click no longer focuses its
+      control (37 labels); kept as part of the defect
+  alt:
+    envs:
+    - amazon
+    note: no <img> in gmail, lms, patient_portal, reddit, robinhood (identical bundle); booking alt failed the variant gate
+  tableheads:
+    envs:
+    - gmail
+    - lms
+    - patient_portal
+    - booking
+    - robinhood
+    note: booking and robinhood cells only after the task-path gate M2
+cells:
+  clean:
+    type: baseline
+    build: clean
+    repeats:
+      bg: 6
+      bu: 5
+    screening_runs: 2
+    tasks: all sample
+  none:
+    type: negative control
+    build: codemod none (byte-identical to clean), served from its own checkout, backend process and 127.0.0.1 port, started and restarted on
+      the variant schedule
+    repeats:
+      bg: 3
+      bu: 3
+    tasks: all sample
+  kind:
+    type: treatment
+    build: codemod <kind>
+    repeats:
+      bg: 3
+      bu: 3
+    tasks: on-path (primary flag) tasks in kind envs; no off-path cells
+  names+:
+    type: information control (add-back)
+    layer: observation, on the names_tagged build (the names build with each removed aria-label/aria-labelledby kept as data-amt-label/data-amt-labelledby,
+      which is not in the accessibility tree); the H1 wrapper reads the data attributes by bid after each observation
+    rule: 'on every observation line whose element (bid) carries data-amt-label(ledby), the name is set to that value (the clean name, evaluated
+      by the same template at run time); every other line (StaticText exposed by the variant, structure, order) kept from the variant; M3: names_tagged
+      H1 observation byte-identical to names on every replay state, and the restored names equal the clean names'
+    repeats:
+      bg: 3
+    tasks: names on-path (primary)
+  names50:
+    type: dose / graded control
+    layer: observation, on the names_tagged build (the names build with each removed aria-label/aria-labelledby kept as data-amt-label/data-amt-labelledby,
+      which is not in the accessibility tree); the H1 wrapper reads the data attributes by bid after each observation
+    rule: 'names+ applied to a seeded half of the changed elements: restore iff sha256(task|bid|amt-v2-names50) is even'
+    repeats:
+      bg: 3
+    tasks: names on-path (strict)
+  labels~:
+    type: sham
+    build: 'codemod labels_sham: htmlFor removed as in labels; aria-labelledby to the label on controls without aria-label; control aria-labels
+      kept verbatim; gated like a kind (variant_gate, click_effect, replay 3/3, do-nothing) before Stage 1'
+    repeats:
+      bg: 3
+    tasks: labels on-path
+    bundle_sha256_prefix: TBD (Stage 0)
+  machinery_shams:
+    type: sham, checked not run
+    build: headings->div role=heading aria-level; landmarks->div explicit role+label; th->td role=columnheader/rowheader
+    rule: H1 observation byte-identical to clean on every replay state (MH5)
+  pos_info:
+    type: positive control
+    layer: observation (clean build)
+    rule: interactive elements keep role and bid, lose name; StaticText inside them dropped
+    repeats:
+      bg: 2
+    tasks:
+    - amazon_add_single_item
+    - amazon_browse_category
+    - amazon_full_account_setup
+    - amazon_multi_destination_orders
+    - amazon_stale_wishlist_refresh
+    - booking_cancel_and_message
+    - booking_reply_to_hotel
+    - booking_saved_list_to_booking
+    - gmail_create_label
+    - gmail_diagnose_missing_reply
+    - gmail_search_and_star
+    - gmail_star_email
+    - lms_check_assignment_grade
+    - lms_find_missing_assignments
+    - lms_late_assignment_worth
+    - pp_full_care_transition
+    - pp_message_correct_provider
+    - pp_preventive_screening_review
+    - pp_prior_auth_marathon
+    - reddit_save_comments
+    - reddit_search_and_message
+    - rh_cancel_pending_order
+    - rh_deposit_funds
+    - rh_mark_notifications_read
+  pc_break:
+    type: exploratory functional-break anchor (not a must-hold)
+    build: click_effect.py pc_break
+    repeats:
+      bg: 2
+    tasks:
+    - amazon_buy_highest_rated
+    - amazon_delivered_review_chain
+    - amazon_duplicate_order_cleanup
+    - amazon_multi_destination_orders
+    - amazon_price_comparison
+    - amazon_stale_wishlist_refresh
+    - booking_account_security_and_payment
+    - booking_book_family_room
+    - booking_delete_saved_list
+    - booking_find_deal_and_book
+    - booking_modify_and_message
+    - booking_modify_dates
+    - booking_save_property
+    - booking_saved_list_to_booking
+    - booking_settings_overhaul
+    - gmail_forward_email
+    - lms_check_assignment_grade
+    - lms_find_missing_assignments
+    - lms_late_assignment_worth
+    - pp_refill_prescription
+    - reddit_notification_driven_workflow
+    - reddit_notification_triage
+    - reddit_subscribe_subreddit
+    - rh_sell_shares
+  do_nothing:
+    type: negative control
+    llm: false
+    repeats: 1
+    tasks: every task x build
+  fmt_wrap:
+    type: format control
+    layer: observation (clean build)
+    rule: 'under each landmark line that the landmarks variant removes on the same state, insert one nameless `generic` line without bid and indent
+      the landmark''s subtree one more level: the same lines change indentation (by +1 instead of -1), line count changes by +k instead of -k,
+      landmark lines and containment kept; unit-tested on 20 saved observations (M3)'
+    repeats:
+      bg: 3
+    tasks: all sample
+bundles_sha256_prefix:
+  amazon:
+    clean: 759090b03120af5a
+    landmarks: 53ba0d4811259908
+    headings: 0184a42342a3674f
+    names: 00617f2b73a4bde5
+    labels: c8c66132fab2c294
+    alt: 9c9188316eb694ca
+    tableheads: 9072f19c4256767b
+    none: 759090b03120af5a
+    pc_break: eff2070fcc99a792
+  booking:
+    clean: 14e4a7a97061868b
+    landmarks: 181f306e7b048639
+    headings: ecc2a4e8c59e9025
+    names: 6d4cd5fbc70ebe67
+    labels: 73a8847cbf75bf61
+    tableheads: 172aa24536f97b8c
+    none: 14e4a7a97061868b
+    pc_break: 0a430bc68d60e9ff
+  gmail:
+    clean: 7634cb0da104cfb3
+    landmarks: a01ee9ca403ca132
+    headings: 3a80eeb658ed3374
+    names: 3f9075b3e8fd7f10
+    labels: 129535c2410897e4
+    alt: 7634cb0da104cfb3
+    tableheads: bb37708385c04600
+    none: 7634cb0da104cfb3
+    pc_break: c6a18888f794c792
+  lms:
+    clean: fab01d076f58eb14
+    landmarks: dd8107e78e9314fa
+    headings: 384739ab1f68377f
+    names: 172aa27df743ede5
+    labels: dacd357e269280ea
+    alt: fab01d076f58eb14
+    tableheads: 2b7884a5c95d266f
+    none: fab01d076f58eb14
+    pc_break: cd93e408f2b5c02d
+  patient_portal:
+    clean: 5a2e2af83a8f814b
+    landmarks: ea9255237953cad7
+    headings: 432d39bfb0d9cbfe
+    names: 26a16aa3438cc46c
+    labels: 0d5461daf71105ff
+    alt: 5a2e2af83a8f814b
+    tableheads: aab12e2dffd7eeb6
+    none: 5a2e2af83a8f814b
+    pc_break: fcb3daf889ae8f65
+  reddit:
+    clean: 365a1921a7ad805b
+    landmarks: e5952e87af724674
+    headings: 7375b0c06cdcbd15
+    names: 3168d3c08faff6fb
+    labels: 0ef6e9b8a8124fb9
+    alt: 365a1921a7ad805b
+    tableheads: 93fe7a8eb45a8ec3
+    none: 365a1921a7ad805b
+    pc_break: b0fa105fe44108c1
+  robinhood:
+    clean: 9b32d85a8f456887
+    landmarks: 8eafdda957e0e511
+    headings: 4fc532104a38bf26
+    names: 25b47dc257d99070
+    labels: 3bd5eede0888d3b5
+    alt: 9b32d85a8f456887
+    tableheads: f9f88ed3ac856ef4
+    none: 9b32d85a8f456887
+    pc_break: cc6f7a501273e37e
+checks:
+  M1: served bundle hash equals bundles_sha256_prefix; else run excluded and rerun
+  M2: variant-gate rules (DOM, pixel, layout, console, observation) plus the residual count on every replay state of each sample task and every
+    static route, every kind and sham build; fail -> (task, cell) excluded before any agent run
+  M2a: 'variant_check.py with the frozen codemod on the 70-task stratified sample: names and labels agreement >= 98% each; else no names/labels
+    run'
+  M2b: 'exposure from real variants: replay every sample task on the frozen variant bundles, record each acted-on element''s AX name in clean
+    and variant, derive on_primary/on_strict; agreement with the simulated flags >= 98% or the real-variant flags replace them (before Stage 1)'
+  M3: 'delivery: names+ restored lines equal clean names and nothing else differs from the variant; names50 restores exactly the seeded half;
+    labels~ computed name equals clean; machinery shams obs identical; fmt_wrap and pos_info unit tests on 20 observations'
+  M3a: labels~ and names_tagged pass variant_gate.py, click_effect.py, replay.py 3/3 and do-nothing before Stage 1; hashes recorded
+  M4: 'per-step DOM residual probe (every element of the kind, including any interactive role with aria-label for names); logged, never a per-run
+    exclusion; a residual in any run makes the (env, build) a delivery defect: codemod fixed, bundle rebuilt and re-gated, every run of that build
+    rerun (numbered deviation); the original runs analysed as assigned as a sensitivity analysis'
+  M5: realised exposure per run; never an exclusion; agreement with assigned exposure computed on clean and none runs only
+  M6: 'function-equivalence and replay verdicts (applied: booking alt out, booking_profile_update_suite out)'
+  M7: stop reason, refusal, truncation, throttling, usage and effort sent, per call, from the H1 wrapper; API errors after 5 retries = infra failure
+  M8: infra failure -> rerun up to 2 times, then missing; flag cell if >5% missing; bounds analysis (missing as failure, as success) for any cell
+    with missing runs
+  M9: do-nothing must fail; else task leaves that cell
+  M10: 'H1 action feasibility: for each reference action, the clicked element or an ancestor/descendant with the same click effect has a bid in
+    the variant H1 observation of that replay state; tasks failing it for a kind leave that kind''s confirmatory test (PC3-PC6) and are reported
+    as a knock-on subset'
+admission:
+  rule: '>=1 of 2 screening clean runs succeed, per model and harness'
+  screening_runs_reused_as_baseline: false
+  change_rule: 'any change to reasoning setting or step cap after Stage 1 voids Stage 1: new screening runs, new admission list'
+selection:
+  rule: "(fixed 2026-10-30, before any agent run; DESIGN.md section 5)\n  pool   = replay reference set (3/3 clean replays, do-nothing fails)\n\
+    \           AND not hardened AND panel tier A (4-6 of 6 published panel models solved)\n           AND no 'unstable' verdict in any replay\
+    \ cell\n  sample = all pool tasks on-path for tableheads (primary flag), then a stratified\n           random fill by env to N_PILOT, quota\
+    \ proportional to the env's remaining\n           pool, at least 3 per env (or all if fewer); RNG seeded with\n           sha256(\"amt-v2-pilot-2026-10-30\"\
+    ); within an env, tasks are drawn in\n           the RNG's shuffle of the sorted task ids.\n  sealed = pool minus sample (no study-model run\
+    \ on them until the main study)."
+  seed_text: amt-v2-pilot-2026-10-30
+  pool_n: 152
+  sample_n: 64
+  sealed_n: 88
+  sealed_tasks: 'select.json: sealed_tasks'
+  excluded_unstable:
+  - booking_profile_update_suite
+stages:
+- '0: builds and gates (M2, M2a, M2b, M3, M10, labels~ gates), codemod frozen and hashed, H1 wrapper, probes, driver, browser-use footprint at
+  1024x768, simulated-outcome validation on exact strata; dated literature search and close-reads of A11y-CUA and Ersoy2025; licence request to
+  the BreakingWeb authors (no LLM)'
+- '0r: registration: PREDICTIONS.md, ANALYSIS.md, design.yaml frozen, sha256 published with a trusted timestamp (Alex)'
+- '0s: smoke, 4 tier-B tasks outside the pool, 32 runs, not analysed; truncation rate, tokens, latency, summary-call success per model'
+- '0c: only cost, quotas, concurrency, maxTokens (if truncation > 2%), Bedrock region and GPT price may change; anything else is a numbered deviation'
+- '1: screening clean c1-c2 -> admission frozen'
+- '2: all other runs, day-blocked by task, seeded random order within block'
+- '3: analysis as registered'
+stopping:
+- 'rolling window of the last 200 Stage-2 runs with >5% infra or call failures: stop and fix; the fixer sees pooled counts only; fix logged as
+  a timestamped deviation; runs passing M1 kept; before/after-fix slot is a sensitivity covariate'
+- 'Stage 0s: >2% of calls truncated at maxTokens: stop for Alex'
+- 'model screening clean success <30%: stop for Alex'
+- 'running cost >1.5x estimate: stop for Alex'
+- 'any do-nothing pass in a running cell: stop that cell'
+- no stopping on variant outcomes; no variant result read before stage 3
+analysis:
+  estimand: paired drop per task, clean baseline minus cell, probability scale, task-weighted mean over admitted tasks
+  primary_interval: paired task bootstrap, 10000 draws, percentile; strata = envs with >= 5 tasks in the cell, the other envs merged into one
+    stratum (into the smallest stratum if the merged one has < 5); joint draws across cells; t(G-1) interval beside it; if the Stage-0 coverage
+    simulation on the cell's exact strata gives < 92%, the unstratified bootstrap is primary for that cell
+  variance_components: 'per kind: glmm success ~ cell + env + (1|task) + (1|task:cell) on clean plus that kind''s cells, per model and harness;
+    parametric bootstrap intervals; power simulation at the estimate and the 80th percentile (capped at tau 1.0)'
+  band: 'per cell, descriptive: random splits of the clean-bundle runs (4 baseline + 3 none in H1) into the cell''s repeat counts, on the cell''s
+    own task set, bootstrap as the primary interval; none pooled by design'
+  family_F1:
+    tests:
+    - PC1 names strict Opus
+    - PC2 names strict GPT
+    test: 'one-sided bootstrap, H1: drop > 0'
+    correction: Holm
+    alpha: 0.05
+    grading: hit if Holm rejects; miss if the upper 95% bound < 10; else unresolved
+  must_hold:
+  - 'MH1 none vs clean: two-sided test at 0.05 does not reject (sensitivity stated)'
+  - MH2 do-nothing 0
+  - 'MH3 pos_info: one-sided test rejects 0 at 0.05'
+  - MH5 machinery shams obs identical
+  must_hold_alpha: 0.05
+  exploratory: everything else, unadjusted 95% intervals, per-cell band; decisions of ANALYSIS.md section 8 tied to named contrasts
+  equivalence_F2:
+    tests:
+    - PC3 landmarks Opus
+    - PC4 landmarks GPT
+    - PC5 headings Opus
+    - PC6 headings GPT
+    test: TOST against a 10-point margin by the 90% interval
+    correction: none (each a separate claim; the joint claim is an intersection-union test)
+    grading: hit if the upper 90% bound < 10; miss if the lower 90% bound > 10; else unresolved
+  secondary_outcomes:
+  - success without a step-cap or truncation failure
+  - steps to success
+  - step-cap hits, truncations, wall-cap hits per cell
+  - first step where a run diverges from every clean run of the task
+  - wrong-target clicks among the ambiguous set (names strict)
+  - observation tokens per step and history-trim step
+  task_dose_covariate: lines and tokens changed between clean and variant H1 observations over the task's replay states (pre-treatment)
+  contrasts_population: models and harnesses compared on the intersection of admitted tasks (primary)
+size:
+  runs_total: 4718
+  runs_by_harness_cell_both_models:
+    bg/alt: 60
+    bg/clean: 768
+    bg/fmt_wrap: 384
+    bg/headings: 372
+    bg/labels: 276
+    bg/labels~: 276
+    bg/landmarks: 384
+    bg/names: 318
+    bg/names+: 318
+    bg/names50: 144
+    bg/none: 384
+    bg/pc_break: 96
+    bg/pos_info: 96
+    bg/tableheads: 144
+    bu/clean: 320
+    bu/names: 186
+    bu/none: 192
+  cost: cost.json
+  precision: precision.json, power.json, mde_sealed.json (pilot_precision.py)
+tasks:
+  amazon_add_single_item:
+    env: amazon
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - alt
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      alt: 3
+      names+: 3
+      names50: 3
+      fmt_wrap: 3
+      pos_info: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  amazon_browse_category:
+    env: amazon
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - alt
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    - labels
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      alt: 3
+      names+: 3
+      names50: 3
+      labels~: 3
+      fmt_wrap: 3
+      pos_info: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  amazon_buy_highest_rated:
+    env: amazon
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - alt
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    - labels
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      alt: 3
+      names+: 3
+      names50: 3
+      labels~: 3
+      fmt_wrap: 3
+      pc_break: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  amazon_competitor_switchover:
+    env: amazon
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - alt
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      alt: 3
+      names+: 3
+      names50: 3
+      fmt_wrap: 3
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  amazon_delivered_review_chain:
+    env: amazon
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - alt
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      alt: 3
+      names+: 3
+      names50: 3
+      labels~: 3
+      fmt_wrap: 3
+      pc_break: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  amazon_duplicate_order_cleanup:
+    env: amazon
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - alt
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      alt: 3
+      names+: 3
+      names50: 3
+      fmt_wrap: 3
+      pc_break: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  amazon_full_account_setup:
+    env: amazon
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - alt
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      alt: 3
+      names+: 3
+      names50: 3
+      labels~: 3
+      fmt_wrap: 3
+      pos_info: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  amazon_multi_destination_orders:
+    env: amazon
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - alt
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      alt: 3
+      names+: 3
+      names50: 3
+      labels~: 3
+      fmt_wrap: 3
+      pos_info: 2
+      pc_break: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  amazon_price_comparison:
+    env: amazon
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - alt
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    - labels
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      alt: 3
+      names+: 3
+      names50: 3
+      labels~: 3
+      fmt_wrap: 3
+      pc_break: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  amazon_stale_wishlist_refresh:
+    env: amazon
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - alt
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    - labels
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      alt: 3
+      names+: 3
+      names50: 3
+      labels~: 3
+      fmt_wrap: 3
+      pos_info: 2
+      pc_break: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  booking_account_security_and_payment:
+    env: booking
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    - labels
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      names+: 3
+      names50: 3
+      labels~: 3
+      fmt_wrap: 3
+      pc_break: 2
+  booking_book_family_room:
+    env: booking
+    on_primary:
+    - landmarks
+    - headings
+    - labels
+    - alt
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      labels: 3
+      tableheads: 3
+      labels~: 3
+      fmt_wrap: 3
+      pc_break: 2
+  booking_cancel_and_message:
+    env: booking
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - alt
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+      pos_info: 2
+  booking_delete_saved_list:
+    env: booking
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      names+: 3
+      names50: 3
+      fmt_wrap: 3
+      pc_break: 2
+  booking_find_deal_and_book:
+    env: booking
+    on_primary:
+    - landmarks
+    - headings
+    - alt
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      tableheads: 3
+      fmt_wrap: 3
+      pc_break: 2
+  booking_modify_and_message:
+    env: booking
+    on_primary:
+    - landmarks
+    - headings
+    - labels
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      labels: 3
+      labels~: 3
+      fmt_wrap: 3
+      pc_break: 2
+  booking_modify_dates:
+    env: booking
+    on_primary:
+    - landmarks
+    - headings
+    - alt
+    on_strict:
+    - landmarks
+    - headings
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      fmt_wrap: 3
+      pc_break: 2
+  booking_read_message:
+    env: booking
+    on_primary:
+    - landmarks
+    - headings
+    on_strict:
+    - landmarks
+    - headings
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      fmt_wrap: 3
+  booking_reply_to_hotel:
+    env: booking
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - alt
+    on_strict:
+    - landmarks
+    - headings
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+      pos_info: 2
+  booking_save_property:
+    env: booking
+    on_primary:
+    - landmarks
+    - headings
+    - labels
+    - alt
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      labels: 3
+      tableheads: 3
+      labels~: 3
+      fmt_wrap: 3
+      pc_break: 2
+  booking_saved_list_to_booking:
+    env: booking
+    on_primary:
+    - landmarks
+    - headings
+    - alt
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      tableheads: 3
+      fmt_wrap: 3
+      pos_info: 2
+      pc_break: 2
+  booking_settings_overhaul:
+    env: booking
+    on_primary:
+    - landmarks
+    - headings
+    - labels
+    - alt
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      labels: 3
+      labels~: 3
+      fmt_wrap: 3
+      pc_break: 2
+  gmail_compliance_settings_audit:
+    env: gmail
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  gmail_create_label:
+    env: gmail
+    on_primary:
+    - landmarks
+    - headings
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      labels: 3
+      tableheads: 3
+      labels~: 3
+      fmt_wrap: 3
+      pos_info: 2
+    bu:
+      clean: 5
+      none: 3
+  gmail_diagnose_missing_reply:
+    env: gmail
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    on_strict:
+    - landmarks
+    - headings
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+      pos_info: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  gmail_forward_email:
+    env: gmail
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      names+: 3
+      names50: 3
+      labels~: 3
+      fmt_wrap: 3
+      pc_break: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  gmail_schedule_recovery:
+    env: gmail
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    on_strict:
+    - landmarks
+    - headings
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  gmail_search_and_star:
+    env: gmail
+    on_primary:
+    - landmarks
+    - names
+    on_strict:
+    - landmarks
+    - names
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      names: 3
+      names+: 3
+      names50: 3
+      fmt_wrap: 3
+      pos_info: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  gmail_star_email:
+    env: gmail
+    on_primary:
+    - landmarks
+    - names
+    on_strict:
+    - landmarks
+    - names
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      names: 3
+      names+: 3
+      names50: 3
+      fmt_wrap: 3
+      pos_info: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  gmail_thread_version_conflict:
+    env: gmail
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    on_strict:
+    - landmarks
+    - headings
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  gmail_update_contact:
+    env: gmail
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      names50: 3
+      labels~: 3
+      fmt_wrap: 3
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  lms_check_assignment_grade:
+    env: lms
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      tableheads: 3
+      names+: 3
+      fmt_wrap: 3
+      pos_info: 2
+      pc_break: 2
+  lms_find_missing_assignments:
+    env: lms
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+      pos_info: 2
+      pc_break: 2
+  lms_late_assignment_worth:
+    env: lms
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+      pos_info: 2
+      pc_break: 2
+  pp_chronic_disease_setup:
+    env: patient_portal
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  pp_emergency_prep:
+    env: patient_portal
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  pp_full_care_transition:
+    env: patient_portal
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+      pos_info: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  pp_message_correct_provider:
+    env: patient_portal
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+      pos_info: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  pp_preventive_screening_review:
+    env: patient_portal
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+      pos_info: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  pp_prior_auth_marathon:
+    env: patient_portal
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+      pos_info: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  pp_read_lab_result:
+    env: patient_portal
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  pp_reconcile_billing:
+    env: patient_portal
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  pp_refill_prescription:
+    env: patient_portal
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      names+: 3
+      names50: 3
+      fmt_wrap: 3
+      pc_break: 2
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  pp_schedule_new_specialist:
+    env: patient_portal
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  pp_setup_telehealth:
+    env: patient_portal
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      names50: 3
+      labels~: 3
+      fmt_wrap: 3
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  pp_treatment_cost_comparison:
+    env: patient_portal
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  pp_view_insurance:
+    env: patient_portal
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+    bu:
+      clean: 5
+      none: 3
+      names: 3
+  reddit_inbox_read_only:
+    env: reddit
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    on_strict:
+    - landmarks
+    - headings
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      names+: 3
+      fmt_wrap: 3
+  reddit_notification_driven_workflow:
+    env: reddit
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+      pc_break: 2
+  reddit_notification_triage:
+    env: reddit
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    on_strict:
+    - landmarks
+    - headings
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+      pc_break: 2
+  reddit_save_comments:
+    env: reddit
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      names+: 3
+      names50: 3
+      fmt_wrap: 3
+      pos_info: 2
+  reddit_save_from_feed:
+    env: reddit
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    on_strict:
+    - landmarks
+    - headings
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      names+: 3
+      fmt_wrap: 3
+  reddit_search_and_message:
+    env: reddit
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    on_strict:
+    - landmarks
+    - headings
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+      pos_info: 2
+  reddit_subscribe_subreddit:
+    env: reddit
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    on_strict:
+    - landmarks
+    - headings
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      names+: 3
+      fmt_wrap: 3
+      pc_break: 2
+  reddit_update_settings:
+    env: reddit
+    on_primary:
+    - landmarks
+    - headings
+    - labels
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      labels: 3
+      labels~: 3
+      fmt_wrap: 3
+  rh_buy_market_order:
+    env: robinhood
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+  rh_cancel_pending_order:
+    env: robinhood
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      names+: 3
+      names50: 3
+      fmt_wrap: 3
+      pos_info: 2
+  rh_check_buying_power:
+    env: robinhood
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+  rh_cost_basis_reconciliation:
+    env: robinhood
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      names50: 3
+      labels~: 3
+      fmt_wrap: 3
+  rh_deposit_funds:
+    env: robinhood
+    on_primary:
+    - landmarks
+    - headings
+    - labels
+    on_strict:
+    - landmarks
+    - headings
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      labels: 3
+      labels~: 3
+      fmt_wrap: 3
+      pos_info: 2
+  rh_mark_notifications_read:
+    env: robinhood
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      names+: 3
+      names50: 3
+      fmt_wrap: 3
+      pos_info: 2
+  rh_security_audit:
+    env: robinhood
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      names50: 3
+      labels~: 3
+      fmt_wrap: 3
+  rh_sell_shares:
+    env: robinhood
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    on_strict:
+    - landmarks
+    - headings
+    - labels
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      names+: 3
+      labels~: 3
+      fmt_wrap: 3
+      pc_break: 2
+  rh_set_price_alert:
+    env: robinhood
+    on_primary:
+    - landmarks
+    - headings
+    - names
+    - labels
+    - tableheads
+    on_strict:
+    - landmarks
+    - headings
+    - names
+    - tableheads
+    bg:
+      clean: 6
+      none: 3
+      landmarks: 3
+      headings: 3
+      names: 3
+      labels: 3
+      tableheads: 3
+      names+: 3
+      names50: 3
+      labels~: 3
+      fmt_wrap: 3
+held_out_models_proposed:
+- us.anthropic.claude-sonnet-5
+- us.openai.gpt-5.6-terra
+- us.openai.gpt-5.6-luna
+codemod:
+  path: scripts/probe/breakingweb/codemod.py
+  sha256_current: 02b3190ff81d153f8ceade194f6076f0adb093273298a7772ca2e7347c7f8045
+  sha256_frozen: TBD (Stage 0, after variant_check >= 98% and the names widening); every bundle hash below is rebuilt from it
+schedule:
+  blocking: each task's full run set (all cells, both models, both harnesses) runs within one local calendar day; tasks assigned to day blocks
+    at random; order within a block seeded random
+  midnight_rule: no run starts in the 30 minutes before local midnight
+  concurrency: 8
+bundles_sha256_prefix_pending:
+  names_tagged: TBD (Stage 0)
+  labels~: TBD (Stage 0)
+  none_checkout: same hash as clean, own checkout/process/port

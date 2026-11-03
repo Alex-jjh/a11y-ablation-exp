@@ -1,0 +1,77 @@
+{
+ "assumptions": {
+  "chars_per_token": 3.3,
+  "system_tokens": 700,
+  "history_cap_tokens_est": 26000,
+  "est_chars_per_token": 2.5,
+  "clean_success": 0.7,
+  "extra_steps_success": 3,
+  "output_tokens_per_step": {
+   "us.anthropic.claude-opus-5-5": 600,
+   "us.openai.gpt-5.6-sol": 900
+  },
+  "price_per_mtok": {
+   "us.anthropic.claude-opus-5-5": [
+    4.0,
+    20.0
+   ],
+   "us.openai.gpt-5.6-sol": [
+    4.0,
+    20.0
+   ]
+  },
+  "bu_input_tokens_per_step": 11000,
+  "bu_steps_success_factor": 1.0,
+  "bu_steps_fail": 30
+ },
+ "obs_tokens_per_env": {
+  "amazon": 961,
+  "booking": 735,
+  "gmail": 1704,
+  "lms": 557,
+  "patient_portal": 1006,
+  "reddit": 1078,
+  "robinhood": 368
+ },
+ "mean_per_run": {
+  "bg_steps": 15.8,
+  "bg_input_tokens": 172739,
+  "bg_step_cap": 23.4,
+  "bu_steps": 14.4
+ },
+ "by_harness_model": {
+  "bg/us.anthropic.claude-opus-5-5": {
+   "runs": 2010,
+   "steps": 33174,
+   "input_tokens": 370719433,
+   "output_tokens": 19904580,
+   "usd": 1881
+  },
+  "bg/us.openai.gpt-5.6-sol": {
+   "runs": 2010,
+   "steps": 33174,
+   "input_tokens": 370719433,
+   "output_tokens": 29856870,
+   "usd": 2080
+  },
+  "bu/us.anthropic.claude-opus-5-5": {
+   "runs": 349,
+   "steps": 5383,
+   "input_tokens": 59214100,
+   "output_tokens": 3229860,
+   "usd": 301
+  },
+  "bu/us.openai.gpt-5.6-sol": {
+   "runs": 349,
+   "steps": 5383,
+   "input_tokens": 59214100,
+   "output_tokens": 4844790,
+   "usd": 334
+  }
+ },
+ "usd_total": 4596,
+ "usd_range_x0.5_x2": [
+  2298,
+  9192
+ ]
+}

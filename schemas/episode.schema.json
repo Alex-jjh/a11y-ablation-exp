@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "a11y-ablation-exp/schemas/episode.schema.json",
+  "title": "episode",
+  "description": "One run of one cell: the immutable trace (trace.json). Written once by abl_traces; never edited afterwards (observer output is a separate observer_note). Draft v0; the 2026-11-02 h1_wrapper.py trace.json is its first instance.",
+  "type": "object",
+  "required": ["schema", "run_id", "cell_id", "trace_id", "harness", "env", "task", "kind", "model", "region", "bundle_content_sha256", "started_utc", "ended_utc", "end_reason", "outcome", "steps"],
+  "properties": {
+    "schema": {"const": "episode/0"},
+    "run_id": {"type": "string"},
+    "cell_id": {"type": "string"},
+    "trace_id": {"type": "string", "pattern": "^[0-9a-f]{16}$"},
+    "harness": {"enum": ["h1", "bu"]},
+    "env": {"type": "string"},
+    "task": {"type": "string"},
+    "kind": {"type": "string"},
+    "model": {"type": "string"},
+    "region": {"type": "string"},
+    "seed": {"type": ["integer", "null"]},
+    "repeat": {"type": "integer"},
+    "bundle_content_sha256": {"type": "string"},
+    "goal": {"type": "string"},
+    "started_utc": {"type": "string", "format": "date-time"},
+    "ended_utc": {"type": "string", "format": "date-time"},
+    "end_reason": {"enum": ["agent_done", "step_cap", "step_timeout", "harness_error", "call_error", "refusal"]},
+    "failure_kind": {"enum": [null, "infra", "cap", "truncated", "refusal", "agent"], "description": "DESIGN M1, M7; infra failures are rerun, not scored"},
+    "outcome": {"type": "object", "required": ["success", "score", "source"], "properties": {"success": {"type": "boolean"}, "score": {"type": "number"}, "source": {"type": "string", "description": "the forced backend evaluation"}, "checks": {"type": "array"}, "negative_checks": {"type": "array"}}},
+    "checks": {"type": "object", "description": "run-integrity checks: served bundle equals manifest, Date shim, remote requests aborted, summary-call failures, truncated calls, temperature never sent"},
+    "tokens": {"type": "object"},
+    "steps": {"type": "array", "items": {"$ref": "step.schema.json"}}
+  }
+}

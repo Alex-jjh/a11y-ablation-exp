@@ -1,0 +1,376 @@
+{
+ "env": "gmail",
+ "kind": "landmarks",
+ "codemod_counts_env": {
+  "env": {
+   "header": 4,
+   "nav": 2,
+   "main": 6,
+   "footer": 1,
+   "aside": 0,
+   "role": 1
+  },
+  "shared": {
+   "header": 2,
+   "nav": 1,
+   "main": 0,
+   "footer": 1,
+   "aside": 1,
+   "role": 1
+  }
+ },
+ "tasks": [
+  {
+   "page": "gmail_access_review_audit",
+   "visible": {
+    "lines_clean": 208,
+    "removed": 208,
+    "added": 204,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\tStaticText 'Gmail'",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search mail', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-[23] navigation 'Gmail navigation', visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "-\t[26] complementary 'Gmail navigation', visible",
+     "-\t\t[27] region 'main', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 217,
+    "removed": 217,
+    "added": 213,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\tStaticText 'Gmail'",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search mail', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-[23] navigation 'Gmail navigation', visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "-\t[26] complementary 'Gmail navigation', visible",
+     "-\t\t[27] region 'main', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     758
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "gmail_action_item_extraction",
+   "visible": {
+    "lines_clean": 219,
+    "removed": 219,
+    "added": 215,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\tStaticText 'Gmail'",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search mail', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-[23] navigation 'Gmail navigation', visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "-\t[26] complementary 'Gmail navigation', visible",
+     "-\t\t[27] region 'main', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 229,
+    "removed": 229,
+    "added": 225,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\tStaticText 'Gmail'",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search mail', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-[23] navigation 'Gmail navigation', visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "-\t[26] complementary 'Gmail navigation', visible",
+     "-\t\t[27] region 'main', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     758
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__compose",
+   "visible": {
+    "lines_clean": 55,
+    "removed": 55,
+    "added": 51,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\tStaticText 'Gmail'",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search mail', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-[23] navigation 'Gmail navigation', visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "-\t[26] complementary 'Gmail navigation', visible",
+     "-\t\t[27] region 'main', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 55,
+    "removed": 55,
+    "added": 51,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\tStaticText 'Gmail'",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search mail', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-[23] navigation 'Gmail navigation', visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "-\t[26] complementary 'Gmail navigation', visible",
+     "-\t\t[27] region 'main', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__contacts",
+   "visible": {
+    "lines_clean": 62,
+    "removed": 32,
+    "added": 30,
+    "examples": [
+     "-[13] banner '', visible",
+     "-\tStaticText 'Gmail'",
+     "-\t[18] search '', visible",
+     "-\t\t[20] textbox 'Search mail', clickable, visible",
+     "-\t\t[21] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+StaticText 'Gmail'",
+     "+[18] Section '', visible",
+     "+\t[20] textbox 'Search mail', clickable, visible",
+     "+\t[21] button 'Run search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 226,
+    "removed": 224,
+    "added": 220,
+    "examples": [
+     "-[13] banner '', visible",
+     "-\tStaticText 'Gmail'",
+     "-\t[18] search '', visible",
+     "-\t\t[20] textbox 'Search mail', clickable, visible",
+     "-\t\t[21] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-[24] navigation 'Gmail navigation'",
+     "-\t[25] button 'Compose a new message', clickable, visible",
+     "-\t[27] complementary 'Gmail navigation', visible",
+     "-\t\t[28] region 'main', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2414
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__inbox",
+   "visible": {
+    "lines_clean": 208,
+    "removed": 208,
+    "added": 204,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\tStaticText 'Gmail'",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search mail', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-[23] navigation 'Gmail navigation', visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "-\t[26] complementary 'Gmail navigation', visible",
+     "-\t\t[27] region 'main', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 217,
+    "removed": 217,
+    "added": 213,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\tStaticText 'Gmail'",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search mail', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-[23] navigation 'Gmail navigation', visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "-\t[26] complementary 'Gmail navigation', visible",
+     "-\t\t[27] region 'main', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     758
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__labels",
+   "visible": {
+    "lines_clean": 59,
+    "removed": 31,
+    "added": 29,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\tStaticText 'Gmail'",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search mail', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "+StaticText 'Gmail'",
+     "+[17] Section '', visible",
+     "+\t[19] textbox 'Search mail', clickable, visible",
+     "+\t[20] button 'Run search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 223,
+    "removed": 223,
+    "added": 219,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\tStaticText 'Gmail'",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search mail', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-[23] navigation 'Gmail navigation'",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "-\t[26] complementary 'Gmail navigation', visible",
+     "-\t\t[27] region 'main', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2414
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search",
+   "visible": {
+    "lines_clean": 40,
+    "removed": 40,
+    "added": 36,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\tStaticText 'Gmail'",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search mail', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-[23] navigation 'Gmail navigation', visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "-\t[26] complementary 'Gmail navigation', visible",
+     "-\t\t[27] region 'main', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 40,
+    "removed": 40,
+    "added": 36,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\tStaticText 'Gmail'",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search mail', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-[23] navigation 'Gmail navigation', visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "-\t[26] complementary 'Gmail navigation', visible",
+     "-\t\t[27] region 'main', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 106,
+    "removed": 106,
+    "added": 101,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\tStaticText 'Gmail'",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search mail', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-[23] navigation 'Gmail navigation', visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "-\t[26] complementary 'Gmail navigation', visible",
+     "-\t\t[27] region 'main', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 173,
+    "removed": 173,
+    "added": 168,
+    "examples": [
+     "-[12] banner '', visible",
+     "-\tStaticText 'Gmail'",
+     "-\t[17] search '', visible",
+     "-\t\t[19] textbox 'Search mail', clickable, visible",
+     "-\t\t[20] button 'Run search', clickable, visible",
+     "-\t\t\tStaticText 'Search'",
+     "-[23] navigation 'Gmail navigation', visible",
+     "-\t[24] button 'Compose a new message', clickable, visible",
+     "-\t[26] complementary 'Gmail navigation', visible",
+     "-\t\t[27] region 'main', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1268
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

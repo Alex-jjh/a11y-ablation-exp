@@ -1,0 +1,720 @@
+{
+ "env": "amazon",
+ "kind": "names",
+ "codemod_counts_env": {
+  "env": {
+   "aria-label": 135
+  },
+  "shared": {
+   "aria-label": 19
+  }
+ },
+ "tasks": [
+  {
+   "page": "amazon_account_overhaul_and_shop",
+   "visible": {
+    "lines_clean": 95,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 439,
+    "removed": 12,
+    "added": 12,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible",
+     "-\t\t[164] link 'Browse Electronics', clickable",
+     "+\t\t[164] link 'Electronics', clickable"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3389
+    ],
+    "diff_share": 0.00105
+   }
+  },
+  {
+   "page": "amazon_add_new_address",
+   "visible": {
+    "lines_clean": 95,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 1 items', clickable, visible",
+     "+\t\t[48] link '1 Cart', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 439,
+    "removed": 12,
+    "added": 12,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 1 items', clickable, visible",
+     "+\t\t[48] link '1 Cart', clickable, visible",
+     "-\t\t[164] link 'Browse Electronics', clickable",
+     "+\t\t[164] link 'Electronics', clickable"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3391
+    ],
+    "diff_share": 0.00076
+   }
+  },
+  {
+   "page": "route__account",
+   "visible": {
+    "lines_clean": 94,
+    "removed": 8,
+    "added": 6,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible",
+     "-\t\t[109] button 'Set 1600 Pennsylvania Ave NW as default shipping address', clickable, visible",
+     "-\t\t\tStaticText 'Set as default'"
+    ]
+   },
+   "all": {
+    "lines_clean": 174,
+    "removed": 15,
+    "added": 11,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible",
+     "-\t\t\t[109] button 'Set 1600 Pennsylvania Ave NW as default shipping address', clickable, visible",
+     "-\t\t\t\tStaticText 'Set as default'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1788
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__cart",
+   "visible": {
+    "lines_clean": 60,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 70,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     771
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__categories",
+   "visible": {
+    "lines_clean": 67,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 88,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     997
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__checkout",
+   "visible": {
+    "lines_clean": 55,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 64,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__customer-service",
+   "visible": {
+    "lines_clean": 75,
+    "removed": 5,
+    "added": 5,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible",
+     "-\t[71] button 'Search help', clickable, visible",
+     "+\t[71] button 'Search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 142,
+    "removed": 5,
+    "added": 5,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible",
+     "-\t[71] button 'Search help', clickable, visible",
+     "+\t[71] button 'Search', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1587
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__deals",
+   "visible": {
+    "lines_clean": 121,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 484,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3263
+    ],
+    "diff_share": 0.00087
+   }
+  },
+  {
+   "page": "route__gift-cards",
+   "visible": {
+    "lines_clean": 48,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 69,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     980
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__home",
+   "visible": {
+    "lines_clean": 95,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 439,
+    "removed": 12,
+    "added": 12,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible",
+     "-\t\t[164] link 'Browse Electronics', clickable",
+     "+\t\t[164] link 'Electronics', clickable"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3389
+    ],
+    "diff_share": 0.00105
+   }
+  },
+  {
+   "page": "route__notifications",
+   "visible": {
+    "lines_clean": 72,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 94,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1058
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__orders",
+   "visible": {
+    "lines_clean": 90,
+    "removed": 6,
+    "added": 5,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible",
+     "-\t[118] link 'Track order order_initial_1', clickable, visible",
+     "-\t\tStaticText 'Track Order'"
+    ]
+   },
+   "all": {
+    "lines_clean": 265,
+    "removed": 16,
+    "added": 10,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible",
+     "-\t\t[118] link 'Track order order_initial_1', clickable, visible",
+     "-\t\t\tStaticText 'Track Order'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2777
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__product_product_36",
+   "visible": {
+    "lines_clean": 99,
+    "removed": 11,
+    "added": 8,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible",
+     "-\t\t[73] link 'Browse subcategory Earbuds', clickable, visible",
+     "+\t\t[73] link 'Earbuds', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 147,
+    "removed": 11,
+    "added": 8,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible",
+     "-\t\t[73] link 'Browse subcategory Earbuds', clickable, visible",
+     "+\t\t[73] link 'Earbuds', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1543
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__returns",
+   "visible": {
+    "lines_clean": 73,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 84,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     811
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search_q-headphones",
+   "visible": {
+    "lines_clean": 128,
+    "removed": 9,
+    "added": 9,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible",
+     "-\t[128] link 'Open Amazon Basics Bluetooth Headphones True Wireless Earbuds IPX4Waterproof, in-Ear w/Mic,Charging Case, Black', clickable, visible",
+     "+\t[128] link 'Amazon Basics Bluetooth Headphones True Wireless Earbuds IPX4Waterproof, in-Ear w/Mic,Charging Case, Black', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 360,
+    "removed": 28,
+    "added": 28,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible",
+     "-\t\t[128] link 'Open Amazon Basics Bluetooth Headphones True Wireless Earbuds IPX4Waterproof, in-Ear w/Mic,Charging Case, Black', clickable, visible",
+     "+\t\t[128] link 'Amazon Basics Bluetooth Headphones True Wireless Earbuds IPX4Waterproof, in-Ear w/Mic,Charging Case, Black', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     3525
+    ],
+    "diff_share": 0.00152
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 59,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 98,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1298
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__wishlist",
+   "visible": {
+    "lines_clean": 59,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 70,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[14] link 'Amazon Home', clickable, visible",
+     "+\t[14] link 'amazon', clickable, visible",
+     "-\t\t[33] button 'Submit search', clickable, visible",
+     "+\t\t[33] button '', clickable, visible",
+     "-\t\t[36] link 'Notifications, 1 unread', clickable, visible",
+     "+\t\t[36] link '1', clickable, visible",
+     "-\t\t[48] link 'Shopping cart, 0 items', clickable, visible",
+     "+\t\t[48] link '0 Cart', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     784
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

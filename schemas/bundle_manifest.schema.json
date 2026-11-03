@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "a11y-ablation-exp/schemas/bundle_manifest.schema.json",
+  "title": "bundle_manifest",
+  "description": "One built BreakingWeb environment for one kind. Written by abl_envs after a build; read by abl_gates (to judge it) and abl_run (to refuse a run whose served bundle differs). Holds hashes and the recipe, never bundle content (BreakingWeb has no LICENSE). Draft v0: frozen at Stage 0 (READINESS B-4, D-16).",
+  "type": "object",
+  "required": ["schema", "env", "kind", "breakingweb", "codemod", "content_sha256", "files", "toolchain", "built_utc"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "bundle_manifest/0"},
+    "env": {"enum": ["amazon", "booking", "gmail", "lms", "patient_portal", "reddit", "robinhood"]},
+    "kind": {"type": "string", "description": "clean, none (byte-identical rebuild), a defect kind (landmarks, headings, names_empty, names_fallback, labels, alt, tableheads) or a control (names_tagged, names_plus, names50, labels_sham, *_sham, fmt_wrap, pos_info, pc_break). names is split into names_empty and names_fallback (D-014)."},
+    "breakingweb": {
+      "type": "object",
+      "required": ["commit", "allowed_diffs"],
+      "properties": {
+        "commit": {"type": "string", "pattern": "^[0-9a-f]{7,40}$", "description": "052f0f0 for the pilot"},
+        "allowed_diffs": {"type": "array", "items": {"type": "string"}, "description": "paths with permitted local edits (breakingweb/app.py and three scripts/*.sh); any other modified tracked file refuses the manifest"}
+      }
+    },
+    "codemod": {
+      "type": ["object", "null"],
+      "required": ["path", "sha256"],
+      "properties": {"path": {"type": "string"}, "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "change_counts": {"type": "object"}, "risk_counts": {"type": "object"}},
+      "description": "null for clean"
+    },
+    "content_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$", "description": "path-free content hash: sha256 over the sorted (relative path, file sha256) list of static/envs/<env>/ (D-16; the checkout path must not enter it)"},
+    "files": {"type": "array", "items": {"type": "object", "required": ["path", "sha256", "size"], "properties": {"path": {"type": "string"}, "sha256": {"type": "string"}, "size": {"type": "integer"}}}},
+    "toolchain": {"type": "object", "required": ["node", "pnpm"], "properties": {"node": {"type": "string"}, "pnpm": {"type": "string"}, "lockfile_sha256": {"type": "string"}}},
+    "built_utc": {"type": "string", "format": "date-time"},
+    "build_log_sha256": {"type": "string"}
+  }
+}

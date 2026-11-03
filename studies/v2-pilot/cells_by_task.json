@@ -1,0 +1,1903 @@
+{
+ "note": "Per task: cell -> repeats per model (same for both models). Regenerate with scripts/probe/breakingweb/pilot_plan.py all.",
+ "runs_total_both_models": 4718,
+ "runs_by_harness_cell_both_models": {
+  "bg/alt": 60,
+  "bg/clean": 768,
+  "bg/fmt_wrap": 384,
+  "bg/headings": 372,
+  "bg/labels": 276,
+  "bg/labels~": 276,
+  "bg/landmarks": 384,
+  "bg/names": 318,
+  "bg/names+": 318,
+  "bg/names50": 144,
+  "bg/none": 384,
+  "bg/pc_break": 96,
+  "bg/pos_info": 96,
+  "bg/tableheads": 144,
+  "bu/clean": 320,
+  "bu/names": 186,
+  "bu/none": 192
+ },
+ "pos_func_tasks": [
+  "amazon_buy_highest_rated",
+  "amazon_delivered_review_chain",
+  "amazon_duplicate_order_cleanup",
+  "amazon_multi_destination_orders",
+  "amazon_price_comparison",
+  "amazon_stale_wishlist_refresh",
+  "booking_account_security_and_payment",
+  "booking_book_family_room",
+  "booking_delete_saved_list",
+  "booking_find_deal_and_book",
+  "booking_modify_and_message",
+  "booking_modify_dates",
+  "booking_save_property",
+  "booking_saved_list_to_booking",
+  "booking_settings_overhaul",
+  "gmail_forward_email",
+  "lms_check_assignment_grade",
+  "lms_find_missing_assignments",
+  "lms_late_assignment_worth",
+  "pp_refill_prescription",
+  "reddit_notification_driven_workflow",
+  "reddit_notification_triage",
+  "reddit_subscribe_subreddit",
+  "rh_sell_shares"
+ ],
+ "pos_info_tasks": [
+  "amazon_add_single_item",
+  "amazon_browse_category",
+  "amazon_full_account_setup",
+  "amazon_multi_destination_orders",
+  "amazon_stale_wishlist_refresh",
+  "booking_cancel_and_message",
+  "booking_reply_to_hotel",
+  "booking_saved_list_to_booking",
+  "gmail_create_label",
+  "gmail_diagnose_missing_reply",
+  "gmail_search_and_star",
+  "gmail_star_email",
+  "lms_check_assignment_grade",
+  "lms_find_missing_assignments",
+  "lms_late_assignment_worth",
+  "pp_full_care_transition",
+  "pp_message_correct_provider",
+  "pp_preventive_screening_review",
+  "pp_prior_auth_marathon",
+  "reddit_save_comments",
+  "reddit_search_and_message",
+  "rh_cancel_pending_order",
+  "rh_deposit_funds",
+  "rh_mark_notifications_read"
+ ],
+ "tasks": {
+  "amazon_add_single_item": {
+   "env": "amazon",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "alt"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "alt": 3,
+    "names+": 3,
+    "names50": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "amazon_browse_category": {
+   "env": "amazon",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "alt"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "alt": 3,
+    "names+": 3,
+    "names50": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "amazon_buy_highest_rated": {
+   "env": "amazon",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "alt"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "alt": 3,
+    "names+": 3,
+    "names50": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "amazon_competitor_switchover": {
+   "env": "amazon",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "alt"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "alt": 3,
+    "names+": 3,
+    "names50": 3,
+    "fmt_wrap": 3
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "amazon_delivered_review_chain": {
+   "env": "amazon",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "alt"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "alt": 3,
+    "names+": 3,
+    "names50": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "amazon_duplicate_order_cleanup": {
+   "env": "amazon",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "alt"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "alt": 3,
+    "names+": 3,
+    "names50": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "amazon_full_account_setup": {
+   "env": "amazon",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "alt"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "alt": 3,
+    "names+": 3,
+    "names50": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "amazon_multi_destination_orders": {
+   "env": "amazon",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "alt"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "alt": 3,
+    "names+": 3,
+    "names50": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2,
+    "pc_break": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "amazon_price_comparison": {
+   "env": "amazon",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "alt"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "alt": 3,
+    "names+": 3,
+    "names50": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "amazon_stale_wishlist_refresh": {
+   "env": "amazon",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "alt"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "alt": 3,
+    "names+": 3,
+    "names50": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2,
+    "pc_break": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "booking_account_security_and_payment": {
+   "env": "booking",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "names+": 3,
+    "names50": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   }
+  },
+  "booking_book_family_room": {
+   "env": "booking",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "labels",
+    "alt",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   }
+  },
+  "booking_cancel_and_message": {
+   "env": "booking",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "alt"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   }
+  },
+  "booking_delete_saved_list": {
+   "env": "booking",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "names+": 3,
+    "names50": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   }
+  },
+  "booking_find_deal_and_book": {
+   "env": "booking",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "alt",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "tableheads": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   }
+  },
+  "booking_modify_and_message": {
+   "env": "booking",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "labels"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "labels": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   }
+  },
+  "booking_modify_dates": {
+   "env": "booking",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "alt"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   }
+  },
+  "booking_read_message": {
+   "env": "booking",
+   "on_primary": [
+    "landmarks",
+    "headings"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "fmt_wrap": 3
+   }
+  },
+  "booking_reply_to_hotel": {
+   "env": "booking",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "alt"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   }
+  },
+  "booking_save_property": {
+   "env": "booking",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "labels",
+    "alt",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   }
+  },
+  "booking_saved_list_to_booking": {
+   "env": "booking",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "alt",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "tableheads": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2,
+    "pc_break": 2
+   }
+  },
+  "booking_settings_overhaul": {
+   "env": "booking",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "labels",
+    "alt"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "labels": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   }
+  },
+  "gmail_compliance_settings_audit": {
+   "env": "gmail",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "gmail_create_label": {
+   "env": "gmail",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3
+   }
+  },
+  "gmail_diagnose_missing_reply": {
+   "env": "gmail",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "gmail_forward_email": {
+   "env": "gmail",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "names+": 3,
+    "names50": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "gmail_schedule_recovery": {
+   "env": "gmail",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "gmail_search_and_star": {
+   "env": "gmail",
+   "on_primary": [
+    "landmarks",
+    "names"
+   ],
+   "on_strict": [
+    "landmarks",
+    "names"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "names": 3,
+    "names+": 3,
+    "names50": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "gmail_star_email": {
+   "env": "gmail",
+   "on_primary": [
+    "landmarks",
+    "names"
+   ],
+   "on_strict": [
+    "landmarks",
+    "names"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "names": 3,
+    "names+": 3,
+    "names50": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "gmail_thread_version_conflict": {
+   "env": "gmail",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "gmail_update_contact": {
+   "env": "gmail",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "names50": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "lms_check_assignment_grade": {
+   "env": "lms",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2,
+    "pc_break": 2
+   }
+  },
+  "lms_find_missing_assignments": {
+   "env": "lms",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2,
+    "pc_break": 2
+   }
+  },
+  "lms_late_assignment_worth": {
+   "env": "lms",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2,
+    "pc_break": 2
+   }
+  },
+  "pp_chronic_disease_setup": {
+   "env": "patient_portal",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "pp_emergency_prep": {
+   "env": "patient_portal",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "pp_full_care_transition": {
+   "env": "patient_portal",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "pp_message_correct_provider": {
+   "env": "patient_portal",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "pp_preventive_screening_review": {
+   "env": "patient_portal",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "pp_prior_auth_marathon": {
+   "env": "patient_portal",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "pp_read_lab_result": {
+   "env": "patient_portal",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "pp_reconcile_billing": {
+   "env": "patient_portal",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "pp_refill_prescription": {
+   "env": "patient_portal",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "names+": 3,
+    "names50": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "pp_schedule_new_specialist": {
+   "env": "patient_portal",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "pp_setup_telehealth": {
+   "env": "patient_portal",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "names50": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "pp_treatment_cost_comparison": {
+   "env": "patient_portal",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "pp_view_insurance": {
+   "env": "patient_portal",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   },
+   "bu": {
+    "clean": 5,
+    "none": 3,
+    "names": 3
+   }
+  },
+  "reddit_inbox_read_only": {
+   "env": "reddit",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "names+": 3,
+    "fmt_wrap": 3
+   }
+  },
+  "reddit_notification_driven_workflow": {
+   "env": "reddit",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   }
+  },
+  "reddit_notification_triage": {
+   "env": "reddit",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   }
+  },
+  "reddit_save_comments": {
+   "env": "reddit",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "names+": 3,
+    "names50": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   }
+  },
+  "reddit_save_from_feed": {
+   "env": "reddit",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "names+": 3,
+    "fmt_wrap": 3
+   }
+  },
+  "reddit_search_and_message": {
+   "env": "reddit",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   }
+  },
+  "reddit_subscribe_subreddit": {
+   "env": "reddit",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "names+": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   }
+  },
+  "reddit_update_settings": {
+   "env": "reddit",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "labels"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "labels": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   }
+  },
+  "rh_buy_market_order": {
+   "env": "robinhood",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   }
+  },
+  "rh_cancel_pending_order": {
+   "env": "robinhood",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "names+": 3,
+    "names50": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   }
+  },
+  "rh_check_buying_power": {
+   "env": "robinhood",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   }
+  },
+  "rh_cost_basis_reconciliation": {
+   "env": "robinhood",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "names50": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   }
+  },
+  "rh_deposit_funds": {
+   "env": "robinhood",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "labels"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "labels": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   }
+  },
+  "rh_mark_notifications_read": {
+   "env": "robinhood",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "names+": 3,
+    "names50": 3,
+    "fmt_wrap": 3,
+    "pos_info": 2
+   }
+  },
+  "rh_security_audit": {
+   "env": "robinhood",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "names50": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   }
+  },
+  "rh_sell_shares": {
+   "env": "robinhood",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "labels"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "names+": 3,
+    "labels~": 3,
+    "fmt_wrap": 3,
+    "pc_break": 2
+   }
+  },
+  "rh_set_price_alert": {
+   "env": "robinhood",
+   "on_primary": [
+    "landmarks",
+    "headings",
+    "names",
+    "labels",
+    "tableheads"
+   ],
+   "on_strict": [
+    "landmarks",
+    "headings",
+    "names",
+    "tableheads"
+   ],
+   "bg": {
+    "clean": 6,
+    "none": 3,
+    "landmarks": 3,
+    "headings": 3,
+    "names": 3,
+    "labels": 3,
+    "tableheads": 3,
+    "names+": 3,
+    "names50": 3,
+    "labels~": 3,
+    "fmt_wrap": 3
+   }
+  }
+ }
+}

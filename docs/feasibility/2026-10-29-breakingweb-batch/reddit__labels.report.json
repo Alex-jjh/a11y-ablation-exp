@@ -1,0 +1,246 @@
+{
+ "env": "reddit",
+ "kind": "labels",
+ "codemod_counts_env": {
+  "env": {
+   "htmlFor": 11,
+   "control-aria": 36
+  },
+  "shared": {
+   "htmlFor": 1,
+   "control-aria": 5
+  }
+ },
+ "tasks": [
+  {
+   "page": "reddit_account_cleanup",
+   "visible": {
+    "lines_clean": 133,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 618,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     5789
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "reddit_block_and_cleanup",
+   "visible": {
+    "lines_clean": 134,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 611,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     5492
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__feed",
+   "visible": {
+    "lines_clean": 133,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 618,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     5789
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__messages",
+   "visible": {
+    "lines_clean": 75,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 108,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     976
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__notifications",
+   "visible": {
+    "lines_clean": 85,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 103,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__saved",
+   "visible": {
+    "lines_clean": 102,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 182,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1436
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search",
+   "visible": {
+    "lines_clean": 46,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 68,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 67,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[96] combobox 'Default feed sort' value='Hot', visible, hasPopup='menu', expanded=False",
+     "+\t[96] combobox '' value='Hot', visible, hasPopup='menu', expanded=False",
+     "-\t[103] combobox 'Default comment sort' value='Best', visible, hasPopup='menu', expanded=False",
+     "+\t[103] combobox '' value='Best', visible, hasPopup='menu', expanded=False",
+     "-\t[113] combobox 'Theme' value='Light', visible, hasPopup='menu', expanded=False",
+     "+\t[113] combobox '' value='Light', visible, hasPopup='menu', expanded=False"
+    ]
+   },
+   "all": {
+    "lines_clean": 154,
+    "removed": 6,
+    "added": 6,
+    "examples": [
+     "-\t[96] combobox 'Default feed sort' value='Hot', visible, hasPopup='menu', expanded=False",
+     "+\t[96] combobox '' value='Hot', visible, hasPopup='menu', expanded=False",
+     "-\t[103] combobox 'Default comment sort' value='Best', visible, hasPopup='menu', expanded=False",
+     "+\t[103] combobox '' value='Best', visible, hasPopup='menu', expanded=False",
+     "-\t[113] combobox 'Theme' value='Light', visible, hasPopup='menu', expanded=False",
+     "+\t[113] combobox '' value='Light', visible, hasPopup='menu', expanded=False",
+     "-\t[138] combobox 'Language' value='English', hasPopup='menu', expanded=False",
+     "+\t[138] combobox '' value='English', hasPopup='menu', expanded=False",
+     "-\t[147] combobox 'Country' value='United States', hasPopup='menu', expanded=False",
+     "+\t[147] combobox '' value='United States', hasPopup='menu', expanded=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1603
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__submit",
+   "visible": {
+    "lines_clean": 61,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-[94] LabelText '', clickable, visible",
+     "+[94] LabelText '', visible",
+     "-[100] LabelText '', clickable, visible",
+     "+[100] LabelText '', visible",
+     "-[107] LabelText '', clickable, visible",
+     "+[107] LabelText '', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 82,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-[94] LabelText '', clickable, visible",
+     "+[94] LabelText '', visible",
+     "-[100] LabelText '', clickable, visible",
+     "+[100] LabelText '', visible",
+     "-[107] LabelText '', clickable, visible",
+     "+[107] LabelText '', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     794
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

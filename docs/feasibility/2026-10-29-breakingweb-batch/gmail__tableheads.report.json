@@ -1,0 +1,213 @@
+{
+ "env": "gmail",
+ "kind": "tableheads",
+ "codemod_counts_env": {
+  "env": {
+   "th": 13
+  },
+  "shared": {
+   "th": 1,
+   "css-files": 1
+  }
+ },
+ "tasks": [
+  {
+   "page": "gmail_access_review_audit",
+   "visible": {
+    "lines_clean": 208,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 217,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     758
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "gmail_action_item_extraction",
+   "visible": {
+    "lines_clean": 219,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 229,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     758
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__compose",
+   "visible": {
+    "lines_clean": 55,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 55,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__contacts",
+   "visible": {
+    "lines_clean": 62,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 226,
+    "removed": 9,
+    "added": 9,
+    "examples": [
+     "-\t\t\t\t\t\t[135] columnheader 'NAME'",
+     "-\t\t\t\t\t\t[136] columnheader 'EMAIL'",
+     "-\t\t\t\t\t\t[137] columnheader 'COMPANY'",
+     "-\t\t\t\t\t\t[138] columnheader 'NOTE'",
+     "-\t\t\t\t\t\t[139] columnheader ''",
+     "-\t\t\t\t\t\t[140] columnheader 'STAR'",
+     "-\t\t\t\t\t\t[141] columnheader 'LAST CONTACT'",
+     "-\t\t\t\t\t\t[142] columnheader 'VIP'",
+     "-\t\t\t\t\t\t[143] columnheader ''",
+     "+\t\t\t\t\t\t[135] gridcell 'NAME'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2414
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__inbox",
+   "visible": {
+    "lines_clean": 208,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 217,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     758
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__labels",
+   "visible": {
+    "lines_clean": 59,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 223,
+    "removed": 9,
+    "added": 9,
+    "examples": [
+     "-\t\t\t\t\t\t[132] columnheader 'NAME'",
+     "-\t\t\t\t\t\t[133] columnheader 'EMAIL'",
+     "-\t\t\t\t\t\t[134] columnheader 'COMPANY'",
+     "-\t\t\t\t\t\t[135] columnheader 'NOTE'",
+     "-\t\t\t\t\t\t[136] columnheader ''",
+     "-\t\t\t\t\t\t[137] columnheader 'STAR'",
+     "-\t\t\t\t\t\t[138] columnheader 'LAST CONTACT'",
+     "-\t\t\t\t\t\t[139] columnheader 'VIP'",
+     "-\t\t\t\t\t\t[140] columnheader ''",
+     "+\t\t\t\t\t\t[132] gridcell 'NAME'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2414
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search",
+   "visible": {
+    "lines_clean": 40,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 40,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 106,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 173,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1268
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

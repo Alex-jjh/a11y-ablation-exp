@@ -1,0 +1,224 @@
+{
+ "env": "lms",
+ "kind": "tableheads",
+ "codemod_counts_env": {
+  "env": {
+   "th": 45,
+   "css-files": 1
+  },
+  "shared": {
+   "th": 1,
+   "css-files": 1
+  }
+ },
+ "tasks": [
+  {
+   "page": "lms_academic_probation_recovery",
+   "visible": {
+    "lines_clean": 92,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t\t\t\t\t[45] columnheader 'Assignment', visible",
+     "-\t\t\t\t\t[46] columnheader 'Course', visible",
+     "-\t\t\t\t\t[47] columnheader 'Due Date', visible",
+     "-\t\t\t\t\t[48] columnheader 'Status', visible",
+     "+\t\t\t\t\t[45] gridcell 'Assignment', visible",
+     "+\t\t\t\t\t[46] gridcell 'Course', visible",
+     "+\t\t\t\t\t[47] gridcell 'Due Date', visible",
+     "+\t\t\t\t\t[48] gridcell 'Status', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 122,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t\t\t\t\t[45] columnheader 'Assignment', visible",
+     "-\t\t\t\t\t[46] columnheader 'Course', visible",
+     "-\t\t\t\t\t[47] columnheader 'Due Date', visible",
+     "-\t\t\t\t\t[48] columnheader 'Status', visible",
+     "+\t\t\t\t\t[45] gridcell 'Assignment', visible",
+     "+\t\t\t\t\t[46] gridcell 'Course', visible",
+     "+\t\t\t\t\t[47] gridcell 'Due Date', visible",
+     "+\t\t\t\t\t[48] gridcell 'Status', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1182
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "lms_academic_standing_optimization",
+   "visible": {
+    "lines_clean": 75,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t\t\t\t\t[45] columnheader 'Assignment', visible",
+     "-\t\t\t\t\t[46] columnheader 'Course', visible",
+     "-\t\t\t\t\t[47] columnheader 'Due Date', visible",
+     "-\t\t\t\t\t[48] columnheader 'Status', visible",
+     "+\t\t\t\t\t[45] gridcell 'Assignment', visible",
+     "+\t\t\t\t\t[46] gridcell 'Course', visible",
+     "+\t\t\t\t\t[47] gridcell 'Due Date', visible",
+     "+\t\t\t\t\t[48] gridcell 'Status', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 101,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t\t\t\t\t[45] columnheader 'Assignment', visible",
+     "-\t\t\t\t\t[46] columnheader 'Course', visible",
+     "-\t\t\t\t\t[47] columnheader 'Due Date', visible",
+     "-\t\t\t\t\t[48] columnheader 'Status', visible",
+     "+\t\t\t\t\t[45] gridcell 'Assignment', visible",
+     "+\t\t\t\t\t[46] gridcell 'Course', visible",
+     "+\t\t\t\t\t[47] gridcell 'Due Date', visible",
+     "+\t\t\t\t\t[48] gridcell 'Status', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1063
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__calendar",
+   "visible": {
+    "lines_clean": 21,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 32,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__courses",
+   "visible": {
+    "lines_clean": 48,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 48,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__dashboard",
+   "visible": {
+    "lines_clean": 92,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t\t\t\t\t[45] columnheader 'Assignment', visible",
+     "-\t\t\t\t\t[46] columnheader 'Course', visible",
+     "-\t\t\t\t\t[47] columnheader 'Due Date', visible",
+     "-\t\t\t\t\t[48] columnheader 'Status', visible",
+     "+\t\t\t\t\t[45] gridcell 'Assignment', visible",
+     "+\t\t\t\t\t[46] gridcell 'Course', visible",
+     "+\t\t\t\t\t[47] gridcell 'Due Date', visible",
+     "+\t\t\t\t\t[48] gridcell 'Status', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 122,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t\t\t\t\t[45] columnheader 'Assignment', visible",
+     "-\t\t\t\t\t[46] columnheader 'Course', visible",
+     "-\t\t\t\t\t[47] columnheader 'Due Date', visible",
+     "-\t\t\t\t\t[48] columnheader 'Status', visible",
+     "+\t\t\t\t\t[45] gridcell 'Assignment', visible",
+     "+\t\t\t\t\t[46] gridcell 'Course', visible",
+     "+\t\t\t\t\t[47] gridcell 'Due Date', visible",
+     "+\t\t\t\t\t[48] gridcell 'Status', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1182
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__messages",
+   "visible": {
+    "lines_clean": 18,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 18,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__peer-reviews",
+   "visible": {
+    "lines_clean": 14,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 14,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

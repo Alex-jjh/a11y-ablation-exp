@@ -1,0 +1,399 @@
+{
+ "env": "reddit",
+ "kind": "headings",
+ "codemod_counts_env": {
+  "env": {
+   "h1": 9,
+   "h2": 6,
+   "h3": 6,
+   "h4": 2,
+   "h5": 0,
+   "h6": 0,
+   "role": 0,
+   "css-files": 1
+  },
+  "shared": {
+   "h1": 0,
+   "h2": 3,
+   "h3": 3,
+   "h4": 0,
+   "h5": 0,
+   "h6": 0,
+   "role": 0
+  }
+ },
+ "tasks": [
+  {
+   "page": "reddit_account_cleanup",
+   "visible": {
+    "lines_clean": 133,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-\t[620] heading 'POPULAR COMMUNITIES', visible",
+     "+\tStaticText 'POPULAR COMMUNITIES'",
+     "-\t[651] heading 'Reddit Premium', visible",
+     "+\tStaticText 'Reddit Premium'"
+    ]
+   },
+   "all": {
+    "lines_clean": 618,
+    "removed": 5,
+    "added": 5,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-\t\t\t[71] heading 'OTHER'",
+     "+\t\t\tStaticText 'OTHER'",
+     "-\t[620] heading 'POPULAR COMMUNITIES', visible",
+     "+\tStaticText 'POPULAR COMMUNITIES'",
+     "-\t[651] heading 'Reddit Premium', visible",
+     "+\tStaticText 'Reddit Premium'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     5789
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "reddit_block_and_cleanup",
+   "visible": {
+    "lines_clean": 134,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-\t[613] heading 'POPULAR COMMUNITIES', visible",
+     "+\tStaticText 'POPULAR COMMUNITIES'",
+     "-\t[644] heading 'Reddit Premium', visible",
+     "+\tStaticText 'Reddit Premium'"
+    ]
+   },
+   "all": {
+    "lines_clean": 611,
+    "removed": 5,
+    "added": 5,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-\t\t\t[71] heading 'OTHER'",
+     "+\t\t\tStaticText 'OTHER'",
+     "-\t[613] heading 'POPULAR COMMUNITIES', visible",
+     "+\tStaticText 'POPULAR COMMUNITIES'",
+     "-\t[644] heading 'Reddit Premium', visible",
+     "+\tStaticText 'Reddit Premium'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     5492
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__feed",
+   "visible": {
+    "lines_clean": 133,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-\t[620] heading 'POPULAR COMMUNITIES', visible",
+     "+\tStaticText 'POPULAR COMMUNITIES'",
+     "-\t[651] heading 'Reddit Premium', visible",
+     "+\tStaticText 'Reddit Premium'"
+    ]
+   },
+   "all": {
+    "lines_clean": 618,
+    "removed": 5,
+    "added": 5,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-\t\t\t[71] heading 'OTHER'",
+     "+\t\t\tStaticText 'OTHER'",
+     "-\t[620] heading 'POPULAR COMMUNITIES', visible",
+     "+\tStaticText 'POPULAR COMMUNITIES'",
+     "-\t[651] heading 'Reddit Premium', visible",
+     "+\tStaticText 'Reddit Premium'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     5789
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__messages",
+   "visible": {
+    "lines_clean": 75,
+    "removed": 7,
+    "added": 7,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-[92] heading 'Messages', visible",
+     "+StaticText 'Messages'",
+     "-[105] heading 'Re: Weekend meetup', visible",
+     "+StaticText 'Re: Weekend meetup'",
+     "-[114] heading 'Mod invitation for r/devtools', visible",
+     "+StaticText 'Mod invitation for r/devtools'"
+    ]
+   },
+   "all": {
+    "lines_clean": 108,
+    "removed": 9,
+    "added": 9,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-\t\t\t[71] heading 'OTHER'",
+     "+\t\t\tStaticText 'OTHER'",
+     "-[92] heading 'Messages', visible",
+     "+StaticText 'Messages'",
+     "-[105] heading 'Re: Weekend meetup', visible",
+     "+StaticText 'Re: Weekend meetup'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     976
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__notifications",
+   "visible": {
+    "lines_clean": 85,
+    "removed": 8,
+    "added": 8,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-[92] heading 'Notifications', visible",
+     "+StaticText 'Notifications'",
+     "-\t[98] heading 'New comment on your post', visible",
+     "+\tStaticText 'New comment on your post'",
+     "-\t[106] heading 'Reply to your comment', visible",
+     "+\tStaticText 'Reply to your comment'"
+    ]
+   },
+   "all": {
+    "lines_clean": 103,
+    "removed": 9,
+    "added": 9,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-\t\t\t[71] heading 'OTHER'",
+     "+\t\t\tStaticText 'OTHER'",
+     "-[92] heading 'Notifications', visible",
+     "+StaticText 'Notifications'",
+     "-\t[98] heading 'New comment on your post', visible",
+     "+\tStaticText 'New comment on your post'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__saved",
+   "visible": {
+    "lines_clean": 102,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-[91] heading 'Saved', visible",
+     "+StaticText 'Saved'"
+    ]
+   },
+   "all": {
+    "lines_clean": 182,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-\t\t\t[71] heading 'OTHER'",
+     "+\t\t\tStaticText 'OTHER'",
+     "-[91] heading 'Saved', visible",
+     "+StaticText 'Saved'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1436
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search",
+   "visible": {
+    "lines_clean": 46,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-[91] heading 'Search Reddit', visible",
+     "+StaticText 'Search Reddit'"
+    ]
+   },
+   "all": {
+    "lines_clean": 68,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-\t\t\t[71] heading 'OTHER'",
+     "+\t\t\tStaticText 'OTHER'",
+     "-[91] heading 'Search Reddit', visible",
+     "+StaticText 'Search Reddit'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 67,
+    "removed": 6,
+    "added": 6,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-[91] heading 'User Settings', visible",
+     "+StaticText 'User Settings'",
+     "-\t[93] heading 'FEED', visible",
+     "+\tStaticText 'FEED'",
+     "-\t[110] heading 'DISPLAY', visible",
+     "+\tStaticText 'DISPLAY'"
+    ]
+   },
+   "all": {
+    "lines_clean": 154,
+    "removed": 9,
+    "added": 9,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-\t\t\t[71] heading 'OTHER'",
+     "+\t\t\tStaticText 'OTHER'",
+     "-[91] heading 'User Settings', visible",
+     "+StaticText 'User Settings'",
+     "-\t[93] heading 'FEED', visible",
+     "+\tStaticText 'FEED'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1603
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__submit",
+   "visible": {
+    "lines_clean": 61,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-[91] heading 'Create a post', visible",
+     "+StaticText 'Create a post'"
+    ]
+   },
+   "all": {
+    "lines_clean": 82,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t\t\t[31] heading 'FEEDS', visible",
+     "+\t\t\tStaticText 'FEEDS'",
+     "-\t\t\t[39] heading 'COMMUNITIES', visible",
+     "+\t\t\tStaticText 'COMMUNITIES'",
+     "-\t\t\t[71] heading 'OTHER'",
+     "+\t\t\tStaticText 'OTHER'",
+     "-[91] heading 'Create a post', visible",
+     "+StaticText 'Create a post'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     794
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

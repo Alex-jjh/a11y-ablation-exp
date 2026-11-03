@@ -1,0 +1,192 @@
+{
+ "env": "gmail",
+ "kind": "labels",
+ "codemod_counts_env": {
+  "env": {
+   "htmlFor": 0,
+   "control-aria": 29
+  },
+  "shared": {
+   "htmlFor": 1,
+   "control-aria": 5
+  }
+ },
+ "tasks": [
+  {
+   "page": "gmail_access_review_audit",
+   "visible": {
+    "lines_clean": 208,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 217,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     758
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "gmail_action_item_extraction",
+   "visible": {
+    "lines_clean": 219,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 229,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     758
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__compose",
+   "visible": {
+    "lines_clean": 55,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 55,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__contacts",
+   "visible": {
+    "lines_clean": 62,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 226,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2414
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__inbox",
+   "visible": {
+    "lines_clean": 208,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 217,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     758
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__labels",
+   "visible": {
+    "lines_clean": 59,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 223,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2414
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search",
+   "visible": {
+    "lines_clean": 40,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 40,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 106,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "all": {
+    "lines_clean": 173,
+    "removed": 0,
+    "added": 0,
+    "examples": []
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1268
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

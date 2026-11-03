@@ -1,0 +1,1465 @@
+{
+ "browser_use_version": "0.13.14",
+ "harness_config": "stock_browseruse_eval.run_episode Browser settings; Agent defaults (DEFAULT_INCLUDE_ATTRIBUTES, max_clickable_elements_length 40000); viewport 1280x720",
+ "outputs": "/tmp/amt-syn/bw-bu/<env>/<build>/<page>.bu.{txt,json,png}; bu_diff.json per env",
+ "validation": {
+  "amazon": {
+   "env": "amazon",
+   "tasks": 30,
+   "indexed_actions_step1": 41,
+   "parsed_click_results": 30,
+   "content_match": 25,
+   "index_match": 1
+  },
+  "gmail": {
+   "env": "gmail",
+   "tasks": 30,
+   "indexed_actions_step1": 40,
+   "parsed_click_results": 34,
+   "content_match": 34,
+   "index_match": 6
+  },
+  "patient_portal": {
+   "env": "patient_portal",
+   "tasks": 30,
+   "indexed_actions_step1": 29,
+   "parsed_click_results": 29,
+   "content_match": 27,
+   "index_match": 6
+  }
+ },
+ "cells": {
+  "amazon": {
+   "n_pages": 17,
+   "clean1": {
+    "codemod": null,
+    "pages_changed": 0,
+    "lines_changed": 0,
+    "lines_depth_only": 0,
+    "lines_clean_total": 2376,
+    "totals": {},
+    "gym_pages_changed": 0,
+    "gym_viewport_lines_changed": 0,
+    "gym_full_lines_changed": 0,
+    "screenshot_max_pix_share": 0.00038,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {},
+    "removed_value_elsewhere": 0,
+    "removed_value_nearby_full": {},
+    "removed_value_fate_examples": {},
+    "examples": {},
+    "gate_verdict": null,
+    "gate_dose": null,
+    "codemod_equals_gate": null
+   },
+   "none": {
+    "codemod": {
+     "env": {},
+     "shared": {}
+    },
+    "pages_changed": 0,
+    "lines_changed": 0,
+    "lines_depth_only": 0,
+    "lines_clean_total": 2376,
+    "totals": {},
+    "gym_pages_changed": 0,
+    "gym_viewport_lines_changed": 0,
+    "gym_full_lines_changed": 0,
+    "screenshot_max_pix_share": 0.00038,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {},
+    "removed_value_elsewhere": 0,
+    "removed_value_nearby_full": {},
+    "removed_value_fate_examples": {},
+    "examples": {},
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 0,
+     "obs_lines_changed_all": 0,
+     "obs_lines_changed_visible": 0,
+     "dom_targets": 0
+    },
+    "codemod_equals_gate": true
+   },
+   "landmarks": {
+    "codemod": {
+     "env": {
+      "main": 1,
+      "aside": 3,
+      "nav": 3,
+      "header": 1,
+      "role": 3,
+      "footer": 1
+     },
+     "shared": {
+      "nav": 1,
+      "header": 2,
+      "footer": 1,
+      "role": 1,
+      "aside": 1
+     }
+    },
+    "pages_changed": 17,
+    "lines_changed": 18,
+    "lines_depth_only": 0,
+    "lines_clean_total": 2376,
+    "totals": {
+     "-attr:role": 17,
+     "tag:aside->div": 1
+    },
+    "gym_pages_changed": 17,
+    "gym_viewport_lines_changed": 1807,
+    "gym_full_lines_changed": 6939,
+    "screenshot_max_pix_share": 0.00139,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {},
+    "removed_value_elsewhere": 0,
+    "removed_value_nearby_full": {},
+    "removed_value_fate_examples": {},
+    "examples": {
+     "-attr:role": [
+      {
+       "page": "amazon_account_overhaul_and_shop",
+       "clean": "[#]<form role=search />",
+       "variant": "[#]<form />"
+      },
+      {
+       "page": "amazon_add_new_address",
+       "clean": "[#]<form role=search />",
+       "variant": "[#]<form />"
+      }
+     ],
+     "tag:aside->div": [
+      {
+       "page": "route__search_q-headphones",
+       "clean": "[#]<aside aria-label=Search filters />",
+       "variant": "[#]<div aria-label=Search filters />"
+      }
+     ]
+    },
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 17,
+     "obs_lines_changed_all": 6947,
+     "obs_lines_changed_visible": 1807,
+     "dom_targets": 88
+    },
+    "codemod_equals_gate": true
+   },
+   "headings": {
+    "codemod": {
+     "env": {
+      "h1": 21,
+      "h2": 37,
+      "h3": 17,
+      "h4": 3,
+      "css-h1": 14,
+      "css-h2": 12,
+      "css-h3": 7,
+      "css-h4": 1,
+      "css-files": 1
+     },
+     "shared": {
+      "h2": 3,
+      "h3": 3
+     }
+    },
+    "pages_changed": 1,
+    "lines_changed": 3,
+    "lines_depth_only": 0,
+    "lines_clean_total": 2376,
+    "totals": {
+     "tag:h3->div": 3,
+     "-attr:level": 3
+    },
+    "gym_pages_changed": 17,
+    "gym_viewport_lines_changed": 114,
+    "gym_full_lines_changed": 368,
+    "screenshot_max_pix_share": 0.0024,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {},
+    "removed_value_elsewhere": 0,
+    "removed_value_nearby_full": {},
+    "removed_value_fate_examples": {},
+    "examples": {
+     "tag:h3->div": [
+      {
+       "page": "route__search_q-headphones",
+       "clean": "[#]<h3 level=3 />",
+       "variant": "[#]<div />"
+      }
+     ],
+     "-attr:level": [
+      {
+       "page": "route__search_q-headphones",
+       "clean": "[#]<h3 level=3 />",
+       "variant": "[#]<div />"
+      }
+     ]
+    },
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 17,
+     "obs_lines_changed_all": 368,
+     "obs_lines_changed_visible": 114,
+     "dom_targets": 184
+    },
+    "codemod_equals_gate": true
+   },
+   "names": {
+    "codemod": {
+     "env": {
+      "aria-label": 133
+     },
+     "shared": {
+      "aria-label": 19
+     }
+    },
+    "pages_changed": 17,
+    "lines_changed": 133,
+    "lines_depth_only": 0,
+    "lines_clean_total": 2376,
+    "totals": {
+     "-attr:aria-label": 133
+    },
+    "gym_pages_changed": 17,
+    "gym_viewport_lines_changed": 197,
+    "gym_full_lines_changed": 325,
+    "screenshot_max_pix_share": 0.00038,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {
+     "aria-label:partial": 99,
+     "aria-label:empty": 34
+    },
+    "removed_value_elsewhere": 0,
+    "removed_value_nearby_full": {
+     "aria-label:partial": 1,
+     "aria-label:empty": 0
+    },
+    "removed_value_fate_examples": {
+     "aria-label:partial": [
+      {
+       "tag": "a",
+       "value": "Amazon Home",
+       "remaining": "amazon"
+      },
+      {
+       "tag": "a",
+       "value": "Shopping cart, 0 items",
+       "remaining": "Cart"
+      },
+      {
+       "tag": "a",
+       "value": "Browse Electronics",
+       "remaining": "Electronics"
+      },
+      {
+       "tag": "a",
+       "value": "Browse Books",
+       "remaining": "Books"
+      }
+     ],
+     "aria-label:empty": [
+      {
+       "tag": "button",
+       "value": "Submit search",
+       "remaining": ""
+      },
+      {
+       "tag": "a",
+       "value": "Notifications, 1 unread",
+       "remaining": ""
+      },
+      {
+       "tag": "button",
+       "value": "Submit search",
+       "remaining": ""
+      },
+      {
+       "tag": "a",
+       "value": "Notifications, 1 unread",
+       "remaining": ""
+      }
+     ]
+    },
+    "examples": {
+     "-attr:aria-label": [
+      {
+       "page": "amazon_account_overhaul_and_shop",
+       "clean": "[#]<a aria-label=Amazon Home />",
+       "variant": "[#]<a />"
+      },
+      {
+       "page": "amazon_add_new_address",
+       "clean": "[#]<a aria-label=Amazon Home />",
+       "variant": "[#]<a />"
+      }
+     ]
+    },
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 17,
+     "obs_lines_changed_all": 325,
+     "obs_lines_changed_visible": 197,
+     "dom_targets": 147
+    },
+    "codemod_equals_gate": true
+   },
+   "labels": {
+    "codemod": {
+     "env": {
+      "control-aria": 52,
+      "htmlFor": 27
+     },
+     "shared": {
+      "control-aria": 5,
+      "htmlFor": 1
+     }
+    },
+    "pages_changed": 17,
+    "lines_changed": 40,
+    "lines_depth_only": 0,
+    "lines_clean_total": 2376,
+    "totals": {
+     "-attr:aria-label": 40
+    },
+    "gym_pages_changed": 17,
+    "gym_viewport_lines_changed": 46,
+    "gym_full_lines_changed": 46,
+    "screenshot_max_pix_share": 0.00038,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {
+     "aria-label:empty": 17,
+     "aria-label:full": 18,
+     "aria-label:none": 2,
+     "aria-label:partial": 3
+    },
+    "removed_value_elsewhere": 21,
+    "removed_value_nearby_full": {
+     "aria-label:empty": 0,
+     "aria-label:none": 1,
+     "aria-label:partial": 2
+    },
+    "removed_value_fate_examples": {
+     "aria-label:empty": [
+      {
+       "tag": "select",
+       "value": "Search in department",
+       "remaining": ""
+      },
+      {
+       "tag": "select",
+       "value": "Search in department",
+       "remaining": ""
+      },
+      {
+       "tag": "select",
+       "value": "Search in department",
+       "remaining": ""
+      },
+      {
+       "tag": "select",
+       "value": "Search in department",
+       "remaining": ""
+      }
+     ],
+     "aria-label:full": [
+      {
+       "tag": "input",
+       "value": "Search Amazon",
+       "remaining": "Search Amazon"
+      },
+      {
+       "tag": "input",
+       "value": "Search Amazon",
+       "remaining": "Search Amazon"
+      },
+      {
+       "tag": "input",
+       "value": "Search Amazon",
+       "remaining": "Search Amazon"
+      },
+      {
+       "tag": "input",
+       "value": "Search Amazon",
+       "remaining": "Search Amazon"
+      }
+     ],
+     "aria-label:none": [
+      {
+       "tag": "select",
+       "value": "Select quantity",
+       "remaining": "buy-qty"
+      },
+      {
+       "tag": "input",
+       "value": "Two-factor authentication",
+       "remaining": "on"
+      }
+     ],
+     "aria-label:partial": [
+      {
+       "tag": "select",
+       "value": "Sort results",
+       "remaining": "sort-select"
+      },
+      {
+       "tag": "input",
+       "value": "Order update emails",
+       "remaining": "settings-order-updates | on"
+      },
+      {
+       "tag": "input",
+       "value": "Deal alert emails",
+       "remaining": "settings-deal-alerts | on"
+      }
+     ]
+    },
+    "examples": {
+     "-attr:aria-label": [
+      {
+       "page": "amazon_account_overhaul_and_shop",
+       "clean": "|SHADOW(open)|[#]<select aria-label=Search in department expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=9,options=All|Electronics|Books|Home & Kitchen) />",
+       "variant": "|SHADOW(open)|[#]<select expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=9,options=All|Electronics|Books|Home & Kitchen) />"
+      },
+      {
+       "page": "amazon_add_new_address",
+       "clean": "|SHADOW(open)|[#]<select aria-label=Search in department expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=9,options=All|Electronics|Books|Home & Kitchen) />",
+       "variant": "|SHADOW(open)|[#]<select expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=9,options=All|Electronics|Books|Home & Kitchen) />"
+      }
+     ]
+    },
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 17,
+     "obs_lines_changed_all": 46,
+     "obs_lines_changed_visible": 46,
+     "dom_targets": 44
+    },
+    "codemod_equals_gate": true
+   },
+   "alt": {
+    "codemod": {
+     "env": {
+      "img": 17
+     },
+     "shared": {}
+    },
+    "pages_changed": 6,
+    "lines_changed": 66,
+    "lines_depth_only": 0,
+    "lines_clean_total": 2376,
+    "totals": {
+     "-attr:image_alt": 66
+    },
+    "gym_pages_changed": 8,
+    "gym_viewport_lines_changed": 28,
+    "gym_full_lines_changed": 340,
+    "screenshot_max_pix_share": 0.00038,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {
+     "image_alt:full": 51,
+     "image_alt:empty": 9,
+     "image_alt:partial": 6
+    },
+    "removed_value_elsewhere": 37,
+    "removed_value_nearby_full": {
+     "image_alt:empty": 0,
+     "image_alt:partial": 0
+    },
+    "removed_value_fate_examples": {
+     "image_alt:full": [
+      {
+       "tag": "a",
+       "value": "Double-Wall Insulated Cookware & Bakeware Set of 4",
+       "remaining": "Double-Wall Insulated Cookware & Bakeware Set of 4 | Ironstone Home | 4,064 | 4000+ | bought in past"
+      },
+      {
+       "tag": "a",
+       "value": "True Wireless Hubs & Adapters Active Noise Cancelling",
+       "remaining": "True Wireless Hubs & Adapters Active Noise Cancelling | Lumivox | 3,273 | 3200+ | bought in past mon"
+      },
+      {
+       "tag": "a",
+       "value": "Portable Bluetooth 5.3 Speakers IPX7 Waterproof",
+       "remaining": "Portable Bluetooth 5.3 Speakers IPX7 Waterproof | Wavefront | 3,178 | 3100+ | bought in past month |"
+      },
+      {
+       "tag": "a",
+       "value": "Wireless Noise-Cancelling Over-Ear Mice",
+       "remaining": "Wireless Noise-Cancelling Over-Ear Mice | Wavefront | 2,924 | 2900+ | bought in past month | 52 | 92"
+      }
+     ],
+     "image_alt:empty": [
+      {
+       "tag": "a",
+       "value": "2026 2-Pack 12800mAh Portable Charger with Built in Cables, Travel Essential Battery Pack, 4 Outputs",
+       "remaining": ""
+      },
+      {
+       "tag": "a",
+       "value": "21Pcs Pink Desk Organizers and Accessories With Mesh Desk Organizer and 360\u00b0Rotating Pen Holder and ",
+       "remaining": ""
+      },
+      {
+       "tag": "a",
+       "value": "23Pcs Resistance Bands Set Workout Bands, 5 Stackable Exercise Bands with Handles, 5 Resistance Loop",
+       "remaining": ""
+      },
+      {
+       "tag": "a",
+       "value": "4 Pack Large Closet Storage Baskets Bins for Shelves | Fabric Closet Organizers and Storage with Han",
+       "remaining": ""
+      }
+     ],
+     "image_alt:partial": [
+      {
+       "tag": "div",
+       "value": "Amazon Basics Wired Earbuds with Microphone, In-Ear Headphones, 3.5mm Jack, High Definition Sound, S",
+       "remaining": "Open Amazon Basics Wired Earbuds with Microphone, In-Ear Headphones, 3.5mm Jack, High Definition Sou"
+      },
+      {
+       "tag": "a",
+       "value": "Amazon Basics Wired Earbuds with Microphone, In-Ear Headphones, 3.5mm Jack, High Definition Sound, S",
+       "remaining": "Open Amazon Basics Wired Earbuds with Microphone, In-Ear Headphones, 3.5mm Jack, High Definition Sou"
+      },
+      {
+       "tag": "div",
+       "value": "kurdene Wireless Earbuds Bluetooth 5.3 in Ear Buds Light Weight Headphones,Deep Bass Sound,Built in ",
+       "remaining": "Open kurdene Wireless Earbuds Bluetooth 5.3 in Ear Buds Light Weight Headphones,Deep Bass Sound,Buil"
+      },
+      {
+       "tag": "a",
+       "value": "kurdene Wireless Earbuds Bluetooth 5.3 in Ear Buds Light Weight Headphones,Deep Bass Sound,Built in ",
+       "remaining": "Open kurdene Wireless Earbuds Bluetooth 5.3 in Ear Buds Light Weight Headphones,Deep Bass Sound,Buil"
+      }
+     ]
+    },
+    "examples": {
+     "-attr:image_alt": [
+      {
+       "page": "amazon_account_overhaul_and_shop",
+       "clean": "[#]<a image_alt=Double-Wall Insulated Cookware & Bakeware Set of 4 image_src=kitchen-cookware.svg />",
+       "variant": "[#]<a image_src=kitchen-cookware.svg />"
+      },
+      {
+       "page": "amazon_add_new_address",
+       "clean": "[#]<a image_alt=1500 Pieces Building Bricks, Classic Bulk Small Blocks, Classic Bricks Set Basic Building Blocks Com... image_src=71au2ZYDWuL._AC_UL320_.jpg />",
+       "variant": "[#]<a image_src=71au2ZYDWuL._AC_UL320_.jpg />"
+      }
+     ]
+    },
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 8,
+     "obs_lines_changed_all": 340,
+     "obs_lines_changed_visible": 28,
+     "dom_targets": 186
+    },
+    "codemod_equals_gate": true
+   }
+  },
+  "gmail": {
+   "n_pages": 8,
+   "clean1": {
+    "codemod": null,
+    "pages_changed": 0,
+    "lines_changed": 0,
+    "lines_depth_only": 0,
+    "lines_clean_total": 1547,
+    "totals": {},
+    "gym_pages_changed": 0,
+    "gym_viewport_lines_changed": 0,
+    "gym_full_lines_changed": 0,
+    "screenshot_max_pix_share": 0.0,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {},
+    "removed_value_elsewhere": 0,
+    "removed_value_nearby_full": {},
+    "removed_value_fate_examples": {},
+    "examples": {},
+    "gate_verdict": null,
+    "gate_dose": null,
+    "codemod_equals_gate": null
+   },
+   "none": {
+    "codemod": {
+     "env": {},
+     "shared": {}
+    },
+    "pages_changed": 0,
+    "lines_changed": 0,
+    "lines_depth_only": 0,
+    "lines_clean_total": 1547,
+    "totals": {},
+    "gym_pages_changed": 0,
+    "gym_viewport_lines_changed": 0,
+    "gym_full_lines_changed": 0,
+    "screenshot_max_pix_share": 0.0,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {},
+    "removed_value_elsewhere": 0,
+    "removed_value_nearby_full": {},
+    "removed_value_fate_examples": {},
+    "examples": {},
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 0,
+     "obs_lines_changed_all": 0,
+     "obs_lines_changed_visible": 0,
+     "dom_targets": 0
+    },
+    "codemod_equals_gate": true
+   },
+   "landmarks": {
+    "codemod": {
+     "env": {
+      "header": 4,
+      "nav": 2,
+      "role": 1,
+      "main": 6,
+      "footer": 1
+     },
+     "shared": {
+      "nav": 1,
+      "header": 2,
+      "footer": 1,
+      "role": 1,
+      "aside": 1
+     }
+    },
+    "pages_changed": 8,
+    "lines_changed": 9,
+    "lines_depth_only": 0,
+    "lines_clean_total": 1547,
+    "totals": {
+     "-attr:role": 8,
+     "tag:main->div": 1
+    },
+    "gym_pages_changed": 8,
+    "gym_viewport_lines_changed": 1769,
+    "gym_full_lines_changed": 2723,
+    "screenshot_max_pix_share": 0.0,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {},
+    "removed_value_elsewhere": 0,
+    "removed_value_nearby_full": {},
+    "removed_value_fate_examples": {},
+    "examples": {
+     "-attr:role": [
+      {
+       "page": "gmail_access_review_audit",
+       "clean": "[#]<form role=search />",
+       "variant": "[#]<form />"
+      },
+      {
+       "page": "gmail_action_item_extraction",
+       "clean": "[#]<form role=search />",
+       "variant": "[#]<form />"
+      }
+     ],
+     "tag:main->div": [
+      {
+       "page": "route__search",
+       "clean": "[#]<main aria-label=Search />",
+       "variant": "[#]<div aria-label=Search />"
+      }
+     ]
+    },
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 8,
+     "obs_lines_changed_all": 2723,
+     "obs_lines_changed_visible": 1769,
+     "dom_targets": 46
+    },
+    "codemod_equals_gate": true
+   },
+   "headings": {
+    "codemod": {
+     "env": {
+      "h1": 3,
+      "h2": 4,
+      "h3": 3,
+      "css-h1": 1,
+      "css-h2": 2,
+      "css-h3": 3,
+      "css-files": 1
+     },
+     "shared": {
+      "h2": 3,
+      "h3": 3
+     }
+    },
+    "pages_changed": 0,
+    "lines_changed": 0,
+    "lines_depth_only": 0,
+    "lines_clean_total": 1547,
+    "totals": {},
+    "gym_pages_changed": 4,
+    "gym_viewport_lines_changed": 20,
+    "gym_full_lines_changed": 28,
+    "screenshot_max_pix_share": 0.0,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {},
+    "removed_value_elsewhere": 0,
+    "removed_value_nearby_full": {},
+    "removed_value_fate_examples": {},
+    "examples": {},
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 4,
+     "obs_lines_changed_all": 28,
+     "obs_lines_changed_visible": 20,
+     "dom_targets": 30
+    },
+    "codemod_equals_gate": true
+   },
+   "names": {
+    "codemod": {
+     "env": {
+      "aria-label": 60
+     },
+     "shared": {
+      "aria-label": 19
+     }
+    },
+    "pages_changed": 8,
+    "lines_changed": 255,
+    "lines_depth_only": 0,
+    "lines_clean_total": 1547,
+    "totals": {
+     "-attr:aria-label": 255
+    },
+    "gym_pages_changed": 8,
+    "gym_viewport_lines_changed": 316,
+    "gym_full_lines_changed": 537,
+    "screenshot_max_pix_share": 0.0,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {
+     "aria-label:partial": 85,
+     "aria-label:full": 84,
+     "aria-label:empty": 85,
+     "aria-label:none": 1
+    },
+    "removed_value_elsewhere": 84,
+    "removed_value_nearby_full": {
+     "aria-label:partial": 0,
+     "aria-label:empty": 0,
+     "aria-label:none": 0
+    },
+    "removed_value_fate_examples": {
+     "aria-label:partial": [
+      {
+       "tag": "button",
+       "value": "Run search",
+       "remaining": "Search"
+      },
+      {
+       "tag": "button",
+       "value": "Compose a new message",
+       "remaining": "Compose"
+      },
+      {
+       "tag": "button",
+       "value": "Mark all as read",
+       "remaining": "Mark all read"
+      },
+      {
+       "tag": "a",
+       "value": "Open unread thread Quarterly Access Review: Project Athena",
+       "remaining": "Quarterly Access Review: Project Athena | The following accounts currently have access to Project At"
+      }
+     ],
+     "aria-label:full": [
+      {
+       "tag": "a",
+       "value": "Inbox",
+       "remaining": "Inbox | 43"
+      },
+      {
+       "tag": "a",
+       "value": "Starred",
+       "remaining": "Starred"
+      },
+      {
+       "tag": "a",
+       "value": "Sent",
+       "remaining": "Sent"
+      },
+      {
+       "tag": "a",
+       "value": "Drafts",
+       "remaining": "Drafts"
+      }
+     ],
+     "aria-label:empty": [
+      {
+       "tag": "button",
+       "value": "Previous page",
+       "remaining": ""
+      },
+      {
+       "tag": "button",
+       "value": "Next page",
+       "remaining": ""
+      },
+      {
+       "tag": "button",
+       "value": "Star Quarterly Access Review: Project Athena",
+       "remaining": ""
+      },
+      {
+       "tag": "button",
+       "value": "Star Fwd: Team Changes",
+       "remaining": ""
+      }
+     ],
+     "aria-label:none": [
+      {
+       "tag": "button",
+       "value": "Toggle BreakingWeb toolbar",
+       "remaining": "WAB"
+      }
+     ]
+    },
+    "examples": {
+     "-attr:aria-label": [
+      {
+       "page": "gmail_access_review_audit",
+       "clean": "[#]<button type=submit aria-label=Run search />",
+       "variant": "[#]<button type=submit />"
+      },
+      {
+       "page": "gmail_action_item_extraction",
+       "clean": "[#]<button type=submit aria-label=Run search />",
+       "variant": "[#]<button type=submit />"
+      }
+     ]
+    },
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 8,
+     "obs_lines_changed_all": 537,
+     "obs_lines_changed_visible": 316,
+     "dom_targets": 367
+    },
+    "codemod_equals_gate": true
+   },
+   "labels": {
+    "codemod": {
+     "env": {
+      "control-aria": 29,
+      "control-aria-props": 17
+     },
+     "shared": {
+      "control-aria": 5,
+      "htmlFor": 1
+     }
+    },
+    "pages_changed": 8,
+    "lines_changed": 30,
+    "lines_depth_only": 9,
+    "lines_clean_total": 1547,
+    "totals": {
+     "-attr:aria-label": 21,
+     "depth": 8,
+     "+line:label": 8,
+     "depth_only": 9,
+     "text": 1
+    },
+    "gym_pages_changed": 4,
+    "gym_viewport_lines_changed": 22,
+    "gym_full_lines_changed": 48,
+    "screenshot_max_pix_share": 0.0,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {
+     "aria-label:full": 12,
+     "aria-label:none": 2,
+     "aria-label:partial": 3,
+     "aria-label:empty": 4
+    },
+    "removed_value_elsewhere": 11,
+    "removed_value_nearby_full": {
+     "aria-label:none": 0,
+     "aria-label:partial": 0,
+     "aria-label:empty": 4
+    },
+    "removed_value_fate_examples": {
+     "aria-label:full": [
+      {
+       "tag": "input",
+       "value": "Search mail",
+       "remaining": "Search mail"
+      },
+      {
+       "tag": "input",
+       "value": "Search mail",
+       "remaining": "Search mail"
+      },
+      {
+       "tag": "input",
+       "value": "Search mail",
+       "remaining": "Search mail"
+      },
+      {
+       "tag": "input",
+       "value": "Search mail",
+       "remaining": "Search mail"
+      }
+     ],
+     "aria-label:none": [
+      {
+       "tag": "input",
+       "value": "Recipients",
+       "remaining": "Compose-to | name@example.com, teammate@example.com"
+      },
+      {
+       "tag": "input",
+       "value": "Attachment filenames",
+       "remaining": "Compose-attachments | budget.xlsx, meeting-notes.pdf"
+      }
+     ],
+     "aria-label:partial": [
+      {
+       "tag": "input",
+       "value": "Email subject",
+       "remaining": "Compose-subject | Subject line"
+      },
+      {
+       "tag": "textarea",
+       "value": "Email body",
+       "remaining": "Compose-body | Write your message"
+      },
+      {
+       "tag": "input",
+       "value": "Forwarding email address",
+       "remaining": "(no forwarding address)"
+      }
+     ],
+     "aria-label:empty": [
+      {
+       "tag": "select",
+       "value": "Gmail display language",
+       "remaining": ""
+      },
+      {
+       "tag": "select",
+       "value": "Maximum page size",
+       "remaining": ""
+      },
+      {
+       "tag": "select",
+       "value": "Undo send seconds",
+       "remaining": ""
+      },
+      {
+       "tag": "select",
+       "value": "Default text style",
+       "remaining": ""
+      }
+     ]
+    },
+    "examples": {
+     "-attr:aria-label": [
+      {
+       "page": "gmail_access_review_audit",
+       "clean": "|SHADOW(open)|[#]<input aria-label=Search mail placeholder=Search mail />",
+       "variant": "|SHADOW(open)|[#]<input placeholder=Search mail />"
+      },
+      {
+       "page": "gmail_action_item_extraction",
+       "clean": "|SHADOW(open)|[#]<input aria-label=Search mail placeholder=Search mail />",
+       "variant": "|SHADOW(open)|[#]<input placeholder=Search mail />"
+      }
+     ],
+     "depth": [
+      {
+       "page": "route__compose",
+       "clean": "|SHADOW(open)|[#]<input id=Compose-to placeholder=name@example.com, teammate@example.com aria-label=Recipients />",
+       "variant": "|SHADOW(open)|[#]<input id=Compose-to placeholder=name@example.com, teammate@example.com />"
+      },
+      {
+       "page": "route__contacts",
+       "clean": "|SHADOW(open)|[#]<input id=new-label-name placeholder=Important Projects aria-label=New label name />",
+       "variant": "|SHADOW(open)|[#]<input id=new-label-name placeholder=Important Projects />"
+      }
+     ],
+     "+line:label": [
+      {
+       "page": "route__compose",
+       "variant": "[#]<label />"
+      },
+      {
+       "page": "route__contacts",
+       "variant": "[#]<label />"
+      }
+     ],
+     "depth_only": [],
+     "text": [
+      {
+       "page": "route__settings",
+       "clean": "|SHADOW(open)|[#]<textarea aria-label=Email signature value=Avery Quinn",
+       "variant": "|SHADOW(open)|[#]<textarea value=Avery Quinn"
+      }
+     ]
+    },
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 4,
+     "obs_lines_changed_all": 48,
+     "obs_lines_changed_visible": 22,
+     "dom_targets": 48
+    },
+    "codemod_equals_gate": true
+   },
+   "tableheads": {
+    "codemod": {
+     "env": {
+      "th": 13
+     },
+     "shared": {
+      "th": 1,
+      "css-td-guard": 1,
+      "css-th": 2,
+      "css-files": 1
+     }
+    },
+    "pages_changed": 2,
+    "lines_changed": 18,
+    "lines_depth_only": 14,
+    "lines_clean_total": 1547,
+    "totals": {
+     "+line:td": 18,
+     "depth_only": 14
+    },
+    "gym_pages_changed": 2,
+    "gym_viewport_lines_changed": 0,
+    "gym_full_lines_changed": 36,
+    "screenshot_max_pix_share": 0.0,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {},
+    "removed_value_elsewhere": 0,
+    "removed_value_nearby_full": {},
+    "removed_value_fate_examples": {},
+    "examples": {
+     "+line:td": [
+      {
+       "page": "route__contacts",
+       "variant": "[#]<td />"
+      },
+      {
+       "page": "route__labels",
+       "variant": "[#]<td />"
+      }
+     ],
+     "depth_only": []
+    },
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 2,
+     "obs_lines_changed_all": 36,
+     "obs_lines_changed_visible": 0,
+     "dom_targets": 18
+    },
+    "codemod_equals_gate": true
+   }
+  },
+  "patient_portal": {
+   "n_pages": 9,
+   "clean1": {
+    "codemod": null,
+    "pages_changed": 0,
+    "lines_changed": 0,
+    "lines_depth_only": 0,
+    "lines_clean_total": 1117,
+    "totals": {},
+    "gym_pages_changed": 0,
+    "gym_viewport_lines_changed": 0,
+    "gym_full_lines_changed": 0,
+    "screenshot_max_pix_share": 0.0,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {},
+    "removed_value_elsewhere": 0,
+    "removed_value_nearby_full": {},
+    "removed_value_fate_examples": {},
+    "examples": {},
+    "gate_verdict": null,
+    "gate_dose": null,
+    "codemod_equals_gate": null
+   },
+   "none": {
+    "codemod": {
+     "env": {},
+     "shared": {}
+    },
+    "pages_changed": 0,
+    "lines_changed": 0,
+    "lines_depth_only": 0,
+    "lines_clean_total": 1117,
+    "totals": {},
+    "gym_pages_changed": 0,
+    "gym_viewport_lines_changed": 0,
+    "gym_full_lines_changed": 0,
+    "screenshot_max_pix_share": 0.0,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {},
+    "removed_value_elsewhere": 0,
+    "removed_value_nearby_full": {},
+    "removed_value_fate_examples": {},
+    "examples": {},
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 0,
+     "obs_lines_changed_all": 0,
+     "obs_lines_changed_visible": 0,
+     "dom_targets": 0
+    },
+    "codemod_equals_gate": true
+   },
+   "landmarks": {
+    "codemod": {
+     "env": {
+      "header": 1,
+      "nav": 2,
+      "main": 1,
+      "role": 1,
+      "aside": 1
+     },
+     "shared": {
+      "nav": 1,
+      "header": 2,
+      "footer": 1,
+      "role": 1,
+      "aside": 1
+     }
+    },
+    "pages_changed": 4,
+    "lines_changed": 4,
+    "lines_depth_only": 0,
+    "lines_clean_total": 1117,
+    "totals": {
+     "tag:main->div": 4
+    },
+    "gym_pages_changed": 9,
+    "gym_viewport_lines_changed": 1218,
+    "gym_full_lines_changed": 1927,
+    "screenshot_max_pix_share": 0.0,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {},
+    "removed_value_elsewhere": 0,
+    "removed_value_nearby_full": {},
+    "removed_value_fate_examples": {},
+    "examples": {
+     "tag:main->div": [
+      {
+       "page": "pp_cancel_appointment",
+       "clean": "|scroll element|<main /> (horizontal 0%)",
+       "variant": "|scroll element|<div /> (horizontal 0%)"
+      },
+      {
+       "page": "pp_cancel_duplicate_appointments",
+       "clean": "|scroll element|<main /> (horizontal 0%)",
+       "variant": "|scroll element|<div /> (horizontal 0%)"
+      }
+     ]
+    },
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 9,
+     "obs_lines_changed_all": 1927,
+     "obs_lines_changed_visible": 1218,
+     "dom_targets": 29
+    },
+    "codemod_equals_gate": true
+   },
+   "headings": {
+    "codemod": {
+     "env": {
+      "h1": 2,
+      "h2": 8,
+      "h3": 20,
+      "h4": 4,
+      "css-h3": 2,
+      "css-h4": 1,
+      "css-files": 1
+     },
+     "shared": {
+      "h2": 3,
+      "h3": 3
+     }
+    },
+    "pages_changed": 0,
+    "lines_changed": 0,
+    "lines_depth_only": 0,
+    "lines_clean_total": 1117,
+    "totals": {},
+    "gym_pages_changed": 9,
+    "gym_viewport_lines_changed": 64,
+    "gym_full_lines_changed": 78,
+    "screenshot_max_pix_share": 0.0,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {},
+    "removed_value_elsewhere": 0,
+    "removed_value_nearby_full": {},
+    "removed_value_fate_examples": {},
+    "examples": {},
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 9,
+     "obs_lines_changed_all": 78,
+     "obs_lines_changed_visible": 64,
+     "dom_targets": 36
+    },
+    "codemod_equals_gate": true
+   },
+   "names": {
+    "codemod": {
+     "env": {
+      "aria-label": 46
+     },
+     "shared": {
+      "aria-label": 19
+     }
+    },
+    "pages_changed": 9,
+    "lines_changed": 142,
+    "lines_depth_only": 0,
+    "lines_clean_total": 1117,
+    "totals": {
+     "-attr:aria-label": 142
+    },
+    "gym_pages_changed": 7,
+    "gym_viewport_lines_changed": 136,
+    "gym_full_lines_changed": 209,
+    "screenshot_max_pix_share": 0.0,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {
+     "aria-label:full": 82,
+     "aria-label:partial": 60
+    },
+    "removed_value_elsewhere": 78,
+    "removed_value_nearby_full": {
+     "aria-label:partial": 0
+    },
+    "removed_value_fate_examples": {
+     "aria-label:full": [
+      {
+       "tag": "a",
+       "value": "Dashboard",
+       "remaining": "Dashboard"
+      },
+      {
+       "tag": "a",
+       "value": "Appointments",
+       "remaining": "Appointments"
+      },
+      {
+       "tag": "a",
+       "value": "Messages",
+       "remaining": "Messages"
+      },
+      {
+       "tag": "a",
+       "value": "Medications",
+       "remaining": "Medications"
+      }
+     ],
+     "aria-label:partial": [
+      {
+       "tag": "button",
+       "value": "Cancel appointment with Dr. Lisa Patel",
+       "remaining": "Cancel"
+      },
+      {
+       "tag": "button",
+       "value": "Reschedule appointment with Dr. Lisa Patel",
+       "remaining": "Reschedule"
+      },
+      {
+       "tag": "button",
+       "value": "Cancel appointment with Dr. Lisa Patel",
+       "remaining": "Cancel"
+      },
+      {
+       "tag": "button",
+       "value": "Reschedule appointment with Dr. Lisa Patel",
+       "remaining": "Reschedule"
+      }
+     ]
+    },
+    "examples": {
+     "-attr:aria-label": [
+      {
+       "page": "pp_cancel_appointment",
+       "clean": "[#]<a aria-label=Dashboard />",
+       "variant": "[#]<a />"
+      },
+      {
+       "page": "pp_cancel_duplicate_appointments",
+       "clean": "[#]<a aria-label=Dashboard />",
+       "variant": "[#]<a />"
+      }
+     ]
+    },
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 7,
+     "obs_lines_changed_all": 209,
+     "obs_lines_changed_visible": 136,
+     "dom_targets": 142
+    },
+    "codemod_equals_gate": true
+   },
+   "labels": {
+    "codemod": {
+     "env": {
+      "control-aria": 36,
+      "htmlFor": 30
+     },
+     "shared": {
+      "control-aria": 5,
+      "htmlFor": 1
+     }
+    },
+    "pages_changed": 3,
+    "lines_changed": 13,
+    "lines_depth_only": 0,
+    "lines_clean_total": 1117,
+    "totals": {
+     "-attr:aria-label": 13
+    },
+    "gym_pages_changed": 3,
+    "gym_viewport_lines_changed": 34,
+    "gym_full_lines_changed": 48,
+    "screenshot_max_pix_share": 0.0,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {
+     "aria-label:partial": 11,
+     "aria-label:empty": 1,
+     "aria-label:none": 1
+    },
+    "removed_value_elsewhere": 0,
+    "removed_value_nearby_full": {
+     "aria-label:partial": 3,
+     "aria-label:empty": 0,
+     "aria-label:none": 0
+    },
+    "removed_value_fate_examples": {
+     "aria-label:partial": [
+      {
+       "tag": "select",
+       "value": "Sort lab results",
+       "remaining": "lab-sort"
+      },
+      {
+       "tag": "input",
+       "value": "Patient name (read only)",
+       "remaining": "profile-name | Maya Nguyen"
+      },
+      {
+       "tag": "input",
+       "value": "Sex (read only)",
+       "remaining": "profile-sex | male"
+      },
+      {
+       "tag": "input",
+       "value": "Phone number: (555) 626-3509",
+       "remaining": "profile-phone | (555) 626-3509 | 123-456-7890"
+      }
+     ],
+     "aria-label:empty": [
+      {
+       "tag": "select",
+       "value": "Filter messages by category",
+       "remaining": ""
+      }
+     ],
+     "aria-label:none": [
+      {
+       "tag": "input",
+       "value": "Date of birth (read only)",
+       "remaining": "profile-dob | 1987-07-07"
+      }
+     ]
+    },
+    "examples": {
+     "-attr:aria-label": [
+      {
+       "page": "route__labs",
+       "clean": "|SHADOW(open)|[#]<select id=lab-sort aria-label=Sort lab results expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=3,options=Date|Test Name|Flag) />",
+       "variant": "|SHADOW(open)|[#]<select id=lab-sort expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=3,options=Date|Test Name|Flag) />"
+      },
+      {
+       "page": "route__messages",
+       "clean": "|SHADOW(open)|[#]<select aria-label=Filter messages by category expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=5,options=All Categories|clinical|billing|scheduling)",
+       "variant": "|SHADOW(open)|[#]<select expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=5,options=All Categories|clinical|billing|scheduling) />"
+      }
+     ]
+    },
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 3,
+     "obs_lines_changed_all": 48,
+     "obs_lines_changed_visible": 34,
+     "dom_targets": 25
+    },
+    "codemod_equals_gate": true
+   },
+   "tableheads": {
+    "codemod": {
+     "env": {
+      "th": 87,
+      "css-th": 1,
+      "css-td-guard": 2,
+      "css-files": 1
+     },
+     "shared": {
+      "th": 1,
+      "css-td-guard": 1,
+      "css-th": 2,
+      "css-files": 1
+     }
+    },
+    "pages_changed": 6,
+    "lines_changed": 60,
+    "lines_depth_only": 60,
+    "lines_clean_total": 1117,
+    "totals": {
+     "+line:td": 60,
+     "depth_only": 60
+    },
+    "gym_pages_changed": 6,
+    "gym_viewport_lines_changed": 96,
+    "gym_full_lines_changed": 144,
+    "screenshot_max_pix_share": 0.0,
+    "screenshot_size_mismatch": 0,
+    "removed_value_fate": {},
+    "removed_value_elsewhere": 0,
+    "removed_value_nearby_full": {},
+    "removed_value_fate_examples": {},
+    "examples": {
+     "+line:td": [
+      {
+       "page": "pp_cancel_appointment",
+       "variant": "[#]<td />"
+      },
+      {
+       "page": "pp_cancel_duplicate_appointments",
+       "variant": "[#]<td />"
+      }
+     ],
+     "depth_only": []
+    },
+    "gate_verdict": "PASS",
+    "gate_dose": {
+     "pages_with_obs_change": 6,
+     "obs_lines_changed_all": 144,
+     "obs_lines_changed_visible": 96,
+     "dom_targets": 72
+    },
+    "codemod_equals_gate": true
+   }
+  }
+ }
+}

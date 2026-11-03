@@ -1,0 +1,581 @@
+{
+ "env": "booking",
+ "kind": "headings",
+ "codemod_counts_env": {
+  "env": {
+   "h1": 13,
+   "h2": 36,
+   "h3": 42,
+   "h4": 0,
+   "h5": 0,
+   "h6": 0,
+   "role": 0,
+   "css-files": 1
+  },
+  "shared": {
+   "h1": 0,
+   "h2": 3,
+   "h3": 3,
+   "h4": 0,
+   "h5": 0,
+   "h6": 0,
+   "role": 0
+  }
+ },
+ "tasks": [
+  {
+   "page": "booking_account_security_and_payment",
+   "visible": {
+    "lines_clean": 42,
+    "removed": 8,
+    "added": 3,
+    "examples": [
+     "-[30] heading 'Settings', visible",
+     "-[33] heading 'Notification Preferences', visible",
+     "+StaticText 'Settings'",
+     "+StaticText 'Notification Preferences'",
+     "-[49] heading 'Security', visible",
+     "+StaticText 'Security'",
+     "-[54] heading 'Language & Currency', visible",
+     "-[57] LabelText '', visible",
+     "-\tStaticText 'Language'",
+     "-[71] LabelText '', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 186,
+    "removed": 8,
+    "added": 8,
+    "examples": [
+     "-\t[30] heading 'Settings', visible",
+     "-\t[33] heading 'Notification Preferences', visible",
+     "+\tStaticText 'Settings'",
+     "+\tStaticText 'Notification Preferences'",
+     "-\t[49] heading 'Security', visible",
+     "+\tStaticText 'Security'",
+     "-\t[54] heading 'Language & Currency', visible",
+     "-\t[57] LabelText '', visible",
+     "+\tStaticText 'Language & Currency'",
+     "+\t[57] LabelText ''"
+    ]
+   },
+   "pixels": {
+    "size_clean": [
+     1265,
+     2130
+    ],
+    "size_variant": [
+     1265,
+     2226
+    ],
+    "diff_share": null
+   }
+  },
+  {
+   "page": "booking_add_payment",
+   "visible": {
+    "lines_clean": 42,
+    "removed": 8,
+    "added": 3,
+    "examples": [
+     "-[30] heading 'Settings', visible",
+     "-[33] heading 'Notification Preferences', visible",
+     "+StaticText 'Settings'",
+     "+StaticText 'Notification Preferences'",
+     "-[49] heading 'Security', visible",
+     "+StaticText 'Security'",
+     "-[54] heading 'Language & Currency', visible",
+     "-[57] LabelText '', visible",
+     "-\tStaticText 'Language'",
+     "-[71] LabelText '', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 176,
+    "removed": 8,
+    "added": 8,
+    "examples": [
+     "-\t[30] heading 'Settings', visible",
+     "-\t[33] heading 'Notification Preferences', visible",
+     "+\tStaticText 'Settings'",
+     "+\tStaticText 'Notification Preferences'",
+     "-\t[49] heading 'Security', visible",
+     "+\tStaticText 'Security'",
+     "-\t[54] heading 'Language & Currency', visible",
+     "-\t[57] LabelText '', visible",
+     "+\tStaticText 'Language & Currency'",
+     "+\t[57] LabelText ''"
+    ]
+   },
+   "pixels": {
+    "size_clean": [
+     1265,
+     2068
+    ],
+    "size_variant": [
+     1265,
+     2165
+    ],
+    "diff_share": null
+   }
+  },
+  {
+   "page": "route__account",
+   "visible": {
+    "lines_clean": 67,
+    "removed": 8,
+    "added": 4,
+    "examples": [
+     "-\t[32] heading 'Jordan Parker', visible",
+     "+\tStaticText 'Jordan Parker'",
+     "-\t[39] heading 'Personal Details', visible",
+     "+\tStaticText 'Personal Details'",
+     "-\t[99] heading 'Wallet', visible",
+     "+\tStaticText 'Wallet'",
+     "-\t[104] heading 'Recent Transactions', visible",
+     "+\tStaticText 'Recent Transactions'",
+     "-\tStaticText 'Reward for leaving 5 reviews'",
+     "-\tStaticText '+'"
+    ]
+   },
+   "all": {
+    "lines_clean": 117,
+    "removed": 7,
+    "added": 7,
+    "examples": [
+     "-\t[32] heading 'Jordan Parker', visible",
+     "+\tStaticText 'Jordan Parker'",
+     "-\t[39] heading 'Personal Details', visible",
+     "+\tStaticText 'Personal Details'",
+     "-\t[77] heading 'Genius Loyalty Program'",
+     "+\tStaticText 'Genius Loyalty Program'",
+     "-\t[89] heading 'Your Benefits'",
+     "+\tStaticText 'Your Benefits'",
+     "-\t[99] heading 'Wallet', visible",
+     "+\tStaticText 'Wallet'"
+    ]
+   },
+   "pixels": {
+    "size_clean": [
+     1265,
+     1294
+    ],
+    "size_variant": [
+     1265,
+     1345
+    ],
+    "diff_share": null
+   }
+  },
+  {
+   "page": "route__deals",
+   "visible": {
+    "lines_clean": 86,
+    "removed": 7,
+    "added": 1,
+    "examples": [
+     "-[31] heading \"Today's Best Deals\", visible",
+     "+StaticText \"Today's Best Deals\"",
+     "-StaticText 'Paris'",
+     "-StaticText ','",
+     "-StaticText 'France'",
+     "-StaticText '\u00b7'",
+     "-StaticText '0.8'",
+     "-StaticText 'km from center'"
+    ]
+   },
+   "all": {
+    "lines_clean": 599,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[31] heading \"Today's Best Deals\", visible",
+     "+\tStaticText \"Today's Best Deals\""
+    ]
+   },
+   "pixels": {
+    "size_clean": [
+     1265,
+     4725
+    ],
+    "size_variant": [
+     1265,
+     4738
+    ],
+    "diff_share": null
+   }
+  },
+  {
+   "page": "route__home",
+   "visible": {
+    "lines_clean": 107,
+    "removed": 11,
+    "added": 10,
+    "examples": [
+     "-\t[32] heading 'Find your next stay', visible",
+     "+\tStaticText 'Find your next stay'",
+     "-\t[51] heading \"Genius Level 2 You're a Genius member!\", visible",
+     "-\t\tStaticText 'Genius Level'",
+     "-\t\tStaticText '2'",
+     "+\tStaticText 'Genius Level'",
+     "+\tStaticText '2'",
+     "+\tStaticText \"You're a Genius member!\"",
+     "-\t[60] heading 'Your recent searches', visible",
+     "+\tStaticText 'Your recent searches'"
+    ]
+   },
+   "all": {
+    "lines_clean": 415,
+    "removed": 22,
+    "added": 22,
+    "examples": [
+     "-\t\t[32] heading 'Find your next stay', visible",
+     "+\t\tStaticText 'Find your next stay'",
+     "-\t\t[51] heading \"Genius Level 2 You're a Genius member!\", visible",
+     "-\t\t\tStaticText 'Genius Level'",
+     "-\t\t\tStaticText '2'",
+     "+\t\tStaticText 'Genius Level'",
+     "+\t\tStaticText '2'",
+     "+\t\tStaticText \"You're a Genius member!\"",
+     "-\t\t[60] heading 'Your recent searches', visible",
+     "+\t\tStaticText 'Your recent searches'"
+    ]
+   },
+   "pixels": {
+    "size_clean": [
+     1265,
+     2397
+    ],
+    "size_variant": [
+     1265,
+     2496
+    ],
+    "diff_share": null
+   }
+  },
+  {
+   "page": "route__messages",
+   "visible": {
+    "lines_clean": 53,
+    "removed": 9,
+    "added": 5,
+    "examples": [
+     "-[31] heading 'Messages 5 unread', visible",
+     "-\tStaticText '5'",
+     "-\tStaticText 'unread'",
+     "+StaticText 'Messages'",
+     "+StaticText '5'",
+     "+StaticText 'unread'",
+     "-[36] heading 'Chic & Basic Born', visible",
+     "+StaticText 'Chic & Basic Born'",
+     "-[68] heading 'Palazzo Versace Dubai', visible",
+     "+StaticText 'Palazzo Versace Dubai'"
+    ]
+   },
+   "all": {
+    "lines_clean": 99,
+    "removed": 8,
+    "added": 8,
+    "examples": [
+     "-\t[31] heading 'Messages 5 unread', visible",
+     "-\t\tStaticText '5'",
+     "-\t\tStaticText 'unread'",
+     "+\tStaticText 'Messages'",
+     "+\tStaticText '5'",
+     "+\tStaticText 'unread'",
+     "-\t[36] heading 'Chic & Basic Born', visible",
+     "+\tStaticText 'Chic & Basic Born'",
+     "-\t[68] heading 'Palazzo Versace Dubai', visible",
+     "+\tStaticText 'Palazzo Versace Dubai'"
+    ]
+   },
+   "pixels": {
+    "size_clean": [
+     1265,
+     1561
+    ],
+    "size_variant": [
+     1265,
+     1616
+    ],
+    "diff_share": null
+   }
+  },
+  {
+   "page": "route__notifications",
+   "visible": {
+    "lines_clean": 49,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-[31] heading 'Notifications 9 unread', visible",
+     "-\tStaticText '9'",
+     "-\tStaticText 'unread'",
+     "+StaticText 'Notifications'",
+     "+StaticText '9'",
+     "+StaticText 'unread'"
+    ]
+   },
+   "all": {
+    "lines_clean": 139,
+    "removed": 3,
+    "added": 3,
+    "examples": [
+     "-\t[31] heading 'Notifications 9 unread', visible",
+     "-\t\tStaticText '9'",
+     "-\t\tStaticText 'unread'",
+     "+\tStaticText 'Notifications'",
+     "+\tStaticText '9'",
+     "+\tStaticText 'unread'"
+    ]
+   },
+   "pixels": {
+    "size_clean": [
+     1265,
+     1966
+    ],
+    "size_variant": [
+     1265,
+     1979
+    ],
+    "diff_share": null
+   }
+  },
+  {
+   "page": "route__reviews",
+   "visible": {
+    "lines_clean": 66,
+    "removed": 16,
+    "added": 4,
+    "examples": [
+     "-[30] heading 'My Reviews', visible",
+     "+StaticText 'My Reviews'",
+     "-[34] heading 'Leave a Review', visible",
+     "+StaticText 'Leave a Review'",
+     "-[46] heading 'Loved it', visible",
+     "+StaticText 'Loved it'",
+     "-[64] heading 'Fantastic service', visible",
+     "+StaticText 'Fantastic service'",
+     "-StaticText 'Jul 13, 2025'",
+     "-StaticText ''"
+    ]
+   },
+   "all": {
+    "lines_clean": 10761,
+    "removed": 579,
+    "added": 579,
+    "examples": [
+     "-\t[30] heading 'My Reviews', visible",
+     "+\tStaticText 'My Reviews'",
+     "-\t[34] heading 'Leave a Review', visible",
+     "+\tStaticText 'Leave a Review'",
+     "-\t[46] heading 'Loved it', visible",
+     "+\tStaticText 'Loved it'",
+     "-\t[64] heading 'Fantastic service', visible",
+     "+\tStaticText 'Fantastic service'",
+     "-\t[82] heading 'Family-friendly'",
+     "+\tStaticText 'Family-friendly'"
+    ]
+   },
+   "pixels": {
+    "size_clean": [
+     1265,
+     109230
+    ],
+    "size_variant": [
+     1265,
+     117321
+    ],
+    "diff_share": null
+   }
+  },
+  {
+   "page": "route__saved",
+   "visible": {
+    "lines_clean": 53,
+    "removed": 9,
+    "added": 5,
+    "examples": [
+     "-\t[31] heading 'My Saved Lists', visible",
+     "+\tStaticText 'My Saved Lists'",
+     "-\t\t[39] heading 'Summer 2026 Ideas', visible",
+     "+\t\tStaticText 'Summer 2026 Ideas'",
+     "-\t\t[47] heading 'Business Trip Hotels', visible",
+     "+\t\tStaticText 'Business Trip Hotels'",
+     "-\t\t[55] heading 'Romantic Getaways', visible",
+     "+\t\tStaticText 'Romantic Getaways'",
+     "-\t\t[63] heading 'Family-Friendly Stays', visible",
+     "+\t\tStaticText 'Family-Friendly Stays'"
+    ]
+   },
+   "all": {
+    "lines_clean": 62,
+    "removed": 8,
+    "added": 8,
+    "examples": [
+     "-\t[31] heading 'My Saved Lists', visible",
+     "+\tStaticText 'My Saved Lists'",
+     "-\t\t[39] heading 'Summer 2026 Ideas', visible",
+     "+\t\tStaticText 'Summer 2026 Ideas'",
+     "-\t\t[47] heading 'Business Trip Hotels', visible",
+     "+\t\tStaticText 'Business Trip Hotels'",
+     "-\t\t[55] heading 'Romantic Getaways', visible",
+     "+\t\tStaticText 'Romantic Getaways'",
+     "-\t\t[63] heading 'Family-Friendly Stays', visible",
+     "+\t\tStaticText 'Family-Friendly Stays'"
+    ]
+   },
+   "pixels": {
+    "size_clean": [
+     1265,
+     919
+    ],
+    "size_variant": [
+     1265,
+     1012
+    ],
+    "diff_share": null
+   }
+  },
+  {
+   "page": "route__search",
+   "visible": {
+    "lines_clean": 136,
+    "removed": 16,
+    "added": 4,
+    "examples": [
+     "-[32] heading 'Search by property name', visible",
+     "+StaticText 'Search by property name'",
+     "-[35] heading 'Your budget (per night)', visible",
+     "+StaticText 'Your budget (per night)'",
+     "-[41] heading 'Star rating', visible",
+     "+StaticText 'Star rating'",
+     "-[63] heading 'Review score', visible",
+     "+StaticText 'Review score'",
+     "-\tStaticText '+'",
+     "-[67] LabelText '', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 432,
+    "removed": 12,
+    "added": 12,
+    "examples": [
+     "-\t\t[32] heading 'Search by property name', visible",
+     "+\t\tStaticText 'Search by property name'",
+     "-\t\t[35] heading 'Your budget (per night)', visible",
+     "+\t\tStaticText 'Your budget (per night)'",
+     "-\t\t[41] heading 'Star rating', visible",
+     "+\t\tStaticText 'Star rating'",
+     "-\t\t[63] heading 'Review score', visible",
+     "+\t\tStaticText 'Review score'",
+     "-\t\t[67] LabelText '', clickable, visible",
+     "-\t\t\t[68] radio 'Very Good 8+', clickable, visible, checked='false'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     2682
+    ],
+    "diff_share": 0.01241
+   }
+  },
+  {
+   "page": "route__settings",
+   "visible": {
+    "lines_clean": 42,
+    "removed": 8,
+    "added": 3,
+    "examples": [
+     "-[30] heading 'Settings', visible",
+     "-[33] heading 'Notification Preferences', visible",
+     "+StaticText 'Settings'",
+     "+StaticText 'Notification Preferences'",
+     "-[49] heading 'Security', visible",
+     "+StaticText 'Security'",
+     "-[54] heading 'Language & Currency', visible",
+     "-[57] LabelText '', visible",
+     "-\tStaticText 'Language'",
+     "-[71] LabelText '', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 186,
+    "removed": 8,
+    "added": 8,
+    "examples": [
+     "-\t[30] heading 'Settings', visible",
+     "-\t[33] heading 'Notification Preferences', visible",
+     "+\tStaticText 'Settings'",
+     "+\tStaticText 'Notification Preferences'",
+     "-\t[49] heading 'Security', visible",
+     "+\tStaticText 'Security'",
+     "-\t[54] heading 'Language & Currency', visible",
+     "-\t[57] LabelText '', visible",
+     "+\tStaticText 'Language & Currency'",
+     "+\t[57] LabelText ''"
+    ]
+   },
+   "pixels": {
+    "size_clean": [
+     1265,
+     2130
+    ],
+    "size_variant": [
+     1265,
+     2226
+    ],
+    "diff_share": null
+   }
+  },
+  {
+   "page": "route__trips",
+   "visible": {
+    "lines_clean": 72,
+    "removed": 20,
+    "added": 5,
+    "examples": [
+     "-[31] heading 'Genius Level 2', visible",
+     "+StaticText 'Genius Level'",
+     "+StaticText '2'",
+     "-[34] heading 'My Trips', visible",
+     "+StaticText 'My Trips'",
+     "-[46] heading 'Chic & Basic Born', visible",
+     "+StaticText 'Chic & Basic Born'",
+     "-[71] heading 'Palazzo Versace Dubai', visible",
+     "+StaticText 'Palazzo Versace Dubai'",
+     "-[76] strong '', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 442,
+    "removed": 21,
+    "added": 22,
+    "examples": [
+     "-\t[31] heading 'Genius Level 2', visible",
+     "+\tStaticText 'Genius Level'",
+     "+\tStaticText '2'",
+     "-\t[34] heading 'My Trips', visible",
+     "+\tStaticText 'My Trips'",
+     "-\t[46] heading 'Chic & Basic Born', visible",
+     "+\tStaticText 'Chic & Basic Born'",
+     "-\t[71] heading 'Palazzo Versace Dubai', visible",
+     "+\tStaticText 'Palazzo Versace Dubai'",
+     "-\t[76] strong '', visible"
+    ]
+   },
+   "pixels": {
+    "size_clean": [
+     1265,
+     4433
+    ],
+    "size_variant": [
+     1265,
+     4721
+    ],
+    "diff_share": null
+   }
+  }
+ ]
+}

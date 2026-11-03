@@ -1,0 +1,266 @@
+{
+ "env": "lms",
+ "kind": "headings",
+ "codemod_counts_env": {
+  "env": {
+   "h1": 9,
+   "h2": 18,
+   "h3": 7,
+   "h4": 0,
+   "h5": 0,
+   "h6": 0,
+   "role": 0
+  },
+  "shared": {
+   "h1": 0,
+   "h2": 3,
+   "h3": 3,
+   "h4": 0,
+   "h5": 0,
+   "h6": 0,
+   "role": 0
+  }
+ },
+ "tasks": [
+  {
+   "page": "lms_academic_probation_recovery",
+   "visible": {
+    "lines_clean": 92,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[25] heading 'DashboardWelcome, Miles Rivera', visible",
+     "-\t\tStaticText 'Welcome,'",
+     "-\t\tStaticText 'Miles Rivera'",
+     "+\tStaticText 'Dashboard'",
+     "+\tStaticText 'Welcome,'",
+     "+\tStaticText 'Miles Rivera'",
+     "-\t\t[41] heading 'Upcoming Deadlines (Next 7 Days)', visible",
+     "+\t\tStaticText 'Upcoming Deadlines (Next 7 Days)'"
+    ]
+   },
+   "all": {
+    "lines_clean": 122,
+    "removed": 6,
+    "added": 6,
+    "examples": [
+     "-\t[25] heading 'DashboardWelcome, Miles Rivera', visible",
+     "-\t\tStaticText 'Welcome,'",
+     "-\t\tStaticText 'Miles Rivera'",
+     "+\tStaticText 'Dashboard'",
+     "+\tStaticText 'Welcome,'",
+     "+\tStaticText 'Miles Rivera'",
+     "-\t\t[41] heading 'Upcoming Deadlines (Next 7 Days)', visible",
+     "+\t\tStaticText 'Upcoming Deadlines (Next 7 Days)'",
+     "-\t\t[94] heading 'Announcements'",
+     "+\t\tStaticText 'Announcements'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1182
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "lms_academic_standing_optimization",
+   "visible": {
+    "lines_clean": 75,
+    "removed": 5,
+    "added": 5,
+    "examples": [
+     "-\t[25] heading 'DashboardWelcome, Maya Chen', visible",
+     "-\t\tStaticText 'Welcome,'",
+     "-\t\tStaticText 'Maya Chen'",
+     "+\tStaticText 'Dashboard'",
+     "+\tStaticText 'Welcome,'",
+     "+\tStaticText 'Maya Chen'",
+     "-\t\t[41] heading 'Upcoming Deadlines (Next 7 Days)', visible",
+     "+\t\tStaticText 'Upcoming Deadlines (Next 7 Days)'",
+     "-\t\t[73] heading 'Announcements', visible",
+     "+\t\tStaticText 'Announcements'"
+    ]
+   },
+   "all": {
+    "lines_clean": 101,
+    "removed": 6,
+    "added": 6,
+    "examples": [
+     "-\t[25] heading 'DashboardWelcome, Maya Chen', visible",
+     "-\t\tStaticText 'Welcome,'",
+     "-\t\tStaticText 'Maya Chen'",
+     "+\tStaticText 'Dashboard'",
+     "+\tStaticText 'Welcome,'",
+     "+\tStaticText 'Maya Chen'",
+     "-\t\t[41] heading 'Upcoming Deadlines (Next 7 Days)', visible",
+     "+\t\tStaticText 'Upcoming Deadlines (Next 7 Days)'",
+     "-\t\t[73] heading 'Announcements', visible",
+     "+\t\tStaticText 'Announcements'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1063
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__calendar",
+   "visible": {
+    "lines_clean": 21,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[25] heading 'Calendar', visible",
+     "+\tStaticText 'Calendar'"
+    ]
+   },
+   "all": {
+    "lines_clean": 32,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[25] heading 'Calendar', visible",
+     "+\tStaticText 'Calendar'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__courses",
+   "visible": {
+    "lines_clean": 48,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[25] heading 'Courses', visible",
+     "+\tStaticText 'Courses'"
+    ]
+   },
+   "all": {
+    "lines_clean": 48,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[25] heading 'Courses', visible",
+     "+\tStaticText 'Courses'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__dashboard",
+   "visible": {
+    "lines_clean": 92,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t[25] heading 'DashboardWelcome, Miles Rivera', visible",
+     "-\t\tStaticText 'Welcome,'",
+     "-\t\tStaticText 'Miles Rivera'",
+     "+\tStaticText 'Dashboard'",
+     "+\tStaticText 'Welcome,'",
+     "+\tStaticText 'Miles Rivera'",
+     "-\t\t[41] heading 'Upcoming Deadlines (Next 7 Days)', visible",
+     "+\t\tStaticText 'Upcoming Deadlines (Next 7 Days)'"
+    ]
+   },
+   "all": {
+    "lines_clean": 122,
+    "removed": 6,
+    "added": 6,
+    "examples": [
+     "-\t[25] heading 'DashboardWelcome, Miles Rivera', visible",
+     "-\t\tStaticText 'Welcome,'",
+     "-\t\tStaticText 'Miles Rivera'",
+     "+\tStaticText 'Dashboard'",
+     "+\tStaticText 'Welcome,'",
+     "+\tStaticText 'Miles Rivera'",
+     "-\t\t[41] heading 'Upcoming Deadlines (Next 7 Days)', visible",
+     "+\t\tStaticText 'Upcoming Deadlines (Next 7 Days)'",
+     "-\t\t[94] heading 'Announcements'",
+     "+\t\tStaticText 'Announcements'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1182
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__messages",
+   "visible": {
+    "lines_clean": 18,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[25] heading 'Messages', visible",
+     "+\tStaticText 'Messages'"
+    ]
+   },
+   "all": {
+    "lines_clean": 18,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[25] heading 'Messages', visible",
+     "+\tStaticText 'Messages'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__peer-reviews",
+   "visible": {
+    "lines_clean": 14,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[25] heading 'Peer Reviews', visible",
+     "+\tStaticText 'Peer Reviews'"
+    ]
+   },
+   "all": {
+    "lines_clean": 14,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t[25] heading 'Peer Reviews', visible",
+     "+\tStaticText 'Peer Reviews'"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}

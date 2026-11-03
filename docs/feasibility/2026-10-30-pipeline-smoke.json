@@ -1,0 +1,687 @@
+{
+ "note": "engineering smoke test, not data; prices = Anthropic first-party list price for claude-opus-5-5 ($4 in / $20 out per MTok), Bedrock price [unverified]",
+ "sources": {
+  "clean": "/tmp/amt-syn/bw-smoke/out/reddit_compose_message__clean/episode.json",
+  "labels": "/tmp/amt-syn/bw-smoke/out/reddit_compose_message__labels/episode.json",
+  "served_clean": "/tmp/amt-syn/bw-smoke/out/served_reddit_compose_message__clean.json"
+ },
+ "arms": {
+  "clean": {
+   "task": "reddit_compose_message",
+   "model": "us.anthropic.claude-opus-5-5",
+   "max_steps": 15,
+   "steps": 15,
+   "completed": false,
+   "episode_evaluation": "Agent did not finish",
+   "force_evaluate": null,
+   "llm_calls": 17,
+   "agent_calls": 15,
+   "summary_calls": 2,
+   "summary_errors": [
+    "ValidationException: An error occurred (ValidationException) when calling the Converse operation: The model returned the following errors: `temperature` is depr",
+    "ValidationException: An error occurred (ValidationException) when calling the Converse operation: The model returned the following errors: `temperature` is depr"
+   ],
+   "call_errors_agent": 0,
+   "input_tokens": 258742,
+   "output_tokens": 1883,
+   "cache_read_tokens": 0,
+   "usd": 1.0726,
+   "usd_per_step": 0.0715,
+   "in_per_step_mean": 17249,
+   "out_per_step_mean": 125.5,
+   "chars_per_input_token": [
+    2.31,
+    2.35
+   ],
+   "stop_reasons": [
+    "end_turn"
+   ],
+   "calls_with_reasoning": 11,
+   "latency_s_mean": 3.02,
+   "wall_s": 67.1,
+   "inferenceConfig_sent": [
+    "{\"maxTokens\": 4096, \"temperature\": 0.0}",
+    "{\"maxTokens\": 4096}"
+   ],
+   "bundle_fx6": "365a1921a7ad805b",
+   "bundle_after_restore_fx6": "365a1921a7ad805b",
+   "codemod": null,
+   "served_match": false,
+   "served_assets": [],
+   "page_date_ms": 1793437200576,
+   "external_aborted": 0,
+   "credentials": {
+    "bearer_env_before": false,
+    "api_key_env_before": false,
+    "AWS_PROFILE": "codex-DO-NOT-DELETE",
+    "AWS_BEDROCK_REGION": "us-west-2",
+    "bearer_env_after": false,
+    "client_region": "us-west-2",
+    "credential_method": "custom-process",
+    "signature_version": "v4"
+   },
+   "git_status_after_restore": [
+    "breakingweb/app.py",
+    "scripts/_sweep_common.sh",
+    "scripts/breakingweb.sh",
+    "scripts/run_gmail_sweep.sh"
+   ],
+   "only_bind_diffs_after": true,
+   "per_step": [
+    {
+     "step": 1,
+     "action": "click(\"22\")",
+     "target": {
+      "ref": "22",
+      "role": "button",
+      "name": "View your profile"
+     },
+     "in": 3290,
+     "out": 35,
+     "usd": 0.0139,
+     "latency_s": 1.72,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 7654
+    },
+    {
+     "step": 2,
+     "action": "scroll(0, 400)",
+     "target": {},
+     "in": 5140,
+     "out": 97,
+     "usd": 0.0225,
+     "latency_s": 1.96,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 11857
+    },
+    {
+     "step": 3,
+     "action": "scroll(0, 1000)",
+     "target": {},
+     "in": 7300,
+     "out": 216,
+     "usd": 0.0335,
+     "latency_s": 3.37,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 16922
+    },
+    {
+     "step": 4,
+     "action": "fill(\"19\", \"QuantumPanda\")",
+     "target": {
+      "ref": "19",
+      "role": "textbox",
+      "name": "Search Reddit"
+     },
+     "in": 9462,
+     "out": 166,
+     "usd": 0.0412,
+     "latency_s": 2.77,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 21989
+    },
+    {
+     "step": 5,
+     "action": "press(\"19\", \"Enter\")",
+     "target": {
+      "ref": "19",
+      "role": "textbox",
+      "name": "Search Reddit"
+     },
+     "in": 11642,
+     "out": 78,
+     "usd": 0.0481,
+     "latency_s": 2.23,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 27099
+    },
+    {
+     "step": 6,
+     "action": "click(\"758\")",
+     "target": {
+      "ref": "758",
+      "role": "button",
+      "name": "u/QuantumPanda"
+     },
+     "in": 13540,
+     "out": 105,
+     "usd": 0.0563,
+     "latency_s": 2.43,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 31550
+    },
+    {
+     "step": 7,
+     "action": "scroll(0, 600)",
+     "target": {},
+     "in": 15312,
+     "out": 225,
+     "usd": 0.0657,
+     "latency_s": 3.82,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 35686
+    },
+    {
+     "step": 8,
+     "action": "hover(\"22\")",
+     "target": {
+      "ref": "22",
+      "role": "button",
+      "name": "View your profile"
+     },
+     "in": 17566,
+     "out": 225,
+     "usd": 0.0748,
+     "latency_s": 5.37,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 41052
+    },
+    {
+     "step": 9,
+     "action": "scroll(0, 2000)",
+     "target": {},
+     "in": 19812,
+     "out": 188,
+     "usd": 0.083,
+     "latency_s": 4.09,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 46412
+    },
+    {
+     "step": 10,
+     "action": "click(\"32\")",
+     "target": {
+      "ref": "32",
+      "role": "link",
+      "name": "Home"
+     },
+     "in": 22068,
+     "out": 333,
+     "usd": 0.0949,
+     "latency_s": 5.6,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 51780
+    },
+    {
+     "step": 11,
+     "action": "scroll(0, 5000)",
+     "target": {},
+     "in": 24772,
+     "out": 163,
+     "usd": 0.1023,
+     "latency_s": 3.85,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 57756
+    },
+    {
+     "step": 12,
+     "action": "click(\"72\")",
+     "target": {
+      "ref": "72",
+      "role": "link",
+      "name": "Messages"
+     },
+     "in": 27462,
+     "out": 6,
+     "usd": 0.11,
+     "latency_s": 1.97,
+     "blocks": [
+      "text"
+     ],
+     "sent_chars": 63724
+    },
+    {
+     "step": 13,
+     "action": "click(\"1511\")",
+     "target": {
+      "ref": "1511",
+      "role": "button",
+      "name": "Compose new message"
+     },
+     "in": 27206,
+     "out": 7,
+     "usd": 0.109,
+     "latency_s": 2.13,
+     "blocks": [
+      "text"
+     ],
+     "sent_chars": 63288
+    },
+    {
+     "step": 14,
+     "action": "fill(\"1565\", \"QuantumPanda\")",
+     "target": {
+      "ref": "1565",
+      "role": "textbox",
+      "name": "Recipient username"
+     },
+     "in": 26395,
+     "out": 18,
+     "usd": 0.1059,
+     "latency_s": 1.93,
+     "blocks": [
+      "text"
+     ],
+     "sent_chars": 61394
+    },
+    {
+     "step": 15,
+     "action": "fill(\"1566\", \"Question about your AskReddit post\")",
+     "target": {
+      "ref": "1566",
+      "role": "textbox",
+      "name": "Message subject"
+     },
+     "in": 27775,
+     "out": 21,
+     "usd": 0.1115,
+     "latency_s": 2.02,
+     "blocks": [
+      "text"
+     ],
+     "sent_chars": 64619
+    }
+   ]
+  },
+  "labels": {
+   "task": "reddit_compose_message",
+   "model": "us.anthropic.claude-opus-5-5",
+   "max_steps": 15,
+   "steps": 15,
+   "completed": false,
+   "episode_evaluation": "Agent did not finish",
+   "force_evaluate": "Score: 0.000; success=False\nPassed 0/1 checks.\n  [FAIL] Compose a new message to QuantumPanda with the exact subject and body (error: no candidate satisfied predicates)\nAll negative checks passed (no penalties).\nFailures:\n  - missing_create: Compose a new message to QuantumPanda with the exact subject and body\nFinal score: 0.000 | Success: False",
+   "llm_calls": 17,
+   "agent_calls": 15,
+   "summary_calls": 2,
+   "summary_errors": [
+    "ValidationException: An error occurred (ValidationException) when calling the Converse operation: The model returned the following errors: `temperature` is depr",
+    "ValidationException: An error occurred (ValidationException) when calling the Converse operation: The model returned the following errors: `temperature` is depr"
+   ],
+   "call_errors_agent": 0,
+   "input_tokens": 253400,
+   "output_tokens": 2295,
+   "cache_read_tokens": 0,
+   "usd": 1.0595,
+   "usd_per_step": 0.0706,
+   "in_per_step_mean": 16893,
+   "out_per_step_mean": 153.0,
+   "chars_per_input_token": [
+    2.31,
+    2.34
+   ],
+   "stop_reasons": [
+    "end_turn"
+   ],
+   "calls_with_reasoning": 13,
+   "latency_s_mean": 3.06,
+   "wall_s": 68.0,
+   "inferenceConfig_sent": [
+    "{\"maxTokens\": 4096, \"temperature\": 0.0}",
+    "{\"maxTokens\": 4096}"
+   ],
+   "bundle_fx6": "0ef6e9b8a8124fb9",
+   "bundle_after_restore_fx6": "365a1921a7ad805b",
+   "codemod": {
+    "env": {
+     "control-aria": 36,
+     "htmlFor": 11
+    },
+    "shared": {
+     "control-aria": 5,
+     "htmlFor": 1
+    }
+   },
+   "served_match": true,
+   "served_assets": [
+    {
+     "url": "http://127.0.0.1:8391/env/reddit/assets/index-D1t3JM8X.css",
+     "sha": "0ea08090a8666932",
+     "disk_match": true,
+     "n_aria_label": 0,
+     "n_htmlFor": 0,
+     "has_recipient_aria": false
+    },
+    {
+     "url": "http://127.0.0.1:8391/env/reddit/assets/index-D3vGC0oN.js",
+     "sha": "41b060a42dccd157",
+     "disk_match": true,
+     "n_aria_label": 78,
+     "n_htmlFor": 5,
+     "has_recipient_aria": false
+    }
+   ],
+   "page_date_ms": 1793437200569,
+   "external_aborted": 0,
+   "credentials": {
+    "bearer_env_before": false,
+    "api_key_env_before": false,
+    "AWS_PROFILE": "codex-DO-NOT-DELETE",
+    "AWS_BEDROCK_REGION": "us-west-2",
+    "bearer_env_after": false,
+    "client_region": "us-west-2",
+    "credential_method": "custom-process",
+    "signature_version": "v4"
+   },
+   "git_status_after_restore": [
+    "breakingweb/app.py",
+    "scripts/_sweep_common.sh",
+    "scripts/breakingweb.sh",
+    "scripts/run_gmail_sweep.sh"
+   ],
+   "only_bind_diffs_after": true,
+   "per_step": [
+    {
+     "step": 1,
+     "action": "click(\"22\")",
+     "target": {
+      "ref": "22",
+      "role": "button",
+      "name": "View your profile"
+     },
+     "in": 3291,
+     "out": 33,
+     "usd": 0.0138,
+     "latency_s": 1.82,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 7654
+    },
+    {
+     "step": 2,
+     "action": "scroll(0, 600)",
+     "target": {},
+     "in": 5142,
+     "out": 100,
+     "usd": 0.0226,
+     "latency_s": 2.09,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 11857
+    },
+    {
+     "step": 3,
+     "action": "fill(\"19\", \"QuantumPanda\")",
+     "target": {
+      "ref": "19",
+      "role": "textbox",
+      "name": "Search Reddit"
+     },
+     "in": 7303,
+     "out": 166,
+     "usd": 0.0325,
+     "latency_s": 2.77,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 16922
+    },
+    {
+     "step": 4,
+     "action": "press(\"19\", \"Enter\")",
+     "target": {
+      "ref": "19",
+      "role": "textbox",
+      "name": "Search Reddit"
+     },
+     "in": 9484,
+     "out": 51,
+     "usd": 0.039,
+     "latency_s": 1.71,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 22032
+    },
+    {
+     "step": 5,
+     "action": "click(\"758\")",
+     "target": {
+      "ref": "758",
+      "role": "button",
+      "name": "u/QuantumPanda"
+     },
+     "in": 11378,
+     "out": 93,
+     "usd": 0.0474,
+     "latency_s": 1.93,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 26471
+    },
+    {
+     "step": 6,
+     "action": "scroll(0, 400)",
+     "target": {},
+     "in": 13151,
+     "out": 205,
+     "usd": 0.0567,
+     "latency_s": 3.48,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 30607
+    },
+    {
+     "step": 7,
+     "action": "hover(\"22\")",
+     "target": {
+      "ref": "22",
+      "role": "button",
+      "name": "View your profile"
+     },
+     "in": 15256,
+     "out": 235,
+     "usd": 0.0657,
+     "latency_s": 3.79,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 35593
+    },
+    {
+     "step": 8,
+     "action": "scroll(0, 1000)",
+     "target": {},
+     "in": 17353,
+     "out": 293,
+     "usd": 0.0753,
+     "latency_s": 4.88,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 40573
+    },
+    {
+     "step": 9,
+     "action": "scroll(0, -2000)",
+     "target": {},
+     "in": 19610,
+     "out": 227,
+     "usd": 0.083,
+     "latency_s": 3.58,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 45941
+    },
+    {
+     "step": 10,
+     "action": "click(\"22\")",
+     "target": {
+      "ref": "22",
+      "role": "button",
+      "name": "View your profile"
+     },
+     "in": 21395,
+     "out": 420,
+     "usd": 0.094,
+     "latency_s": 6.62,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 50085
+    },
+    {
+     "step": 11,
+     "action": "click(\"32\")",
+     "target": {
+      "ref": "32",
+      "role": "link",
+      "name": "Home"
+     },
+     "in": 23247,
+     "out": 236,
+     "usd": 0.0977,
+     "latency_s": 4.12,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 54289
+    },
+    {
+     "step": 12,
+     "action": "scroll(0, 500)",
+     "target": {},
+     "in": 25978,
+     "out": 137,
+     "usd": 0.1067,
+     "latency_s": 2.89,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 60291
+    },
+    {
+     "step": 13,
+     "action": "click(\"72\")",
+     "target": {
+      "ref": "72",
+      "role": "link",
+      "name": "Messages"
+     },
+     "in": 26913,
+     "out": 6,
+     "usd": 0.1078,
+     "latency_s": 1.89,
+     "blocks": [
+      "text"
+     ],
+     "sent_chars": 62260
+    },
+    {
+     "step": 14,
+     "action": "click(\"1600\")",
+     "target": {
+      "ref": "1600",
+      "role": "button",
+      "name": "Compose new message"
+     },
+     "in": 26275,
+     "out": 7,
+     "usd": 0.1052,
+     "latency_s": 1.78,
+     "blocks": [
+      "text"
+     ],
+     "sent_chars": 60779
+    },
+    {
+     "step": 15,
+     "action": "fill(\"1654\", \"QuantumPanda\")",
+     "target": {
+      "ref": "1654",
+      "role": "textbox",
+      "name": "To: u/username"
+     },
+     "in": 27624,
+     "out": 86,
+     "usd": 0.1122,
+     "latency_s": 2.54,
+     "blocks": [
+      "reasoningContent",
+      "text"
+     ],
+     "sent_chars": 63936
+    }
+   ]
+  }
+ },
+ "served_clean_rebuild": {
+  "bundle_fx6": "365a1921a7ad805b",
+  "served_match": true,
+  "all_disk_assets_loaded": true,
+  "served_assets": [
+   {
+    "url": "http://127.0.0.1:8391/env/reddit/assets/index-D1t3JM8X.css",
+    "sha": "0ea08090a8666932",
+    "disk_match": true,
+    "n_aria_label": 0,
+    "n_htmlFor": 0,
+    "has_recipient_aria": false
+   },
+   {
+    "url": "http://127.0.0.1:8391/env/reddit/assets/index-GNVILxQJ.js",
+    "sha": "48d6770986b00bf4",
+    "disk_match": true,
+    "n_aria_label": 108,
+    "n_htmlFor": 17,
+    "has_recipient_aria": true
+   }
+  ],
+  "only_bind_diffs_after": true
+ },
+ "replay_bundles_reddit": {
+  "clean": "365a1921a7ad805b",
+  "labels": "0ef6e9b8a8124fb9",
+  "source": "/tmp/amt-syn/bw-replay/final/reddit/builds.json"
+ }
+}

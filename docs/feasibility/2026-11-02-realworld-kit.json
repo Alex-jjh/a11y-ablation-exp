@@ -1,0 +1,5400 @@
+{
+ "what": "realworld kit tests 2026-11-02: fixture self-test, privacy, isolation, BreakingWeb clean vs codemod variants (JSON and MHTML), data-amt strip check",
+ "selftest": {
+  "fixtures": {
+   "alt_neg.rwk.json": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 4,
+    "style_source": "capture-stamps"
+   },
+   "alt_neg.mhtml": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "this-render"
+   },
+   "alt_pos.rwk.json": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 2,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {
+      "exact": 2
+     },
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "exact",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 2,
+    "style_source": "capture-stamps"
+   },
+   "alt_pos.mhtml": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 2,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {
+      "exact": 2
+     },
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "exact",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "this-render"
+   },
+   "headings_neg.rwk.json": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 3,
+    "style_source": "capture-stamps"
+   },
+   "headings_neg.mhtml": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "this-render"
+   },
+   "headings_pos.rwk.json": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 5,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {
+      "exact": 5
+     },
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "exact",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 3,
+    "style_source": "capture-stamps"
+   },
+   "headings_pos.mhtml": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 5,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {
+      "exact": 5
+     },
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "exact",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "this-render"
+   },
+   "labels_neg.rwk.json": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "capture-stamps"
+   },
+   "labels_neg.mhtml": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "this-render"
+   },
+   "labels_pos.rwk.json": {
+    "counts": {
+     "names": 0,
+     "labels": 4,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {
+      "exact": 3,
+      "equivalent": 1
+     },
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "exact",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "capture-stamps"
+   },
+   "labels_pos.mhtml": {
+    "counts": {
+     "names": 0,
+     "labels": 4,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {
+      "exact": 3,
+      "equivalent": 1
+     },
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "exact",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "this-render"
+   },
+   "landmarks_neg.rwk.json": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "capture-stamps"
+   },
+   "landmarks_neg.mhtml": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "this-render"
+   },
+   "landmarks_pos.rwk.json": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 4,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {
+      "exact": 4
+     },
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "exact",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "capture-stamps"
+   },
+   "landmarks_pos.mhtml": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 4,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {
+      "exact": 4
+     },
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "exact",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "this-render"
+   },
+   "names_neg.rwk.json": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 3,
+    "style_source": "capture-stamps"
+   },
+   "names_neg.mhtml": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "this-render"
+   },
+   "names_pos.rwk.json": {
+    "counts": {
+     "names": 8,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {
+      "exact": 8
+     },
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "exact",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 3,
+    "style_source": "capture-stamps"
+   },
+   "names_pos.mhtml": {
+    "counts": {
+     "names": 8,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {
+      "exact": 8
+     },
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "exact",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "this-render"
+   },
+   "privacy.rwk.json": {
+    "counts": {
+     "names": 2,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {
+      "exact": 2
+     },
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "exact",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "capture-stamps"
+   },
+   "privacy.mhtml": {
+    "counts": {
+     "names": 2,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {
+      "exact": 2
+     },
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "exact",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "this-render"
+   },
+   "tableheads_neg.rwk.json": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "capture-stamps"
+   },
+   "tableheads_neg.mhtml": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 0
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {}
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "none"
+    },
+    "aborted": 0,
+    "style_source": "this-render"
+   },
+   "tableheads_pos.rwk.json": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 1
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {
+      "exact": 1
+     }
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "exact"
+    },
+    "aborted": 0,
+    "style_source": "capture-stamps"
+   },
+   "tableheads_pos.mhtml": {
+    "counts": {
+     "names": 0,
+     "labels": 0,
+     "alt": 0,
+     "headings": 0,
+     "landmarks": 0,
+     "tableheads": 1
+    },
+    "verdicts": {
+     "names": {},
+     "labels": {},
+     "alt": {},
+     "headings": {},
+     "landmarks": {},
+     "tableheads": {
+      "exact": 1
+     }
+    },
+    "page_verdict": {
+     "names": "none",
+     "labels": "none",
+     "alt": "none",
+     "headings": "none",
+     "landmarks": "none",
+     "tableheads": "exact"
+    },
+    "aborted": 0,
+    "style_source": "this-render"
+   }
+  },
+  "privacy": {
+   "json_leaks": [],
+   "mhtml_keeps": [
+    "jane.doe@example.com",
+    "prefilled-private-value",
+    "typed private message",
+    "draft private body",
+    "metaCsrfTokenValue",
+    "s3cr3tSESSIONvalue",
+    "4839201",
+    "5550012",
+    "98765432",
+    "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5"
+   ],
+   "json_stats": {
+    "elements": 35,
+    "shadow_roots": 0,
+    "scripts_removed": 1,
+    "values_cleared": 4,
+    "emails": 1,
+    "digit_runs": 2,
+    "tokens": 1,
+    "urls_stripped": 1,
+    "css_inlined": 1,
+    "css_unreadable": 0,
+    "adopted_sheets": 0
+   },
+   "json_has_masked_email_text": true,
+   "json_keeps_submit_text": true,
+   "json_keeps_in_page_anchor": true,
+   "json_query_hashed": true
+  },
+  "isolation": {
+   "hostile.rwk.json": {
+    "beacon_hits": [],
+    "script_marker": null,
+    "final_url_is_served_url": true,
+    "served": 1,
+    "aborted": 7,
+    "aborted_sample": [
+     "http://127.0.0.1:38611/a.css",
+     "http://127.0.0.1:38611/import.css",
+     "http://127.0.0.1:38611/img.png",
+     "http://127.0.0.1:38611/poster.png",
+     "http://127.0.0.1:38611/prefetch",
+     "http://127.0.0.1:38611/frame",
+     "http://127.0.0.1:38611/bg.png"
+    ],
+    "noscript_in_tree": false,
+    "cleanup": {
+     "noscript_removed": 1,
+     "bids_renamed": 0,
+     "stripped": 0,
+     "browsergym_attrs": 0
+    }
+   },
+   "hostile.mhtml": {
+    "beacon_hits": [],
+    "script_marker": null,
+    "final_url_is_served_url": true,
+    "served": 1,
+    "aborted": 7,
+    "aborted_sample": [
+     "http://127.0.0.1:38611/a.css",
+     "http://127.0.0.1:38611/import.css",
+     "http://127.0.0.1:38611/img.png",
+     "http://127.0.0.1:38611/poster.png",
+     "http://127.0.0.1:38611/prefetch",
+     "http://127.0.0.1:38611/frame",
+     "http://127.0.0.1:38611/bg.png"
+    ],
+    "noscript_in_tree": false,
+    "cleanup": {
+     "noscript_removed": 1,
+     "bids_renamed": 0,
+     "stripped": 0,
+     "browsergym_attrs": 0
+    }
+   }
+  },
+  "failures": []
+ },
+ "bw_cells": {
+  "amazon|names|json": {
+   "pages": 17,
+   "count_clean": 52,
+   "count_variant": 93,
+   "new": 41,
+   "explained": 41,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 147,
+   "targets_detected": 41,
+   "changed_elements": 147,
+   "ladder": {
+    "unique-changed|not": 73,
+    "shared|not": 33,
+    "shared|detected": 24,
+    "empty|detected": 17
+   },
+   "new_by_verdict": {
+    "exact": 41
+   },
+   "new_by_signature": {
+    "empty": 17,
+    "ambiguous": 24
+   },
+   "page_verdicts": {
+    "exact->exact": 17
+   },
+   "pages_with_targets": 17,
+   "pages_with_targets_detected": 17,
+   "missed_examples": [
+    {
+     "page": "amazon_account_overhaul_and_shop.json",
+     "tag": "a",
+     "role": "link",
+     "name": "amazon",
+     "attrs": {
+      "class": "amazon-navbar__logo",
+      "href": "/env/amazon/home?session=hwarfha&agent_mode=h1ocofu2"
+     }
+    },
+    {
+     "page": "amazon_account_overhaul_and_shop.json",
+     "tag": "a",
+     "role": "link",
+     "name": "Office",
+     "attrs": {
+      "class": "home-category-card",
+      "href": "/env/amazon/search?q=h7tupun&category=h13q5v8b&session=hwarf"
+     }
+    },
+    {
+     "page": "amazon_account_overhaul_and_shop.json",
+     "tag": "a",
+     "role": "link",
+     "name": "Sports",
+     "attrs": {
+      "class": "home-category-card",
+      "href": "/env/amazon/search?q=h7tupun&category=h1uv2kkw&session=hwarf"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "amazon|names|mhtml": {
+   "pages": 17,
+   "count_clean": 52,
+   "count_variant": 93,
+   "new": 41,
+   "explained": 41,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 147,
+   "targets_detected": 41,
+   "changed_elements": 147,
+   "ladder": {
+    "unique-changed|not": 73,
+    "shared|not": 33,
+    "shared|detected": 24,
+    "empty|detected": 17
+   },
+   "new_by_verdict": {
+    "exact": 41
+   },
+   "new_by_signature": {
+    "empty": 17,
+    "ambiguous": 24
+   },
+   "page_verdicts": {
+    "exact->exact": 17
+   },
+   "pages_with_targets": 17,
+   "pages_with_targets_detected": 17,
+   "missed_examples": [
+    {
+     "page": "amazon_account_overhaul_and_shop.mhtml",
+     "tag": "a",
+     "role": "link",
+     "name": "amazon",
+     "attrs": {
+      "class": "amazon-navbar__logo",
+      "href": "http://127.0.0.1:8113/env/amazon/home?session=amazon_amazon_"
+     }
+    },
+    {
+     "page": "amazon_account_overhaul_and_shop.mhtml",
+     "tag": "a",
+     "role": "link",
+     "name": "Office",
+     "attrs": {
+      "class": "home-category-card",
+      "href": "http://127.0.0.1:8113/env/amazon/search?q=&category=Office+S"
+     }
+    },
+    {
+     "page": "amazon_account_overhaul_and_shop.mhtml",
+     "tag": "a",
+     "role": "link",
+     "name": "Sports",
+     "attrs": {
+      "class": "home-category-card",
+      "href": "http://127.0.0.1:8113/env/amazon/search?q=&category=Sports+%"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "amazon|labels|json": {
+   "pages": 17,
+   "count_clean": 0,
+   "count_variant": 39,
+   "new": 39,
+   "explained": 39,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 42,
+   "targets_detected": 39,
+   "changed_elements": 44,
+   "ladder": {
+    "name-kept|detected": 18,
+    "name-empty|detected": 21,
+    "name-kept|not": 2,
+    "name-changed|not": 1
+   },
+   "new_by_verdict": {
+    "exact": 38,
+    "equivalent": 1
+   },
+   "new_by_signature": {
+    "no-visible-label": 34,
+    "text-near-control": 1,
+    "unassociated-label": 4
+   },
+   "page_verdicts": {
+    "none->exact": 17
+   },
+   "pages_with_targets": 17,
+   "pages_with_targets_detected": 17,
+   "missed_examples": [
+    {
+     "page": "route__settings.json",
+     "tag": "input",
+     "role": "checkbox",
+     "name": "Deal alert emails",
+     "attrs": {
+      "id": "settings-deal-alerts",
+      "type": "checkbox"
+     }
+    },
+    {
+     "page": "route__settings.json",
+     "tag": "input",
+     "role": "checkbox",
+     "name": "Order update emails",
+     "attrs": {
+      "id": "settings-order-updates",
+      "type": "checkbox"
+     }
+    },
+    {
+     "page": "route__settings.json",
+     "tag": "input",
+     "role": "checkbox",
+     "name": "Two-factor authentication (2FA)",
+     "attrs": {
+      "type": "checkbox"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "amazon|labels|mhtml": {
+   "pages": 17,
+   "count_clean": 0,
+   "count_variant": 39,
+   "new": 39,
+   "explained": 39,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 42,
+   "targets_detected": 39,
+   "changed_elements": 44,
+   "ladder": {
+    "name-kept|detected": 18,
+    "name-empty|detected": 21,
+    "name-kept|not": 2,
+    "name-changed|not": 1
+   },
+   "new_by_verdict": {
+    "exact": 38,
+    "equivalent": 1
+   },
+   "new_by_signature": {
+    "no-visible-label": 34,
+    "text-near-control": 1,
+    "unassociated-label": 4
+   },
+   "page_verdicts": {
+    "none->exact": 17
+   },
+   "pages_with_targets": 17,
+   "pages_with_targets_detected": 17,
+   "missed_examples": [
+    {
+     "page": "route__settings.mhtml",
+     "tag": "input",
+     "role": "checkbox",
+     "name": "Deal alert emails",
+     "attrs": {
+      "id": "settings-deal-alerts",
+      "type": "checkbox"
+     }
+    },
+    {
+     "page": "route__settings.mhtml",
+     "tag": "input",
+     "role": "checkbox",
+     "name": "Order update emails",
+     "attrs": {
+      "id": "settings-order-updates",
+      "type": "checkbox"
+     }
+    },
+    {
+     "page": "route__settings.mhtml",
+     "tag": "input",
+     "role": "checkbox",
+     "name": "Two-factor authentication (2FA)",
+     "attrs": {
+      "type": "checkbox"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "amazon|alt|json": {
+   "pages": 17,
+   "count_clean": 0,
+   "count_variant": 162,
+   "new": 162,
+   "explained": 162,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 162,
+   "targets_detected": 162,
+   "changed_elements": 186,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 162
+   },
+   "new_by_signature": {
+    "img-without-alt": 162
+   },
+   "page_verdicts": {
+    "none->exact": 9,
+    "none->none": 8
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 9,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "amazon|alt|mhtml": {
+   "pages": 17,
+   "count_clean": 0,
+   "count_variant": 162,
+   "new": 162,
+   "explained": 162,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 162,
+   "targets_detected": 162,
+   "changed_elements": 186,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 162
+   },
+   "new_by_signature": {
+    "img-without-alt": 162
+   },
+   "page_verdicts": {
+    "none->exact": 9,
+    "none->none": 8
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 9,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "amazon|headings|json": {
+   "pages": 17,
+   "count_clean": 17,
+   "count_variant": 118,
+   "new": 101,
+   "explained": 101,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 184,
+   "targets_detected": 101,
+   "changed_elements": 184,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 101
+   },
+   "new_by_signature": {
+    "heading-styled-text": 56,
+    "bold-short-text": 45
+   },
+   "page_verdicts": {
+    "equivalent->exact": 15,
+    "exact->exact": 1,
+    "none->none": 1
+   },
+   "pages_with_targets": 17,
+   "pages_with_targets_detected": 16,
+   "missed_examples": [
+    {
+     "page": "amazon_account_overhaul_and_shop.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "product-card__name"
+     }
+    },
+    {
+     "page": "amazon_account_overhaul_and_shop.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "product-card__name"
+     }
+    },
+    {
+     "page": "amazon_account_overhaul_and_shop.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "product-card__name"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "amazon|headings|mhtml": {
+   "pages": 17,
+   "count_clean": 17,
+   "count_variant": 118,
+   "new": 101,
+   "explained": 101,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 184,
+   "targets_detected": 101,
+   "changed_elements": 201,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 101
+   },
+   "new_by_signature": {
+    "heading-styled-text": 56,
+    "bold-short-text": 45
+   },
+   "page_verdicts": {
+    "equivalent->exact": 15,
+    "exact->exact": 1,
+    "none->none": 1
+   },
+   "pages_with_targets": 17,
+   "pages_with_targets_detected": 16,
+   "missed_examples": [
+    {
+     "page": "amazon_account_overhaul_and_shop.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "product-card__name"
+     }
+    },
+    {
+     "page": "amazon_account_overhaul_and_shop.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "product-card__name"
+     }
+    },
+    {
+     "page": "amazon_account_overhaul_and_shop.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "product-card__name"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "amazon|landmarks|json": {
+   "pages": 17,
+   "count_clean": 0,
+   "count_variant": 51,
+   "new": 51,
+   "explained": 51,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 71,
+   "targets_detected": 51,
+   "changed_elements": 88,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 51
+   },
+   "new_by_signature": {
+    "navigation-like-container": 17,
+    "main-like-container": 17,
+    "contentinfo-like-container": 17
+   },
+   "page_verdicts": {
+    "none->exact": 17
+   },
+   "pages_with_targets": 17,
+   "pages_with_targets_detected": 17,
+   "missed_examples": [
+    {
+     "page": "amazon_account_overhaul_and_shop.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "Main navigation",
+     "attrs": {
+      "class": "amazon-navbar__links",
+      "aria-label": "Main navigation"
+     }
+    },
+    {
+     "page": "amazon_add_new_address.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "Main navigation",
+     "attrs": {
+      "class": "amazon-navbar__links",
+      "aria-label": "Main navigation"
+     }
+    },
+    {
+     "page": "route__account.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "Main navigation",
+     "attrs": {
+      "class": "amazon-navbar__links",
+      "aria-label": "Main navigation"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "amazon|landmarks|mhtml": {
+   "pages": 17,
+   "count_clean": 0,
+   "count_variant": 51,
+   "new": 51,
+   "explained": 51,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 71,
+   "targets_detected": 51,
+   "changed_elements": 105,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 51
+   },
+   "new_by_signature": {
+    "navigation-like-container": 17,
+    "main-like-container": 17,
+    "contentinfo-like-container": 17
+   },
+   "page_verdicts": {
+    "none->exact": 17
+   },
+   "pages_with_targets": 17,
+   "pages_with_targets_detected": 17,
+   "missed_examples": [
+    {
+     "page": "amazon_account_overhaul_and_shop.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "Main navigation",
+     "attrs": {
+      "class": "amazon-navbar__links",
+      "aria-label": "Main navigation"
+     }
+    },
+    {
+     "page": "amazon_add_new_address.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "Main navigation",
+     "attrs": {
+      "class": "amazon-navbar__links",
+      "aria-label": "Main navigation"
+     }
+    },
+    {
+     "page": "route__account.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "Main navigation",
+     "attrs": {
+      "class": "amazon-navbar__links",
+      "aria-label": "Main navigation"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "amazon|tableheads|json": {
+   "pages": 17,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 0,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 17
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "amazon|tableheads|mhtml": {
+   "pages": 17,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 17,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 17
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "amazon|headings:strong|json": {
+   "pages": 17,
+   "count_clean": 17,
+   "count_variant": 73,
+   "new": 56,
+   "explained": 56,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 184,
+   "targets_detected": 56,
+   "changed_elements": 184,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 56
+   },
+   "new_by_signature": {
+    "heading-styled-text": 56
+   },
+   "page_verdicts": {
+    "equivalent->exact": 15,
+    "exact->exact": 1,
+    "none->none": 1
+   },
+   "pages_with_targets": 17,
+   "pages_with_targets_detected": 16,
+   "missed_examples": [
+    {
+     "page": "amazon_account_overhaul_and_shop.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "product-card__name"
+     }
+    },
+    {
+     "page": "amazon_account_overhaul_and_shop.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    },
+    {
+     "page": "amazon_account_overhaul_and_shop.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "product-card__name"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "amazon|headings:strong|mhtml": {
+   "pages": 17,
+   "count_clean": 17,
+   "count_variant": 73,
+   "new": 56,
+   "explained": 56,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 184,
+   "targets_detected": 56,
+   "changed_elements": 201,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 56
+   },
+   "new_by_signature": {
+    "heading-styled-text": 56
+   },
+   "page_verdicts": {
+    "equivalent->exact": 15,
+    "exact->exact": 1,
+    "none->none": 1
+   },
+   "pages_with_targets": 17,
+   "pages_with_targets_detected": 16,
+   "missed_examples": [
+    {
+     "page": "amazon_account_overhaul_and_shop.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "product-card__name"
+     }
+    },
+    {
+     "page": "amazon_account_overhaul_and_shop.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    },
+    {
+     "page": "amazon_account_overhaul_and_shop.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "product-card__name"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "booking|names|json": {
+   "pages": 12,
+   "count_clean": 631,
+   "count_variant": 668,
+   "new": 39,
+   "explained": 39,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 55,
+   "targets_detected": 39,
+   "changed_elements": 55,
+   "ladder": {
+    "shared|detected": 39,
+    "unique-changed|not": 16
+   },
+   "new_by_verdict": {
+    "exact": 39
+   },
+   "new_by_signature": {
+    "ambiguous": 39
+   },
+   "page_verdicts": {
+    "none->exact": 5,
+    "exact->exact": 5,
+    "none->none": 2
+   },
+   "pages_with_targets": 6,
+   "pages_with_targets_detected": 5,
+   "missed_examples": [
+    {
+     "page": "route__search.json",
+     "tag": "a",
+     "role": "link",
+     "name": "TOC Hostel Barcelona TOC Hostel Barcelona★★ Eixample, Barcelona, Spain0.3 km from center 7.8 Good 9,876 reviews Pool Bar Free WiFi Shared kitchen Free cancellation hostel €25 per night See availability",
+     "attrs": {
+      "href": "/env/booking/property/prop_103?session=h1qwvlfs&agent_mode=h",
+      "style": "text-decoration: none; color: inherit;"
+     }
+    },
+    {
+     "page": "route__search.json",
+     "tag": "a",
+     "role": "link",
+     "name": "Atlantis, The Palm Atlantis, The Palm★★★★★ Palm Jumeirah, Dubai, United Arab Emirates15.0 km from center 8.7 Fabulous 8,765 reviews Water park Pool Beach access Spa Restaurant Genius – 10% off Free cancellation Breakfast included resort AED 380 per night See availability",
+     "attrs": {
+      "href": "/env/booking/property/prop_152?session=h1qwvlfs&agent_mode=h",
+      "style": "text-decoration: none; color: inherit;"
+     }
+    },
+    {
+     "page": "route__search.json",
+     "tag": "a",
+     "role": "link",
+     "name": "Generator Rome Generator Rome★★ Esquilino, Rome, Italy0.8 km from center 7.4 Good 8,765 reviews Laundry Non-smoking rooms Air conditioning Room service Pet-friendly Free cancellation hostel €74 per night See availability",
+     "attrs": {
+      "href": "/env/booking/property/prop_137?session=h1qwvlfs&agent_mode=h",
+      "style": "text-decoration: none; color: inherit;"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "booking|names|mhtml": {
+   "pages": 12,
+   "count_clean": 631,
+   "count_variant": 668,
+   "new": 39,
+   "explained": 39,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 55,
+   "targets_detected": 39,
+   "changed_elements": 55,
+   "ladder": {
+    "shared|detected": 39,
+    "unique-changed|not": 16
+   },
+   "new_by_verdict": {
+    "exact": 39
+   },
+   "new_by_signature": {
+    "ambiguous": 39
+   },
+   "page_verdicts": {
+    "none->exact": 5,
+    "exact->exact": 5,
+    "none->none": 2
+   },
+   "pages_with_targets": 6,
+   "pages_with_targets_detected": 5,
+   "missed_examples": [
+    {
+     "page": "route__search.mhtml",
+     "tag": "a",
+     "role": "link",
+     "name": "TOC Hostel Barcelona TOC Hostel Barcelona★★ Eixample, Barcelona, Spain0.3 km from center 7.8 Good 9,876 reviews Pool Bar Free WiFi Shared kitchen Free cancellation hostel €25 per night See availability",
+     "attrs": {
+      "href": "http://127.0.0.1:8113/env/booking/property/prop_103?session=",
+      "style": "text-decoration: none; color: inherit;"
+     }
+    },
+    {
+     "page": "route__search.mhtml",
+     "tag": "a",
+     "role": "link",
+     "name": "Atlantis, The Palm Atlantis, The Palm★★★★★ Palm Jumeirah, Dubai, United Arab Emirates15.0 km from center 8.7 Fabulous 8,765 reviews Water park Pool Beach access Spa Restaurant Genius – 10% off Free cancellation Breakfast included resort AED 380 per night See availability",
+     "attrs": {
+      "href": "http://127.0.0.1:8113/env/booking/property/prop_152?session=",
+      "style": "text-decoration: none; color: inherit;"
+     }
+    },
+    {
+     "page": "route__search.mhtml",
+     "tag": "a",
+     "role": "link",
+     "name": "Generator Rome Generator Rome★★ Esquilino, Rome, Italy0.8 km from center 7.4 Good 8,765 reviews Laundry Non-smoking rooms Air conditioning Room service Pet-friendly Free cancellation hostel €74 per night See availability",
+     "attrs": {
+      "href": "http://127.0.0.1:8113/env/booking/property/prop_137?session=",
+      "style": "text-decoration: none; color: inherit;"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "booking|labels|json": {
+   "pages": 12,
+   "count_clean": 0,
+   "count_variant": 26,
+   "new": 26,
+   "explained": 26,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 26,
+   "targets_detected": 26,
+   "changed_elements": 26,
+   "ladder": {
+    "name-empty|detected": 19,
+    "name-kept|detected": 2,
+    "name-changed|detected": 5
+   },
+   "new_by_verdict": {
+    "exact": 23,
+    "equivalent": 3
+   },
+   "new_by_signature": {
+    "unassociated-label": 18,
+    "no-visible-label": 5,
+    "text-near-control": 3
+   },
+   "page_verdicts": {
+    "none->exact": 5,
+    "none->none": 6,
+    "none->equivalent": 1
+   },
+   "pages_with_targets": 6,
+   "pages_with_targets_detected": 6,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "booking|labels|mhtml": {
+   "pages": 12,
+   "count_clean": 0,
+   "count_variant": 26,
+   "new": 26,
+   "explained": 26,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 26,
+   "targets_detected": 26,
+   "changed_elements": 26,
+   "ladder": {
+    "name-empty|detected": 19,
+    "name-kept|detected": 2,
+    "name-changed|detected": 5
+   },
+   "new_by_verdict": {
+    "exact": 23,
+    "equivalent": 3
+   },
+   "new_by_signature": {
+    "unassociated-label": 18,
+    "no-visible-label": 5,
+    "text-near-control": 3
+   },
+   "page_verdicts": {
+    "none->exact": 5,
+    "none->none": 6,
+    "none->equivalent": 1
+   },
+   "pages_with_targets": 6,
+   "pages_with_targets_detected": 6,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "booking|alt|json": {
+   "pages": 12,
+   "count_clean": 0,
+   "count_variant": 44,
+   "new": 44,
+   "explained": 44,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 44,
+   "targets_detected": 44,
+   "changed_elements": 44,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 44
+   },
+   "new_by_signature": {
+    "img-without-alt": 44
+   },
+   "page_verdicts": {
+    "none->none": 9,
+    "none->exact": 3
+   },
+   "pages_with_targets": 3,
+   "pages_with_targets_detected": 3,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "booking|alt|mhtml": {
+   "pages": 12,
+   "count_clean": 0,
+   "count_variant": 44,
+   "new": 44,
+   "explained": 44,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 44,
+   "targets_detected": 44,
+   "changed_elements": 44,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 44
+   },
+   "new_by_signature": {
+    "img-without-alt": 44
+   },
+   "page_verdicts": {
+    "none->none": 9,
+    "none->exact": 3
+   },
+   "pages_with_targets": 3,
+   "pages_with_targets_detected": 3,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "booking|headings|json": {
+   "pages": 12,
+   "count_clean": 8,
+   "count_variant": 651,
+   "new": 643,
+   "explained": 643,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 662,
+   "targets_detected": 643,
+   "changed_elements": 662,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 643
+   },
+   "new_by_signature": {
+    "heading-styled-text": 64,
+    "bold-short-text": 579
+   },
+   "page_verdicts": {
+    "none->exact": 9,
+    "exact->exact": 3
+   },
+   "pages_with_targets": 12,
+   "pages_with_targets_detected": 12,
+   "missed_examples": [
+    {
+     "page": "route__home.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    },
+    {
+     "page": "route__home.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    },
+    {
+     "page": "route__home.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "booking|headings|mhtml": {
+   "pages": 12,
+   "count_clean": 8,
+   "count_variant": 651,
+   "new": 643,
+   "explained": 643,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 662,
+   "targets_detected": 643,
+   "changed_elements": 674,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 643
+   },
+   "new_by_signature": {
+    "heading-styled-text": 64,
+    "bold-short-text": 579
+   },
+   "page_verdicts": {
+    "none->exact": 9,
+    "exact->exact": 3
+   },
+   "pages_with_targets": 12,
+   "pages_with_targets_detected": 12,
+   "missed_examples": [
+    {
+     "page": "route__home.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    },
+    {
+     "page": "route__home.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    },
+    {
+     "page": "route__home.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "booking|landmarks|json": {
+   "pages": 12,
+   "count_clean": 0,
+   "count_variant": 46,
+   "new": 46,
+   "explained": 46,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 50,
+   "targets_detected": 46,
+   "changed_elements": 50,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 46
+   },
+   "new_by_signature": {
+    "banner-like-container": 12,
+    "navigation-like-container": 12,
+    "main-like-container": 10,
+    "contentinfo-like-container": 12
+   },
+   "page_verdicts": {
+    "none->exact": 12
+   },
+   "pages_with_targets": 12,
+   "pages_with_targets_detected": 12,
+   "missed_examples": [
+    {
+     "page": "route__saved.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "bk-main",
+      "style": "flex: 1 1 0%;"
+     }
+    },
+    {
+     "page": "route__search.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "Search filters",
+     "attrs": {
+      "class": "bk-filters",
+      "aria-label": "Search filters"
+     }
+    },
+    {
+     "page": "route__search.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "Search results pages",
+     "attrs": {
+      "class": "bk-pagination",
+      "aria-label": "Search results pages"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "booking|landmarks|mhtml": {
+   "pages": 12,
+   "count_clean": 0,
+   "count_variant": 46,
+   "new": 46,
+   "explained": 46,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 50,
+   "targets_detected": 46,
+   "changed_elements": 62,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 46
+   },
+   "new_by_signature": {
+    "banner-like-container": 12,
+    "navigation-like-container": 12,
+    "main-like-container": 10,
+    "contentinfo-like-container": 12
+   },
+   "page_verdicts": {
+    "none->exact": 12
+   },
+   "pages_with_targets": 12,
+   "pages_with_targets_detected": 12,
+   "missed_examples": [
+    {
+     "page": "route__saved.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "bk-main",
+      "style": "flex: 1 1 0%;"
+     }
+    },
+    {
+     "page": "route__search.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "Search filters",
+     "attrs": {
+      "class": "bk-filters",
+      "aria-label": "Search filters"
+     }
+    },
+    {
+     "page": "route__search.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "Search results pages",
+     "attrs": {
+      "class": "bk-pagination",
+      "aria-label": "Search results pages"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "booking|tableheads|json": {
+   "pages": 12,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 0,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 12
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "booking|tableheads|mhtml": {
+   "pages": 12,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 12,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 12
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "booking|headings:strong|json": {
+   "pages": 12,
+   "count_clean": 2,
+   "count_variant": 66,
+   "new": 64,
+   "explained": 64,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 662,
+   "targets_detected": 64,
+   "changed_elements": 662,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 64
+   },
+   "new_by_signature": {
+    "heading-styled-text": 64
+   },
+   "page_verdicts": {
+    "none->exact": 9,
+    "exact->exact": 3
+   },
+   "pages_with_targets": 12,
+   "pages_with_targets_detected": 12,
+   "missed_examples": [
+    {
+     "page": "route__account.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "style": "font-size: 14px; font-weight: 600; margin-bottom: 10px;"
+     }
+    },
+    {
+     "page": "route__account.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "style": "font-size: 14px; font-weight: 600; margin-bottom: 8px;"
+     }
+    },
+    {
+     "page": "route__home.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "booking|headings:strong|mhtml": {
+   "pages": 12,
+   "count_clean": 2,
+   "count_variant": 66,
+   "new": 64,
+   "explained": 64,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 662,
+   "targets_detected": 64,
+   "changed_elements": 674,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 64
+   },
+   "new_by_signature": {
+    "heading-styled-text": 64
+   },
+   "page_verdicts": {
+    "none->exact": 9,
+    "exact->exact": 3
+   },
+   "pages_with_targets": 12,
+   "pages_with_targets_detected": 12,
+   "missed_examples": [
+    {
+     "page": "route__account.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "style": "font-size: 14px; font-weight: 600; margin-bottom: 10px;"
+     }
+    },
+    {
+     "page": "route__account.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "style": "font-size: 14px; font-weight: 600; margin-bottom: 8px;"
+     }
+    },
+    {
+     "page": "route__home.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "gmail|names|json": {
+   "pages": 8,
+   "count_clean": 44,
+   "count_variant": 109,
+   "new": 109,
+   "explained": 109,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 258,
+   "targets_detected": 109,
+   "changed_elements": 367,
+   "ladder": {
+    "unique-changed|not": 104,
+    "empty|detected": 93,
+    "kept|not": 45,
+    "shared|detected": 16
+   },
+   "new_by_verdict": {
+    "exact": 109
+   },
+   "new_by_signature": {
+    "empty": 93,
+    "ambiguous": 16
+   },
+   "page_verdicts": {
+    "equivalent->exact": 3,
+    "none->none": 2,
+    "none->exact": 3
+   },
+   "pages_with_targets": 8,
+   "pages_with_targets_detected": 4,
+   "missed_examples": [
+    {
+     "page": "gmail_access_review_audit.json",
+     "tag": "a",
+     "role": "link",
+     "name": "Quarterly Access Review: Project Athena —The following accounts currently have access to Project Athena: 1. jsmith (Jane Smith, Engineering) 2. klee (Kevin Lee, Product) 3. mwong (M",
+     "attrs": {
+      "class": "gmail-email-row__subject",
+      "href": "/env/gmail/thread/email_1?session=htz9l2q&agent_mode=hv5j5gx"
+     }
+    },
+    {
+     "page": "gmail_access_review_audit.json",
+     "tag": "a",
+     "role": "link",
+     "name": "Revised budget worksheet —Sharing the latest notes before tomorrow's check-in. The team is aligned on the main path and only needs confirmation on the follow-up items",
+     "attrs": {
+      "class": "gmail-email-row__subject",
+      "href": "/env/gmail/thread/email_43?session=htz9l2q&agent_mode=hv5j5g"
+     }
+    },
+    {
+     "page": "gmail_access_review_audit.json",
+     "tag": "a",
+     "role": "link",
+     "name": "Follow-up on venue estimate —Sending a quick status update from today's working session. Most of the edits were minor, with one budget line still waiting on approval. If",
+     "attrs": {
+      "class": "gmail-email-row__subject",
+      "href": "/env/gmail/thread/email_30?session=htz9l2q&agent_mode=hv5j5g"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "gmail|names|mhtml": {
+   "pages": 8,
+   "count_clean": 44,
+   "count_variant": 109,
+   "new": 109,
+   "explained": 109,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 258,
+   "targets_detected": 109,
+   "changed_elements": 367,
+   "ladder": {
+    "unique-changed|not": 104,
+    "empty|detected": 93,
+    "kept|not": 45,
+    "shared|detected": 16
+   },
+   "new_by_verdict": {
+    "exact": 109
+   },
+   "new_by_signature": {
+    "empty": 93,
+    "ambiguous": 16
+   },
+   "page_verdicts": {
+    "equivalent->exact": 3,
+    "none->none": 2,
+    "none->exact": 3
+   },
+   "pages_with_targets": 8,
+   "pages_with_targets_detected": 4,
+   "missed_examples": [
+    {
+     "page": "gmail_access_review_audit.mhtml",
+     "tag": "a",
+     "role": "link",
+     "name": "Quarterly Access Review: Project Athena —The following accounts currently have access to Project Athena: 1. jsmith (Jane Smith, Engineering) 2. klee (Kevin Lee, Product) 3. mwong (M",
+     "attrs": {
+      "class": "gmail-email-row__subject",
+      "href": "http://127.0.0.1:8113/env/gmail/thread/email_1?session=gmail"
+     }
+    },
+    {
+     "page": "gmail_access_review_audit.mhtml",
+     "tag": "a",
+     "role": "link",
+     "name": "Revised budget worksheet —Sharing the latest notes before tomorrow's check-in. The team is aligned on the main path and only needs confirmation on the follow-up items",
+     "attrs": {
+      "class": "gmail-email-row__subject",
+      "href": "http://127.0.0.1:8113/env/gmail/thread/email_43?session=gmai"
+     }
+    },
+    {
+     "page": "gmail_access_review_audit.mhtml",
+     "tag": "a",
+     "role": "link",
+     "name": "Follow-up on venue estimate —Sending a quick status update from today's working session. Most of the edits were minor, with one budget line still waiting on approval. If",
+     "attrs": {
+      "class": "gmail-email-row__subject",
+      "href": "http://127.0.0.1:8113/env/gmail/thread/email_30?session=gmai"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "gmail|labels|json": {
+   "pages": 8,
+   "count_clean": 0,
+   "count_variant": 14,
+   "new": 14,
+   "explained": 14,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 32,
+   "targets_detected": 14,
+   "changed_elements": 48,
+   "ladder": {
+    "name-kept|detected": 8,
+    "name-changed|not": 18,
+    "name-empty|detected": 5,
+    "name-changed|detected": 1
+   },
+   "new_by_verdict": {
+    "equivalent": 12,
+    "exact": 2
+   },
+   "new_by_signature": {
+    "text-near-control": 12,
+    "no-visible-label": 2
+   },
+   "page_verdicts": {
+    "none->equivalent": 7,
+    "none->exact": 1
+   },
+   "pages_with_targets": 8,
+   "pages_with_targets_detected": 8,
+   "missed_examples": [
+    {
+     "page": "route__compose.json",
+     "tag": "input",
+     "role": "textbox",
+     "name": "Attachments Mock attachments use comma-separated filenames.",
+     "attrs": {
+      "id": "Compose-attachments",
+      "class": "wab-input",
+      "aria-invalid": "false",
+      "placeholder": "budget.xlsx, meeting-notes.pdf"
+     }
+    },
+    {
+     "page": "route__compose.json",
+     "tag": "textarea",
+     "role": "textbox",
+     "name": "Message",
+     "attrs": {
+      "id": "Compose-body",
+      "class": "wab-textarea",
+      "aria-invalid": "false",
+      "rows": "10",
+      "placeholder": "Write your message"
+     }
+    },
+    {
+     "page": "route__compose.json",
+     "tag": "input",
+     "role": "textbox",
+     "name": "Subject",
+     "attrs": {
+      "id": "Compose-subject",
+      "class": "wab-input",
+      "aria-invalid": "false",
+      "placeholder": "Subject line"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "gmail|labels|mhtml": {
+   "pages": 8,
+   "count_clean": 0,
+   "count_variant": 14,
+   "new": 14,
+   "explained": 14,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 32,
+   "targets_detected": 14,
+   "changed_elements": 48,
+   "ladder": {
+    "name-kept|detected": 8,
+    "name-changed|not": 18,
+    "name-empty|detected": 5,
+    "name-changed|detected": 1
+   },
+   "new_by_verdict": {
+    "equivalent": 12,
+    "exact": 2
+   },
+   "new_by_signature": {
+    "text-near-control": 12,
+    "no-visible-label": 2
+   },
+   "page_verdicts": {
+    "none->equivalent": 7,
+    "none->exact": 1
+   },
+   "pages_with_targets": 8,
+   "pages_with_targets_detected": 8,
+   "missed_examples": [
+    {
+     "page": "route__compose.mhtml",
+     "tag": "input",
+     "role": "textbox",
+     "name": "Attachments Mock attachments use comma-separated filenames.",
+     "attrs": {
+      "id": "Compose-attachments",
+      "class": "wab-input",
+      "aria-invalid": "false",
+      "placeholder": "budget.xlsx, meeting-notes.pdf"
+     }
+    },
+    {
+     "page": "route__compose.mhtml",
+     "tag": "textarea",
+     "role": "textbox",
+     "name": "Message",
+     "attrs": {
+      "id": "Compose-body",
+      "class": "wab-textarea",
+      "aria-invalid": "false",
+      "rows": "10",
+      "placeholder": "Write your message"
+     }
+    },
+    {
+     "page": "route__compose.mhtml",
+     "tag": "input",
+     "role": "textbox",
+     "name": "Subject",
+     "attrs": {
+      "id": "Compose-subject",
+      "class": "wab-input",
+      "aria-invalid": "false",
+      "placeholder": "Subject line"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "gmail|alt|json": {
+   "pages": 8,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 0,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 8
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "gmail|alt|mhtml": {
+   "pages": 8,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 0,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 8
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "gmail|headings|json": {
+   "pages": 8,
+   "count_clean": 8,
+   "count_variant": 15,
+   "new": 7,
+   "explained": 7,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 14,
+   "targets_detected": 7,
+   "changed_elements": 30,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 7
+   },
+   "new_by_signature": {
+    "heading-styled-text": 3,
+    "bold-short-text": 4
+   },
+   "page_verdicts": {
+    "equivalent->equivalent": 5,
+    "equivalent->exact": 3
+   },
+   "pages_with_targets": 4,
+   "pages_with_targets_detected": 3,
+   "missed_examples": [
+    {
+     "page": "route__compose.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    },
+    {
+     "page": "route__contacts.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    },
+    {
+     "page": "route__contacts.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "gmail|headings|mhtml": {
+   "pages": 8,
+   "count_clean": 8,
+   "count_variant": 15,
+   "new": 7,
+   "explained": 7,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 14,
+   "targets_detected": 7,
+   "changed_elements": 38,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 7
+   },
+   "new_by_signature": {
+    "heading-styled-text": 3,
+    "bold-short-text": 4
+   },
+   "page_verdicts": {
+    "equivalent->equivalent": 5,
+    "equivalent->exact": 3
+   },
+   "pages_with_targets": 4,
+   "pages_with_targets_detected": 3,
+   "missed_examples": [
+    {
+     "page": "route__compose.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    },
+    {
+     "page": "route__contacts.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    },
+    {
+     "page": "route__contacts.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "gmail|landmarks|json": {
+   "pages": 8,
+   "count_clean": 0,
+   "count_variant": 24,
+   "new": 24,
+   "explained": 24,
+   "unexplained": 0,
+   "unexplained_strict": 8,
+   "targets": 33,
+   "targets_detected": 16,
+   "changed_elements": 46,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 24
+   },
+   "new_by_signature": {
+    "banner-like-container": 8,
+    "navigation-like-container": 8,
+    "main-like-container": 8
+   },
+   "page_verdicts": {
+    "none->exact": 8
+   },
+   "pages_with_targets": 8,
+   "pages_with_targets_detected": 8,
+   "missed_examples": [
+    {
+     "page": "gmail_access_review_audit.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "Gmail navigation",
+     "attrs": {
+      "class": "wab-sidebar wab-card",
+      "aria-label": "Gmail navigation",
+      "style": "padding: 1rem;"
+     }
+    },
+    {
+     "page": "gmail_access_review_audit.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "Inbox",
+     "attrs": {
+      "class": "gmail-page",
+      "aria-label": "Inbox"
+     }
+    },
+    {
+     "page": "gmail_action_item_extraction.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "Gmail navigation",
+     "attrs": {
+      "class": "wab-sidebar wab-card",
+      "aria-label": "Gmail navigation",
+      "style": "padding: 1rem;"
+     }
+    }
+   ],
+   "unexplained_strict_examples": [
+    {
+     "page": "gmail_access_review_audit.json",
+     "signature": "main-like-container",
+     "html": "<div class=\"gmail-main-column\"><div class=\"gmail-page\" aria-label=\"Inbox\"><div class=\"gmail-toolbar\"><div class=\"gmail-toolbar__left\"><div class=\"wab-tabs\" role=\"tablist\" aria-label=\"Inbox categories\""
+    },
+    {
+     "page": "gmail_action_item_extraction.json",
+     "signature": "main-like-container",
+     "html": "<div class=\"gmail-main-column\"><div class=\"gmail-page\" aria-label=\"Inbox\"><div class=\"gmail-toolbar\"><div class=\"gmail-toolbar__left\"><div class=\"wab-tabs\" role=\"tablist\" aria-label=\"Inbox categories\""
+    },
+    {
+     "page": "route__compose.json",
+     "signature": "main-like-container",
+     "html": "<div class=\"gmail-main-column\"><div class=\"gmail-page\" aria-label=\"Compose message\"><form class=\"gmail-compose-form wab-card\" aria-label=\"Compose\"><div class=\"gmail-compose-form__header\"><h2>Compose</"
+    }
+   ]
+  },
+  "gmail|landmarks|mhtml": {
+   "pages": 8,
+   "count_clean": 0,
+   "count_variant": 24,
+   "new": 24,
+   "explained": 24,
+   "unexplained": 0,
+   "unexplained_strict": 8,
+   "targets": 33,
+   "targets_detected": 16,
+   "changed_elements": 54,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 24
+   },
+   "new_by_signature": {
+    "banner-like-container": 8,
+    "navigation-like-container": 8,
+    "main-like-container": 8
+   },
+   "page_verdicts": {
+    "none->exact": 8
+   },
+   "pages_with_targets": 8,
+   "pages_with_targets_detected": 8,
+   "missed_examples": [
+    {
+     "page": "gmail_access_review_audit.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "Gmail navigation",
+     "attrs": {
+      "class": "wab-sidebar wab-card",
+      "aria-label": "Gmail navigation",
+      "style": "padding: 1rem;"
+     }
+    },
+    {
+     "page": "gmail_access_review_audit.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "Inbox",
+     "attrs": {
+      "class": "gmail-page",
+      "aria-label": "Inbox"
+     }
+    },
+    {
+     "page": "gmail_action_item_extraction.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "Gmail navigation",
+     "attrs": {
+      "class": "wab-sidebar wab-card",
+      "aria-label": "Gmail navigation",
+      "style": "padding: 1rem;"
+     }
+    }
+   ],
+   "unexplained_strict_examples": [
+    {
+     "page": "gmail_access_review_audit.mhtml",
+     "signature": "main-like-container",
+     "html": "<div class=\"gmail-main-column\"><div data-amt=\"main\" class=\"gmail-page\" aria-label=\"Inbox\"><div class=\"gmail-toolbar\"><div class=\"gmail-toolbar__left\"><div class=\"wab-tabs\" role=\"tablist\" aria-label=\"I"
+    },
+    {
+     "page": "gmail_action_item_extraction.mhtml",
+     "signature": "main-like-container",
+     "html": "<div class=\"gmail-main-column\"><div data-amt=\"main\" class=\"gmail-page\" aria-label=\"Inbox\"><div class=\"gmail-toolbar\"><div class=\"gmail-toolbar__left\"><div class=\"wab-tabs\" role=\"tablist\" aria-label=\"I"
+    },
+    {
+     "page": "route__compose.mhtml",
+     "signature": "main-like-container",
+     "html": "<div class=\"gmail-main-column\"><div data-amt=\"main\" class=\"gmail-page\" aria-label=\"Compose message\"><form class=\"gmail-compose-form wab-card\" aria-label=\"Compose\"><div data-amt=\"header\" class=\"gmail-c"
+    }
+   ]
+  },
+  "gmail|tableheads|json": {
+   "pages": 8,
+   "count_clean": 0,
+   "count_variant": 2,
+   "new": 2,
+   "explained": 2,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 2,
+   "targets_detected": 2,
+   "changed_elements": 18,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 2
+   },
+   "new_by_signature": {
+    "th-less-table": 2
+   },
+   "page_verdicts": {
+    "none->none": 6,
+    "none->exact": 2
+   },
+   "pages_with_targets": 2,
+   "pages_with_targets_detected": 2,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "gmail|tableheads|mhtml": {
+   "pages": 8,
+   "count_clean": 0,
+   "count_variant": 2,
+   "new": 2,
+   "explained": 2,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 2,
+   "targets_detected": 2,
+   "changed_elements": 26,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 2
+   },
+   "new_by_signature": {
+    "th-less-table": 2
+   },
+   "page_verdicts": {
+    "none->none": 6,
+    "none->exact": 2
+   },
+   "pages_with_targets": 2,
+   "pages_with_targets_detected": 2,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "gmail|headings:strong|json": {
+   "pages": 8,
+   "count_clean": 8,
+   "count_variant": 11,
+   "new": 3,
+   "explained": 3,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 14,
+   "targets_detected": 3,
+   "changed_elements": 30,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 3
+   },
+   "new_by_signature": {
+    "heading-styled-text": 3
+   },
+   "page_verdicts": {
+    "equivalent->equivalent": 5,
+    "equivalent->exact": 3
+   },
+   "pages_with_targets": 4,
+   "pages_with_targets_detected": 3,
+   "missed_examples": [
+    {
+     "page": "route__compose.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    },
+    {
+     "page": "route__contacts.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    },
+    {
+     "page": "route__contacts.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "gmail|headings:strong|mhtml": {
+   "pages": 8,
+   "count_clean": 8,
+   "count_variant": 11,
+   "new": 3,
+   "explained": 3,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 14,
+   "targets_detected": 3,
+   "changed_elements": 38,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 3
+   },
+   "new_by_signature": {
+    "heading-styled-text": 3
+   },
+   "page_verdicts": {
+    "equivalent->equivalent": 5,
+    "equivalent->exact": 3
+   },
+   "pages_with_targets": 4,
+   "pages_with_targets_detected": 3,
+   "missed_examples": [
+    {
+     "page": "route__compose.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    },
+    {
+     "page": "route__contacts.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    },
+    {
+     "page": "route__contacts.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "lms|names|json": {
+   "pages": 7,
+   "count_clean": 4,
+   "count_variant": 4,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 74,
+   "targets_detected": 4,
+   "changed_elements": 74,
+   "ladder": {
+    "kept|not": 35,
+    "shared|detected": 4,
+    "unique-changed|not": 35
+   },
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "equivalent->exact": 2,
+    "none->none": 5
+   },
+   "pages_with_targets": 7,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [
+    {
+     "page": "lms_academic_probation_recovery.json",
+     "tag": "a",
+     "role": "link",
+     "name": "Dashboard",
+     "attrs": {
+      "class": "lms-topbar__link",
+      "href": "/env/lms?session=h1386pzx&agent_mode=h1kqezon"
+     }
+    },
+    {
+     "page": "lms_academic_probation_recovery.json",
+     "tag": "a",
+     "role": "link",
+     "name": "Weekly Quiz 3",
+     "attrs": {
+      "class": "lms-link",
+      "href": "/env/lms/courses/course_2/assignments/assignment_10?session="
+     }
+    },
+    {
+     "page": "lms_academic_probation_recovery.json",
+     "tag": "a",
+     "role": "link",
+     "name": "CS101 Introduction to Computer Science Prof. Brooks -- Spring 2026",
+     "attrs": {
+      "class": "lms-card lms-link",
+      "href": "/env/lms/courses/course_1?session=h1386pzx&agent_mode=h1kqez",
+      "style": "text-decoration: none; color: inherit;"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "lms|names|mhtml": {
+   "pages": 7,
+   "count_clean": 4,
+   "count_variant": 4,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 74,
+   "targets_detected": 4,
+   "changed_elements": 74,
+   "ladder": {
+    "kept|not": 35,
+    "shared|detected": 4,
+    "unique-changed|not": 35
+   },
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "equivalent->exact": 2,
+    "none->none": 5
+   },
+   "pages_with_targets": 7,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [
+    {
+     "page": "lms_academic_probation_recovery.mhtml",
+     "tag": "a",
+     "role": "link",
+     "name": "Dashboard",
+     "attrs": {
+      "class": "lms-topbar__link",
+      "href": "http://127.0.0.1:8113/env/lms?session=lms_lms_academic_proba"
+     }
+    },
+    {
+     "page": "lms_academic_probation_recovery.mhtml",
+     "tag": "a",
+     "role": "link",
+     "name": "Weekly Quiz 3",
+     "attrs": {
+      "class": "lms-link",
+      "href": "http://127.0.0.1:8113/env/lms/courses/course_2/assignments/a"
+     }
+    },
+    {
+     "page": "lms_academic_probation_recovery.mhtml",
+     "tag": "a",
+     "role": "link",
+     "name": "CS101 Introduction to Computer Science Prof. Brooks -- Spring 2026",
+     "attrs": {
+      "class": "lms-card lms-link",
+      "href": "http://127.0.0.1:8113/env/lms/courses/course_1?session=lms_l",
+      "style": "text-decoration: none; color: inherit;"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "lms|labels|json": {
+   "pages": 7,
+   "count_clean": 0,
+   "count_variant": 2,
+   "new": 2,
+   "explained": 2,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 2,
+   "targets_detected": 2,
+   "changed_elements": 4,
+   "ladder": {
+    "name-empty|detected": 2
+   },
+   "new_by_verdict": {
+    "exact": 2
+   },
+   "new_by_signature": {
+    "no-visible-label": 2
+   },
+   "page_verdicts": {
+    "none->none": 6,
+    "none->exact": 1
+   },
+   "pages_with_targets": 1,
+   "pages_with_targets_detected": 1,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "lms|labels|mhtml": {
+   "pages": 7,
+   "count_clean": 0,
+   "count_variant": 2,
+   "new": 2,
+   "explained": 2,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 2,
+   "targets_detected": 2,
+   "changed_elements": 4,
+   "ladder": {
+    "name-empty|detected": 2
+   },
+   "new_by_verdict": {
+    "exact": 2
+   },
+   "new_by_signature": {
+    "no-visible-label": 2
+   },
+   "page_verdicts": {
+    "none->none": 6,
+    "none->exact": 1
+   },
+   "pages_with_targets": 1,
+   "pages_with_targets_detected": 1,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "lms|alt|json": {
+   "pages": 7,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 0,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 7
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "lms|alt|mhtml": {
+   "pages": 7,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 0,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 7
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "lms|headings|json": {
+   "pages": 7,
+   "count_clean": 0,
+   "count_variant": 16,
+   "new": 16,
+   "explained": 16,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 16,
+   "targets_detected": 16,
+   "changed_elements": 16,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 16
+   },
+   "new_by_signature": {
+    "heading-styled-text": 16
+   },
+   "page_verdicts": {
+    "none->exact": 7
+   },
+   "pages_with_targets": 7,
+   "pages_with_targets_detected": 7,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "lms|headings|mhtml": {
+   "pages": 7,
+   "count_clean": 0,
+   "count_variant": 16,
+   "new": 16,
+   "explained": 16,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 16,
+   "targets_detected": 16,
+   "changed_elements": 23,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 16
+   },
+   "new_by_signature": {
+    "heading-styled-text": 16
+   },
+   "page_verdicts": {
+    "none->exact": 7
+   },
+   "pages_with_targets": 7,
+   "pages_with_targets_detected": 7,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "lms|landmarks|json": {
+   "pages": 7,
+   "count_clean": 0,
+   "count_variant": 21,
+   "new": 21,
+   "explained": 21,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 22,
+   "targets_detected": 21,
+   "changed_elements": 22,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 21
+   },
+   "new_by_signature": {
+    "banner-like-container": 7,
+    "navigation-like-container": 7,
+    "main-like-container": 7
+   },
+   "page_verdicts": {
+    "none->exact": 7
+   },
+   "pages_with_targets": 7,
+   "pages_with_targets_detected": 7,
+   "missed_examples": [
+    {
+     "page": "route__messages.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "Sent Messages",
+     "attrs": {
+      "aria-label": "Sent Messages"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "lms|landmarks|mhtml": {
+   "pages": 7,
+   "count_clean": 0,
+   "count_variant": 21,
+   "new": 21,
+   "explained": 21,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 22,
+   "targets_detected": 21,
+   "changed_elements": 29,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 21
+   },
+   "new_by_signature": {
+    "banner-like-container": 7,
+    "navigation-like-container": 7,
+    "main-like-container": 7
+   },
+   "page_verdicts": {
+    "none->exact": 7
+   },
+   "pages_with_targets": 7,
+   "pages_with_targets_detected": 7,
+   "missed_examples": [
+    {
+     "page": "route__messages.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "Sent Messages",
+     "attrs": {
+      "aria-label": "Sent Messages"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "lms|tableheads|json": {
+   "pages": 7,
+   "count_clean": 0,
+   "count_variant": 3,
+   "new": 3,
+   "explained": 3,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 3,
+   "targets_detected": 3,
+   "changed_elements": 12,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 3
+   },
+   "new_by_signature": {
+    "th-less-table": 3
+   },
+   "page_verdicts": {
+    "none->exact": 3,
+    "none->none": 4
+   },
+   "pages_with_targets": 3,
+   "pages_with_targets_detected": 3,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "lms|tableheads|mhtml": {
+   "pages": 7,
+   "count_clean": 0,
+   "count_variant": 3,
+   "new": 3,
+   "explained": 3,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 3,
+   "targets_detected": 3,
+   "changed_elements": 19,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 3
+   },
+   "new_by_signature": {
+    "th-less-table": 3
+   },
+   "page_verdicts": {
+    "none->exact": 3,
+    "none->none": 4
+   },
+   "pages_with_targets": 3,
+   "pages_with_targets_detected": 3,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "lms|headings:strong|json": {
+   "pages": 7,
+   "count_clean": 0,
+   "count_variant": 16,
+   "new": 16,
+   "explained": 16,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 16,
+   "targets_detected": 16,
+   "changed_elements": 16,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 16
+   },
+   "new_by_signature": {
+    "heading-styled-text": 16
+   },
+   "page_verdicts": {
+    "none->exact": 7
+   },
+   "pages_with_targets": 7,
+   "pages_with_targets_detected": 7,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "lms|headings:strong|mhtml": {
+   "pages": 7,
+   "count_clean": 0,
+   "count_variant": 16,
+   "new": 16,
+   "explained": 16,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 16,
+   "targets_detected": 16,
+   "changed_elements": 23,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 16
+   },
+   "new_by_signature": {
+    "heading-styled-text": 16
+   },
+   "page_verdicts": {
+    "none->exact": 7
+   },
+   "pages_with_targets": 7,
+   "pages_with_targets_detected": 7,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "patient_portal|names|json": {
+   "pages": 9,
+   "count_clean": 32,
+   "count_variant": 56,
+   "new": 24,
+   "explained": 24,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 142,
+   "targets_detected": 56,
+   "changed_elements": 142,
+   "ladder": {
+    "shared|detected": 56,
+    "unique-changed|not": 10,
+    "kept|not": 76
+   },
+   "new_by_verdict": {
+    "exact": 24
+   },
+   "new_by_signature": {
+    "ambiguous": 24
+   },
+   "page_verdicts": {
+    "equivalent->exact": 3,
+    "none->exact": 3,
+    "none->none": 3
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 5,
+   "missed_examples": [
+    {
+     "page": "pp_cancel_appointment.json",
+     "tag": "button",
+     "role": "button",
+     "name": "Show Past Appointments (5)",
+     "attrs": {
+      "type": "button",
+      "class": "pp-btn pp-btn--secondary"
+     }
+    },
+    {
+     "page": "pp_cancel_appointment.json",
+     "tag": "a",
+     "role": "link",
+     "name": "Appointments",
+     "attrs": {
+      "aria-current": "page",
+      "class": "pp-sidebar__link pp-sidebar__link--active",
+      "href": "/env/patient_portal/appointments?session=h1nqggx6&agent_mode"
+     }
+    },
+    {
+     "page": "pp_cancel_appointment.json",
+     "tag": "a",
+     "role": "link",
+     "name": "Referrals",
+     "attrs": {
+      "class": "pp-sidebar__link",
+      "href": "/env/patient_portal/referrals?session=h1nqggx6&agent_mode=h1"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "patient_portal|names|mhtml": {
+   "pages": 9,
+   "count_clean": 32,
+   "count_variant": 56,
+   "new": 24,
+   "explained": 24,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 142,
+   "targets_detected": 56,
+   "changed_elements": 142,
+   "ladder": {
+    "shared|detected": 56,
+    "unique-changed|not": 10,
+    "kept|not": 76
+   },
+   "new_by_verdict": {
+    "exact": 24
+   },
+   "new_by_signature": {
+    "ambiguous": 24
+   },
+   "page_verdicts": {
+    "equivalent->exact": 3,
+    "none->exact": 3,
+    "none->none": 3
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 5,
+   "missed_examples": [
+    {
+     "page": "pp_cancel_appointment.mhtml",
+     "tag": "button",
+     "role": "button",
+     "name": "Show Past Appointments (5)",
+     "attrs": {
+      "type": "button",
+      "class": "pp-btn pp-btn--secondary"
+     }
+    },
+    {
+     "page": "pp_cancel_appointment.mhtml",
+     "tag": "a",
+     "role": "link",
+     "name": "Appointments",
+     "attrs": {
+      "aria-current": "page",
+      "class": "pp-sidebar__link pp-sidebar__link--active",
+      "href": "http://127.0.0.1:8113/env/patient_portal/appointments?sessio"
+     }
+    },
+    {
+     "page": "pp_cancel_appointment.mhtml",
+     "tag": "a",
+     "role": "link",
+     "name": "Referrals",
+     "attrs": {
+      "class": "pp-sidebar__link",
+      "href": "http://127.0.0.1:8113/env/patient_portal/referrals?session=p"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "patient_portal|labels|json": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 13,
+   "new": 13,
+   "explained": 13,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 13,
+   "targets_detected": 13,
+   "changed_elements": 25,
+   "ladder": {
+    "name-empty|detected": 13
+   },
+   "new_by_verdict": {
+    "exact": 12,
+    "equivalent": 1
+   },
+   "new_by_signature": {
+    "unassociated-label": 12,
+    "text-near-control": 1
+   },
+   "page_verdicts": {
+    "none->none": 6,
+    "none->exact": 2,
+    "none->equivalent": 1
+   },
+   "pages_with_targets": 3,
+   "pages_with_targets_detected": 3,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "patient_portal|labels|mhtml": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 13,
+   "new": 13,
+   "explained": 13,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 13,
+   "targets_detected": 13,
+   "changed_elements": 25,
+   "ladder": {
+    "name-empty|detected": 13
+   },
+   "new_by_verdict": {
+    "exact": 12,
+    "equivalent": 1
+   },
+   "new_by_signature": {
+    "unassociated-label": 12,
+    "text-near-control": 1
+   },
+   "page_verdicts": {
+    "none->none": 6,
+    "none->exact": 2,
+    "none->equivalent": 1
+   },
+   "pages_with_targets": 3,
+   "pages_with_targets_detected": 3,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "patient_portal|alt|json": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 0,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 9
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "patient_portal|alt|mhtml": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 0,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 9
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "patient_portal|headings|json": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 36,
+   "new": 36,
+   "explained": 36,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 36,
+   "targets_detected": 36,
+   "changed_elements": 36,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 36
+   },
+   "new_by_signature": {
+    "heading-styled-text": 36
+   },
+   "page_verdicts": {
+    "none->exact": 9
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 9,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "patient_portal|headings|mhtml": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 36,
+   "new": 36,
+   "explained": 36,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 36,
+   "targets_detected": 36,
+   "changed_elements": 45,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 36
+   },
+   "new_by_signature": {
+    "heading-styled-text": 36
+   },
+   "page_verdicts": {
+    "none->exact": 9
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 9,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "patient_portal|landmarks|json": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 28,
+   "new": 28,
+   "explained": 28,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 29,
+   "targets_detected": 28,
+   "changed_elements": 29,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 28
+   },
+   "new_by_signature": {
+    "banner-like-container": 9,
+    "navigation-like-container": 9,
+    "main-like-container": 9,
+    "complementary-like-container": 1
+   },
+   "page_verdicts": {
+    "none->exact": 9
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 9,
+   "missed_examples": [
+    {
+     "page": "route__messages.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "Message Inbox",
+     "attrs": {
+      "aria-label": "Message Inbox"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "patient_portal|landmarks|mhtml": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 28,
+   "new": 28,
+   "explained": 28,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 29,
+   "targets_detected": 28,
+   "changed_elements": 38,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 28
+   },
+   "new_by_signature": {
+    "banner-like-container": 9,
+    "navigation-like-container": 9,
+    "main-like-container": 9,
+    "complementary-like-container": 1
+   },
+   "page_verdicts": {
+    "none->exact": 9
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 9,
+   "missed_examples": [
+    {
+     "page": "route__messages.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "Message Inbox",
+     "attrs": {
+      "aria-label": "Message Inbox"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "patient_portal|tableheads|json": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 8,
+   "new": 8,
+   "explained": 8,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 8,
+   "targets_detected": 8,
+   "changed_elements": 72,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 8
+   },
+   "new_by_signature": {
+    "th-less-table": 8
+   },
+   "page_verdicts": {
+    "none->exact": 6,
+    "none->none": 3
+   },
+   "pages_with_targets": 6,
+   "pages_with_targets_detected": 6,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "patient_portal|tableheads|mhtml": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 8,
+   "new": 8,
+   "explained": 8,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 8,
+   "targets_detected": 8,
+   "changed_elements": 81,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 8
+   },
+   "new_by_signature": {
+    "th-less-table": 8
+   },
+   "page_verdicts": {
+    "none->exact": 6,
+    "none->none": 3
+   },
+   "pages_with_targets": 6,
+   "pages_with_targets_detected": 6,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "patient_portal|headings:strong|json": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 36,
+   "new": 36,
+   "explained": 36,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 36,
+   "targets_detected": 36,
+   "changed_elements": 36,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 36
+   },
+   "new_by_signature": {
+    "heading-styled-text": 36
+   },
+   "page_verdicts": {
+    "none->exact": 9
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 9,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "patient_portal|headings:strong|mhtml": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 36,
+   "new": 36,
+   "explained": 36,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 36,
+   "targets_detected": 36,
+   "changed_elements": 45,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 36
+   },
+   "new_by_signature": {
+    "heading-styled-text": 36
+   },
+   "page_verdicts": {
+    "none->exact": 9
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 9,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "reddit|names|json": {
+   "pages": 9,
+   "count_clean": 610,
+   "count_variant": 596,
+   "new": 162,
+   "explained": 162,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 779,
+   "targets_detected": 544,
+   "changed_elements": 779,
+   "ladder": {
+    "kept|not": 163,
+    "kept|detected": 216,
+    "shared|detected": 166,
+    "glyph|detected": 162,
+    "unique-changed|not": 72
+   },
+   "new_by_verdict": {
+    "exact": 162
+   },
+   "new_by_signature": {
+    "glyph-only": 162
+   },
+   "page_verdicts": {
+    "exact->exact": 3,
+    "equivalent->exact": 2,
+    "none->none": 4
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [
+    {
+     "page": "reddit_account_cleanup.json",
+     "tag": "a",
+     "role": "link",
+     "name": "Settings",
+     "attrs": {
+      "class": "wab-sidebar__link",
+      "href": "/env/reddit/settings?session=h8as8o3&agent_mode=h3h37rc"
+     }
+    },
+    {
+     "page": "reddit_account_cleanup.json",
+     "tag": "button",
+     "role": "button",
+     "name": "5 comments",
+     "attrs": {
+      "class": "post-card__action-btn"
+     }
+    },
+    {
+     "page": "reddit_account_cleanup.json",
+     "tag": "a",
+     "role": "link",
+     "name": "Home",
+     "attrs": {
+      "class": "wab-sidebar__link wab-sidebar__link--active",
+      "aria-current": "page",
+      "href": "/env/reddit/feed?session=h8as8o3&agent_mode=h3h37rc"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "reddit|names|mhtml": {
+   "pages": 9,
+   "count_clean": 610,
+   "count_variant": 596,
+   "new": 162,
+   "explained": 162,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 779,
+   "targets_detected": 544,
+   "changed_elements": 779,
+   "ladder": {
+    "kept|not": 163,
+    "kept|detected": 216,
+    "shared|detected": 166,
+    "glyph|detected": 162,
+    "unique-changed|not": 72
+   },
+   "new_by_verdict": {
+    "exact": 162
+   },
+   "new_by_signature": {
+    "glyph-only": 162
+   },
+   "page_verdicts": {
+    "exact->exact": 3,
+    "equivalent->exact": 2,
+    "none->none": 4
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [
+    {
+     "page": "reddit_account_cleanup.mhtml",
+     "tag": "a",
+     "role": "link",
+     "name": "Settings",
+     "attrs": {
+      "class": "wab-sidebar__link",
+      "href": "http://127.0.0.1:8113/env/reddit/settings?session=reddit_red"
+     }
+    },
+    {
+     "page": "reddit_account_cleanup.mhtml",
+     "tag": "button",
+     "role": "button",
+     "name": "5 comments",
+     "attrs": {
+      "class": "post-card__action-btn"
+     }
+    },
+    {
+     "page": "reddit_account_cleanup.mhtml",
+     "tag": "a",
+     "role": "link",
+     "name": "Home",
+     "attrs": {
+      "class": "wab-sidebar__link wab-sidebar__link--active",
+      "aria-current": "page",
+      "href": "http://127.0.0.1:8113/env/reddit/feed?session=reddit_reddit_"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "reddit|labels|json": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 19,
+   "new": 19,
+   "explained": 19,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 33,
+   "targets_detected": 19,
+   "changed_elements": 37,
+   "ladder": {
+    "name-kept|detected": 9,
+    "name-empty|detected": 6,
+    "name-kept|not": 13,
+    "name-changed|not": 1,
+    "name-changed|detected": 4
+   },
+   "new_by_verdict": {
+    "equivalent": 10,
+    "exact": 9
+   },
+   "new_by_signature": {
+    "text-near-control": 10,
+    "unassociated-label": 9
+   },
+   "page_verdicts": {
+    "none->equivalent": 7,
+    "none->exact": 2
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 9,
+   "missed_examples": [
+    {
+     "page": "route__settings.json",
+     "tag": "input",
+     "role": "checkbox",
+     "name": "Email on mentions",
+     "attrs": {
+      "type": "checkbox"
+     }
+    },
+    {
+     "page": "route__settings.json",
+     "tag": "input",
+     "role": "checkbox",
+     "name": "Email digest",
+     "attrs": {
+      "type": "checkbox"
+     }
+    },
+    {
+     "page": "route__settings.json",
+     "tag": "input",
+     "role": "checkbox",
+     "name": "Email on comment replies",
+     "attrs": {
+      "type": "checkbox"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "reddit|labels|mhtml": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 19,
+   "new": 19,
+   "explained": 19,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 33,
+   "targets_detected": 19,
+   "changed_elements": 37,
+   "ladder": {
+    "name-kept|detected": 9,
+    "name-empty|detected": 6,
+    "name-kept|not": 13,
+    "name-changed|not": 1,
+    "name-changed|detected": 4
+   },
+   "new_by_verdict": {
+    "equivalent": 10,
+    "exact": 9
+   },
+   "new_by_signature": {
+    "text-near-control": 10,
+    "unassociated-label": 9
+   },
+   "page_verdicts": {
+    "none->equivalent": 7,
+    "none->exact": 2
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 9,
+   "missed_examples": [
+    {
+     "page": "route__settings.mhtml",
+     "tag": "input",
+     "role": "checkbox",
+     "name": "Email on mentions",
+     "attrs": {
+      "type": "checkbox"
+     }
+    },
+    {
+     "page": "route__settings.mhtml",
+     "tag": "input",
+     "role": "checkbox",
+     "name": "Email digest",
+     "attrs": {
+      "type": "checkbox"
+     }
+    },
+    {
+     "page": "route__settings.mhtml",
+     "tag": "input",
+     "role": "checkbox",
+     "name": "Email on comment replies",
+     "attrs": {
+      "type": "checkbox"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "reddit|alt|json": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 0,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 9
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "reddit|alt|mhtml": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 0,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 9
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "reddit|headings|json": {
+   "pages": 9,
+   "count_clean": 3,
+   "count_variant": 46,
+   "new": 43,
+   "explained": 43,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 54,
+   "targets_detected": 43,
+   "changed_elements": 135,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 43
+   },
+   "new_by_signature": {
+    "bold-short-text": 37,
+    "heading-styled-text": 6
+   },
+   "page_verdicts": {
+    "exact->exact": 3,
+    "none->exact": 6
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 9,
+   "missed_examples": [
+    {
+     "page": "route__notifications.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "notification-item__title"
+     }
+    },
+    {
+     "page": "route__notifications.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "notification-item__title"
+     }
+    },
+    {
+     "page": "route__notifications.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "notification-item__title"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "reddit|headings|mhtml": {
+   "pages": 9,
+   "count_clean": 3,
+   "count_variant": 46,
+   "new": 43,
+   "explained": 43,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 54,
+   "targets_detected": 43,
+   "changed_elements": 144,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 43
+   },
+   "new_by_signature": {
+    "bold-short-text": 37,
+    "heading-styled-text": 6
+   },
+   "page_verdicts": {
+    "exact->exact": 3,
+    "none->exact": 6
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 9,
+   "missed_examples": [
+    {
+     "page": "route__notifications.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "notification-item__title"
+     }
+    },
+    {
+     "page": "route__notifications.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "notification-item__title"
+     }
+    },
+    {
+     "page": "route__notifications.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "notification-item__title"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "reddit|landmarks|json": {
+   "pages": 9,
+   "count_clean": 9,
+   "count_variant": 30,
+   "new": 21,
+   "explained": 21,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 30,
+   "targets_detected": 21,
+   "changed_elements": 39,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 21
+   },
+   "new_by_signature": {
+    "banner-like-container": 9,
+    "navigation-like-container": 9,
+    "complementary-like-container": 3
+   },
+   "page_verdicts": {
+    "partial->exact": 9
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 9,
+   "missed_examples": [
+    {
+     "page": "reddit_account_cleanup.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "Reddit navigation",
+     "attrs": {
+      "class": "wab-sidebar wab-card",
+      "aria-label": "Reddit navigation",
+      "style": "padding: 1rem;"
+     }
+    },
+    {
+     "page": "reddit_block_and_cleanup.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "Reddit navigation",
+     "attrs": {
+      "class": "wab-sidebar wab-card",
+      "aria-label": "Reddit navigation",
+      "style": "padding: 1rem;"
+     }
+    },
+    {
+     "page": "route__feed.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "Reddit navigation",
+     "attrs": {
+      "class": "wab-sidebar wab-card",
+      "aria-label": "Reddit navigation",
+      "style": "padding: 1rem;"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "reddit|landmarks|mhtml": {
+   "pages": 9,
+   "count_clean": 9,
+   "count_variant": 30,
+   "new": 21,
+   "explained": 21,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 30,
+   "targets_detected": 21,
+   "changed_elements": 48,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 21
+   },
+   "new_by_signature": {
+    "banner-like-container": 9,
+    "navigation-like-container": 9,
+    "complementary-like-container": 3
+   },
+   "page_verdicts": {
+    "partial->exact": 9
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 9,
+   "missed_examples": [
+    {
+     "page": "reddit_account_cleanup.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "Reddit navigation",
+     "attrs": {
+      "class": "wab-sidebar wab-card",
+      "aria-label": "Reddit navigation",
+      "style": "padding: 1rem;"
+     }
+    },
+    {
+     "page": "reddit_block_and_cleanup.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "Reddit navigation",
+     "attrs": {
+      "class": "wab-sidebar wab-card",
+      "aria-label": "Reddit navigation",
+      "style": "padding: 1rem;"
+     }
+    },
+    {
+     "page": "route__feed.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "Reddit navigation",
+     "attrs": {
+      "class": "wab-sidebar wab-card",
+      "aria-label": "Reddit navigation",
+      "style": "padding: 1rem;"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "reddit|tableheads|json": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 0,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 9
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "reddit|tableheads|mhtml": {
+   "pages": 9,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 9,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 9
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "reddit|headings:strong|json": {
+   "pages": 9,
+   "count_clean": 3,
+   "count_variant": 9,
+   "new": 6,
+   "explained": 6,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 54,
+   "targets_detected": 6,
+   "changed_elements": 135,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 6
+   },
+   "new_by_signature": {
+    "heading-styled-text": 6
+   },
+   "page_verdicts": {
+    "exact->exact": 3,
+    "none->exact": 6
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 6,
+   "missed_examples": [
+    {
+     "page": "reddit_account_cleanup.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "premium-title"
+     }
+    },
+    {
+     "page": "reddit_account_cleanup.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "wab-sidebar__heading"
+     }
+    },
+    {
+     "page": "reddit_account_cleanup.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "wab-sidebar__heading"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "reddit|headings:strong|mhtml": {
+   "pages": 9,
+   "count_clean": 3,
+   "count_variant": 9,
+   "new": 6,
+   "explained": 6,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 54,
+   "targets_detected": 6,
+   "changed_elements": 144,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 6
+   },
+   "new_by_signature": {
+    "heading-styled-text": 6
+   },
+   "page_verdicts": {
+    "exact->exact": 3,
+    "none->exact": 6
+   },
+   "pages_with_targets": 9,
+   "pages_with_targets_detected": 6,
+   "missed_examples": [
+    {
+     "page": "reddit_account_cleanup.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "premium-title"
+     }
+    },
+    {
+     "page": "reddit_account_cleanup.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "wab-sidebar__heading"
+     }
+    },
+    {
+     "page": "reddit_account_cleanup.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "wab-sidebar__heading"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "robinhood|names|json": {
+   "pages": 14,
+   "count_clean": 2,
+   "count_variant": 44,
+   "new": 42,
+   "explained": 42,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 111,
+   "targets_detected": 44,
+   "changed_elements": 111,
+   "ladder": {
+    "kept|not": 31,
+    "unique-changed|not": 36,
+    "empty|detected": 42,
+    "shared|detected": 2
+   },
+   "new_by_verdict": {
+    "exact": 42
+   },
+   "new_by_signature": {
+    "empty": 42
+   },
+   "page_verdicts": {
+    "none->exact": 13,
+    "equivalent->exact": 1
+   },
+   "pages_with_targets": 14,
+   "pages_with_targets_detected": 14,
+   "missed_examples": [
+    {
+     "page": "rh_add_to_watchlist.json",
+     "tag": "button",
+     "role": "button",
+     "name": "Banking",
+     "attrs": {
+      "class": "rh-category-chip"
+     }
+    },
+    {
+     "page": "rh_add_to_watchlist.json",
+     "tag": "button",
+     "role": "button",
+     "name": "ETFs",
+     "attrs": {
+      "class": "rh-category-chip"
+     }
+    },
+    {
+     "page": "rh_add_to_watchlist.json",
+     "tag": "button",
+     "role": "button",
+     "name": "YTD",
+     "attrs": {
+      "class": "rh-time-range__btn "
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "robinhood|names|mhtml": {
+   "pages": 14,
+   "count_clean": 2,
+   "count_variant": 44,
+   "new": 42,
+   "explained": 42,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 111,
+   "targets_detected": 44,
+   "changed_elements": 111,
+   "ladder": {
+    "kept|not": 31,
+    "unique-changed|not": 36,
+    "empty|detected": 42,
+    "shared|detected": 2
+   },
+   "new_by_verdict": {
+    "exact": 42
+   },
+   "new_by_signature": {
+    "empty": 42
+   },
+   "page_verdicts": {
+    "none->exact": 13,
+    "equivalent->exact": 1
+   },
+   "pages_with_targets": 14,
+   "pages_with_targets_detected": 14,
+   "missed_examples": [
+    {
+     "page": "rh_add_to_watchlist.mhtml",
+     "tag": "button",
+     "role": "button",
+     "name": "Banking",
+     "attrs": {
+      "class": "rh-category-chip"
+     }
+    },
+    {
+     "page": "rh_add_to_watchlist.mhtml",
+     "tag": "button",
+     "role": "button",
+     "name": "ETFs",
+     "attrs": {
+      "class": "rh-category-chip"
+     }
+    },
+    {
+     "page": "rh_add_to_watchlist.mhtml",
+     "tag": "button",
+     "role": "button",
+     "name": "YTD",
+     "attrs": {
+      "class": "rh-time-range__btn "
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "robinhood|labels|json": {
+   "pages": 14,
+   "count_clean": 0,
+   "count_variant": 25,
+   "new": 25,
+   "explained": 25,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 25,
+   "targets_detected": 25,
+   "changed_elements": 25,
+   "ladder": {
+    "name-changed|detected": 18,
+    "name-empty|detected": 7
+   },
+   "new_by_verdict": {
+    "equivalent": 17,
+    "exact": 8
+   },
+   "new_by_signature": {
+    "text-near-control": 17,
+    "unassociated-label": 8
+   },
+   "page_verdicts": {
+    "none->equivalent": 11,
+    "none->exact": 3
+   },
+   "pages_with_targets": 14,
+   "pages_with_targets_detected": 14,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "robinhood|labels|mhtml": {
+   "pages": 14,
+   "count_clean": 0,
+   "count_variant": 25,
+   "new": 25,
+   "explained": 25,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 25,
+   "targets_detected": 25,
+   "changed_elements": 25,
+   "ladder": {
+    "name-changed|detected": 18,
+    "name-empty|detected": 7
+   },
+   "new_by_verdict": {
+    "equivalent": 17,
+    "exact": 8
+   },
+   "new_by_signature": {
+    "text-near-control": 17,
+    "unassociated-label": 8
+   },
+   "page_verdicts": {
+    "none->equivalent": 11,
+    "none->exact": 3
+   },
+   "pages_with_targets": 14,
+   "pages_with_targets_detected": 14,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "robinhood|alt|json": {
+   "pages": 14,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 0,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 14
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "robinhood|alt|mhtml": {
+   "pages": 14,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 0,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 14
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "robinhood|headings|json": {
+   "pages": 14,
+   "count_clean": 0,
+   "count_variant": 33,
+   "new": 33,
+   "explained": 33,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 36,
+   "targets_detected": 33,
+   "changed_elements": 36,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 33
+   },
+   "new_by_signature": {
+    "heading-styled-text": 27,
+    "bold-short-text": 6
+   },
+   "page_verdicts": {
+    "none->exact": 13,
+    "none->none": 1
+   },
+   "pages_with_targets": 13,
+   "pages_with_targets_detected": 13,
+   "missed_examples": [
+    {
+     "page": "rh_add_to_watchlist.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "rh-portfolio__value"
+     }
+    },
+    {
+     "page": "rh_buy_market_order.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "rh-portfolio__value"
+     }
+    },
+    {
+     "page": "route__lists.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "robinhood|headings|mhtml": {
+   "pages": 14,
+   "count_clean": 0,
+   "count_variant": 33,
+   "new": 33,
+   "explained": 33,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 36,
+   "targets_detected": 33,
+   "changed_elements": 50,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 33
+   },
+   "new_by_signature": {
+    "heading-styled-text": 27,
+    "bold-short-text": 6
+   },
+   "page_verdicts": {
+    "none->exact": 13,
+    "none->none": 1
+   },
+   "pages_with_targets": 13,
+   "pages_with_targets_detected": 13,
+   "missed_examples": [
+    {
+     "page": "rh_add_to_watchlist.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "rh-portfolio__value"
+     }
+    },
+    {
+     "page": "rh_buy_market_order.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "rh-portfolio__value"
+     }
+    },
+    {
+     "page": "route__lists.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {}
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "robinhood|landmarks|json": {
+   "pages": 14,
+   "count_clean": 0,
+   "count_variant": 44,
+   "new": 44,
+   "explained": 44,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 44,
+   "targets_detected": 44,
+   "changed_elements": 59,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 44
+   },
+   "new_by_signature": {
+    "banner-like-container": 14,
+    "navigation-like-container": 14,
+    "main-like-container": 14,
+    "complementary-like-container": 2
+   },
+   "page_verdicts": {
+    "none->exact": 14
+   },
+   "pages_with_targets": 14,
+   "pages_with_targets_detected": 14,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "robinhood|landmarks|mhtml": {
+   "pages": 14,
+   "count_clean": 0,
+   "count_variant": 44,
+   "new": 44,
+   "explained": 44,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 44,
+   "targets_detected": 44,
+   "changed_elements": 73,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 44
+   },
+   "new_by_signature": {
+    "banner-like-container": 14,
+    "navigation-like-container": 14,
+    "main-like-container": 14,
+    "complementary-like-container": 2
+   },
+   "page_verdicts": {
+    "none->exact": 14
+   },
+   "pages_with_targets": 14,
+   "pages_with_targets_detected": 14,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "robinhood|tableheads|json": {
+   "pages": 14,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 0,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 14
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "robinhood|tableheads|mhtml": {
+   "pages": 14,
+   "count_clean": 0,
+   "count_variant": 0,
+   "new": 0,
+   "explained": 0,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 0,
+   "targets_detected": 0,
+   "changed_elements": 14,
+   "ladder": {},
+   "new_by_verdict": {},
+   "new_by_signature": {},
+   "page_verdicts": {
+    "none->none": 14
+   },
+   "pages_with_targets": 0,
+   "pages_with_targets_detected": 0,
+   "missed_examples": [],
+   "unexplained_strict_examples": []
+  },
+  "robinhood|headings:strong|json": {
+   "pages": 14,
+   "count_clean": 0,
+   "count_variant": 27,
+   "new": 27,
+   "explained": 27,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 36,
+   "targets_detected": 27,
+   "changed_elements": 36,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 27
+   },
+   "new_by_signature": {
+    "heading-styled-text": 27
+   },
+   "page_verdicts": {
+    "none->exact": 13,
+    "none->none": 1
+   },
+   "pages_with_targets": 13,
+   "pages_with_targets_detected": 13,
+   "missed_examples": [
+    {
+     "page": "rh_add_to_watchlist.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "rh-portfolio__value"
+     }
+    },
+    {
+     "page": "rh_add_to_watchlist.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "rh-news-card__headline"
+     }
+    },
+    {
+     "page": "rh_add_to_watchlist.json",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "rh-news-card__headline"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  },
+  "robinhood|headings:strong|mhtml": {
+   "pages": 14,
+   "count_clean": 0,
+   "count_variant": 27,
+   "new": 27,
+   "explained": 27,
+   "unexplained": 0,
+   "unexplained_strict": 0,
+   "targets": 36,
+   "targets_detected": 27,
+   "changed_elements": 50,
+   "ladder": {},
+   "new_by_verdict": {
+    "exact": 27
+   },
+   "new_by_signature": {
+    "heading-styled-text": 27
+   },
+   "page_verdicts": {
+    "none->exact": 13,
+    "none->none": 1
+   },
+   "pages_with_targets": 13,
+   "pages_with_targets_detected": 13,
+   "missed_examples": [
+    {
+     "page": "rh_add_to_watchlist.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "rh-portfolio__value"
+     }
+    },
+    {
+     "page": "rh_add_to_watchlist.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "rh-news-card__headline"
+     }
+    },
+    {
+     "page": "rh_add_to_watchlist.mhtml",
+     "tag": "div",
+     "role": "generic",
+     "name": "",
+     "attrs": {
+      "class": "rh-news-card__headline"
+     }
+    }
+   ],
+   "unexplained_strict_examples": []
+  }
+ },
+ "bw_clean_instances": {
+  "amazon|names": {
+   "instances": 52,
+   "pages": 17,
+   "by_signature": {
+    "ambiguous": 52
+   },
+   "top_names_or_html": [
+    [
+     "Today's Deals",
+     34
+    ],
+    [
+     "View order details",
+     6
+    ],
+    [
+     "Books",
+     6
+    ],
+    [
+     "Edit",
+     3
+    ],
+    [
+     "Return items",
+     3
+    ]
+   ]
+  },
+  "amazon|headings": {
+   "instances": 17,
+   "pages": 16,
+   "by_signature": {
+    "heading-styled-text": 17
+   },
+   "top_names_or_html": [
+    [
+     "<span class=\"amazon-footer__logo\">amazon</span>",
+     16
+    ],
+    [
+     "<div class=\"order-card__status\"><strong>cancelled<",
+     1
+    ]
+   ]
+  },
+  "booking|names": {
+   "instances": 631,
+   "pages": 5,
+   "by_signature": {
+    "ambiguous": 631
+   },
+   "top_names_or_html": [
+    [
+     "Property",
+     577
+    ],
+    [
+     "See deal",
+     20
+    ],
+    [
+     "View details",
+     15
+    ],
+    [
+     "See availability",
+     10
+    ],
+    [
+     "Edit",
+     7
+    ],
+    [
+     "View Moxy NYC Times Square",
+     2
+    ]
+   ]
+  },
+  "booking|headings": {
+   "instances": 8,
+   "pages": 3,
+   "by_signature": {
+    "bold-short-text": 6,
+    "heading-styled-text": 2
+   },
+   "top_names_or_html": [
+    [
+     "<div style=\"margin-top: 6px;\"><span class=\"bk-badg",
+     5
+    ],
+    [
+     "<div><span class=\"bk-genius-badge\" style=\"font-siz",
+     1
+    ],
+    [
+     "<span class=\"bk-genius-badge\" style=\"font-size: 16",
+     1
+    ],
+    [
+     "<div class=\"bk-result-count\">196 properties found<",
+     1
+    ]
+   ]
+  },
+  "gmail|headings": {
+   "instances": 8,
+   "pages": 8,
+   "by_signature": {
+    "heading-styled-text": 8
+   },
+   "top_names_or_html": [
+    [
+     "<span class=\"gmail-topbar__title\">Gmail</span>",
+     8
+    ]
+   ]
+  },
+  "gmail|names": {
+   "instances": 44,
+   "pages": 3,
+   "by_signature": {
+    "ambiguous": 44
+   },
+   "top_names_or_html": [
+    [
+     "Star Follow-up on venue estimate",
+     8
+    ],
+    [
+     "Open read thread Follow-up on venue estimate",
+     6
+    ],
+    [
+     "Star Revised budget worksheet",
+     6
+    ],
+    [
+     "Open read thread Revised budget worksheet",
+     6
+    ],
+    [
+     "Star Agenda draft for Monday check-in",
+     6
+    ],
+    [
+     "Open unread thread Agenda draft for Monday check-i",
+     4
+    ]
+   ]
+  },
+  "lms|names": {
+   "instances": 4,
+   "pages": 2,
+   "by_signature": {
+    "ambiguous": 4
+   },
+   "top_names_or_html": [
+    [
+     "Assignment Midterm Exam",
+     4
+    ]
+   ]
+  },
+  "patient_portal|names": {
+   "instances": 32,
+   "pages": 3,
+   "by_signature": {
+    "ambiguous": 32
+   },
+   "top_names_or_html": [
+    [
+     "Cancel appointment with Dr. Lisa Patel",
+     8
+    ],
+    [
+     "Reschedule appointment with Dr. Lisa Patel",
+     8
+    ],
+    [
+     "Cancel appointment with Dr. Sandra Lee",
+     3
+    ],
+    [
+     "Reschedule appointment with Dr. Sandra Lee",
+     3
+    ],
+    [
+     "Cancel appointment with Dr. Steven Wright",
+     3
+    ],
+    [
+     "Reschedule appointment with Dr. Steven Wright",
+     3
+    ]
+   ]
+  },
+  "reddit|names": {
+   "instances": 610,
+   "pages": 5,
+   "by_signature": {
+    "ambiguous": 610
+   },
+   "top_names_or_html": [
+    [
+     "Upvote",
+     81
+    ],
+    [
+     "Downvote",
+     81
+    ],
+    [
+     "Hide",
+     81
+    ],
+    [
+     "Share",
+     81
+    ],
+    [
+     "Save",
+     67
+    ],
+    [
+     "0 comments",
+     15
+    ]
+   ]
+  },
+  "reddit|headings": {
+   "instances": 3,
+   "pages": 3,
+   "by_signature": {
+    "heading-styled-text": 3
+   },
+   "top_names_or_html": [
+    [
+     "<div class=\"premium-icon\">Premium</div>",
+     3
+    ]
+   ]
+  },
+  "reddit|landmarks": {
+   "instances": 9,
+   "pages": 9,
+   "by_signature": {
+    "main-like-container": 9
+   },
+   "top_names_or_html": [
+    [
+     "<div class=\"reddit-main-column\"><div class=\"feed-p",
+     3
+    ],
+    [
+     "<div class=\"reddit-main-column\"><div class=\"settin",
+     1
+    ],
+    [
+     "<div class=\"reddit-main-column\"><div class=\"notifi",
+     1
+    ],
+    [
+     "<div class=\"reddit-main-column\"><div class=\"messag",
+     1
+    ],
+    [
+     "<div class=\"reddit-main-column\"><div class=\"search",
+     1
+    ],
+    [
+     "<div class=\"reddit-main-column\"><div class=\"saved-",
+     1
+    ]
+   ]
+  },
+  "robinhood|names": {
+   "instances": 2,
+   "pages": 1,
+   "by_signature": {
+    "ambiguous": 2
+   },
+   "top_names_or_html": [
+    [
+     "Run search",
+     2
+    ]
+   ]
+  }
+ },
+ "bw_format_agreement": {
+  "amazon": {
+   "names": "119/119",
+   "labels": "119/119",
+   "alt": "119/119",
+   "headings": "119/119",
+   "landmarks": "119/119",
+   "tableheads": "119/119"
+  },
+  "booking": {
+   "names": "84/84",
+   "labels": "84/84",
+   "alt": "84/84",
+   "headings": "84/84",
+   "landmarks": "84/84",
+   "tableheads": "84/84"
+  },
+  "gmail": {
+   "names": "56/56",
+   "labels": "56/56",
+   "alt": "56/56",
+   "headings": "56/56",
+   "landmarks": "56/56",
+   "tableheads": "56/56"
+  },
+  "lms": {
+   "names": "49/49",
+   "labels": "49/49",
+   "alt": "49/49",
+   "headings": "49/49",
+   "landmarks": "49/49",
+   "tableheads": "49/49"
+  },
+  "patient_portal": {
+   "names": "63/63",
+   "labels": "63/63",
+   "alt": "63/63",
+   "headings": "63/63",
+   "landmarks": "63/63",
+   "tableheads": "63/63"
+  },
+  "reddit": {
+   "names": "63/63",
+   "labels": "63/63",
+   "alt": "63/63",
+   "headings": "63/63",
+   "landmarks": "63/63",
+   "tableheads": "63/63"
+  },
+  "robinhood": {
+   "names": "98/98",
+   "labels": "98/98",
+   "alt": "98/98",
+   "headings": "98/98",
+   "landmarks": "98/98",
+   "tableheads": "98/98"
+  }
+ },
+ "bw_stripcheck": {
+  "pages": 228,
+  "kind_counts_compared": 1368,
+  "differences": []
+ }
+}

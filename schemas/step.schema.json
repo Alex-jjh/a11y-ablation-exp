@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "a11y-ablation-exp/schemas/step.schema.json",
+  "title": "step",
+  "description": "One agent step inside an episode, or one history-summary call (kind=summary). Everything the model was sent and everything that came back, so a trace can be read and coded without the run. Field names follow h1_wrapper.py trace.json (2026-11-02) where they exist. Draft v0.",
+  "type": "object",
+  "required": ["step", "kind", "url", "observation_sha256", "request_sha256", "response", "latency_s", "attempts"],
+  "properties": {
+    "step": {"type": "integer", "minimum": 0},
+    "kind": {"enum": ["agent", "summary"], "description": "history summary calls are their own steps, so a silent fallback is visible (agent.py:494-510)"},
+    "url": {"type": "string", "description": "raw URL; packets for observers mask host:port (D-17)"},
+    "observation_text": {"type": "string", "description": "exactly as sent"},
+    "observation_sha256": {"type": "string"},
+    "screenshot_sha256": {"type": ["string", "null"], "description": "bu harness only"},
+    "request_sha256": {"type": "string", "description": "sha256 of the canonical Converse request body"},
+    "params_sent": {"type": "object", "description": "maxTokens, reasoning fields, toolConfig hash"},
+    "response": {
+      "type": "object",
+      "required": ["text", "tool_uses", "reasoning", "reasoning_visibility", "stop_reason", "usage"],
+      "properties": {
+        "text": {"type": "string"},
+        "tool_uses": {"type": "array", "items": {"type": "object", "required": ["name", "input"], "properties": {"tool_use_id": {"type": "string"}, "name": {"type": "string"}, "input": {"type": "object"}}}, "description": "D-013: the action comes from a toolUse block, never from parsing text"},
+        "reasoning": {"type": "array", "items": {"type": "object", "required": ["type"], "properties": {"type": {"enum": ["text", "summary", "redacted"]}, "text": {"type": "string"}, "signature_sha256": {"type": "string"}, "redacted_bytes": {"type": "integer"}}}},
+        "reasoning_visibility": {"enum": ["text", "summary", "encrypted", "empty_text", "none"], "description": "explicit none when no reasoning block came back (proposal F11)"},
+        "stop_reason": {"type": "string"},
+        "usage": {"type": "object", "properties": {"in": {"type": "integer"}, "out": {"type": "integer"}, "cache_read": {"type": "integer"}, "cache_write": {"type": "integer"}}}
+      }
+    },
+    "action": {"type": ["object", "null"], "description": "the executed action (tool name and arguments) and its bid/target"},
+    "action_error": {"type": ["string", "null"]},
+    "url_after": {"type": ["string", "null"]},
+    "latency_s": {"type": "number"},
+    "attempts": {"type": "integer", "minimum": 1},
+    "error_kind": {"enum": [null, "throttled", "transient", "credential", "invalid", "access_denied", "model_unavailable", "timeout"]}
+  }
+}

@@ -1,0 +1,452 @@
+{
+ "env": "robinhood",
+ "kind": "labels",
+ "codemod_counts_env": {
+  "env": {
+   "htmlFor": 19,
+   "control-aria": 33
+  },
+  "shared": {
+   "htmlFor": 1,
+   "control-aria": 5
+  }
+ },
+ "tasks": [
+  {
+   "page": "rh_add_to_watchlist",
+   "visible": {
+    "lines_clean": 61,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 104,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1368
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "rh_buy_market_order",
+   "visible": {
+    "lines_clean": 73,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 118,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     1406
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__account",
+   "visible": {
+    "lines_clean": 43,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible",
+     "-\t\t[42] combobox 'Theme' value='Light', visible, hasPopup='menu', expanded=False",
+     "+\t\t[42] combobox '' value='Light', visible, hasPopup='menu', expanded=False",
+     "-\t\t[47] combobox 'Default Order Type' value='Market', visible, hasPopup='menu', expanded=False",
+     "+\t\t[47] combobox '' value='Market', visible, hasPopup='menu', expanded=False",
+     "-\t\t[61] combobox 'Two-Factor Authentication' value='None', visible, hasPopup='menu', expanded=False",
+     "+\t\t[61] combobox '' value='None', visible, hasPopup='menu', expanded=False"
+    ]
+   },
+   "all": {
+    "lines_clean": 50,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible",
+     "-\t\t[42] combobox 'Theme' value='Light', visible, hasPopup='menu', expanded=False",
+     "+\t\t[42] combobox '' value='Light', visible, hasPopup='menu', expanded=False",
+     "-\t\t[47] combobox 'Default Order Type' value='Market', visible, hasPopup='menu', expanded=False",
+     "+\t\t[47] combobox '' value='Market', visible, hasPopup='menu', expanded=False",
+     "-\t\t[61] combobox 'Two-Factor Authentication' value='None', visible, hasPopup='menu', expanded=False",
+     "+\t\t[61] combobox '' value='None', visible, hasPopup='menu', expanded=False"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1265,
+     822
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__alerts",
+   "visible": {
+    "lines_clean": 32,
+    "removed": 6,
+    "added": 6,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible",
+     "-\t\t[42] LabelText '', clickable, visible",
+     "+\t\t[42] LabelText '', visible",
+     "-\t\t[43] textbox 'Symbol', clickable, visible",
+     "+\t\t[43] textbox 'AAPL', clickable, visible",
+     "-\t\t[46] combobox 'Condition' value='Above', visible, hasPopup='menu', expanded=False",
+     "-\t\t[50] LabelText '', clickable, visible",
+     "+\t\t[46] combobox '' value='Above', visible, hasPopup='menu', expanded=False",
+     "+\t\t[50] LabelText '', visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 34,
+    "removed": 6,
+    "added": 6,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible",
+     "-\t\t[42] LabelText '', clickable, visible",
+     "+\t\t[42] LabelText '', visible",
+     "-\t\t[43] textbox 'Symbol', clickable, visible",
+     "+\t\t[43] textbox 'AAPL', clickable, visible",
+     "-\t\t[46] combobox 'Condition' value='Above', visible, hasPopup='menu', expanded=False",
+     "+\t\t[46] combobox '' value='Above', visible, hasPopup='menu', expanded=False",
+     "-\t\t[50] LabelText '', clickable, visible",
+     "+\t\t[50] LabelText '', visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__dividends",
+   "visible": {
+    "lines_clean": 25,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 25,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__history",
+   "visible": {
+    "lines_clean": 21,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 29,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__lists",
+   "visible": {
+    "lines_clean": 27,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 27,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__notifications",
+   "visible": {
+    "lines_clean": 23,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 23,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__options_positions",
+   "visible": {
+    "lines_clean": 30,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 30,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__orders",
+   "visible": {
+    "lines_clean": 25,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 25,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__recurring",
+   "visible": {
+    "lines_clean": 22,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 22,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__search",
+   "visible": {
+    "lines_clean": 22,
+    "removed": 2,
+    "added": 2,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible",
+     "-\t\t[40] textbox 'Search stocks', clickable, visible",
+     "+\t\t[40] textbox 'Search stocks by name or symbol', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 22,
+    "removed": 2,
+    "added": 2,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible",
+     "-\t\t[40] textbox 'Search stocks', clickable, visible",
+     "+\t\t[40] textbox 'Search stocks by name or symbol', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__tax",
+   "visible": {
+    "lines_clean": 30,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "all": {
+    "lines_clean": 31,
+    "removed": 1,
+    "added": 1,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  },
+  {
+   "page": "route__transfers",
+   "visible": {
+    "lines_clean": 32,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible",
+     "-\t[44] combobox 'From', visible, hasPopup='menu', expanded=False",
+     "-\t[46] LabelText '', clickable, visible",
+     "+\t[44] combobox '', visible, hasPopup='menu', expanded=False",
+     "+\t[46] LabelText '', visible",
+     "-\t[47] spinbutton 'Amount', clickable, visible, valuemin=0, valuemax=0, valuetext=''",
+     "+\t[47] spinbutton '0.00', clickable, visible, valuemin=0, valuemax=0, valuetext=''"
+    ]
+   },
+   "all": {
+    "lines_clean": 32,
+    "removed": 4,
+    "added": 4,
+    "examples": [
+     "-\t\t[27] textbox 'Search stocks', clickable, visible",
+     "+\t\t[27] textbox 'Search', clickable, visible",
+     "-\t[44] combobox 'From', visible, hasPopup='menu', expanded=False",
+     "-\t[46] LabelText '', clickable, visible",
+     "+\t[44] combobox '', visible, hasPopup='menu', expanded=False",
+     "+\t[46] LabelText '', visible",
+     "-\t[47] spinbutton 'Amount', clickable, visible, valuemin=0, valuemax=0, valuetext=''",
+     "+\t[47] spinbutton '0.00', clickable, visible, valuemin=0, valuemax=0, valuetext=''"
+    ]
+   },
+   "pixels": {
+    "size": [
+     1280,
+     720
+    ],
+    "diff_share": 0.0
+   }
+  }
+ ]
+}
